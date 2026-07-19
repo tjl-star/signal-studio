@@ -1,0 +1,10 @@
+{
+  "accounts": [
+    {
+      "source": "demo",
+      "platform": "youtube",
+      "account_id": "demo_channel_1",
+      "account_name": "Demo Creator"
+    }
+  ]
+}
