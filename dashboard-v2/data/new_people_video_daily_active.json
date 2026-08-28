@@ -1,0 +1,2115 @@
+{
+  "source": "data-provider /skill/coreData",
+  "metric": "设备DAU",
+  "metric_name": "设备日活",
+  "application": "全部应用",
+  "date_range": {
+    "start": "2026-07-04",
+    "end": "2026-08-27",
+    "inclusive": true
+  },
+  "clients": [
+    "安卓",
+    "iOS",
+    "M站"
+  ],
+  "fields": [
+    "date",
+    "application_name",
+    "client",
+    "device_dau",
+    "new_device",
+    "play_rate",
+    "source"
+  ],
+  "rows": [
+    {
+      "date": "2026-07-04",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 120509,
+      "new_device": 66921,
+      "play_rate": 0.692,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-04",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 733606,
+      "new_device": 74102,
+      "play_rate": 0.8105,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-04",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 1038009,
+      "new_device": 79291,
+      "play_rate": 0.8481,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-05",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 115133,
+      "new_device": 60613,
+      "play_rate": 0.6908,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-05",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 745426,
+      "new_device": 71002,
+      "play_rate": 0.8078,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-05",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 1058779,
+      "new_device": 82585,
+      "play_rate": 0.8449,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-06",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 107039,
+      "new_device": 55931,
+      "play_rate": 0.684,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-06",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 638576,
+      "new_device": 47475,
+      "play_rate": 0.7867,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-06",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 897897,
+      "new_device": 64251,
+      "play_rate": 0.8221,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-07",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 103966,
+      "new_device": 55159,
+      "play_rate": 0.6671,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-07",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 619620,
+      "new_device": 47966,
+      "play_rate": 0.7862,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-07",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 870315,
+      "new_device": 58809,
+      "play_rate": 0.8193,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-08",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 114390,
+      "new_device": 63115,
+      "play_rate": 0.683,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-08",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 686176,
+      "new_device": 64467,
+      "play_rate": 0.8085,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-08",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 982289,
+      "new_device": 70526,
+      "play_rate": 0.8441,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-09",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 101475,
+      "new_device": 52589,
+      "play_rate": 0.678,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-09",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 634797,
+      "new_device": 51459,
+      "play_rate": 0.7864,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-09",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 893207,
+      "new_device": 55099,
+      "play_rate": 0.8196,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-10",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 93553,
+      "new_device": 44120,
+      "play_rate": 0.7305,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-10",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 644386,
+      "new_device": 46837,
+      "play_rate": 0.7921,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-10",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 928652,
+      "new_device": 46829,
+      "play_rate": 0.8307,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-11",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 109137,
+      "new_device": 56510,
+      "play_rate": 0.7122,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-11",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 708137,
+      "new_device": 54620,
+      "play_rate": 0.8008,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-11",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 1009328,
+      "new_device": 48878,
+      "play_rate": 0.8356,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-12",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 123317,
+      "new_device": 69141,
+      "play_rate": 0.6683,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-12",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 712446,
+      "new_device": 51498,
+      "play_rate": 0.7955,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-12",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 997104,
+      "new_device": 44216,
+      "play_rate": 0.8292,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-13",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 103590,
+      "new_device": 54078,
+      "play_rate": 0.6811,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-13",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 611654,
+      "new_device": 38872,
+      "play_rate": 0.7707,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-13",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 839122,
+      "new_device": 36178,
+      "play_rate": 0.8029,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-14",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 97588,
+      "new_device": 50793,
+      "play_rate": 0.708,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-14",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 579676,
+      "new_device": 34984,
+      "play_rate": 0.7686,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-14",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 795793,
+      "new_device": 34182,
+      "play_rate": 0.7988,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-15",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 99486,
+      "new_device": 53107,
+      "play_rate": 0.7135,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-15",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 576696,
+      "new_device": 32791,
+      "play_rate": 0.7751,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-15",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 797408,
+      "new_device": 30583,
+      "play_rate": 0.8057,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-16",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 101871,
+      "new_device": 52199,
+      "play_rate": 0.7373,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-16",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 640034,
+      "new_device": 44542,
+      "play_rate": 0.8006,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-16",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 891853,
+      "new_device": 40107,
+      "play_rate": 0.8317,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-17",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 105432,
+      "new_device": 53338,
+      "play_rate": 0.723,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-17",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 686115,
+      "new_device": 54436,
+      "play_rate": 0.8128,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-17",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 991712,
+      "new_device": 51591,
+      "play_rate": 0.8488,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-18",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 114248,
+      "new_device": 61592,
+      "play_rate": 0.7347,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-18",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 708667,
+      "new_device": 48142,
+      "play_rate": 0.8142,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-18",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 1032882,
+      "new_device": 46257,
+      "play_rate": 0.8497,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-19",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 122659,
+      "new_device": 66878,
+      "play_rate": 0.7074,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-19",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 760677,
+      "new_device": 61018,
+      "play_rate": 0.821,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-19",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 1096002,
+      "new_device": 57738,
+      "play_rate": 0.8551,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-20",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 110796,
+      "new_device": 59569,
+      "play_rate": 0.7127,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-20",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 642225,
+      "new_device": 41743,
+      "play_rate": 0.7848,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-20",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 906738,
+      "new_device": 40563,
+      "play_rate": 0.8217,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-21",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 101552,
+      "new_device": 52132,
+      "play_rate": 0.7193,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-21",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 619056,
+      "new_device": 42401,
+      "play_rate": 0.78,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-21",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 849005,
+      "new_device": 36206,
+      "play_rate": 0.8153,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-22",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 105083,
+      "new_device": 55223,
+      "play_rate": 0.7252,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-22",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 620795,
+      "new_device": 38430,
+      "play_rate": 0.7848,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-22",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 854433,
+      "new_device": 33759,
+      "play_rate": 0.8191,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-23",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 104888,
+      "new_device": 52870,
+      "play_rate": 0.7219,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-23",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 657071,
+      "new_device": 43221,
+      "play_rate": 0.7997,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-23",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 903535,
+      "new_device": 35307,
+      "play_rate": 0.829,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-24",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 108632,
+      "new_device": 53725,
+      "play_rate": 0.7324,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-24",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 690787,
+      "new_device": 43594,
+      "play_rate": 0.8051,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-24",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 981802,
+      "new_device": 37023,
+      "play_rate": 0.8432,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-25",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 108051,
+      "new_device": 53666,
+      "play_rate": 0.73,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-25",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 698055,
+      "new_device": 47770,
+      "play_rate": 0.8028,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-25",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 981140,
+      "new_device": 36489,
+      "play_rate": 0.84,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-26",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 122413,
+      "new_device": 65122,
+      "play_rate": 0.7191,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-26",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 722828,
+      "new_device": 48758,
+      "play_rate": 0.8069,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-26",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 1003714,
+      "new_device": 35627,
+      "play_rate": 0.8382,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-27",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 108197,
+      "new_device": 55866,
+      "play_rate": 0.7056,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-27",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 609483,
+      "new_device": 36677,
+      "play_rate": 0.7711,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-27",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 815146,
+      "new_device": 29543,
+      "play_rate": 0.8015,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-28",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 108444,
+      "new_device": 57883,
+      "play_rate": 0.7205,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-28",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 596978,
+      "new_device": 35550,
+      "play_rate": 0.7654,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-28",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 796561,
+      "new_device": 29387,
+      "play_rate": 0.7871,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-29",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 98916,
+      "new_device": 48679,
+      "play_rate": 0.7213,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-29",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 589465,
+      "new_device": 33744,
+      "play_rate": 0.7704,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-29",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 783412,
+      "new_device": 27003,
+      "play_rate": 0.8053,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-30",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 99352,
+      "new_device": 49449,
+      "play_rate": 0.7289,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-30",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 577233,
+      "new_device": 31804,
+      "play_rate": 0.7609,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-30",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 767028,
+      "new_device": 26259,
+      "play_rate": 0.7952,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-31",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 107401,
+      "new_device": 55224,
+      "play_rate": 0.7309,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-31",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 612997,
+      "new_device": 34188,
+      "play_rate": 0.7777,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-31",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 876626,
+      "new_device": 31041,
+      "play_rate": 0.8248,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-01",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 114170,
+      "new_device": 60754,
+      "play_rate": 0.7461,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-01",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 651994,
+      "new_device": 40107,
+      "play_rate": 0.785,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-01",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 928108,
+      "new_device": 35359,
+      "play_rate": 0.8251,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-02",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 118106,
+      "new_device": 63793,
+      "play_rate": 0.7578,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-02",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 656282,
+      "new_device": 38441,
+      "play_rate": 0.7866,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-02",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 910128,
+      "new_device": 32688,
+      "play_rate": 0.8256,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-03",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 108820,
+      "new_device": 57454,
+      "play_rate": 0.7079,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-03",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 570705,
+      "new_device": 30959,
+      "play_rate": 0.7578,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-03",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 762686,
+      "new_device": 26366,
+      "play_rate": 0.7923,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-04",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 107973,
+      "new_device": 58340,
+      "play_rate": 0.7084,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-04",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 548038,
+      "new_device": 29464,
+      "play_rate": 0.7525,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-04",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 724501,
+      "new_device": 24597,
+      "play_rate": 0.7875,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-07",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 719920,
+      "new_device": 24197,
+      "play_rate": 0.7973,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-07",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 529358,
+      "new_device": 27463,
+      "play_rate": 0.7556,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-07",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 103607,
+      "new_device": 55114,
+      "play_rate": 0.7161,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-08",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 760838,
+      "new_device": 25851,
+      "play_rate": 0.8016,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-08",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 561355,
+      "new_device": 31825,
+      "play_rate": 0.7665,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-08",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 103095,
+      "new_device": 54367,
+      "play_rate": 0.7192,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-09",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 742372,
+      "new_device": 26113,
+      "play_rate": 0.7895,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-09",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 567006,
+      "new_device": 33122,
+      "play_rate": 0.7605,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-09",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 110992,
+      "new_device": 60466,
+      "play_rate": 0.7371,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-10",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 703680,
+      "new_device": 24681,
+      "play_rate": 0.7868,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-10",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 541436,
+      "new_device": 29429,
+      "play_rate": 0.7564,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-10",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 105139,
+      "new_device": 54375,
+      "play_rate": 0.7165,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-11",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 693391,
+      "new_device": 24726,
+      "play_rate": 0.7859,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-11",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 527028,
+      "new_device": 28765,
+      "play_rate": 0.753,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-11",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 97740,
+      "new_device": 48557,
+      "play_rate": 0.7295,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-12",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 711636,
+      "new_device": 24736,
+      "play_rate": 0.7937,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-12",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 534705,
+      "new_device": 28587,
+      "play_rate": 0.7601,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-12",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 88378,
+      "new_device": 39696,
+      "play_rate": 0.7662,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-13",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 708351,
+      "new_device": 24141,
+      "play_rate": 0.7634,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-13",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 511818,
+      "new_device": 26889,
+      "play_rate": 0.7484,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-13",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 84115,
+      "new_device": 37402,
+      "play_rate": 0.7618,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-14",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 710361,
+      "new_device": 23267,
+      "play_rate": 0.7974,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-14",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 516981,
+      "new_device": 26570,
+      "play_rate": 0.7608,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-14",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 87572,
+      "new_device": 41177,
+      "play_rate": 0.7655,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-15",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 739825,
+      "new_device": 24713,
+      "play_rate": 0.8016,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-15",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 531139,
+      "new_device": 27816,
+      "play_rate": 0.7651,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-15",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 93612,
+      "new_device": 48903,
+      "play_rate": 0.7305,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-16",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 699308,
+      "new_device": 23575,
+      "play_rate": 0.7807,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-16",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 515538,
+      "new_device": 27493,
+      "play_rate": 0.753,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-16",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 98411,
+      "new_device": 54128,
+      "play_rate": 0.713,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-17",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 638653,
+      "new_device": 21308,
+      "play_rate": 0.7768,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-17",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 487048,
+      "new_device": 24827,
+      "play_rate": 0.7414,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-17",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 85173,
+      "new_device": 41491,
+      "play_rate": 0.7618,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-18",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 628539,
+      "new_device": 20353,
+      "play_rate": 0.7777,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-18",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 462319,
+      "new_device": 5609,
+      "play_rate": 0.7374,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-18",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 87814,
+      "new_device": 44419,
+      "play_rate": 0.7576,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-19",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 614052,
+      "new_device": 19075,
+      "play_rate": 0.7825,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-19",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 437327,
+      "new_device": 5259,
+      "play_rate": 0.7354,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-19",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 90529,
+      "new_device": 47605,
+      "play_rate": 0.7671,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-20",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 611403,
+      "new_device": 19168,
+      "play_rate": 0.782,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-20",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 446660,
+      "new_device": 14045,
+      "play_rate": 0.7336,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-20",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 88337,
+      "new_device": 45580,
+      "play_rate": 0.7759,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-05",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 729212,
+      "new_device": 24856,
+      "play_rate": 0.795,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-05",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 544820,
+      "new_device": 29033,
+      "play_rate": 0.7562,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-05",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 100021,
+      "new_device": 50337,
+      "play_rate": 0.737,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-06",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 702712,
+      "new_device": 24031,
+      "play_rate": 0.7885,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-06",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 526089,
+      "new_device": 27471,
+      "play_rate": 0.7513,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-06",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 105127,
+      "new_device": 56357,
+      "play_rate": 0.7226,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-21",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 656236,
+      "new_device": 20111,
+      "play_rate": 0.7963,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-21",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 467754,
+      "new_device": 18399,
+      "play_rate": 0.7457,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-21",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 86633,
+      "new_device": 42639,
+      "play_rate": 0.7699,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-22",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 658604,
+      "new_device": 20736,
+      "play_rate": 0.7898,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-22",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 479631,
+      "new_device": 22108,
+      "play_rate": 0.7488,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-22",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 90862,
+      "new_device": 47647,
+      "play_rate": 0.7669,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-23",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 636617,
+      "new_device": 21132,
+      "play_rate": 0.7796,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-23",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 476435,
+      "new_device": 24201,
+      "play_rate": 0.7407,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-23",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 87525,
+      "new_device": 43617,
+      "play_rate": 0.7603,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-25",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 569331,
+      "new_device": 18096,
+      "play_rate": 0.7665,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-25",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 436001,
+      "new_device": 19328,
+      "play_rate": 0.7315,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-25",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 87771,
+      "new_device": 44928,
+      "play_rate": 0.7596,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-24",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 581247,
+      "new_device": 18650,
+      "play_rate": 0.7682,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-24",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 441761,
+      "new_device": 19219,
+      "play_rate": 0.7333,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-24",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 88966,
+      "new_device": 45546,
+      "play_rate": 0.7653,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-26",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 584110,
+      "new_device": 19259,
+      "play_rate": 0.7675,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-26",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 443520,
+      "new_device": 20409,
+      "play_rate": 0.7305,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-26",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 79399,
+      "new_device": 36800,
+      "play_rate": 0.7518,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-27",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 582326,
+      "new_device": 19994,
+      "play_rate": 0.7578,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-27",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 445500,
+      "new_device": 21127,
+      "play_rate": 0.7257,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-27",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 83457,
+      "new_device": 40752,
+      "play_rate": 0.7573,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-01",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 825041,
+      "new_device": 59991,
+      "play_rate": 0.8259,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-01",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 609142,
+      "new_device": 56084,
+      "play_rate": 0.7983,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-01",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 103179,
+      "new_device": 55577,
+      "play_rate": 0.7474,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-02",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 844634,
+      "new_device": 63178,
+      "play_rate": 0.8271,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-02",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 625679,
+      "new_device": 61469,
+      "play_rate": 0.7981,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-02",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 108555,
+      "new_device": 60227,
+      "play_rate": 0.7238,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-03",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 1041602,
+      "new_device": 114550,
+      "play_rate": 0.857,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-03",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 750638,
+      "new_device": 110687,
+      "play_rate": 0.8244,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-03",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 136776,
+      "new_device": 84099,
+      "play_rate": 0.676,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-01",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1699941,
+      "new_device": 177412,
+      "play_rate": 0.7639,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-02",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1740101,
+      "new_device": 190644,
+      "play_rate": 0.7644,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-03",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 2092342,
+      "new_device": 315804,
+      "play_rate": 0.7934,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-04",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 2055324,
+      "new_device": 235242,
+      "play_rate": 0.7905,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-05",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 2080972,
+      "new_device": 226042,
+      "play_rate": 0.7885,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-06",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1810316,
+      "new_device": 176072,
+      "play_rate": 0.7578,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-07",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1755300,
+      "new_device": 169716,
+      "play_rate": 0.7552,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-08",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1940518,
+      "new_device": 204947,
+      "play_rate": 0.7813,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-09",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1785341,
+      "new_device": 165329,
+      "play_rate": 0.7574,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-10",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1822394,
+      "new_device": 144142,
+      "play_rate": 0.77,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-11",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1978278,
+      "new_device": 167586,
+      "play_rate": 0.7811,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-12",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1985282,
+      "new_device": 172235,
+      "play_rate": 0.7724,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-13",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1713659,
+      "new_device": 135479,
+      "play_rate": 0.7402,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-14",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1627246,
+      "new_device": 125750,
+      "play_rate": 0.7376,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-15",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1628518,
+      "new_device": 122027,
+      "play_rate": 0.7424,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-16",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1791452,
+      "new_device": 142431,
+      "play_rate": 0.7695,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-17",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1937206,
+      "new_device": 165272,
+      "play_rate": 0.7878,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-18",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 2000865,
+      "new_device": 162854,
+      "play_rate": 0.7961,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-19",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 2126069,
+      "new_device": 192257,
+      "play_rate": 0.8016,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-20",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1816488,
+      "new_device": 147676,
+      "play_rate": 0.7599,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-21",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1722193,
+      "new_device": 136189,
+      "play_rate": 0.7543,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-22",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1731139,
+      "new_device": 132865,
+      "play_rate": 0.7591,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-23",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1815360,
+      "new_device": 137131,
+      "play_rate": 0.7718,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-24",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1930176,
+      "new_device": 140304,
+      "play_rate": 0.7852,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-25",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1928770,
+      "new_device": 144567,
+      "play_rate": 0.7865,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-26",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1993177,
+      "new_device": 156559,
+      "play_rate": 0.7869,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-27",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1685811,
+      "new_device": 128034,
+      "play_rate": 0.7425,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-28",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1651591,
+      "new_device": 128441,
+      "play_rate": 0.7347,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-29",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1619470,
+      "new_device": 115205,
+      "play_rate": 0.7454,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-30",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1592651,
+      "new_device": 113328,
+      "play_rate": 0.7354,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-07-31",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1744275,
+      "new_device": 126456,
+      "play_rate": 0.7608,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-01",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1831984,
+      "new_device": 142409,
+      "play_rate": 0.7705,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-02",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1823518,
+      "new_device": 141028,
+      "play_rate": 0.7717,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-03",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1592118,
+      "new_device": 120557,
+      "play_rate": 0.7301,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-04",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1526363,
+      "new_device": 118076,
+      "play_rate": 0.7252,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-05",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1518239,
+      "new_device": 109277,
+      "play_rate": 0.7324,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-06",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1475932,
+      "new_device": 112729,
+      "play_rate": 0.7256,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-07",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1492220,
+      "new_device": 111331,
+      "play_rate": 0.732,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-08",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1555356,
+      "new_device": 116699,
+      "play_rate": 0.745,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-09",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1554358,
+      "new_device": 124849,
+      "play_rate": 0.7374,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-10",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1495392,
+      "new_device": 113358,
+      "play_rate": 0.7256,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-11",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1460032,
+      "new_device": 106921,
+      "play_rate": 0.7248,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-12",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1478609,
+      "new_device": 97771,
+      "play_rate": 0.7332,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-13",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1450812,
+      "new_device": 92921,
+      "play_rate": 0.7112,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-14",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1455171,
+      "new_device": 95463,
+      "play_rate": 0.735,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-15",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1492917,
+      "new_device": 105910,
+      "play_rate": 0.7432,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-16",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1441663,
+      "new_device": 109576,
+      "play_rate": 0.7258,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-17",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1350046,
+      "new_device": 91894,
+      "play_rate": 0.7143,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-18",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1315124,
+      "new_device": 74753,
+      "play_rate": 0.7134,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-19",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1274213,
+      "new_device": 75930,
+      "play_rate": 0.715,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-20",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1280391,
+      "new_device": 82794,
+      "play_rate": 0.7138,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-21",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1342914,
+      "new_device": 85418,
+      "play_rate": 0.7279,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-22",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1352012,
+      "new_device": 95108,
+      "play_rate": 0.7307,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-23",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1325969,
+      "new_device": 93575,
+      "play_rate": 0.721,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-24",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1249848,
+      "new_device": 87891,
+      "play_rate": 0.7028,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-25",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1230631,
+      "new_device": 86747,
+      "play_rate": 0.7003,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-26",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1243037,
+      "new_device": 80727,
+      "play_rate": 0.7014,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-08-27",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1248200,
+      "new_device": 86205,
+      "play_rate": 0.6951,
+      "source": "data-provider /skill/coreData"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+/* Ranking trend semantics: increase is red, decrease is green. Trend is display-only. */
+.ranking-change-heading{display:inline-block;color:inherit;font:inherit;white-space:nowrap}
+.change-badge.change-up{background:#fff0f0;color:#cf5e65}
+.change-badge.change-down{background:#e5f7ed;color:#159a70}
+.content-ranking-table .change-value.is-up{color:#cf5e65!important}
+.content-ranking-table .change-value.is-down{color:#159a70!important}
+.content-ranking-table .play-uv-value{color:#526781!important;font-weight:800}
+.hot-table-wrap .search-uv-value{color:#526781!important}

@@ -1,0 +1,31 @@
+{
+  "module": "站内播放排名 Top30",
+  "requested_as_of": "2026-08-04",
+  "date_range": {
+    "start": "2026-07-06",
+    "end": "2026-08-04",
+    "days": 30
+  },
+  "ranking_rule": "play_vv desc",
+  "supported_tabs": {
+    "总榜": "seasonPlayVV daily Top30",
+    "新用户榜": "playTop10 daily Top10 only",
+    "新增用户榜": "unsupported"
+  },
+  "columns": [
+    "日期",
+    "榜单分类",
+    "排名",
+    "内容名称",
+    "播放UV",
+    "播放VV",
+    "昨日环比",
+    "聚集类型",
+    "内容分类",
+    "题材标签",
+    "榜单状态",
+    "数据状态",
+    "来源接口",
+    "限制说明"
+  ]
+}

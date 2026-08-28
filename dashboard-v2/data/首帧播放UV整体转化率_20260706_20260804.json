@@ -1,0 +1,130 @@
+﻿{
+    "metric":  "首帧播放UV整体转化率",
+    "field":  "first_frame_play_uv_rate",
+    "definition":  "全部端口整体口径",
+    "start_date":  "2026-07-06",
+    "end_date":  "2026-08-04",
+    "source":  "dramaConversion",
+    "rows":  [
+                 {
+                     "date":  "2026-07-06",
+                     "first_frame_play_uv_rate":  0.286
+                 },
+                 {
+                     "date":  "2026-07-07",
+                     "first_frame_play_uv_rate":  0.2843
+                 },
+                 {
+                     "date":  "2026-07-08",
+                     "first_frame_play_uv_rate":  0.2911
+                 },
+                 {
+                     "date":  "2026-07-09",
+                     "first_frame_play_uv_rate":  0.2933
+                 },
+                 {
+                     "date":  "2026-07-10",
+                     "first_frame_play_uv_rate":  0.3003
+                 },
+                 {
+                     "date":  "2026-07-11",
+                     "first_frame_play_uv_rate":  0.31
+                 },
+                 {
+                     "date":  "2026-07-12",
+                     "first_frame_play_uv_rate":  0.3074
+                 },
+                 {
+                     "date":  "2026-07-13",
+                     "first_frame_play_uv_rate":  0.2994
+                 },
+                 {
+                     "date":  "2026-07-14",
+                     "first_frame_play_uv_rate":  0.2978
+                 },
+                 {
+                     "date":  "2026-07-15",
+                     "first_frame_play_uv_rate":  0.2878
+                 },
+                 {
+                     "date":  "2026-07-16",
+                     "first_frame_play_uv_rate":  0.3199
+                 },
+                 {
+                     "date":  "2026-07-17",
+                     "first_frame_play_uv_rate":  0.3257
+                 },
+                 {
+                     "date":  "2026-07-18",
+                     "first_frame_play_uv_rate":  0.3316
+                 },
+                 {
+                     "date":  "2026-07-19",
+                     "first_frame_play_uv_rate":  0.3017
+                 },
+                 {
+                     "date":  "2026-07-20",
+                     "first_frame_play_uv_rate":  0.3057
+                 },
+                 {
+                     "date":  "2026-07-21",
+                     "first_frame_play_uv_rate":  0.3131
+                 },
+                 {
+                     "date":  "2026-07-22",
+                     "first_frame_play_uv_rate":  0.3126
+                 },
+                 {
+                     "date":  "2026-07-23",
+                     "first_frame_play_uv_rate":  0.3231
+                 },
+                 {
+                     "date":  "2026-07-24",
+                     "first_frame_play_uv_rate":  0.331
+                 },
+                 {
+                     "date":  "2026-07-25",
+                     "first_frame_play_uv_rate":  0.3258
+                 },
+                 {
+                     "date":  "2026-07-26",
+                     "first_frame_play_uv_rate":  0.3126
+                 },
+                 {
+                     "date":  "2026-07-27",
+                     "first_frame_play_uv_rate":  0.3157
+                 },
+                 {
+                     "date":  "2026-07-28",
+                     "first_frame_play_uv_rate":  0.3183
+                 },
+                 {
+                     "date":  "2026-07-29",
+                     "first_frame_play_uv_rate":  0.3121
+                 },
+                 {
+                     "date":  "2026-07-30",
+                     "first_frame_play_uv_rate":  0.313
+                 },
+                 {
+                     "date":  "2026-07-31",
+                     "first_frame_play_uv_rate":  0.3088
+                 },
+                 {
+                     "date":  "2026-08-01",
+                     "first_frame_play_uv_rate":  0.3041
+                 },
+                 {
+                     "date":  "2026-08-02",
+                     "first_frame_play_uv_rate":  0.2965
+                 },
+                 {
+                     "date":  "2026-08-03",
+                     "first_frame_play_uv_rate":  0.3067
+                 },
+                 {
+                     "date":  "2026-08-04",
+                     "first_frame_play_uv_rate":  0.3066
+                 }
+             ]
+}
