@@ -1,4 +1,4 @@
-﻿const DATA={
+const DATA={
   daily:'data/new_people_video_daily_active.json', dau:'data/new_people_video_device_dau_by_client_20260705_20260804.json', playRate:'data/播放率_近30天_按客户端.json', duration:'data/人均播放时长_近30天_按客户端.json', playCount:'data/avg_play_count_by_client.json',
   searchUse:'data/搜索使用率_按客户端_20260706_20260804.json', firstFrame:'data/首帧播放UV整体转化率_20260706_20260804.json', fiveMin:'data/播放5分钟UV整体转化率_20260706_20260804.json', newSearch:'data/新用户搜索使用率_20260706_20260804.json', oldSearch:'data/老用户搜索使用率_20260706_20260804.json', hotSearch:'data/热搜Top30_20260706_20260804.json', ranking:'data/站内播放排名Top30_20260706_20260804.json?v=20260825-playuv-top30',
   traffic:'data/home_funnel_requested_fields.json', trafficChannelFunnel:'data/%E9%A6%96%E9%A1%B5%E6%B5%81%E9%87%8F%E4%B8%8E%E8%BD%AC%E5%8C%96%E6%BC%8F%E6%96%97_20260705_20260804.json', channelOps:'data/%E9%A2%91%E9%81%93%E8%BF%90%E8%90%A5%E5%88%86%E6%9E%90_dramaConversion_android_rrsp_xb_20260705_20260804.json', trafficDetail:'data/home_channel_traffic_detail.json', sections:'data/home_sections_risk_detail.json?v=20260821-client-risk-scope', banners:'data/banner_click_detail.json', bannerClick:'data/banner_click_20260704_20260804_all_clients.json', guess:'data/guess_you_like_home_data.json', guessPv:'data/guess_you_like_pv_home_data.json', guessExposure:'data/guess_you_like_home_exposure_conversion.json', genreRatio:'data/%E5%89%A7%E7%A7%8D%E6%92%AD%E6%94%BE%E5%8D%A0%E6%AF%94_%E5%85%A8%E9%83%A8%E7%AB%AF%E5%8F%A3_20260705_20260804.json'
@@ -29,19 +29,20 @@ renderRanking=function(){
 };
 }
 const DATA_PATHS={
-  daily:'data/new_people_video_daily_active.json?v=20260828-data-20260824-refresh-1',dau:'data/new_people_video_device_dau_by_client_20260705_20260804.json',playRate:'data/%E6%92%AD%E6%94%BE%E7%8E%87_%E8%BF%9130%E5%A4%A9_%E6%8C%89%E5%AE%A2%E6%88%B7%E7%AB%AF.json',duration:'data/%E4%BA%BA%E5%9D%87%E6%92%AD%E6%94%BE%E6%97%B6%E9%95%BF_%E8%BF%9130%E5%A4%A9_%E6%8C%89%E5%AE%A2%E6%88%B7%E7%AB%AF.json?v=20260828-data-20260824-refresh-1',playCount:'data/avg_play_count_by_client.json?v=20260828-data-20260824-refresh-1',
+  daily:'data/new_people_video_daily_active.json?v=20260830-data-refresh-1',dau:'data/new_people_video_device_dau_by_client_20260705_20260804.json',playRate:'data/%E6%92%AD%E6%94%BE%E7%8E%87_%E8%BF%9130%E5%A4%A9_%E6%8C%89%E5%AE%A2%E6%88%B7%E7%AB%AF.json',duration:'data/%E4%BA%BA%E5%9D%87%E6%92%AD%E6%94%BE%E6%97%B6%E9%95%BF_%E8%BF%9130%E5%A4%A9_%E6%8C%89%E5%AE%A2%E6%88%B7%E7%AB%AF.json?v=20260830-data-refresh-1',playCount:'data/avg_play_count_by_client.json?v=20260830-data-refresh-1',
   searchUse:'data/%E6%90%9C%E7%B4%A2%E4%BD%BF%E7%94%A8%E7%8E%87_%E5%85%A8%E9%83%A8%E7%AB%AF%E5%8F%A3_20260706_20260804.json',firstFrame:'data/%E9%A6%96%E5%B8%A7%E6%92%AD%E6%94%BEUV%E6%95%B4%E4%BD%93%E8%BD%AC%E5%8C%96%E7%8E%87_20260706_20260804.json',fiveMin:'data/%E6%92%AD%E6%94%BE5%E5%88%86%E9%92%9FUV%E6%95%B4%E4%BD%93%E8%BD%AC%E5%8C%96%E7%8E%87_20260706_20260804.json',newSearch:'data/%E6%96%B0%E7%94%A8%E6%88%B7%E6%90%9C%E7%B4%A2%E4%BD%BF%E7%94%A8%E7%8E%87_20260706_20260804.json',oldSearch:'data/%E8%80%81%E7%94%A8%E6%88%B7%E6%90%9C%E7%B4%A2%E4%BD%BF%E7%94%A8%E7%8E%87_20260706_20260804.json',hotSearch:'data/%E7%83%AD%E6%90%9CTop30_20260706_20260804.json',ranking:'data/%E7%AB%99%E5%86%85%E6%92%AD%E6%94%BE%E6%8E%92%E5%90%8DTop30_20260706_20260804.json?v=20260825-playuv-top30',trafficChannelFunnel:'data/%E9%A6%96%E9%A1%B5%E6%B5%81%E9%87%8F%E4%B8%8E%E8%BD%AC%E5%8C%96%E6%BC%8F%E6%96%97_20260705_20260804.json',channelOps:'data/%E9%A2%91%E9%81%93%E8%BF%90%E8%90%A5%E5%88%86%E6%9E%90_dramaConversion_android_rrsp_xb_20260705_20260804.json',
   playRateAll:'data/%E6%92%AD%E6%94%BE%E7%8E%87_%E8%BF%9130%E5%A4%A9.json',durationAll:'data/%E4%BA%BA%E5%9D%87%E6%92%AD%E6%94%BE%E6%97%B6%E9%95%BF_%E8%BF%9130%E5%A4%A9_%E5%85%A8%E9%83%A8%E7%AB%AF%E5%8F%A3.json',duration7:'data/%E4%BA%BA%E5%9D%87%E6%92%AD%E6%94%BE%E6%97%917%E5%A4%A9.json',detailPlay5:'data/%E5%BD%B1%E8%A7%86%E8%AF%A6%E6%83%85%E9%A1%B5%E6%92%AD%E6%94%BE5%E5%88%86%E9%92%9FUV%E8%BD%AC%E5%8C%96%E7%8E%87_%E8%BF%9130%E5%A4%A9.json',rankingNotes:'data/%E7%AB%99%E5%86%85%E6%92%AD%E6%94%BE%E6%8E%92%E5%90%8DTop30_20260706_20260804_%E5%8F%A3%E5%BE%84%E8%AF%B4%E6%98%8E.json',yesterdayTop10:'data/%E6%98%A8%E6%97%A5%E6%92%AD%E6%94%BETop10_20260806_%E5%8F%AF%E4%BA%A4%E4%BB%98%E6%98%8E%E7%BB%86.json',yesterdayTop20:'data/%E6%98%A8%E6%97%A5%E5%89%A7%E7%83%AD%E6%92%AD%E6%8E%92%E5%90%8DTop20_20260806.json',searchFirstExtra:'data/first_frame_play_uv_conversion_20260705_20260804.json',searchIos5:'data/play_5_mins_uv_rate_iOS_20260706_20260804.json',searchDetail5:'data/search_detail_play_5_mins_uv_rate_20260705_20260804.json',searchAllClient:'data/%E6%90%9C%E7%B4%A2%E4%BD%BF%E7%94%A8%E7%8E%87_%E5%85%A8%E9%83%A8%E7%AB%AF%E5%8F%A3_20260706_20260804.json',searchDetailExtra:'data/%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E5%BD%B1%E8%A7%86%E8%AF%A6%E6%83%85%E9%A1%B5%E6%92%AD%E6%94%BE5%E5%88%86%E9%92%9FUV%E8%BD%AC%E5%8C%96%E7%8E%87_20260706_20260804.json',guessTabClick:'data/guess_you_like_home_tab_click_uv_by_client_device_20260705_20260804.json'
 };
 DATA_PATHS.genreRatio='data/%E5%89%A7%E7%A7%8D%E6%92%AD%E6%94%BE%E5%8D%A0%E6%AF%94_%E5%85%A8%E9%83%A8%E7%AB%AF%E5%8F%A3_20260705_20260804.json?v=20260828-data-20260824-refresh-1';
-DATA_PATHS.searchConversion='data/search_overall_conversion_20260701_20260825.json?v=20260827-quickbi-search-overall';
+DATA_PATHS.searchConversion='data/search_overall_conversion_20260701_20260825.json?v=20260907-quickbi-search-overall';
+DATA_PATHS.hotKeywordDramaMap='热搜词剧名映射.json?v=20260903-mapping-3';
 DATA_PATHS.hotSearch='data/%E7%83%AD%E6%90%9C%E6%80%BB%E6%A6%9C_20260704_20260804.json?v=20260828-date-range-0701-0827-2';
-DATA_PATHS.newHotSearch='data/%E6%96%B0%E7%94%A8%E6%88%B7%E7%83%AD%E6%90%9C_%E8%AF%8D%E9%A2%91_20260704_20260804.json?v=20260828-date-range-0701-0827-2';
+DATA_PATHS.newHotSearch='data/%E6%96%B0%E7%94%A8%E6%88%B7%E7%83%AD%E6%90%9C_%E8%AF%8D%E9%A2%91_20260704_20260804.json?v=20260910-hotsearch-rings-top30-1';
 DATA_PATHS.sectionOps='data/home_section_ops_20260705_20260804.json?v=20260828-data-20260824-refresh-2';
 DATA_PATHS.ranking='data/%E7%AB%99%E5%86%85%E6%92%AD%E6%94%BE%E6%8E%92%E5%90%8DTop30_20260706_20260804.json?v=20260828-data-20260824-refresh-1';
 DATA_PATHS.channelOps='data/%E9%A2%91%E9%81%93%E8%BF%90%E8%90%A5%E5%88%86%E6%9E%90_dramaConversion_android_rrsp_xb_20260705_20260804.json?v=20260828-data-20260824-refresh-1';
-DATA_PATHS.bannerClick='data/banner_click_20260704_20260804_all_clients.json?v=20260828-data-20260824-refresh-2';
-DATA_PATHS.guessQuickBi='data/guess_you_like_home_quickbi_20260701_20260825.json?v=20260827-quickbi-guess';
+DATA_PATHS.bannerClick='data/banner_click_20260704_20260804_all_clients.json?v=20260908-data-refresh-1';
+DATA_PATHS.guessQuickBi='data/guess_you_like_home_quickbi_20260701_20260825.json?v=20260907-quickbi-guess';
 // Removed legacy snapshots are intentionally not part of the startup load.
 delete DATA.guess;delete DATA.guessPv;delete DATA.guessExposure;delete DATA_PATHS.guessTabClick;
 DATA_PATHS.daily='data/new_people_video_daily_active.json?v=20260828-all-client-1';
@@ -52,19 +53,29 @@ DATA_PATHS.duration='data/人均播放时长_近30天_按客户端.json?v=202608
 DATA_PATHS.playRateAll='data/播放率_近30天.json';
 DATA_PATHS.durationAll='data/人均播放时长_近30天_全部端口.json';
 DATA_PATHS.duration7='data/人均播放时长_近7天.json';
-DATA_PATHS.genreRatio='data/剧种播放占比_全部端口_20260705_20260804.json?v=20260828-date-range-0701-0827-2';
-DATA_PATHS.searchConversion='data/search_overall_conversion_20260701_20260825.json?v=20260827-quickbi-search-overall';
-DATA_PATHS.hotSearch='data/%E7%83%AD%E6%90%9C%E6%80%BB%E6%A6%9C_20260704_20260804.json?v=20260828-date-range-0701-0827-2';
-DATA_PATHS.sectionOps='data/home_section_ops_20260705_20260804.json?v=20260828-date-range-0701-0827-2';
-DATA_PATHS.ranking='data/站内播放排名Top30_20260706_20260804.json?v=20260828-new-user-playuv-all-dates-1';
-DATA_PATHS.channelOps='data/频道运营分析_dramaConversion_android_rrsp_xb_20260705_20260804.json?v=20260828-date-range-0701-0827-2';
-DATA_PATHS.popupWindow='data/popup_window_20260701_20260827_android_rrsp_xb.json?v=20260828-popup-tab-1';
+DATA_PATHS.genreRatio='data/剧种播放占比_全部端口_20260705_20260804.json?v=20260830-refresh-1';
+DATA_PATHS.genreMapping='data/bl_genre_mapping.json?v=20260907-genre-display-rule-2';
+DATA_PATHS.searchConversion='data/search_overall_conversion_20260701_20260825.json?v=20260907-quickbi-search-overall';
+DATA_PATHS.hotSearch='data/%E7%83%AD%E6%90%9C%E6%80%BB%E6%A6%9C_20260704_20260804.json?v=20260910-hotsearch-rings-top30-1';
+DATA_PATHS.sectionOps='data/home_section_ops_20260705_20260804.json?v=20260830-refresh-1';
+DATA_PATHS.ranking='data/站内播放排名Top30_20260706_20260804.json?v=20260910-new-user-top30-1';
+DATA_PATHS.seasonTitleMap='data/season_title_map.json?v=20260903-season-title-map-1';
+DATA_PATHS.channelOps='data/频道运营分析_dramaConversion_android_rrsp_xb_20260705_20260804.json?v=20260830-refresh-1';
+DATA_PATHS.popupWindow='data/popup_window_20260701_20260827_android_rrsp_xb.json?v=20260830-popup-refresh-1';
 // Retired search-analysis assets were removed; do not request them during
 // startup. The active search-funnel page uses only searchConversion below.
 ['searchUse','firstFrame','fiveMin','newSearch','oldSearch','searchFirstExtra','searchIos5','searchDetail5','searchAllClient','searchDetailExtra'].forEach(key=>{delete DATA[key];delete DATA_PATHS[key]});
 const DASHBOARD_RANGE_START='2026-07-01';
-const DASHBOARD_RANGE_END='2026-08-27';
-const state={start:DASHBOARD_RANGE_START,end:DASHBOARD_RANGE_END,client:'安卓',page:'insight',homeTab:'traffic',data:{}};
+// Fallback for the first paint; init() replaces this with the newest verified
+// date shared by the active data modules after their snapshots load.
+let DASHBOARD_RANGE_END='2026-09-10';
+// Allow a shared dashboard URL to open the requested module directly.  The
+// default remains the overview for existing bookmarks, while
+// `?page=content` opens 热播榜单 immediately.
+const requestedInitialPage=new URLSearchParams(window.location.search).get('page');
+const initialPage=['insight','report','overview','content','search','genre','home','guess','sections','search-funnel','banner','popup'].includes(requestedInitialPage)?requestedInitialPage:'insight';
+const state={start:DASHBOARD_RANGE_START,end:DASHBOARD_RANGE_END,client:'安卓',page:initialPage,homeTab:'traffic',data:{}};window.__dashboardState=state;
+window.__openResourcePage=()=>{state.page='banner';renderPage()};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const empty='--', fmt=v=>v===null||v===undefined||v===''?empty:Number.isFinite(Number(v))?Number(v).toLocaleString('zh-CN'):String(v), pct=v=>v===null||v===undefined||v===''?empty:`${(Number(v)*100).toFixed(1)}%`, esc=v=>String(v??empty).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function maxDashboardDataDate(value){
@@ -101,7 +112,31 @@ function dashboardVerifiedDate(data){
 }
 function rows(value){if(Array.isArray(value))return value;if(value?.rows)return value.rows;if(value?.data)return value.data;return []}
 function repairText(value){if(typeof value==='string'&&!/^[\x00-\x7f]*$/.test(value)&&/[ÃÂåæçèéêëìíîïðñòóôõö÷øùúûüýþ]/.test(value)){try{return decodeURIComponent(escape(value))}catch(_){return value}}if(Array.isArray(value))return value.map(repairText);if(value&&typeof value==='object')return Object.fromEntries(Object.entries(value).map(([k,v])=>[k,repairText(v)]));return value}
-async function load(path){const r=await fetch(path);if(!r.ok)throw Error(path);const text=new TextDecoder('utf-8').decode(await r.arrayBuffer()).replace(/^\uFEFF/,'');return rows(repairText(JSON.parse(text)))}
+const dashboardJsonCache=window.__dashboardJsonCache||(window.__dashboardJsonCache=new Map());
+function dashboardDataCacheKey(path){return new URL(path,location.href).pathname}
+window.__dashboardFetchJson=window.__dashboardFetchJson||function(path){
+  const key=dashboardDataCacheKey(path);
+  if(!dashboardJsonCache.has(key)){
+    dashboardJsonCache.set(key,fetch(path).then(async response=>{
+      if(!response.ok)throw Error(path);
+      const text=new TextDecoder('utf-8').decode(await response.arrayBuffer()).replace(/^\uFEFF/,'');
+      return JSON.parse(text);
+    }).catch(error=>{dashboardJsonCache.delete(key);throw error}));
+  }
+  return dashboardJsonCache.get(key);
+};
+async function load(path){return rows(repairText(await window.__dashboardFetchJson(path)))}
+function normalizeHotKeyword(value){return String(value??'').normalize('NFKC').trim().replace(/[\s\u3000]+/g,'').toLowerCase()}
+const HOT_SEARCH_NON_DRAMA_TITLES=new Set(['我','爱']);
+function hotDramaName(row){
+  const raw=String(row?.title??row?.['搜索词']??'').trim();
+  if(!raw)return '--';
+  const mappings=rows(state.data.hotKeywordDramaMap||[]);
+  const mapped=mappings.find(item=>String(item.normalized_keyword||normalizeHotKeyword(item.keyword))===normalizeHotKeyword(raw)&&String(item.status||'active')!=='inactive');
+  const hasContentEvidence=Boolean(String(row?.season_id??'').trim()||String(row?.content_type??'').trim()||String(row?.producer_region??'').trim()||String(row?.genre??'').trim()||String(row?.topic_tag??'').trim());
+  if(HOT_SEARCH_NON_DRAMA_TITLES.has(raw)&&!hasContentEvidence)return '--';
+  return mapped?.drama_name|| (hasContentEvidence?raw:'--');
+}
 function rowDate(r){return r.date??r['日期']??r['鏃ユ湡']??''}
 function filterDate(list){return list.filter(r=>(!state.start||String(rowDate(r))>=state.start)&&(!state.end||String(rowDate(r))<=state.end))}
 function latest(list){return [...list].sort((a,b)=>String(rowDate(a)).localeCompare(String(rowDate(b)))).at(-1)}
@@ -132,7 +167,7 @@ function setText(id,value){const el=$(id);const display=id==='overview-client'?(
 function card(label,value,sub,delta){return `<article class="kpi-card"><label>${label}</label><strong>${fmt(value)}</strong>${delta?`<span class="delta ${delta<0?'down':''}">${delta>0?'↑':'↓'} ${Math.abs(delta).toFixed(1)}%</span>`:''}<small>${sub}</small></article>`}
 function lastDelta(list,key){const a=filterDate(list).filter(r=>r.client===state.client).sort((x,y)=>x.date.localeCompare(y.date));if(a.length<2||a.at(-2)[key]==null||a.at(-1)[key]==null)return null;return (a.at(-1)[key]-a.at(-2)[key])/(a.at(-2)[key]||1)*100}
 function makeLine(id,rows,key,name,color,percent=false){if(!window.echarts)return;const el=$(id);if(!el)return;const chart=echarts.getInstanceByDom(el)||echarts.init(el);const data=filterDate(rows).filter(r=>!r.client||r.client===state.client||r.client_type===state.client).sort((a,b)=>String(a.date).localeCompare(String(b.date)));chart.setOption({animation:false,color:[color],grid:{left:58,right:18,top:24,bottom:35,containLabel:true},tooltip:{trigger:'axis',valueFormatter:v=>percent?pct(v):fmt(v)},xAxis:{type:'category',data:data.map(r=>r.date.slice(5)),axisLabel:{color:'#8392a7'}},yAxis:{type:'value',axisLabel:{color:'#8392a7',formatter:v=>percent?`${Math.round(v*100)}%`:fmt(v)},splitLine:{lineStyle:{color:'#edf1f6'}}},series:[{name,type:'line',smooth:.22,symbol:'circle',symbolSize:4,data:data.map(r=>r[key]),lineStyle:{width:3},areaStyle:{color:color+'18'}}]});chart.resize();}
-function resizeCharts(){if(!window.echarts)return;document.querySelectorAll('.chart').forEach(el=>{const chart=echarts.getInstanceByDom(el);if(chart)chart.resize()})}
+function resizeCharts(){if(!window.echarts)return;document.querySelectorAll('.page.active .chart').forEach(el=>{const chart=echarts.getInstanceByDom(el);if(chart)chart.resize()})}
 function deferResize(){requestAnimationFrame(()=>requestAnimationFrame(resizeCharts))}
 function renderOverview(){const daily=state.data.daily,dau=clientRows(state.data.dau.length?state.data.dau:daily), rate=clientRows(state.data.playRate.length?state.data.playRate:daily), duration=clientRows(state.data.duration), counts=clientRows(state.data.playCount);const cur=latest(daily.filter(r=>r.client===state.client))||latest(daily);const d=cur?.device_dau,n=cur?.new_device,pr=cur?.play_rate,du=latest(duration)?.total_avg_watch_duration,pc=latest(counts)?.[state.client];$('#overview-kpis').innerHTML=[card('设备DAU',d,'device_dau',lastDelta(daily,'device_dau')),card('新增设备',n,'new_device',lastDelta(daily,'new_device')),card('播放率',pr,'play_rate',lastDelta(daily,'play_rate')),card('人均播放时长',du==null?null:`${Number(du).toFixed(1)} 分钟`,'total_avg_watch_duration',null),card('人均播放次数',pc,'近30天客户端拆分',null)].join('');setText('overview-client',state.client);setText('dau-current',fmt(d));setText('new-current',fmt(n));makeLine('#dau-chart',dau,'device_dau','设备DAU','#2f76e8');makeLine('#new-chart',dau,'new_device','新增设备','#159a70');makeLine('#rate-chart',rate,'play_rate','播放率','#d58b3e',true);const clients=['安卓','iOS','M站'];const table=$('#client-table');if(table)table.innerHTML=clients.map(c=>{const x=latest(filterDate(daily).filter(r=>r.client===c));const y=latest(filterDate(state.data.duration).filter(r=>r.client_type===c));const z=latest(filterDate(state.data.playCount).filter(r=>r[c]!=null));return `<tr><td>${c}</td><td>${fmt(x?.device_dau)}</td><td>${pct(x?.play_rate)}</td><td>${y?.total_avg_watch_duration==null?empty:Number(y.total_avg_watch_duration).toFixed(1)+' 分钟'}</td><td>${fmt(z?.[c])}</td></tr>`}).join('')}
 function renderRanking(){const list=filterDate(state.data.ranking).filter(r=>r['榜单分类']==='总榜').sort((a,b)=>Number(a['排名'])-Number(b['排名']));const top=list.slice(0,10);const vv=top.filter(r=>r['播放VV']!=null&&r['播放VV']!=='--');$('#content-summary').innerHTML=[['榜单记录',list.length+' 条','真实 Top30 文件'],['最高播放VV',fmt(Math.max(...list.map(r=>Number(r['播放VV'])||0))),'原始播放VV'],['播放UV状态',list.filter(r=>r['播放UV']==='--').length+' 条为 --','接口原始返回'],['数据日期',list.length?list[0]['日期']:'--','最新可用记录']].map(x=>`<div class="summary-item"><span>${x[0]}</span><strong>${x[1]}</strong><small>${x[2]}</small></div>`).join('');$('#ranking-table').innerHTML=list.length?list.map(r=>`<tr><td>${esc(r['日期'])}</td><td>${esc(r['排名'])}</td><td>${esc(r['内容名称'])}</td><td>${esc(r['播放UV'])}</td><td>${fmt(r['播放VV'])}</td><td>${esc(r['昨日环比'])}</td><td>${esc(r['聚集类型'])}</td><td>${esc(r['内容分类'])}</td><td>${esc(r['题材标签'])}</td><td>${esc(r['榜单状态'])}</td><td>${esc(r['数据状态'])}</td></tr>`).join(''):`<tr><td colspan="11" class="empty">暂无真实记录</td></tr>`;if(window.echarts){const c=echarts.getInstanceByDom($('#ranking-chart'))||echarts.init($('#ranking-chart'));c.setOption({grid:{left:120,right:25,top:15,bottom:30},tooltip:{trigger:'axis'},xAxis:{type:'value'},yAxis:{type:'category',data:top.slice().reverse().map(r=>String(r['内容名称']||'--').slice(0,18))},series:[{type:'bar',data:top.slice().reverse().map(r=>Number(r['播放VV'])||0),itemStyle:{color:'#5e6ad2'}}]})}}
@@ -142,7 +177,26 @@ function renderTraffic(){const cur=trafficCurrent();$('#traffic-kpis').innerHTML
 function renderResources(){const sections=filterDate(state.data.sections).filter(r=>r.date===state.end&&r.client===state.client&&r.application_name==='新人人视频').sort((a,b)=>(b.click_ctr_uv||0)-(a.click_ctr_uv||0)).slice(0,20);$('#section-table').innerHTML=sections.map(r=>`<tr><td>${esc(r.board_name)}</td><td>${esc(r.sub_board_name)}</td><td>${fmt(r.exposure_uv)}</td><td>${fmt(r.click_uv)}</td><td>${pct(r.click_ctr_uv)}</td><td>${esc(r.risk_level)}</td></tr>`).join('')||`<tr><td colspan="6" class="empty">暂无真实记录</td></tr>`;const chartRows=sections.slice(0,8).reverse();if(window.echarts){const c=echarts.getInstanceByDom($('#section-chart'))||echarts.init($('#section-chart'));c.setOption({grid:{left:110,right:15,top:10,bottom:25},xAxis:{type:'value',axisLabel:{formatter:v=>`${Math.round(v*100)}%`}},yAxis:{type:'category',data:chartRows.map(r=>r.board_name)},series:[{type:'bar',data:chartRows.map(r=>r.click_ctr_uv),itemStyle:{color:'#a9c9e8'}}]})}const banners=filterDate(state.data.banners).filter(r=>r.date===state.end&&r.client===state.client).sort((a,b)=>(b.ctr_uv||0)-(a.ctr_uv||0)).slice(0,30);$('#banner-table').innerHTML=banners.slice(0,12).map(r=>`<tr><td>${esc(r.title)}</td><td>${esc(r.banner_position)}</td><td>${esc(r.channel)}</td><td>${fmt(r.exposure_uv)}</td><td>${fmt(r.click_uv)}</td><td>${pct(r.ctr_uv)}</td></tr>`).join('')||`<tr><td colspan="6" class="empty">暂无真实记录</td></tr>`;const bc=echarts.getInstanceByDom($('#banner-chart'))||echarts.init($('#banner-chart'));bc.setOption({grid:{left:120,right:15,top:10,bottom:25},xAxis:{type:'value',axisLabel:{formatter:v=>`${Math.round(v*100)}%`}},yAxis:{type:'category',data:banners.slice(0,8).reverse().map(r=>(r.title||'--').slice(0,15))},series:[{type:'bar',data:banners.slice(0,8).reverse().map(r=>r.ctr_uv),itemStyle:{color:'#7ca8ed'}}]})}
 function renderGuess(){const list=filterDate(state.data.guess).filter(r=>r.client===state.client), cur=latest(list);const metrics=[['内容点击UV','content_click_uv'],['播放UV','play_uv'],['播放超过5分钟UV','play_over_5m_uv'],['有效播放UV','effective_play_uv']];$('#guess-uv').innerHTML=metrics.map(x=>`<div class="metric-row"><span>${x[0]}</span><strong>${fmt(cur?.[x[1]])}</strong></div>`).join('');makeLine('#guess-chart',list,'content_click_uv','内容点击UV','#2f76e8');}
 function renderPage(){ $$('.page').forEach(p=>p.classList.remove('active'));const p=$(`#page-${state.page}`);if(p)p.classList.add('active');setText('page-title',state.page==='home'?'首页流量与转化漏斗':state.page==='content'?'内容榜单':state.page==='search'?'热搜榜单明细':'视频运营数据平台');$$('.nav-item').forEach(b=>b.classList.toggle('active',b.dataset.page===state.page));if(state.page==='overview')renderOverview();if(state.page==='content')renderRanking();if(state.page==='home'){renderTraffic();renderResources();renderGuess()}deferResize()}
-function bind(){ $$('.nav-item').forEach(b=>b.addEventListener('click',()=>{state.page=b.dataset.page;renderPage()}));$$('.sub-tabs button').forEach(b=>b.addEventListener('click',()=>{state.homeTab=b.dataset.homeTab;$$('.sub-tabs button').forEach(x=>x.classList.toggle('active',x===b));$$('.home-panel').forEach(x=>x.classList.remove('active'));$(`#home-${state.homeTab}`).classList.add('active');if(state.homeTab==='traffic')renderTraffic();if(state.homeTab==='resources')renderResources();if(state.homeTab==='guess')renderGuess();deferResize()}));$$('.detail-toggle').forEach(b=>b.addEventListener('click',()=>{const target=$(`#${b.dataset.target}`);if(!target)return;const collapsed=target.classList.toggle('detail-collapsed');b.textContent=collapsed?'查看明细':'收起明细';deferResize()}));window.addEventListener('resize',resizeCharts)}
+function bind(){
+  $$('.nav-item').forEach(b=>b.addEventListener('click',()=>{
+    const subnav=b.nextElementSibling?.classList.contains('nav-subnav')?b.nextElementSibling:null;
+    if(subnav){
+      const expand=!b.classList.contains('nav-expanded');
+      $$('.nav-group-toggle').forEach(item=>{item.classList.remove('nav-expanded');item.setAttribute('aria-expanded','false')});
+      if(expand){b.classList.add('nav-expanded');b.setAttribute('aria-expanded','true')}
+      return;
+    }
+    state.page=b.dataset.page;renderPage();
+  }));
+  // Bind the grouped sidebar items during the initial bootstrap.  The late
+  // enhancement code runs after init(), so relying on it leaves Banner点击
+  // and 弹窗数据 without a handler on a cold load.
+  $$('.nav-subitem').forEach(b=>{
+    if(b.dataset.navBound)return;
+    b.dataset.navBound='1';
+    b.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();state.page=b.dataset.page;renderPage()});
+  });
+  $$('.sub-tabs button').forEach(b=>b.addEventListener('click',()=>{state.homeTab=b.dataset.homeTab;$$('.sub-tabs button').forEach(x=>x.classList.toggle('active',x===b));$$('.home-panel').forEach(x=>x.classList.remove('active'));$(`#home-${state.homeTab}`).classList.add('active');if(state.homeTab==='traffic')renderTraffic();if(state.homeTab==='resources')renderResources();if(state.homeTab==='guess')renderGuess();deferResize()}));$$('.detail-toggle').forEach(b=>b.addEventListener('click',()=>{const target=$(`#${b.dataset.target}`);if(!target)return;const collapsed=target.classList.toggle('detail-collapsed');b.textContent=collapsed?'查看明细':'收起明细';deferResize()}));window.addEventListener('resize',resizeCharts)}
 function setDashboardLoading(loading){const main=$('.main'),overlay=$('#dashboard-loading');if(main)main.setAttribute('aria-busy',String(loading));if(overlay)overlay.hidden=!loading}
 function finishDashboardLoading(){requestAnimationFrame(()=>requestAnimationFrame(()=>setDashboardLoading(false)))}
 function updateDashboardDateLabels(){
@@ -160,8 +214,9 @@ async function init(){
   setDashboardLoading(true);
   // Keep navigation usable even while optional data sources are loading.
   bind();
-  setTimeout(()=>setDashboardLoading(false),5000);
-  const entries=Object.entries({...DATA,...DATA_PATHS}).filter(([k])=>!['guess','guessPv','guessExposure','guessTabClick'].includes(k));
+  setTimeout(()=>setDashboardLoading(false),1200);
+  const initialKeys=new Set(['daily','playRate','duration','playCount','sectionOps','channelOps','bannerClick','ranking','hotSearch','hotKeywordDramaMap','genreRatio']);
+  const entries=Object.entries({...DATA,...DATA_PATHS}).filter(([k])=>initialKeys.has(k));
   const settled=await Promise.all(entries.map(async([k,p])=>{const path=LOAD_PATH_OVERRIDES[k]||DATA_PATHS[k]||p;try{const value=await Promise.race([load(path),new Promise((_,reject)=>setTimeout(()=>reject(Error('timeout')),8000))]);return {k,value,path}}catch(error){console.warn('[dashboard] data resource unavailable',path,error);return {k,value:[],path,error}}}));
   settled.forEach(({k,value})=>state.data[k]=value);
   updateDashboardDateLabels();
@@ -174,6 +229,7 @@ async function init(){
   // date forward by itself and change the number of "今日关注" cards.
   const latestDate=dashboardVerifiedDate(state.data);
   if(latestDate){
+    DASHBOARD_RANGE_END=latestDate;
     state.end=latestDate;
     window.__dashboardDefaultDate=latestDate;
     if(state.start>state.end)state.start=state.end;
@@ -260,7 +316,7 @@ renderTraffic=function(){
 makeLine=function(id,list,key,name,color,percent=false){if(!window.echarts)return;const el=$(id);if(!el)return;const chart=echarts.getInstanceByDom(el)||echarts.init(el);const data=filterDate(list).filter(r=>!r.client||r.client===state.client||r.client_type===state.client).filter(r=>r[key]!=null).sort((a,b)=>String(a.date||a['日期']).localeCompare(String(b.date||b['日期'])));chart.setOption({animation:false,color:[color],grid:{left:58,right:18,top:24,bottom:35,containLabel:true},tooltip:{trigger:'axis',valueFormatter:v=>percent?pct(v):fmt(v)},xAxis:{type:'category',data:data.map(r=>String(r.date||r['日期']).slice(5)),axisLabel:{color:'#8392a7'}},yAxis:{type:'value',axisLabel:{color:'#8392a7',formatter:v=>percent?`${Math.round(v*100)}%`:fmt(v)},splitLine:{lineStyle:{color:'#edf1f6'}}},series:[{name,type:'line',smooth:.22,symbol:'circle',symbolSize:4,data:data.map(r=>r[key]),lineStyle:{width:3},areaStyle:{color:color+'18'}}]});chart.resize()};
 renderOverview=function(){const daily=clientRows(state.data.daily),rate=clientRows(state.data.playRate),duration=clientRows(state.data.duration).filter(r=>r.client_type===state.client),counts=state.data.playCount;const cur=latest(daily.filter(r=>r.client===state.client))||latest(daily);const d=cur?.device_dau,n=cur?.new_device,pr=cur?.play_rate,du=latest(duration)?.total_avg_watch_duration,pc=latest(counts)?.[state.client];$('#overview-kpis').innerHTML=[card('设备DAU',d,'device_dau',lastDelta(daily,'device_dau')),card('新增设备',n,'new_device',lastDelta(daily,'new_device')),card('播放率',pr,'play_rate',lastDelta(daily,'play_rate')),card('人均播放时长',du==null?null:`${Number(du).toFixed(1)} 分钟`,'total_avg_watch_duration',null),card('人均播放次数',pc,'近30天客户端拆分',null)].join('');setText('overview-client',state.client);setText('dau-current',fmt(d));setText('new-current',fmt(n));makeLine('#dau-chart',daily,'device_dau','设备DAU','#2f76e8');makeLine('#new-chart',daily,'new_device','新增设备','#159a70');makeLine('#rate-chart',rate,'play_rate','播放率','#d58b3e',true);const clients=['安卓','iOS','M站'];const table=$('#client-table');if(table)table.innerHTML=clients.map(c=>{const x=latest(filterDate(state.data.daily).filter(r=>r.client===c));const y=latest(filterDate(state.data.duration).filter(r=>r.client_type===c));const z=latest(filterDate(counts).filter(r=>r[c]!=null));return `<tr><td>${c}</td><td>${fmt(x?.device_dau)}</td><td>${pct(x?.play_rate)}</td><td>${y?.total_avg_watch_duration==null?empty:Number(y.total_avg_watch_duration).toFixed(1)+' 分钟'}</td><td>${fmt(z?.[c])}</td></tr>`}).join('')};
 
-renderSearch=function(){const use=searchRows(state.data.searchUse),first=searchRows(state.data.firstFrame),five=searchRows(state.data.fiveMin);const latestUse=latest(use),latestFirst=latest(first),latestFive=latest(five),newRows=searchRows(state.data.newSearch),oldRows=searchRows(state.data.oldSearch),latestNew=latest(newRows),latestOld=latest(oldRows);$('#search-kpis').innerHTML=[card('搜索点击转化率',latestUse?.search_click_rate,'search_click_rate'),card('首帧播放UV整体转化率',latestFirst?.value??latestFirst?.first_frame_play_uv_rate,'first_frame_play_uv_rate'),card('播放5分钟UV整体转化率',latestFive?.value??latestFive?.play_5_mins_uv_rate,'play_5_mins_uv_rate'),card('新用户搜索使用率',latestNew?.search_click_rate,'search_click_rate'),card('老用户搜索使用率',latestOld?.search_click_rate,'search_click_rate')].join('');const chain=[['搜索点击转化率',latestUse?.search_click_rate],['首帧播放UV整体转化率',latestFirst?.value??latestFirst?.first_frame_play_uv_rate],['播放5分钟UV整体转化率',latestFive?.value??latestFive?.play_5_mins_uv_rate]];$('#search-chain').innerHTML=chain.map((x,i)=>`${i?'<div class="chain-arrow">↓</div>':''}<div class="chain-step"><b>${i+1}</b><div><span>${x[0]}</span><strong>${pct(x[1])}</strong></div></div>`).join('');makeLine('#search-chart',use,'search_click_rate','搜索点击转化','#2f76e8',true);makeLine('#search-behavior-chart',newRows,'search_click_rate','新用户搜索使用率','#159a70',true);const hot=filterDate(state.data.hotSearch).filter(r=>String(r.date||r['日期'])===state.end).slice(0,30);$('#hot-search-table').innerHTML=hot.map(r=>`<tr><td>${esc(r.rank??r['排名'])}</td><td>${esc(r.title??r['搜索词'])}</td><td>${fmt(r.search_count??r['搜索次数'])}</td><td>${fmt(r.search_uv??r['搜索UV'])}</td><td>${esc(r.day_over_day??r['昨日环比'])}</td></tr>`).join('')||`<tr><td colspan="5" class="empty">暂无真实记录</td></tr>`};
+renderSearch=function(){const use=searchRows(state.data.searchUse),first=searchRows(state.data.firstFrame),five=searchRows(state.data.fiveMin);const latestUse=latest(use),latestFirst=latest(first),latestFive=latest(five),newRows=searchRows(state.data.newSearch),oldRows=searchRows(state.data.oldSearch),latestNew=latest(newRows),latestOld=latest(oldRows);$('#search-kpis').innerHTML=[card('搜索点击转化率',latestUse?.search_click_rate,'search_click_rate'),card('首帧播放UV整体转化率',latestFirst?.value??latestFirst?.first_frame_play_uv_rate,'first_frame_play_uv_rate'),card('播放5分钟UV整体转化率',latestFive?.value??latestFive?.play_5_mins_uv_rate,'play_5_mins_uv_rate'),card('新用户搜索使用率',latestNew?.search_click_rate,'search_click_rate'),card('老用户搜索使用率',latestOld?.search_click_rate,'search_click_rate')].join('');const chain=[['搜索点击转化率',latestUse?.search_click_rate],['首帧播放UV整体转化率',latestFirst?.value??latestFirst?.first_frame_play_uv_rate],['播放5分钟UV整体转化率',latestFive?.value??latestFive?.play_5_mins_uv_rate]];$('#search-chain').innerHTML=chain.map((x,i)=>`${i?'<div class="chain-arrow">↓</div>':''}<div class="chain-step"><b>${i+1}</b><div><span>${x[0]}</span><strong>${pct(x[1])}</strong></div></div>`).join('');makeLine('#search-chart',use,'search_click_rate','搜索点击转化','#2f76e8',true);makeLine('#search-behavior-chart',newRows,'search_click_rate','新用户搜索使用率','#159a70',true);const hot=filterDate(state.data.hotSearch).filter(r=>String(r.date||r['日期'])===state.end).filter(r=>hotDramaName(r)!=='--').slice(0,30);$('#hot-search-table').innerHTML=hot.map(r=>`<tr><td>${esc(r.rank??r['排名'])}</td><td>${esc(hotDramaName(r))}</td><td>${fmt(r.search_count??r.search_vv??r['搜索次数'])}</td><td>${fmt(r.search_uv??r['搜索UV'])}</td><td>${esc(r.day_over_day??r.day_over_day_pct??r['昨日环比'])}</td></tr>`).join('')||`<tr><td colspan="5" class="empty">暂无真实记录</td></tr>`};
 
 const renderTrafficWithRawRates=renderTraffic;
 renderTraffic=function(){renderTrafficWithRawRates();const cur=trafficCurrent();const steps=[['首页频道点击UV','homepage_channel_click_uv',null],['内容点击UV','content_click_uv','content_click_uv_rate'],['详情播放UV','detail_play_uv','play_conversion_uv_rate'],['播放超过5分钟UV','play_over_5m_uv','play_over_5m_uv_rate'],['有效播放UV','effective_play_uv','effective_play_uv_rate']];$('#traffic-chain').innerHTML=steps.map((x,i)=>`${i?'<div class="chain-arrow">↓</div>':''}<div class="chain-step"><b>${i+1}</b><div><span>${x[0]}</span><strong>${fmt(cur?.[x[1]])}</strong><small>${x[1]} · ${x[2]?pct(cur?.[x[2]]):'--'}</small></div></div>`).join('')};
@@ -322,7 +378,7 @@ renderRanking=function(){
 // Final Tab2 correction: daily snapshot view with latest date selected by default.
 renderRanking=function(){
   const host=$('#page-content');if(!host)return;
-  host.innerHTML='<section class="content-detail panel"><div class="panel-head"><div><h3>热播榜单明细</h3><span>每日榜单快照，保留原始记录不合并</span></div><div class="content-table-actions"><label for="content-date-filter">日期</label><select id="content-date-filter" class="content-date-filter"></select><button type="button" class="content-sort active" data-sort="vv">播放VV</button><button type="button" class="content-sort" data-sort="change">昨日环比</button></div></div><div class="content-detail-scroll"><table class="content-ranking-table"><thead><tr><th>排名</th><th>内容名称</th><th>播放UV</th><th>播放VV</th><th>昨日环比</th><th>聚集类型</th><th>内容分类</th><th>题材标签</th><th>榜单状态</th><th>数据状态</th></tr></thead><tbody id="ranking-table"></tbody></table></div></section>';
+   host.innerHTML='<section class="content-detail panel"><div class="panel-head"><div><h3>热播榜单明细</h3><span>按 season_id 识别内容；日环比、周环比齐全后按播放VV降序取Top30</span></div><div class="content-table-actions"><label for="content-date-filter">日期</label><select id="content-date-filter" class="content-date-filter"></select><button type="button" class="content-sort active" data-sort="vv">播放VV</button><button type="button" class="content-sort" data-sort="change">昨日环比</button></div></div><div class="content-detail-scroll"><table class="content-ranking-table"><thead><tr><th>排名</th><th>内容名称</th><th>播放UV</th><th>播放VV</th><th>昨日环比</th><th>聚集类型</th><th>内容分类</th><th>题材标签</th><th>榜单状态</th><th>数据状态</th></tr></thead><tbody id="ranking-table"></tbody></table></div></section>';
   const all=filterDate(state.data.ranking).filter(r=>r['榜单分类']==='总榜');
   const dates=[...new Set(all.map(r=>String(r['日期']||'')))].filter(Boolean).sort();
   let activeDate=dates.at(-1)||'',sort='vv',desc=false;
@@ -340,6 +396,39 @@ DATA_PATHS.duration7='data/%E4%BA%BA%E5%9D%87%E6%92%AD%E6%94%BE%E6%97%B6%E9%95%B
 // Tab2 list tabs: keep both sections visible and use the sidebar as anchors.
 const renderRankingWithCategoryTabs=renderRanking;
 const genreRatioState={date:''};
+let genreDisplayRowsPromise=null;
+function genreDisplayName(row,mapping){
+  const id=String(row?.season_id||'').trim();
+  const plot=String(row?.plot_type||'').split(',').map(value=>value.trim()).filter(Boolean);
+  const region=String(row?.producer_region||'');
+  const rule=mapping?.rule||{};
+  const listed=Array.isArray(mapping?.season_ids)&&mapping.season_ids.map(String).includes(id);
+  const matchesRule=plot.includes(rule.plot_type_contains||'同性')
+    &&String(row?.season_type||'')==='TH'
+    &&region.includes(rule.producer_region||'泰国');
+  const originalGenre={CHN:'国产',JP:'日剧',KR:'韩剧',TH:'泰剧',UK:'英剧',USK:'美剧',OTHER:'其他'}[String(row?.season_type||'')]||String(row?.genre||row?.season_type||'其他');
+  // season_ids 已由 Excel 按“泰国 + 同性 + 普通话”筛选；这里再用播放明细的
+  // season_type / plot_type / producer_region 做第二层校验，避免 ID 误套到其他内容。
+  return listed&&matchesRule?'国产剧':originalGenre;
+}
+function ensureGenreDisplayRows(){
+  if(state.data.genreRatioMapped)return Promise.resolve(state.data.genreRatioMapped);
+  if(genreDisplayRowsPromise)return genreDisplayRowsPromise;
+  const source=rows(state.data.genreRatio),dates=[...new Set(source.map(r=>String(r['日期']||r.date||'')).filter(Boolean))].sort(),mapping=state.data.genreMapping||{};
+  genreDisplayRowsPromise=Promise.all(dates.map(date=>loadSeasonDay(date).then(day=>({date,rows:day})))).then(days=>{
+    const grouped=new Map();
+    days.forEach(({date,rows:dayRows})=>dayRows.forEach(row=>{
+      const vv=Number(row.play_count),uv=Number(row.play_uv);if(!row.season_id||!Number.isFinite(vv)||vv<10)return;
+      const key=`${date}\u0000${genreDisplayName(row,mapping)}`,old=grouped.get(key)||{日期:date,剧种:genreDisplayName(row,mapping),播放VV:0,播放UV:0};
+      old['播放VV']+=vv;if(Number.isFinite(uv))old['播放UV']+=uv;grouped.set(key,old);
+    }));
+    const totals=new Map();[...grouped.values()].forEach(row=>totals.set(row['日期'],(totals.get(row['日期'])||0)+row['播放VV']));
+    const result=[...grouped.values()].map(row=>({...row,'播放VV占比':totals.get(row['日期'])?row['播放VV']/totals.get(row['日期'])*100:0}));
+    state.data.genreRatioMapped=result;return result;
+  }).catch(error=>{console.warn('[dashboard] genre display mapping unavailable',error);state.data.genreRatioMapped=[];return []});
+  return genreDisplayRowsPromise;
+}
+window.__ensureGenreDisplayRows=ensureGenreDisplayRows;
 renderRanking=function(){
   renderRankingWithCategoryTabs();
   const host=document.querySelector('#page-content');
@@ -377,7 +466,8 @@ renderRanking=function(){
       });
     }));
   }
-  const allGenreRows=state.data.genreRatio||[];
+  if(!state.data.genreRatioMapped){ensureGenreDisplayRows().then(()=>{renderRanking();requestAnimationFrame(()=>setupRankingBoard())});return}
+  const allGenreRows=state.data.genreRatioMapped;
   const genreDates=[...new Set(allGenreRows.map(r=>String(r['日期']||r.date||'')).filter(Boolean))].sort();
   if(!genreRatioState.date||!genreDates.includes(genreRatioState.date))genreRatioState.date=genreDates.includes(state.end)?state.end:genreDates.at(-1);
   const genreRows=()=>allGenreRows.filter(r=>String(r['日期']||r.date||'')===genreRatioState.date).sort((a,b)=>(Number(b['播放VV'])||0)-(Number(a['播放VV'])||0));
@@ -912,6 +1002,30 @@ renderPage=function(){
   }
 };
 
+// Popup analysis is a single scrollable page, matching Banner click layout.
+const renderPopupPageTabbed=renderPopupPage;
+renderPopupPage=function(){
+  renderPopupPageTabbed();
+  const tabs=$$('.popup-sub-tabs button');
+  tabs.forEach(button=>{button.classList.remove('active');button.setAttribute('aria-selected','false')});
+  $$('.popup-panel').forEach(panel=>panel.classList.add('active'));
+  renderPopupOverview();
+  renderPopupRanking();
+  renderPopupDetail();
+};
+function popupRankRows(){return popupMergedRows().filter(r=>r.date===popupViewState.date)}
+function popupMergedRows(){
+  const groups=new Map();
+  rows(state.data.popupWindow||[]).forEach(r=>{const date=popupDate(r),name=String(r.name||'').trim();if(!date||!name)return;const key=date+'\u0000'+name;const item=groups.get(key)||{date,name,id:r.id,expost_pv:0,expost_uv:0,click_pv:0,click_uv:0,jump_pv:0,jump_uv:0,play_pv:0,play_uv:0};['expost_pv','expost_uv','click_pv','click_uv','jump_pv','jump_uv','play_pv','play_uv'].forEach(k=>item[k]+=popupNum(r[k])||0);groups.set(key,item)});
+  return [...groups.values()].map(r=>({...r,ctr:r.expost_uv?r.click_uv/r.expost_uv:null,conversion_rate:r.click_uv?r.jump_uv/r.click_uv:null,play_rate:r.jump_uv?r.play_uv/r.jump_uv:null})).sort((a,b)=>a.date.localeCompare(b.date)||a.name.localeCompare(b.name,'zh-CN'));
+}
+renderPopupDetail=function(){const root=$('#popup-detail');if(!root)return;const q=String(popupViewState.search||'').trim().toLowerCase(),source=popupMergedRows().filter(r=>!q||r.name.toLowerCase().includes(q));root.innerHTML=`<div class="popup-toolbar"><label>剧名搜索<input id="popup-detail-search" type="search" placeholder="输入剧名" value="${esc(popupViewState.search)}"></label><button type="button" class="banner-excel-button" id="popup-export-excel">导出 Excel</button><span class="popup-toolbar-note">一天一剧一行 · ${source.length} 条</span></div><section class="panel"><div class="popup-detail-wrap"><table class="popup-table"><thead><tr>${['日期','剧名','曝光PV','曝光UV','点击PV','点击UV','跳转播放PV','跳转播放UV','有效播放PV','有效播放UV','点击率','转化率','有效播放率'].map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${source.map(r=>`<tr><td>${esc(r.date)}</td><td class="popup-name">${esc(r.name)}</td><td>${fmt(r.expost_pv)}</td><td>${fmt(r.expost_uv)}</td><td>${fmt(r.click_pv)}</td><td>${fmt(r.click_uv)}</td><td>${fmt(r.jump_pv)}</td><td>${fmt(r.jump_uv)}</td><td>${fmt(r.play_pv)}</td><td>${fmt(r.play_uv)}</td><td>${popupRate(r.ctr)}</td><td>${popupRate(r.conversion_rate)}</td><td>${popupRate(r.play_rate)}</td></tr>`).join('')||'<tr><td colspan="13" class="popup-empty">暂无符合条件的数据</td></tr>'}</tbody></table></div></section>`;$('#popup-detail-search')?.addEventListener('input',e=>{popupViewState.search=e.target.value;renderPopupDetail()});$('#popup-export-excel')?.addEventListener('click',()=>{const days=[...new Set(source.map(r=>r.date))].sort().slice(0,4),rows4=source.filter(r=>days.includes(r.date)),header=['日期','剧名','曝光PV','曝光UV','点击PV','点击UV','跳转播放PV','跳转播放UV','有效播放PV','有效播放UV','点击率','转化率','有效播放率'];const html='<table><tr>'+header.map(h=>`<th>${h}</th>`).join('')+'</tr>'+rows4.map(r=>'<tr>'+[r.date,r.name,r.expost_pv,r.expost_uv,r.click_pv,r.click_uv,r.jump_pv,r.jump_uv,r.play_pv,r.play_uv,r.ctr,r.conversion_rate,r.play_rate].map(v=>`<td>${v??''}</td>`).join('')+'</tr>').join('')+'</table>';const blob=new Blob(['\ufeff',html],{type:'application/vnd.ms-excel'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`弹窗明细_上线前4个数据日.xls`;a.click();URL.revokeObjectURL(url)})};
+renderPopupOverview=function(){const root=$('#popup-overview');if(!root)return;root.innerHTML=`<section class="panel popup-trend-panel"><div class="panel-head"><div><h3>上线后一周有效播放 UV 趋势</h3><span>搜索剧名后，按真实日期从上线最早一天开始展示</span></div><label>剧名搜索<input id="popup-trend-search" type="search" placeholder="输入剧名"></label></div><div id="popup-trend-chart" class="popup-chart" role="img" aria-label="弹窗上线后一周有效播放UV趋势"></div></section>`;const input=$('#popup-trend-search');input?.addEventListener('input',()=>renderPopupTrend(input.value));renderPopupTrend('')};
+function renderPopupTrend(query){const chart=$('#popup-trend-chart');if(!chart)return;const q=String(query||'').trim().toLowerCase();if(!q){chart.innerHTML='<div class="popup-empty">请输入剧名查看上线后一周趋势</div>';return}const all=popupMergedRows().filter(r=>r.name.toLowerCase().includes(q)),name=all[0]?.name||'';if(!name){chart.innerHTML='<div class="popup-empty">未找到匹配的剧名</div>';return}const dates=[...new Set(all.filter(r=>r.name===name).map(r=>r.date))].sort().slice(0,7),data=dates.map(d=>all.find(r=>r.name===name&&r.date===d)?.play_uv??null);popupChart('#popup-trend-chart',{animation:false,grid:{left:60,right:24,top:24,bottom:38,containLabel:true},tooltip:{trigger:'axis',formatter:p=>{const i=p?.[0]?.dataIndex??0,r=all.find(x=>x.name===name&&x.date===dates[i]);return `${esc(name)}<br/>日期：${dates[i]}<br/>有效播放UV：${fmt(r?.play_uv)}<br/>点击UV：${fmt(r?.click_uv)}<br/>点击率：${popupRate(r?.ctr)}`}},xAxis:{type:'category',data:dates},yAxis:{type:'value',axisLabel:{formatter:v=>fmt(v)}},series:[{name:'有效播放UV',type:'line',smooth:true,symbol:'circle',symbolSize:7,data,lineStyle:{width:3,color:'#2f76e8'},itemStyle:{color:'#2f76e8'}}]})}
+renderPopupRanking=function(){const root=$('#popup-ranking');if(!root)return;const rows=popupMergedRows(),map=new Map();rows.forEach(r=>{const x=map.get(r.name)||{...r,expost_uv:0,click_uv:0,play_uv:0};x.expost_uv+=r.expost_uv;x.click_uv+=r.click_uv;x.play_uv+=r.play_uv;map.set(r.name,x)});const items=[...map.values()].sort((a,b)=>b.play_uv-a.play_uv).slice(0,10);root.innerHTML=`<section class="panel"><div class="panel-head"><div><h3>弹窗有效播放贡献榜</h3><span>按累计有效播放 UV 排序，不按曝光 UV 排序</span></div><strong>${items.length} 个</strong></div><div id="popup-ranking-chart" class="popup-chart" role="img" aria-label="弹窗有效播放贡献榜"></div></section>`;popupChart('#popup-ranking-chart',{animation:false,grid:{left:150,right:60,top:16,bottom:24,containLabel:true},tooltip:{trigger:'axis',axisPointer:{type:'shadow'},formatter:p=>{const r=items[items.length-1-(p?.[0]?.dataIndex??0)];return r?`${esc(r.name)}<br/>有效播放UV：${fmt(r.play_uv)}<br/>点击UV：${fmt(r.click_uv)}<br/>点击率：${popupRate(r.click_uv/r.expost_uv)}`:''}},xAxis:{type:'value',axisLabel:{formatter:v=>fmt(v)}},yAxis:{type:'category',data:items.slice().reverse().map(r=>r.name)},series:[{type:'bar',data:items.slice().reverse().map((r,i)=>({value:r.play_uv,itemStyle:{color:i<3?'#2f76e8':'#a8c7e8'}})),label:{show:true,position:'right',formatter:p=>fmt(p.value)}}]})};
+renderPopupPage=function(){const host=$('#page-popup');if(!host)return;popupBuild();$$('.page').forEach(page=>page.classList.toggle('active',page===host));$$('.nav-item').forEach(button=>button.classList.toggle('active',button.dataset.page==='popup'));const dateInput=$('#popup-date');if(dateInput)dateInput.value=popupViewState.date;$$('.popup-panel').forEach(panel=>panel.classList.add('active'));renderPopupRanking();const rankHead=$('#popup-ranking .panel-head');if(rankHead&&!rankHead.querySelector('.popup-rank-date')){const label=document.createElement('label');label.className='popup-rank-date';label.innerHTML='<span>日期</span><input type="date" value="'+popupViewState.date+'">';label.querySelector('input').addEventListener('change',e=>{popupViewState.date=e.target.value;renderPopupPage()});rankHead.appendChild(label)}renderPopupOverview();renderPopupDetail();const detailToolbar=$('#popup-detail .popup-toolbar');if(detailToolbar&&!detailToolbar.querySelector('.popup-detail-dates')){const box=document.createElement('label');box.className='popup-detail-dates';box.innerHTML='<span>日期范围</span><input type="date"><span>至</span><input type="date">';detailToolbar.appendChild(box)}deferResize()};
+document.addEventListener('click',event=>{const button=event.target.closest?.('[data-page="popup"]');if(!button)return;setTimeout(()=>{const host=$('#page-popup');if(!host)return;$$('.popup-panel').forEach(panel=>panel.classList.add('active'));renderPopupOverview();renderPopupRanking();renderPopupDetail();deferResize()},80)});
+
 // Tab4 replacement: channel operations only. This intentionally does not
 // reuse the legacy funnel DOM or any derived stage conversion calculations.
 const TAB4_OPS_CHANNELS=['精选','电影','美剧','英剧','韩剧','日剧','泰剧','国产剧'];
@@ -1178,9 +1292,158 @@ function ensureChartThemeControl(){
 
 // Unified ranking controls for the four operator-facing boards.
 const rankingBoardState={
-  play:{type:'总榜',date:'',sortKey:'rank',direction:'asc',status:'all',trend:'all'},
-  search:{type:'总榜',date:'',sortKey:'rank',direction:'asc',status:'all',trend:'all'}
+  play:{type:'总榜',date:'',startDate:'',endDate:'',sortKey:'rank',direction:'asc',status:'all',trend:'all'},
+  search:{type:'总榜',date:'',startDate:'',endDate:'',sortKey:'search_vv',direction:'desc',status:'all',trend:'all'}
 };
+const seasonDailyCache=new Map();
+const hotRankingApiCache=new Map();
+let rankingRenderToken=0;
+function rankingAvailableDates(){return [...new Set((state.data.ranking||[]).map(rankingDate).filter(Boolean))].sort()}
+function rankingDateShift(value,days){const d=new Date(`${value}T00:00:00`);d.setDate(d.getDate()+days);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+function rankingDateRange(start,end){const dates=[],cursor=new Date(`${start}T00:00:00`),last=new Date(`${end}T00:00:00`);for(;cursor<=last;cursor.setDate(cursor.getDate()+1))dates.push(`${cursor.getFullYear()}-${String(cursor.getMonth()+1).padStart(2,'0')}-${String(cursor.getDate()).padStart(2,'0')}`);return dates}
+async function loadSeasonDay(date){
+  if(seasonDailyCache.has(date))return seasonDailyCache.get(date);
+  // These files are generated as UTF-8 JSON with the final field names already
+  // normalized. Avoid the generic dashboard loader here: its recursive text
+  // repair walks every cell and made a single 20k-row day block the UI thread.
+  const promise=fetch(`data/season_play_daily/${date}.json`).then(response=>response.ok?response.json():Promise.reject(Error(`season day ${date}`))).then(payload=>Array.isArray(payload)?payload:(payload?.rows||[])).catch(()=>[]);
+  seasonDailyCache.set(date,promise);return promise;
+}
+async function loadHotRankingApi(start,end){
+  const key=`${start}|${end}`;
+  if(hotRankingApiCache.has(key))return hotRankingApiCache.get(key);
+  // 以逐日 seasonPlayVV 文件为主数据源，避免复用可能滞后的服务进程
+  // 或其旧缓存；同一份数据同时用于当前周期和上一比较周期。这里保留
+  // 全部 season_id 候选，日/周环比筛选必须发生在 Top30 截断之前。
+  const promise=Promise.all(rankingDateRange(start,end).map(date=>loadSeasonDay(date).then(rows=>({date,rows})))).then(dayRows=>({rows:seasonDailyViewRows(dayRows)})).catch(error=>{hotRankingApiCache.delete(key);throw error});
+  hotRankingApiCache.set(key,promise);return promise;
+}
+function primarySeasonTitle(seasonId,fallback){const mapped=(state.data.seasonTitleMap||[]).find(row=>String(row.season_id||'').trim()===String(seasonId||'').trim());return String(mapped?.title||fallback||'--').trim()||'--'}
+function seasonIdsForTitle(title,dailyRows){
+  const wanted=String(title||'').trim();if(!wanted)return [];
+  const ids=new Set();
+  (dailyRows||[]).forEach(row=>{if(String(row.title||'').trim()===wanted){const id=String(row.season_id||'').trim();if(id)ids.add(id)}});
+  return [...ids];
+}
+function resolveNewUserSeasonId(rawTitle,dailyRows,rawRow){
+  const explicit=String(rawRow?.season_id||'').trim();if(explicit)return explicit;
+  let candidates=seasonIdsForTitle(rawTitle,dailyRows);
+  if(candidates.length>1&&rawRow){
+    const region=String(rawRow['聚集类型']||'').trim(),contentType=String(rawRow['内容分类']||'').trim();
+    const narrowed=(dailyRows||[]).filter(row=>candidates.includes(String(row.season_id||'').trim())
+      &&(!region||String(row.season_type||'').trim()===region)
+      &&(!contentType||String(row.season_classify||'').trim()===contentType)
+    ).map(row=>String(row.season_id||'').trim());
+    candidates=[...new Set(narrowed)];
+  }
+  // playTop10 is an alias-only interface. Resolve the alias once, then keep
+  // season_id as the identity for every downstream operation. An ambiguous
+  // alias is intentionally left unresolved instead of merging unrelated IDs.
+  return candidates.length===1?candidates[0]:'';
+}
+function mergeSeasonDailyRows(dayRows){
+  const grouped=new Map();
+  dayRows.flatMap(item=>item.rows||[]).forEach(row=>{
+    const seasonId=String(row.season_id||'').trim();if(!seasonId)return;
+    const current=grouped.get(seasonId);const next=current||{season_id:seasonId,title:row.title,season_type:row.season_type,season_classify:row.season_classify,plot_type:row.plot_type,producer_region:row.producer_region,play_count:0,play_uv:0};
+    next.play_count+=Number(row.play_count)||0;next.play_uv+=Number(row.play_uv)||0;grouped.set(seasonId,next);
+  });
+  return [...grouped.values()].map(row=>({...row,title:primarySeasonTitle(row.season_id,row.title)}));
+}
+function seasonIdsInDays(dayRows){const ids=new Set();dayRows.flatMap(item=>item.rows||[]).forEach(row=>{const id=String(row.season_id||'').trim();if(id)ids.add(id)});return ids}
+function seasonDailyViewRows(dayRows){return mergeSeasonDailyRows(dayRows).sort((a,b)=>(Number(b.play_count)||0)-(Number(a.play_count)||0)).map((row,index)=>({...row,rank:index+1}));}
+function seasonIdsInTop30(dayRows){
+  const daily=new Map();
+  dayRows.forEach(item=>(item.rows||[]).forEach(row=>{
+    const id=String(row.season_id||'').trim();if(!id)return;
+    const key=`${item.date||''}::${id}`,old=daily.get(key),vv=Number(row.play_count)||0;
+    if(!old||vv>old.play_count)daily.set(key,{season_id:id,play_count:vv});
+  }));
+  const totals=new Map();daily.forEach(row=>totals.set(row.season_id,(totals.get(row.season_id)||0)+row.play_count));
+  return [...totals.entries()].sort((a,b)=>b[1]-a[1]).slice(0,30).map(([id])=>id);
+}
+function seasonPlaybackTotals(dayRows){
+  const totals=new Map();
+  dayRows.forEach(item=>{
+    const daily=new Map();
+    (item.rows||[]).forEach(row=>{
+      const id=String(row.season_id||'').trim();if(!id)return;
+      const value=Number(row.play_count)||0,old=daily.get(id);
+      if(old===undefined||value>old)daily.set(id,value);
+    });
+    daily.forEach((value,id)=>totals.set(id,(totals.get(id)||0)+value));
+  });
+  return totals;
+}
+function seasonPlaybackTotalsByTitle(dayRows){
+  const totals=new Map();
+  dayRows.forEach(item=>{
+    const daily=new Map();
+    (item.rows||[]).forEach(row=>{
+      const title=String(row.title||'').trim();if(!title)return;
+      const value=Number(row.play_count)||0,old=daily.get(title);
+      if(old===undefined||value>old)daily.set(title,value);
+    });
+    daily.forEach((value,title)=>totals.set(title,(totals.get(title)||0)+value));
+  });
+  return totals;
+}
+function loadHistoricalHotRankingIds(beforeDate){
+  const key=String(beforeDate||'');
+  if(!key)return Promise.resolve({ids:new Set(),complete:true});
+  if(!window.__hotRankingHistoryCache)window.__hotRankingHistoryCache=new Map();
+  const cache=window.__hotRankingHistoryCache;
+  if(cache.has(key))return cache.get(key);
+  const fallback=()=>{
+    const historyDates=rankingAvailableDates().filter(date=>date<key).sort();
+    const needed=[...new Set(historyDates.flatMap(date=>[date,rankingDateShift(date,-1),rankingDateShift(date,-7)]))];
+    return Promise.all(needed.map(date=>loadSeasonDay(date).then(rows=>({date,rows})))).then(payloads=>{
+      const byDate=new Map(payloads.map(item=>[item.date,item.rows||[]])),values=new Map();
+      byDate.forEach((rows,date)=>{const daily=new Map();(rows||[]).forEach(row=>{const id=String(row.season_id||'').trim(),value=Number(row.play_count);if(!id||!Number.isFinite(value))return;if(!daily.has(id)||value>daily.get(id))daily.set(id,value)});values.set(date,daily)});
+      const ids=new Set();historyDates.forEach(date=>{const current=values.get(date)||new Map(),previous=values.get(rankingDateShift(date,-1))||new Map(),week=values.get(rankingDateShift(date,-7))||new Map();const eligible=[...current.entries()].filter(([id,value])=>Number.isFinite(value)&&previous.has(id)&&Number.isFinite(previous.get(id))&&previous.get(id)!==0&&week.has(id)&&Number.isFinite(week.get(id))&&week.get(id)!==0).sort((a,b)=>b[1]-a[1]);eligible.slice(0,30).forEach(([id])=>ids.add(id))});
+      return {ids,complete:true};
+    }).catch(()=>({ids:new Set(),complete:false}));
+  };
+  if(!window.__hotRankingHistoryRowsPromise)window.__hotRankingHistoryRowsPromise=window.__dashboardFetchJson('data/season_hot_ranking_history.json').then(payload=>rows(payload));
+  const promise=window.__hotRankingHistoryRowsPromise.then(historyRows=>{
+    if(!Array.isArray(historyRows))throw Error('hot ranking history shape');
+    const dates=rankingAvailableDates().filter(date=>date<key).sort(),available=new Set(historyRows.map(row=>String(row.date||'').slice(0,10)).filter(Boolean));
+    const complete=dates.every(date=>available.has(date)),ids=new Set();
+    historyRows.filter(row=>String(row.date||'').slice(0,10)<key).forEach(row=>(row.season_ids||row.ids||[]).forEach(id=>{const value=String(id||'').trim();if(value)ids.add(value)}));
+    return {ids,complete};
+  }).catch(fallback);
+  cache.set(key,promise);return promise;
+}
+function loadHistoricalNewUserHotRankingIds(beforeDate){
+  const key=String(beforeDate||'');
+  if(!key)return Promise.resolve({ids:new Set(),complete:true});
+  if(!window.__newUserHotRankingHistoryCache)window.__newUserHotRankingHistoryCache=new Map();
+  const cache=window.__newUserHotRankingHistoryCache;
+  if(cache.has(key))return cache.get(key);
+  if(!window.__newUserHotRankingHistoryRowsPromise)window.__newUserHotRankingHistoryRowsPromise=window.__dashboardFetchJson('data/season_new_user_hot_ranking_history.json').then(payload=>rows(payload));
+  const promise=window.__newUserHotRankingHistoryRowsPromise.then(historyRows=>{
+    if(!Array.isArray(historyRows))throw Error('new-user hot ranking history shape');
+    const dates=rankingAvailableDates().filter(date=>date<key).sort(),available=new Set(historyRows.map(row=>String(row.date||'').slice(0,10)).filter(Boolean)),ids=new Set();
+    historyRows.filter(row=>String(row.date||'').slice(0,10)<key).forEach(row=>(row.season_ids||row.ids||[]).forEach(id=>{const value=String(id||'').trim();if(value)ids.add(value)}));
+    return {ids,complete:dates.every(date=>available.has(date))};
+  }).catch(()=>({ids:new Set(),complete:false}));
+  cache.set(key,promise);return promise;
+}
+function manualRankingPlaybackTotals(rowsList,date){
+  const byId=new Map(),byTitle=new Map();
+  (rowsList||[]).filter(row=>rankingDate(row)===date&&String(row['榜单分类']||'')==='总榜').forEach(row=>{
+    const value=Number(row['播放VV']);if(!Number.isFinite(value))return;
+    const title=String(row['内容名称']||'').trim(),id=String(row.season_id||row['剧集ID']||'').trim();
+    if(title)byTitle.set(title,Math.max(byTitle.get(title)||0,value));
+    if(id)byId.set(id,Math.max(byId.get(id)||0,value));
+  });
+  return {byId,byTitle};
+}
+function rankingPeriodChange(current,previous){
+  const a=Number(current),b=Number(previous);if(!Number.isFinite(a)||!Number.isFinite(b)||b===0)return '--';
+  const delta=(a-b)/b*100;
+  return `${delta>0?'↑':delta<0?'↓':'→'}${Math.abs(delta).toFixed(2)}%`;
+}
 function rankingDate(row){return String(row?.['日期']??row?.date??'')}
 function rankingNumber(value){
   if(value===null||value===undefined||value===''||value==='--')return null;
@@ -1188,7 +1451,7 @@ function rankingNumber(value){
   return match?Number(match[0]):null;
 }
 function rankingCompare(a,b,key,direction){
-  const numericKeys=new Set(['rank','play_uv','play_vv','day_over_day','search_vv','search_uv','day_over_day_pct']);
+  const numericKeys=new Set(['rank','play_uv','play_vv','day_over_day','search_vv','search_uv','day_over_day_pct','week_change']);
   const av=key==='date'?rankingDate(a):numericKeys.has(key)?rankingNumber(a[key]):String(a[key]??'');
   const bv=key==='date'?rankingDate(b):numericKeys.has(key)?rankingNumber(b[key]):String(b[key]??'');
   if(numericKeys.has(key)&&(av===null||bv===null)){
@@ -1203,7 +1466,7 @@ function rankingCompare(a,b,key,direction){
   return direction==='desc'?-result:result;
 }
 function rankingSortButton(label,key,state){
-  if(key==='day_over_day'||key==='day_over_day_pct'){
+  if(key==='day_over_day'||key==='day_over_day_pct'||key==='week_over_week'||key==='week_change'){
     return `<span class="ranking-change-heading">${label}</span>`;
   }
   const active=state.sortKey===key;
@@ -1212,7 +1475,10 @@ function rankingSortButton(label,key,state){
   return `<button type="button" class="ranking-sort-button${active?' active':''}" data-sort-key="${key}" title="按${label}${active&&state.direction==='asc'?'降序':'升序'}排序" aria-label="按${label}${active&&state.direction==='asc'?'降序':'升序'}排序">${label}${indicator}</button>`;
 }
 function rankingStatusFilter(state){
-  return `<span class="ranking-status-filter-wrap"><span>榜单状态</span><select class="ranking-status-filter" data-ranking-status aria-label="筛选榜单状态"><option value="all"${state.status==='all'?' selected':''}>全部</option><option value="new"${state.status==='new'?' selected':''}>新入榜</option></select></span>`;
+  // “新入榜” is a row annotation within the displayed Top30.  It is not a
+  // separate ranking/filter, so keep the column label without exposing a
+  // control that would turn the table into a non-Top30 subset.
+  return '<span class="ranking-status-filter-wrap"><span>榜单状态</span></span>';
 }
 function computedPlaybackChange(row, allRows){
   const existing=String(row?.day_over_day??'').trim();
@@ -1243,12 +1509,15 @@ function computedRankingStatus(row, allRows){
 function rankingToolbar(kind,dates,state){
   const latest=window.__dashboardDefaultDate&&dates.includes(window.__dashboardDefaultDate)?window.__dashboardDefaultDate:dates.at(-1)||'';
   if(!state.date||!dates.includes(state.date))state.date=latest;
+  if(!state.startDate||!dates.includes(state.startDate))state.startDate=latest;
+  if(!state.endDate||!dates.includes(state.endDate))state.endDate=latest;
+  const dateControls=`<label class="ranking-date-control"><span>日期</span><input type="date" data-ranking-date aria-label="选择榜单日期" value="${esc(state.date)}" min="${esc(dates[0]||'')}" max="${esc(latest)}"></label>`;
   return `<div class="ranking-toolbar" data-ranking-kind="${kind}">
     <div class="ranking-segmented" role="tablist" aria-label="榜单类型">
       <button type="button" class="ranking-mode${state.type==='总榜'?' active':''}" data-ranking-type="总榜" role="tab" aria-selected="${state.type==='总榜'}">总榜</button>
       <button type="button" class="ranking-mode${state.type==='新用户榜'?' active':''}" data-ranking-type="新用户榜" role="tab" aria-selected="${state.type==='新用户榜'}">新用户榜</button>
     </div>
-    <label class="ranking-date-control"><span>日期</span><input type="date" data-ranking-date aria-label="选择榜单日期" value="${esc(state.date)}" min="${esc(dates[0]||'')}" max="${esc(latest)}"></label>
+    ${dateControls}
   </div>`;
 }
 function rankingChangeIsIncrease(value){
@@ -1273,6 +1542,7 @@ function rankingChangeMagnitude(value){
 function rankingChangeBadge(value){
   const number=rankingNumber(value);
   if(number===null)return '<span class="change-empty">--</span>';
+  if(number===0)return '<span class="change-badge change-flat"><span aria-hidden="true">→</span>0%</span>';
   const raw=String(value).trim();
   const positive=rankingChangeIsIncrease(value);
   const amount=Math.abs(number).toFixed(2).replace(/\.00$/,'');
@@ -1283,7 +1553,6 @@ function rankBadge(rank){
   return `<span class="rank-badge rank-${n<=3?n:'other'} rank-tone-${((n-1)%6)+1}">${esc(rank)}</span>`;
 }
 function setupRankingBoard(){
-  if(state.page!=='content')return;
   const detail=document.querySelector('#page-content .content-detail');
   const table=document.querySelector('#page-content #ranking-table');
   const head=detail?.querySelector('.panel-head');
@@ -1310,11 +1579,11 @@ function setupRankingBoard(){
       if(mode){rankingBoardState.play.type=mode.dataset.rankingType;rankingBoardState.play.status='all';rankingBoardState.play.trend='all';renderRankingBoard();}
       if(sort){const key=sort.dataset.sortKey;const current=rankingBoardState.play;if(current.sortKey===key)current.direction=current.direction==='asc'?'desc':'asc';else{current.sortKey=key;current.direction=key==='rank'?'asc':'desc'}renderRankingBoard();}
     });
-    toolbar.querySelector('[data-ranking-date]')?.addEventListener('change',event=>{rankingBoardState.play.date=event.target.value;renderRankingBoard()});
+    toolbar.querySelector('[data-ranking-date]')?.addEventListener('change',event=>{rankingBoardState.play.date=event.target.value;rankingBoardState.play.startDate=event.target.value;rankingBoardState.play.endDate=event.target.value;rankingBoardState.play.status='all';renderRankingBoard()});
   }
   const header=detail.querySelector('thead tr');
   if(header)header.innerHTML=[
-    ['排名','rank'],['内容名称','title'],['播放UV','play_uv'],['播放VV','play_vv'],['昨日环比','day_over_day'],['聚集类型','region'],['内容分类','content_type'],['题材标签','tags']
+    ['排名','rank'],['内容名称','title'],['播放UV','play_uv'],['播放VV','play_vv'],['昨日环比','day_over_day'],['周环比','week_over_week'],['聚集类型','region'],['内容分类','content_type'],['题材标签','tags']
   ].map(([label,key])=>`<th>${rankingSortButton(label,key,rankingBoardState.play)}</th>`).join('')+`<th>${rankingStatusFilter(rankingBoardState.play)}</th>`;
   header?.querySelector('[data-ranking-status]')?.addEventListener('change',event=>{rankingBoardState.play.status=event.target.value;rankingBoardState.play.trend='all';renderRankingBoard()});
   if(header)header.onclick=event=>{
@@ -1336,34 +1605,129 @@ function setupRankingBoard(){
 }
 function renderRankingBoard(){
   const stateView=rankingBoardState.play;
+  const token=++rankingRenderToken;
+  const dates=rankingAvailableDates();
+  const start=stateView.startDate||stateView.date;
+  const end=stateView.endDate||stateView.date;
+  if(!start||!end)return;
+  if(start>end){stateView.endDate=start;return renderRankingBoard()}
+  const isRange=false;
+  if(stateView.type==='新用户榜')stateView.date=end;
+  const selectedDates=rankingDateRange(start,end).filter(date=>dates.includes(date));
+  const periodLength=Math.max(selectedDates.length,1);
+  // 比较周期由用户选择的日期决定，不依赖榜单快照索引是否恰好包含
+  // 前一日/前一周期；否则单日选择会出现整列环比丢失。
+  const previousDates=rankingDateRange(rankingDateShift(start,-periodLength),rankingDateShift(end,-periodLength));
   const allRows=state.data.ranking||[];
-  let source=allRows.filter(r=>r['榜单分类']===stateView.type&&rankingDate(r)===stateView.date).map(r=>{
-    const item={raw:r,rank:r['排名'],date:rankingDate(r),title:r['内容名称'],play_uv:r['播放UV'],play_vv:r['播放VV'],day_over_day:r['昨日环比'],region:r['聚集类型'],content_type:r['内容分类'],tags:r['题材标签'],status:r['榜单状态']};
-    item.day_over_day=computedPlaybackChange(item,allRows);
-    item.status=computedRankingStatus(item,allRows);
-    return item;
-  });
+  const weekDate=rankingDateShift(end,-7);
+  const loadDates=[...new Set([...selectedDates,...previousDates,weekDate])];
+  const renderLoading=()=>{const table=document.querySelector('#page-content #ranking-table');if(table)table.innerHTML='<tr><td colspan="10" class="empty">正在加载榜单数据…</td></tr>'};
+  renderLoading();
+    const rankingDataPromise=stateView.type==='总榜'
+      ? Promise.all([loadHotRankingApi(start,end),...previousDates.map(date=>loadSeasonDay(date).then(rows=>({date,rows}))),loadSeasonDay(weekDate).then(rows=>({date:weekDate,rows}))]).then(payloads=>Promise.all([payloads,loadHistoricalHotRankingIds(start)]))
+      : Promise.all(loadDates.map(date=>loadSeasonDay(date))).then(payloads=>Promise.all([payloads,loadHistoricalNewUserHotRankingIds(start)]));
+  rankingDataPromise.then(([dayPayloads,historyInfo])=>{
+    if(token!==rankingRenderToken)return;
+    const payloadByDate=stateView.type==='总榜'?new Map():new Map(loadDates.map((date,index)=>[date,dayPayloads[index]]));
+    let source=[];
+    if(stateView.type==='总榜'){
+      const apiPayload=dayPayloads[0]?.data||dayPayloads[0]||{},previousPayloads=dayPayloads.slice(1,-1),previousTotals=seasonPlaybackTotals(previousPayloads),weekTotals=seasonPlaybackTotals([dayPayloads.at(-1)]);
+      // 环比按 season_id 找原始播放值；日/周环比筛选放在 Top30 截断前。
+      source=(apiPayload.rows||[]).map((row,index)=>{
+        const id=String(row.season_id||'').trim(),previousValue=previousTotals.get(id),hasPrevious=previousValue!==undefined&&previousValue!==null;
+        const weekValue=weekTotals.get(id),hasWeek=weekValue!==undefined&&weekValue!==null;
+        const dayChange=hasPrevious?rankingPeriodChange(row.play_count,previousValue):'--';
+        return {...row,raw:row,rank:index+1,date:start,play_vv:row.play_count,play_uv:row.play_uv,region:genreDisplayName(row,state.data.genreMapping||{}),content_type:row.season_classify,tags:row.plot_type,status:'--',day_over_day:dayChange,week_over_week:hasWeek?rankingPeriodChange(row.play_count,weekValue):'--'}
+      });
+    }else{
+      const dailyBySeason=new Map();
+      selectedDates.forEach(date=>{
+        const dailyRows=payloadByDate.get(date)||[];
+        allRows.filter(r=>r['榜单分类']===stateView.type&&rankingDate(r)===date).forEach(r=>{
+          const title=String(r['内容名称']||'').trim();
+          const seasonId=resolveNewUserSeasonId(title,dailyRows,r);
+          if(!seasonId)return;
+          const meta=dailyRows.find(item=>String(item.season_id||'').trim()===String(seasonId));
+          const vv=Number(r['播放VV'])||0;
+          const rawUvValue=r['播放UV'];
+          const rawUv=(rawUvValue===null||rawUvValue===undefined||rawUvValue===''||rawUvValue==='--')?NaN:Number(rawUvValue);
+          const uv=Number.isFinite(rawUv)?rawUv:(Number(meta?.play_uv)||0);
+          const key=`${date}::${seasonId}`,old=dailyBySeason.get(key);
+          if(!old||vv>old.play_vv){dailyBySeason.set(key,{raw:r,season_id:seasonId,rank:r['排名'],date,title,play_uv:uv,play_vv:vv,day_over_day:r['昨日环比'],region:meta?genreDisplayName(meta,state.data.genreMapping||{}):r['聚集类型'],content_type:r['内容分类']||meta?.season_classify||'--',tags:r['题材标签']||meta?.plot_type||'--',status:r['榜单状态']||'--'});}
+        });
+      });
+      const aggregated=new Map();
+      dailyBySeason.forEach(row=>{
+        const old=aggregated.get(row.season_id);
+        if(!old)aggregated.set(row.season_id,{...row,play_uv:Number(row.play_uv)||0,play_vv:Number(row.play_vv)||0});
+        else{old.play_uv+=(Number(row.play_uv)||0);old.play_vv+=(Number(row.play_vv)||0);if(String(row.status).trim()==='新入榜')old.status='新入榜';}
+      });
+      source=[...aggregated.values()].map(r=>({...r,title:primarySeasonTitle(r.season_id,r.title),date:isRange?`${start} 至 ${end}`:r.date}));
+    }
+    if(stateView.type==='新用户榜'){
+      const previousDaily=new Map();
+      previousDates.forEach(date=>{
+        const dailyRows=payloadByDate.get(date)||[];
+        allRows.filter(r=>r['榜单分类']===stateView.type&&rankingDate(r)===date).forEach(r=>{
+          const id=resolveNewUserSeasonId(r['内容名称'],dailyRows,r);if(!id)return;
+          const key=`${date}::${id}`,value=Number(r['播放VV']);if(!Number.isFinite(value))return;const old=previousDaily.get(key);if(old===undefined||value>old)previousDaily.set(key,value);
+        });
+      });
+      const previousTotals=new Map();previousDaily.forEach((value,key)=>{const id=key.split('::')[1];previousTotals.set(id,(previousTotals.get(id)||0)+value)});
+      const previousIds=new Set();previousDaily.forEach((_,key)=>previousIds.add(key.split('::')[1]));
+      const weekRows=allRows.filter(r=>r['榜单分类']===stateView.type&&rankingDate(r)===weekDate),weekTotals=new Map();weekRows.forEach(r=>{const id=resolveNewUserSeasonId(r['内容名称'],payloadByDate.get(weekDate)||[],r),value=Number(r['播放VV']);if(id&&Number.isFinite(value))weekTotals.set(id,Math.max(weekTotals.get(id)||0,value))});
+      source=source.map(row=>{
+        // The updater persists verified rings on refreshed rows. Keep those
+        // ID-aligned values; older snapshots fall back to the title-resolved
+        // historical rows until they are refreshed by the updater.
+        const persistedDay=String(row.raw?.['昨日环比']??'').trim(),persistedWeek=String(row.raw?.['周环比']??'').trim();
+        return {...row,
+          day_over_day:rankingNumber(persistedDay)!==null?persistedDay:(previousIds.has(String(row.season_id))?rankingPeriodChange(row.play_vv,previousTotals.get(String(row.season_id))):'--'),
+          week_over_week:rankingNumber(persistedWeek)!==null?persistedWeek:(weekTotals.has(String(row.season_id))?rankingPeriodChange(row.play_vv,weekTotals.get(String(row.season_id))):'--')
+        };
+      });
+      // 新用户榜也必须先满足日环比、周环比，再按播放 VV 取 Top30。
+      source=source.filter(row=>rankingNumber(row.day_over_day)!==null&&rankingNumber(row.week_over_week)!==null);
+    }
+  if(stateView.type==='总榜'){
+    const historyIds=historyInfo?.ids||new Set(),historyComplete=historyInfo?.complete!==false;
+    // 三个条件是同一层筛选：日环比、周环比都存在后，才按播放 VV
+    // 排序并截取 Top30。环比缺失的剧不会被高 VV 提前占位。
+    source=source.map(row=>({...row,status:historyComplete&&!historyIds.has(String(row.season_id||'').trim())?'新入榜':'--'}));
+    source=source.filter(row=>rankingNumber(row.day_over_day)!==null&&rankingNumber(row.week_over_week)!==null);
+  }
   if(stateView.trend!=='all'){
     source=source.filter(r=>rankingChangeTrend(r.day_over_day)===stateView.trend);
   }
-  if(stateView.status==='new')source=source.filter(r=>String(r.status).trim()==='新入榜');
+  if(stateView.type==='新用户榜'){
+    const historyIds=historyInfo?.ids||new Set(),historyComplete=historyInfo?.complete===true;
+    source=source.map(row=>({...row,status:historyComplete&&!historyIds.has(String(row.season_id||'').trim())?'新入榜':'--'}));
+  }
   source.sort((a,b)=>stateView.trend!=='all'&&stateView.sortKey==='day_over_day'
     ?(rankingChangeMagnitude(b.day_over_day)??-Infinity)-(rankingChangeMagnitude(a.day_over_day)??-Infinity)
-    :rankingCompare(a,b,stateView.sortKey,stateView.direction));
+    :(stateView.type==='总榜'||stateView.type==='新用户榜')?(Number(b.play_vv)||0)-(Number(a.play_vv)||0):rankingCompare(a,b,stateView.sortKey,stateView.direction));
+  source=source.slice(0,30);
   const table=document.querySelector('#page-content #ranking-table');
   if(!table)return;
-  table.innerHTML=source.map(r=>`<tr><td>${rankBadge(r.rank)}</td><td class="content-name">${esc(r.title)}</td><td class="play-uv-value">${esc(r.play_uv??'--')}</td><td class="vv-value">${fmt(r.play_vv)}</td><td class="change-value">${rankingChangeBadge(r.day_over_day)}</td><td>${esc(r.region??'--')}</td><td>${esc(r.content_type??'--')}</td><td>${esc(r.tags??'--')}</td><td class="${String(r.status).trim()==='新入榜'?'ranking-status-new':''}">${esc(r.status??'--')}</td></tr>`).join('')||'<tr><td colspan="9" class="empty">暂无真实记录</td></tr>';
-  document.querySelector('#page-content .content-top10-date')?.replaceChildren(document.createTextNode(`${stateView.date||'--'} · ${stateView.type}`));
+  source=source.map((row,index)=>({...row,rank:index+1}));
+  table.innerHTML=source.map(r=>`<tr><td>${rankBadge(r.rank)}</td><td class="content-name">${esc(r.title)}</td><td class="play-uv-value">${esc(r.play_uv??'--')}</td><td class="vv-value">${fmt(r.play_vv)}</td><td class="change-value">${rankingChangeBadge(r.day_over_day)}</td><td class="change-value">${rankingChangeBadge(r.week_over_week)}</td><td>${esc(r.region??'--')}</td><td>${esc(r.content_type??'--')}</td><td>${esc(r.tags??'--')}</td><td class="${String(r.status).trim()==='新入榜'?'ranking-status-new':''}">${esc(r.status??'--')}</td></tr>`).join('')||'<tr><td colspan="10" class="empty">暂无真实记录</td></tr>';
+  document.querySelector('#page-content .content-top10-date')?.replaceChildren(document.createTextNode(`${isRange?`${start} 至 ${end}`:start} · ${stateView.type}`));
   document.querySelectorAll('.ranking-toolbar[data-ranking-kind="play"] .ranking-mode').forEach(button=>{const active=button.dataset.rankingType===stateView.type;button.classList.toggle('active',active);button.setAttribute('aria-selected',String(active))});
-  const date=document.querySelector('.ranking-toolbar[data-ranking-kind="play"] [data-ranking-date]');if(date)date.value=stateView.date;
+  const dateInput=document.querySelector('.ranking-toolbar[data-ranking-kind="play"] [data-ranking-date]');if(dateInput)dateInput.value=stateView.date;
   const header=document.querySelector('#page-content .content-detail thead tr');if(header)header.querySelectorAll('[data-sort-key]').forEach(button=>{
     const active=button.dataset.sortKey===stateView.sortKey;button.classList.toggle('active',active);
     const indicator=button.querySelector('.sort-triangle');indicator?.classList.toggle('ascending',active&&stateView.direction==='asc');indicator?.classList.toggle('descending',active&&stateView.direction==='desc');
     const label=button.textContent.trim();const action=active&&stateView.direction==='asc'?'降序':'升序';button.title=`按${label}${action}排序`;button.setAttribute('aria-label',`按${label}${action}排序`);
   });
+  header?.querySelector('.ranking-change-heading')?.replaceChildren(document.createTextNode('昨日环比'));
   if(header)header.querySelectorAll('[data-change-direction]').forEach(button=>{
     const active=stateView.sortKey==='day_over_day'&&((button.dataset.changeDirection==='asc'&&stateView.trend==='up')||(button.dataset.changeDirection==='desc'&&stateView.trend==='down'));
     button.classList.toggle('active',active);
+  });
+  }).catch(error=>{
+    if(token!==rankingRenderToken)return;
+    const table=document.querySelector('#page-content #ranking-table');
+    if(table)table.innerHTML=`<tr><td colspan="10" class="empty">榜单数据加载失败，请刷新重试（${esc(error?.message||'请求异常')}）</td></tr>`;
   });
 }
 function setupSearchRankingBoard(){
@@ -1390,10 +1754,10 @@ function setupSearchRankingBoard(){
       if(mode){rankingBoardState.search.type=mode.dataset.rankingType;rankingBoardState.search.status='all';rankingBoardState.search.trend='all';renderSearchRankingBoard();}
       if(sort){const key=sort.dataset.sortKey;const current=rankingBoardState.search;if(current.sortKey===key)current.direction=current.direction==='asc'?'desc':'asc';else{current.sortKey=key;current.direction=key==='rank'?'asc':'desc'}renderSearchRankingBoard();}
     });
-    toolbar.querySelector('[data-ranking-date]')?.addEventListener('change',event=>{rankingBoardState.search.date=event.target.value;renderSearchRankingBoard()});
+    toolbar.querySelector('[data-ranking-date]')?.addEventListener('change',event=>{rankingBoardState.search.date=event.target.value;rankingBoardState.search.startDate=event.target.value;rankingBoardState.search.endDate=event.target.value;rankingBoardState.search.status='all';renderSearchRankingBoard()});
   }
   const header=region.querySelector('.hot-table-wrap thead tr');
-  if(header)header.innerHTML=[['排名','rank'],['剧名','title'],['搜索VV','search_vv'],['搜索UV','search_uv'],['昨日环比','day_over_day_pct'],['内容类型','content_type'],['地区','producer_region'],['剧种','genre'],['题材标签','topic_tag']].map(([label,key])=>`<th>${rankingSortButton(label,key,rankingBoardState.search)}</th>`).join('')+`<th>${rankingStatusFilter(rankingBoardState.search)}</th>`;
+  updateSearchRankingHeader();
   header?.querySelector('[data-ranking-status]')?.addEventListener('change',event=>{rankingBoardState.search.status=event.target.value;rankingBoardState.search.trend='all';renderSearchRankingBoard()});
   if(header)header.onclick=event=>{
     const changeDirection=event.target.closest('[data-change-direction]');
@@ -1412,44 +1776,93 @@ function setupSearchRankingBoard(){
   };
   renderSearchRankingBoard();
 }
+function searchPeriodAggregate(rawRows,start,end){
+  const grouped=new Map();
+  rawRows.filter(r=>{const d=rankingDate(r);return d>=start&&d<=end}).forEach(r=>{
+    const display=hotDramaName(r);if(display==='--')return;
+    const current=grouped.get(display),vv=Number(r.search_vv??r.search_count)||0,uv=Number(r.search_uv)||0;
+    if(!current)grouped.set(display,{raw:r,display_title:display,rank:Number(r.rank)||999,search_vv:vv,search_uv:uv,content_type:r.content_type,producer_region:r.producer_region,genre:r.genre,topic_tag:r.topic_tag});
+    else{current.search_vv+=vv;current.search_uv+=uv;if(Number(r.rank)<current.rank){current.rank=Number(r.rank);current.raw=r;}}
+  });
+  return [...grouped.values()];
+}
+function renderSearchPeriodBoard(rawRows,start,end,dates,stateView){
+  const length=Math.max(rankingDateRange(start,end).filter(d=>dates.includes(d)).length,1),previousStart=rankingDateShift(start,-length),previousEnd=rankingDateShift(end,-length),previous=new Map(searchPeriodAggregate(rawRows,previousStart,previousEnd).map(r=>[r.display_title,r.search_vv]));
+  let source=searchPeriodAggregate(rawRows,start,end).map(r=>({...r,day_over_day_pct:'--',week_change:rankingPeriodChange(r.search_vv,previous.get(r.display_title)),status:'--'}));
+  if(stateView.trend!=='all')source=source.filter(r=>rankingChangeTrend(r.week_change)===stateView.trend);
+  source.sort((a,b)=>rankingCompare(a,b,stateView.sortKey==='day_over_day_pct'?'week_change':stateView.sortKey,stateView.direction));
+  source=source.slice(0,30).map((r,i)=>({...r,displayRank:i+1}));
+  const table=document.querySelector('#hot-search-ops-table');if(!table)return;
+  table.innerHTML=source.map(r=>`<tr><td>${rankBadge(r.displayRank)}</td><td class="content-name">${esc(r.display_title)}</td><td class="vv-value">${fmt(r.search_vv)}</td><td class="search-uv-value">${fmt(r.search_uv)}</td><td class="change-value">${rankingChangeBadge(r.week_change)}</td><td>${esc(r.content_type??'--')}</td><td>${esc(r.producer_region??'--')}</td><td>${esc(r.genre??'--')}</td><td>${esc(r.topic_tag??'--')}</td><td>--</td></tr>`).join('')||'<tr><td colspan="10" class="empty">暂无真实数据</td></tr>';
+  updateSearchRankingHeader(true);
+  document.querySelector('.ranking-toolbar[data-ranking-kind="search"] [data-ranking-start]')?.setAttribute('value',start);document.querySelector('.ranking-toolbar[data-ranking-kind="search"] [data-ranking-end]')?.setAttribute('value',end);
+  document.querySelector('.hot-table-wrap thead .ranking-change-heading')?.replaceChildren(document.createTextNode('昨日环比'));
+}
+function updateSearchRankingHeader(isRange){
+  const region=document.querySelector('.search-region'),header=region?.querySelector('.hot-table-wrap thead tr');if(!header)return;
+  header.innerHTML=[['排名','rank'],['剧名','title'],['搜索VV','search_vv'],['搜索UV','search_uv'],['昨日环比','day_over_day_pct'],['周环比','week_change'],['内容类型','content_type'],['地区','producer_region'],['剧种','genre'],['题材标签','topic_tag']].map(([label,sortKey])=>`<th>${rankingSortButton(label,sortKey,rankingBoardState.search)}</th>`).join('')+`<th>${rankingStatusFilter(rankingBoardState.search)}</th>`;
+  header.querySelector('[data-ranking-status]')?.addEventListener('change',event=>{rankingBoardState.search.status=event.target.value;rankingBoardState.search.trend='all';renderSearchRankingBoard()});
+}
 function renderSearchRankingBoard(){
   const stateView=rankingBoardState.search;
+  // 热搜总榜与新用户榜统一固定为：两项环比齐全后按搜索 VV 降序取 Top30。
+  stateView.sortKey='search_vv';stateView.direction='desc';stateView.trend='all';
   const rawRows=stateView.type==='新用户榜'?(state.data.newHotSearch||[]):(state.data.hotSearch||[]);
   const availableDates=[...new Set(rawRows.map(rankingDate).filter(Boolean))].sort();
-  if(!availableDates.includes(stateView.date))stateView.date=availableDates.at(-1)||state.end;
+  if(!stateView.date||!availableDates.includes(stateView.date))stateView.date=availableDates.at(-1)||state.end;
+  stateView.startDate=stateView.date;stateView.endDate=stateView.date;
+  if(stateView.sortKey==='week_change')stateView.sortKey='day_over_day_pct';
   const previousDate=[...new Set(rawRows.map(rankingDate).filter(date=>date<stateView.date))].sort().at(-1)||'';
+  const weekDate=rankingDateShift(stateView.date,-7),previousWeek=new Map(),previousWeekBySeason=new Map(),previousByDisplay=new Map();
+  rawRows.filter(r=>rankingDate(r)===weekDate).forEach(r=>{
+    const vv=Number(r.search_vv??r.search_count)||0,display=hotDramaName(r),id=String(r.season_id??'').trim();
+    if(display!=='--')previousWeek.set(display,(previousWeek.get(display)||0)+vv);
+    if(id)previousWeekBySeason.set(id,(previousWeekBySeason.get(id)||0)+vv);
+  });
   const previousTitles=new Set(rawRows.filter(r=>rankingDate(r)===previousDate&&String(r.title||'').trim()).map(r=>String(r.title).trim()));
-  const previousBySeason=new Map(rawRows.filter(r=>rankingDate(r)===previousDate&&String(r.raw?.season_id??r.season_id??'').trim()).map(r=>[String(r.raw?.season_id??r.season_id).trim(),Number(r.search_vv??r.search_count)]));
+  // 新入榜按当前展示日期之前的全部Top30历史判断，不按上一天或环比阈值判断。
+  const historicalTopSeasonIds=new Set(rawRows.filter(r=>rankingDate(r)<stateView.date&&String(r.season_id??'').trim()).map(r=>String(r.season_id).trim()));
+  const previousBySeason=new Map();
+  rawRows.filter(r=>rankingDate(r)===previousDate&&String(r.season_id??'').trim()).forEach(r=>{
+    const id=String(r.season_id).trim(),vv=Number(r.search_vv??r.search_count)||0;
+    previousBySeason.set(id,(previousBySeason.get(id)||0)+vv);
+  });
   const previousVV=new Map(rawRows.filter(r=>rankingDate(r)===previousDate&&String(r.title||'').trim()).map(r=>[String(r.title).trim(),Number(r.search_vv??r.search_count)]));
+  rawRows.filter(r=>rankingDate(r)===previousDate).forEach(r=>{
+    const display=hotDramaName(r);if(display==='--')return;
+    const vv=Number(r.search_vv??r.search_count)||0;
+    previousByDisplay.set(display,(previousByDisplay.get(display)||0)+vv);
+  });
   let source=rawRows.filter(r=>rankingDate(r)===stateView.date).map(r=>{
-    const title=String(r.title||'').trim(),status=title&&!previousTitles.has(title)?'新入榜':'--';
-    const searchVV=Number(r.search_vv??r.search_count),seasonId=String(r.season_id??'').trim(),oldVV=seasonId&&previousBySeason.has(seasonId)?previousBySeason.get(seasonId):previousVV.get(title),fallbackChange=Number.isFinite(searchVV)&&Number.isFinite(oldVV)&&oldVV!==0?Number((((searchVV-oldVV)/oldVV)*100).toFixed(2)):null;
-    return {raw:r,rank:r.rank,title:r.title,search_vv:r.search_vv??r.search_count,search_uv:r.search_uv,day_over_day_pct:status==='新入榜'?null:(r.day_over_day_pct??r.day_over_day??fallbackChange),content_type:r.content_type,producer_region:r.producer_region,genre:r.genre,topic_tag:r.topic_tag,status};
+    const title=String(r.title||'').trim();
+    const searchVV=Number(r.search_vv??r.search_count),seasonId=String(r.season_id??'').trim(),displayTitle=hotDramaName(r),oldVV=seasonId&&previousBySeason.has(seasonId)?previousBySeason.get(seasonId):previousByDisplay.get(displayTitle)??previousVV.get(title),fallbackChange=Number.isFinite(searchVV)&&Number.isFinite(oldVV)&&oldVV!==0?Number((((searchVV-oldVV)/oldVV)*100).toFixed(2)):null;
+    const currentVV=Number(r.search_vv??r.search_count),weekVV=seasonId&&previousWeekBySeason.has(seasonId)?previousWeekBySeason.get(seasonId):previousWeek.get(displayTitle);
+    const suppliedDay=Number(r.day_over_day_pct??r.day_over_day),dayChange=Number.isFinite(suppliedDay)?suppliedDay:fallbackChange;
+    const suppliedWeek=Number(r.week_change??r.week_over_week);
+    const suppliedStatus=String(r.status??r['榜单状态']??'').trim();
+    const status=seasonId?(historicalTopSeasonIds.has(seasonId)?'--':'新入榜'):(suppliedStatus||'--');
+    const weekChange=Number.isFinite(suppliedWeek)?suppliedWeek:(displayTitle!=='--'&&Number.isFinite(currentVV)&&Number.isFinite(weekVV)&&weekVV!==0?Number((((currentVV-weekVV)/weekVV)*100).toFixed(2)):null);
+    return {raw:r,rank:r.rank,title:r.title,display_title:displayTitle,search_vv:r.search_vv??r.search_count,search_uv:r.search_uv,day_over_day_pct:dayChange,week_change:weekChange,content_type:r.content_type,producer_region:r.producer_region,genre:r.genre,topic_tag:r.topic_tag,status};
   });
   // 空剧名/占位剧名不是有效的剧集榜单记录：隐藏后让后续有效记录顺次补位。
-  source=source.filter(r=>{const title=String(r.title??'').trim();return title&&title!=='--'});
-  // 同一榜单可能返回不同 season_id 但相同展示剧名：页面按剧名展示时只保留一条，优先保留有 season_id 的记录。
+  source=source.filter(r=>String(r.display_title??'').trim()&&String(r.display_title).trim()!=='--');
+  // 热搜榜按 season_id 保留榜单明细；不同 season_id 即使映射成相同剧名，也不能合并掉 Top30 记录。
   const uniqueTitles=new Map();
   source.forEach(row=>{
-    const title=String(row.title).trim(),current=uniqueTitles.get(title),hasId=Boolean(String(row.raw?.season_id??'').trim()),currentHasId=Boolean(String(current?.raw?.season_id??'').trim());
-    if(!current||(!currentHasId&&hasId)||(currentHasId===hasId&&Number(row.rank)<Number(current.rank)))uniqueTitles.set(title,row);
+    const title=String(row.display_title).trim(),seasonId=String(row.raw?.season_id??'').trim(),key=seasonId||`${title}\u0000${String(row.rank??'')}`,current=uniqueTitles.get(key);
+    if(!current||Number(row.rank)<Number(current.rank))uniqueTitles.set(key,row);
   });
   source=[...uniqueTitles.values()];
-  if(stateView.trend!=='all'){
-    source=source.filter(r=>rankingChangeTrend(r.day_over_day_pct)===stateView.trend);
-  }
-  if(stateView.status==='new')source=source.filter(r=>String(r.status).trim()==='新入榜');
-  source.sort((a,b)=>stateView.trend!=='all'&&stateView.sortKey==='day_over_day_pct'
-    ?(rankingChangeMagnitude(b.day_over_day_pct)??-Infinity)-(rankingChangeMagnitude(a.day_over_day_pct)??-Infinity)
-    :rankingCompare(a,b,stateView.sortKey,stateView.direction));
-  // 总榜固定呈现 Top30；原始接口通常会带一条空占位记录，前面的有效记录清洗后正好取前30。
-  // 若接口实际只返回少于30条，则保留全部有效记录，后续由补充数据源继续补齐。
-  if(stateView.type==='总榜'&&stateView.status==='all'&&stateView.trend==='all')source=source.slice(0,30);
+  // 日环比、周环比均有值后，按搜索 VV 降序取 Top30；两种榜单使用同一口径。
+  source=source.filter(r=>rankingNumber(r.day_over_day_pct)!==null&&rankingNumber(r.week_change)!==null);
+  source.sort((a,b)=>(Number(b.search_vv)||0)-(Number(a.search_vv)||0));
+  source=source.slice(0,30);
   source=source.map((r,index)=>({...r,displayRank:index+1}));
   const table=document.querySelector('#hot-search-ops-table');if(!table)return;
-  table.innerHTML=source.map(r=>`<tr><td>${rankBadge(r.displayRank)}</td><td class="content-name">${esc(r.title)}</td><td class="vv-value">${fmt(r.search_vv)}</td><td class="search-uv-value">${fmt(r.search_uv)}</td><td class="change-value">${rankingChangeBadge(r.day_over_day_pct)}</td><td>${esc(r.content_type??'--')}</td><td>${esc(r.producer_region??'--')}</td><td>${esc(r.genre??'--')}</td><td>${esc(r.topic_tag??'--')}</td><td class="${String(r.status).trim()==='新入榜'?'ranking-status-new':''}">${esc(r.status)}</td></tr>`).join('')||'<tr><td colspan="10" class="empty">暂无真实数据</td></tr>';
+  table.innerHTML=source.map(r=>`<tr><td>${rankBadge(r.displayRank)}</td><td class="content-name">${esc(r.display_title)}</td><td class="vv-value">${fmt(r.search_vv)}</td><td class="search-uv-value">${fmt(r.search_uv)}</td><td class="change-value">${rankingChangeBadge(r.day_over_day_pct)}</td><td class="change-value">${rankingChangeBadge(r.week_change)}</td><td>${esc(r.content_type??'--')}</td><td>${esc(r.producer_region??'--')}</td><td>${esc(r.genre??'--')}</td><td>${esc(r.topic_tag??'--')}</td><td class="${String(r.status).trim()==='新入榜'?'ranking-status-new':''}">${esc(r.status)}</td></tr>`).join('')||'<tr><td colspan="11" class="empty">暂无真实数据</td></tr>';
+  updateSearchRankingHeader();
   document.querySelectorAll('.ranking-toolbar[data-ranking-kind="search"] .ranking-mode').forEach(button=>{const active=button.dataset.rankingType===stateView.type;button.classList.toggle('active',active);button.setAttribute('aria-selected',String(active))});
-  const date=document.querySelector('.ranking-toolbar[data-ranking-kind="search"] [data-ranking-date]');if(date)date.value=stateView.date;
+  const dateInput=document.querySelector('.ranking-toolbar[data-ranking-kind="search"] [data-ranking-date]');if(dateInput)dateInput.value=stateView.date;
   const header=document.querySelector('.hot-table-wrap thead tr');if(header)header.querySelectorAll('[data-sort-key]').forEach(button=>{
     const active=button.dataset.sortKey===stateView.sortKey;button.classList.toggle('active',active);
     const indicator=button.querySelector('.sort-triangle');indicator?.classList.toggle('ascending',active&&stateView.direction==='asc');indicator?.classList.toggle('descending',active&&stateView.direction==='desc');
@@ -2178,18 +2591,28 @@ renderSectionOps=function(){
 };
 
 /* Standalone Banner click analysis. It intentionally uses row-level source fields only. */
-const bannerViewState={rankDate:DASHBOARD_RANGE_END,detailDate:DASHBOARD_RANGE_END,client:'and',rankPosition:'all',detailPosition:'all',detailStatus:'all',ranking:'click',detailSortKey:'priority',detailSortDir:'desc',page:1,pageSize:20,bound:false};
+const bannerViewState={rankDate:DASHBOARD_RANGE_END,detailDate:DASHBOARD_RANGE_END,detailStartDate:'',detailEndDate:'',detailTitle:'',titleSuggestionsOpen:false,titleSuggestionTarget:'trend',trendClient:'and',trendWindow:7,burstMonth:'',burstSelected:'',client:'and',rankPosition:'all',detailPosition:'all',detailStatus:'all',ranking:'click',detailSortKey:'date',detailSortDir:'asc',page:1,pageSize:20,bound:false};
+let bannerIndex={source:null,byClient:new Map(),byDateClient:new Map(),dates:[],previous:new Map()};
 Object.defineProperty(bannerViewState,'date',{get(){return this.detailDate},set(value){this.rankDate=value;this.detailDate=value}});
-const bannerClientLabels={and:'安卓',web:'M站'};
-function bannerSourceRows(){return rows(state.data.bannerClick)}
+const bannerClientLabels={and:'and',web:'web'};
+function bannerSourceRows(){const source=rows(state.data.bannerClick);if(bannerIndex.source!==source){const dates=new Set(),byClient=new Map(),byDateClient=new Map();source.forEach(row=>{const client=String(row.clienttype||'').trim().toLowerCase(),date=bannerDate(row);if(client){if(!byClient.has(client))byClient.set(client,[]);byClient.get(client).push(row)}if(date){dates.add(date);const key=`${client}\u0000${date}`;if(!byDateClient.has(key))byDateClient.set(key,[]);byDateClient.get(key).push(row)}});const ordered=[...dates].sort(),previous=new Map();ordered.forEach((date,index)=>previous.set(date,ordered[index-1]||''));bannerIndex={source,byClient,byDateClient,dates:ordered,previous}}return source}
+function bannerClientRows(client){bannerSourceRows();const key=String(client||'').trim().toLowerCase();return ['and','web'].includes(key)?(bannerIndex.byClient.get(key)||[]):[]}
+function bannerDateClientRows(date,client){bannerSourceRows();return bannerIndex.byDateClient.get(`${String(client||'').trim().toLowerCase()}\u0000${date}`)||[]}
 function bannerNumber(value){const n=Number(value);return Number.isFinite(n)?n:null}
 function bannerDate(row){return String(row?.date??'')}
+function bannerTitle(row){return String(row?.title??row?.banner_title??row?.name??'').replace(/[\s　]+/g,'').trim()}
+function bannerNormalizeSearchText(value){return String(value??'').normalize('NFKC').toLowerCase().replace(/[\s\u3000\-—_·•,，。.!！?？:：;；'"“”‘’()（）\[\]【】<>《》]+/g,'')}
+function bannerTitleMatches(row,query,mode='fuzzy'){
+  const normalizedQuery=bannerNormalizeSearchText(query);
+  if(!normalizedQuery)return true;
+  const normalizedTitle=bannerNormalizeSearchText(row?.title??row?.banner_title??row?.name??'');
+  return mode==='exact'?normalizedTitle===normalizedQuery:normalizedTitle.includes(normalizedQuery);
+}
 function bannerPosition(row){return String(row?.position_id??'')}
 function bannerAnomaly(row){
   const exposure=bannerNumber(row?.uv_expose_count),click=bannerNumber(row?.uv_click_count),ctr=bannerNumber(row?.ctr_uv);
   if(exposure===null||click===null||ctr===null)return '字段缺失';
   if(click>exposure)return '点击UV大于曝光UV';
-  if(ctr>1)return '点击率大于100%';
   if(exposure===0&&click>0)return '曝光UV为0但点击UV大于0';
   return '';
 }
@@ -2205,20 +2628,52 @@ function bannerUniqueRows(list){
 function bannerFilteredRows(scope='rank'){
   const position=scope==='detail'?bannerViewState.detailPosition:bannerViewState.rankPosition;
   const date=scope==='detail'?bannerViewState.detailDate:bannerViewState.rankDate;
-  return bannerSourceRows().filter(row=>bannerDate(row)===date&&String(row.clienttype||'')===bannerViewState.client&&(position==='all'||bannerPosition(row)===position));
+  const client=scope==='detail'?'all':bannerViewState.client;
+  const titleQuery=String(bannerViewState.detailTitle||'');
+  const trendWindow=Number(bannerViewState.trendWindow)||7;
+  const detailStart=bannerViewState.detailStartDate,detailEnd=bannerViewState.detailEndDate;
+  const candidates=scope==='detail'?bannerSourceRows():bannerDateClientRows(date,client);
+  return candidates.filter(row=>{
+    const rowDate=bannerDate(row),inDate=scope==='detail'?(!detailStart&&!detailEnd||(!detailStart||rowDate>=detailStart)&&(!detailEnd||rowDate<=detailEnd)):rowDate===date;
+    const titleMatches=bannerTitleMatches(row,titleQuery);
+    const rowClient=String(row.clienttype||'').trim().toLowerCase(),detailClientAllowed=scope!=='detail'||['and','web'].includes(rowClient);
+    return inDate&&detailClientAllowed&&(scope==='detail'||rowClient===client)&&(position==='all'||bannerPosition(row)===position)&&(scope!=='detail'||titleMatches);
+  });
 }
 function bannerFormatClient(client){return bannerClientLabels[client]||client||'--'}
 function bannerFormatPct(value){const n=bannerNumber(value);return n===null?'--':`${(n*100).toFixed(2)}%`}
-function bannerPreviousDate(date){return [...new Set(bannerSourceRows().map(bannerDate).filter(Boolean))].filter(x=>x<date).sort().at(-1)||''}
+function bannerPreviousDate(date){bannerSourceRows();return bannerIndex.previous.get(date)||''}
 function bannerCompareRows(date,client){const previousDate=bannerPreviousDate(date),map=new Map();bannerUniqueRows(bannerSourceRows().filter(row=>bannerDate(row)===previousDate&&String(row.clienttype||'')===client)).forEach(row=>map.set(`${bannerPosition(row)}\u0000${row.title||''}`,row));return {date:previousDate,map}}
+function bannerPreviousRow(row){const previousDate=bannerPreviousDate(bannerDate(row)),client=String(row.clienttype||'').trim().toLowerCase();return bannerUniqueRows(bannerDateClientRows(previousDate,client).filter(item=>bannerPosition(item)===bannerPosition(row)&&String(item.title||'')===String(row.title||'')))[0]}
 function bannerDetailExportRows(){
-  const unique=bannerUniqueRows(bannerFilteredRows('detail')).filter(row=>(bannerNumber(row.uv_expose_count)??-Infinity)>=1000),compare=bannerCompareRows(bannerViewState.detailDate,bannerViewState.client);
-  return unique.map(row=>{const old=compare.map.get(`${bannerPosition(row)}\u0000${row.title||''}`),exposure=bannerNumber(row.uv_expose_count),click=bannerNumber(row.uv_click_count),oldClick=bannerNumber(old?.uv_click_count),ctr=bannerNumber(row.ctr_uv),oldCtr=bannerNumber(old?.ctr_uv),lowSample=(exposure!==null&&exposure<1000)||(click!==null&&click<50),changeStatus=!old?(compare.date?'新上榜':'暂无昨日数据'):lowSample?'样本不足':'';return {...row,clickChange:oldClick===null||oldClick===0?null:(click-oldClick)/Math.abs(oldClick),ctrChange:oldCtr===null||ctr===null?null:ctr-oldCtr,changeStatus}}).filter(row=>bannerViewState.detailStatus!=='new'||row.changeStatus==='新上榜');
+  const unique=bannerUniqueRows(bannerFilteredRows('detail')).filter(row=>(bannerNumber(row.uv_expose_count)??-Infinity)>=1000);
+  return unique.map(row=>{const old=bannerPreviousRow(row),exposure=bannerNumber(row.uv_expose_count),click=bannerNumber(row.uv_click_count),oldClick=bannerNumber(old?.uv_click_count),ctr=bannerNumber(row.ctr_uv),oldCtr=bannerNumber(old?.ctr_uv),lowSample=(exposure!==null&&exposure<1000)||(click!==null&&click<50),changeStatus=!old?(bannerPreviousDate(bannerDate(row))?'新上榜':'暂无昨日数据'):lowSample?'样本不足':'';return {...row,clickChange:oldClick===null||oldClick===0?null:(click-oldClick)/Math.abs(oldClick),ctrChange:oldCtr===null||ctr===null?null:ctr-oldCtr,changeStatus}}).filter(row=>bannerViewState.detailStatus!=='new'||row.changeStatus==='新上榜');
+}
+function bannerXml(value){return String(value??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;')}
+function bannerCrc32(bytes){let crc=-1;for(const byte of bytes){crc^=byte;for(let i=0;i<8;i++)crc=(crc>>>1)^((crc&1)?0xedb88320:0)}return (crc^-1)>>>0}
+function bannerZip(files){
+  const encoder=new TextEncoder(),parts=[],central=[];let offset=0;
+  const u16=n=>new Uint8Array([n&255,(n>>>8)&255]),u32=n=>new Uint8Array([n&255,(n>>>8)&255,(n>>>16)&255,(n>>>24)&255]);
+  const join=items=>{const size=items.reduce((sum,item)=>sum+item.length,0),out=new Uint8Array(size);let at=0;items.forEach(item=>{out.set(item,at);at+=item.length});return out};
+  Object.entries(files).forEach(([name,content])=>{const nameBytes=encoder.encode(name),data=encoder.encode(content),crc=bannerCrc32(data);const local=join([u32(0x04034b50),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),u16(nameBytes.length),u16(0),nameBytes,data]);parts.push(local);central.push(join([u32(0x02014b50),u16(20),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),u16(nameBytes.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(offset),nameBytes]));offset+=local.length});
+  const directory=join(central),end=join([u32(0x06054b50),u16(0),u16(0),u16(central.length),u16(central.length),u32(directory.length),u32(offset),u16(0)]);return new Blob([...parts,directory,end],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'})
+}
+function bannerExcelRows(){
+  const grouped=new Map();bannerDetailExportRows().forEach(row=>{const key=[row.title||'',row.clienttype||'',bannerPosition(row)].join('\u0000');if(!grouped.has(key))grouped.set(key,[]);grouped.get(key).push(row)});
+  return [...grouped.values()].flatMap(group=>group.sort((a,b)=>bannerDate(a).localeCompare(bannerDate(b))).slice(0,3)).sort((a,b)=>String(a.title||'').localeCompare(String(b.title||''),'zh-CN')||String(a.clienttype||'').localeCompare(String(b.clienttype||''),'zh-CN')||bannerPosition(a).localeCompare(bannerPosition(b),'zh-CN')||bannerDate(a).localeCompare(bannerDate(b)));
 }
 function exportBannerDetail(){
-  const headers=['日期','Banner位置','Banner标题','曝光UV','点击UV','点击率','点击UV昨日环比','点击率昨日环比','榜单状态'],rows=bannerDetailExportRows();
-  const csv=[headers,...rows.map(row=>[bannerDate(row),bannerPosition(row),row.title||'',row.uv_expose_count??'',row.uv_click_count??'',bannerFormatPct(row.ctr_uv),row.clickChange==null?'':`${row.clickChange>=0?'↑':'↓'} ${(Math.abs(row.clickChange)*100).toFixed(Math.abs(row.clickChange)*100<10?2:1)}%`,row.ctrChange==null?'':`${row.ctrChange>=0?'↑':'↓'} ${(Math.abs(row.ctrChange)*100).toFixed(2)}pp`,row.changeStatus==='新上榜'?'新上榜':''])].map(row=>row.map(value=>`"${String(value).replace(/"/g,'""')}"`).join(',')).join('\r\n');
-  const blob=new Blob([`\uFEFF${csv}`],{type:'text/csv;charset=utf-8;'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=`Banner明细_${bannerViewState.date}_${bannerViewState.detailStatus==='new'?'新上榜':'全部'}.csv`;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  const source=bannerExcelRows();if(!source.length){window.alert('当前筛选条件下没有可导出的Banner明细');return}
+  const groups=new Map();source.forEach(row=>{const key=[row.title||'',row.clienttype||'',bannerPosition(row)].join('\u0000');if(!groups.has(key))groups.set(key,[]);groups.get(key).push(row)});
+  const merges=[],sheetRows=[`<row r="1" ht="28" customHeight="1">${['Banner名称','平台','位置','日期','曝光UV','点击UV','转化率','平均'].map((text,index)=>`<c r="${String.fromCharCode(65+index)}1" t="inlineStr" s="1"><is><t>${text}</t></is></c>`).join('')}</row>`];let rowNumber=2;
+  for(const group of groups.values()){
+    const start=rowNumber,average=group.reduce((sum,row)=>sum+(bannerNumber(row.ctr_uv)||0),0)/group.length;
+    group.forEach((row,index)=>{const date=bannerDate(row).replace(/-/g,''),exposure=bannerNumber(row.uv_expose_count),click=bannerNumber(row.uv_click_count),ctr=bannerNumber(row.ctr_uv),averageCell=index?'':`<c r="H${rowNumber}" s="4"><v>${average}</v></c>`;sheetRows.push(`<row r="${rowNumber}" ht="24" customHeight="1"><c r="A${rowNumber}" t="inlineStr" s="2"><is><t>${bannerXml(row.title||'')}</t></is></c><c r="B${rowNumber}" t="inlineStr" s="2"><is><t>${bannerXml(row.clienttype||'')}</t></is></c><c r="C${rowNumber}" t="inlineStr" s="2"><is><t>${bannerXml(bannerPosition(row))}</t></is></c><c r="D${rowNumber}" t="inlineStr" s="2"><is><t>${date}</t></is></c><c r="E${rowNumber}" s="3"><v>${exposure??0}</v></c><c r="F${rowNumber}" s="3"><v>${click??0}</v></c><c r="G${rowNumber}" s="4"><v>${ctr??0}</v></c>${averageCell}</row>`);rowNumber++});
+    if(group.length>1){merges.push(`A${start}:A${rowNumber-1}`,`B${start}:B${rowNumber-1}`,`C${start}:C${rowNumber-1}`,`H${start}:H${rowNumber-1}`)}
+  }
+  const worksheet=`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><cols><col min="1" max="1" width="27" customWidth="1"/><col min="2" max="3" width="15" customWidth="1"/><col min="4" max="4" width="14" customWidth="1"/><col min="5" max="8" width="14" customWidth="1"/></cols><sheetData>${sheetRows.join('')}</sheetData>${merges.length?`<mergeCells count="${merges.length}">${merges.map(ref=>`<mergeCell ref="${ref}"/>`).join('')}</mergeCells>`:''}<autoFilter ref="A1:H${rowNumber-1}"/></worksheet>`;
+  const files={'[Content_Types].xml':'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>','_rels/.rels':'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>','xl/workbook.xml':'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="Banner明细" sheetId="1" r:id="rId1"/></sheets></workbook>','xl/_rels/workbook.xml.rels':'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>','xl/styles.xml':'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="2"><font><sz val="11"/><name val="Microsoft YaHei"/></font><font><b/><sz val="11"/><name val="Microsoft YaHei"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FFEAF2FB"/><bgColor indexed="64"/></patternFill></fill></fills><borders count="2"><border/><border><left style="thin"><color rgb="FFD9E1EA"/></left><right style="thin"><color rgb="FFD9E1EA"/></right><top style="thin"><color rgb="FFD9E1EA"/></top><bottom style="thin"><color rgb="FFD9E1EA"/></bottom></border></borders><cellXfs count="5"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/><xf numFmtId="0" fontId="1" fillId="2" borderId="1" applyAlignment="1"><alignment horizontal="center" vertical="center"/></xf><xf numFmtId="0" fontId="0" fillId="0" borderId="1" applyAlignment="1"><alignment horizontal="center" vertical="center"/></xf><xf numFmtId="3" fontId="0" fillId="0" borderId="1" applyAlignment="1"><alignment horizontal="center" vertical="center"/></xf><xf numFmtId="10" fontId="0" fillId="0" borderId="1" applyAlignment="1"><alignment horizontal="center" vertical="center"/></xf></cellXfs></styleSheet>','xl/worksheets/sheet1.xml':worksheet};
+  const blob=bannerZip(files),url=URL.createObjectURL(blob),link=document.createElement('a'),dates=[...new Set(source.map(bannerDate))].sort();link.href=url;link.download=`Banner明细_${dates[0]}_${dates.at(-1)}.xlsx`;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)
 }
 function bannerChangeBadge(value,type,status){if(status)return `<span class="banner-change-badge neutral">${status}</span>`;if(value===null||value===undefined||value==='')return '<span class="banner-change-badge neutral">--</span>';const n=bannerNumber(value);if(n===null)return '<span class="banner-change-badge neutral">--</span>';const up=n>=0,cls=up?'up':'down',arrow=up?'↑':'↓',abs=Math.abs(n);const text=type==='ctr'?`${(abs*100).toFixed(2)}pp`:`${(abs*100).toFixed(abs*100<10?2:1)}%`;return `<span class="banner-change-badge ${cls}">${arrow} ${text}</span>`}
 function bannerStatus(row){const issue=bannerAnomaly(row);return issue?`异常：${issue}`:'正常'}
@@ -2229,7 +2684,7 @@ function bannerRankRows(list){
   return unique.sort((a,b)=>(bannerNumber(b.uv_click_count)??-Infinity)-(bannerNumber(a.uv_click_count)??-Infinity)).slice(0,10);
 }
 function bannerSetOptions(){
-  const dateInputs=$$('#banner-date, #banner-detail-date'),source=bannerSourceRows(),dates=[...new Set(source.map(bannerDate).filter(Boolean))].sort();
+  const dateInputs=$$('#banner-date, #banner-detail-date, #banner-detail-start-date, #banner-detail-end-date');const source=bannerSourceRows();const dates=bannerIndex.dates;
   if(!dates.length)return;
   dateInputs.forEach(input=>{input.min=dates[0];input.max=dates.at(-1)});
   const defaultDate=window.__dashboardDefaultDate&&dates.includes(window.__dashboardDefaultDate)?window.__dashboardDefaultDate:dates.at(-1);
@@ -2238,6 +2693,15 @@ function bannerSetOptions(){
   const rankDate=$('#banner-date'),detailDate=$('#banner-detail-date');
   if(rankDate)rankDate.value=bannerViewState.rankDate;
   if(detailDate)detailDate.value=bannerViewState.detailDate;
+  const detailStart=$('#banner-detail-start-date'),detailEnd=$('#banner-detail-end-date'),detailTitle=$('#banner-detail-title-search');
+  if(detailStart)detailStart.value=bannerViewState.detailStartDate;
+  if(detailEnd)detailEnd.value=bannerViewState.detailEndDate;
+  if(detailTitle&&document.activeElement!==detailTitle&&(bannerViewState.detailTitle||!detailTitle.value))detailTitle.value=bannerViewState.detailTitle;
+  const trendClient=$('#banner-trend-client');
+  if(trendClient)trendClient.value=bannerViewState.trendClient;
+  const trendTitle=$('#banner-trend-title-search');
+  if(trendTitle&&document.activeElement!==trendTitle&&(bannerViewState.detailTitle||!trendTitle.value))trendTitle.value=bannerViewState.detailTitle;
+  $$('.banner-trend-period').forEach(button=>{const active=Number(button.dataset.bannerTrendWindow)===Number(bannerViewState.trendWindow);button.classList.toggle('is-active',active);button.setAttribute('aria-selected',active?'true':'false')});
   const positions=[...new Set(source.map(bannerPosition).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'zh-CN'));
   const selects=$$('.banner-position-select'),currentRank=bannerViewState.rankPosition,currentDetail=bannerViewState.detailPosition;
   const html=['<option value="all">全部位置</option>',...positions.map(position=>`<option value="${esc(position)}">${esc(position)}</option>`)].join('');
@@ -2258,7 +2722,7 @@ function bannerRenderRanking(list){
   instance.setOption({
     animation:false,
     grid:{left:190,right:76,top:12,bottom:26,containLabel:true},
-    tooltip:{trigger:'axis',axisPointer:{type:'shadow'},formatter:params=>{const item=params?.[0],row=ranked[ranked.length-1-(item?.dataIndex??0)];if(!row)return '';return `${esc(row.title||'--')}<br/>位置：${esc(bannerPosition(row)||'--')}<br/>${isCtr?'点击率：'+bannerFormatPct(row.ctr_uv):'点击UV：'+fmt(row.uv_click_count)}`}},
+    tooltip:{trigger:'axis',axisPointer:{type:'shadow'},formatter:params=>{const item=params?.[0],row=ranked[ranked.length-1-(item?.dataIndex??0)];if(!row)return '';return `${esc(row.title||'--')}<br/>位置：${esc(bannerPosition(row)||'--')}<br/>${isCtr?'转化率：'+bannerFormatPct(row.ctr_uv):'点击UV：'+fmt(row.uv_click_count)}`}},
     xAxis:{type:'value',min:0,axisLabel:{color:'#8392a7',formatter:value=>isCtr?`${(Number(value)*100).toFixed(0)}%`:fmt(value)},splitLine:{lineStyle:{color:'#edf1f6'}}},
     yAxis:{type:'category',data:labels,axisLabel:{color:'#455b77',width:178,overflow:'truncate'}},
     series:[{type:'bar',barMaxWidth:26,data:values,itemStyle:{color:chartGreen,borderRadius:[0,5,5,0]},label:{show:true,position:'right',color:'#405b78',fontWeight:750,formatter:value=>isCtr?bannerFormatPct(value.value):fmt(value.value)}}]
@@ -2305,16 +2769,63 @@ function ensureLegacyDetailTablePagers(){
     sync();
   });
 }
+function bannerRenderTrend(){
+  const empty=$('#banner-trend-empty'),chart=$('#banner-trend-chart'),trendInput=$('#banner-trend-title-search'),query=String(trendInput?.value??bannerViewState.detailTitle??''),client=String($('#banner-trend-client')?.value||bannerViewState.trendClient).trim().toLowerCase(),windowSize=Number(bannerViewState.trendWindow)||7;
+  if(!empty||!chart)return;
+  const hasQuery=Boolean(bannerNormalizeSearchText(query));
+  const titleMatches=bannerUniqueRows(bannerClientRows(client).filter(row=>hasQuery&&bannerTitleMatches(row,query))),allTitleMatches=bannerUniqueRows(bannerSourceRows().filter(row=>hasQuery&&bannerTitleMatches(row,query))),matches=titleMatches.length?titleMatches:allTitleMatches,dates=[...new Set(matches.map(bannerDate).filter(Boolean))].sort();
+  if(!hasQuery||!dates.length){empty.hidden=false;chart.hidden=true;empty.textContent=hasQuery?'未找到匹配的 Banner 标题':'请先搜索一个 Banner 标题';return}
+  const launch=dates[0],latest=dates.at(-1),launchTime=Date.parse(`${launch}T00:00:00Z`),latestTime=Date.parse(`${latest}T00:00:00Z`),rangeStartTime=windowSize===30?Math.max(launchTime,latestTime-(windowSize-1)*86400000):launchTime,dayCount=Math.floor((latestTime-rangeStartTime)/86400000)+1,labels=Array.from({length:dayCount},(_,index)=>new Date(rangeStartTime+index*86400000).toISOString().slice(0,10)),byDate=new Map();
+  matches.forEach(row=>{const date=bannerDate(row);if(!labels.includes(date))return;const item=byDate.get(date)||{date,exposure:0,click:0};item.exposure+=bannerNumber(row.uv_expose_count)||0;item.click+=bannerNumber(row.uv_click_count)||0;byDate.set(date,item)});
+  const clicks=labels.map(date=>byDate.get(date)?.click??null),ctrs=labels.map(date=>{const item=byDate.get(date);return item&&item.exposure>0?item.click/item.exposure:null});
+  empty.hidden=true;chart.hidden=false;$('#banner-trend-caption').textContent=`${matches[0].title||bannerViewState.detailTitle} · ${windowSize===30?'近30天：':''}${labels[0]} 至 ${labels.at(-1)} · ${bannerFormatClient(client)}`;
+  if(!window.echarts)return;
+  const instance=echarts.getInstanceByDom(chart)||echarts.init(chart);
+  instance.setOption({animation:false,grid:{left:60,right:66,top:64,bottom:32,containLabel:true},legend:{top:8,left:'center',right:'auto',textStyle:{color:'#60758e',fontWeight:700}},tooltip:{trigger:'axis',formatter:params=>{const index=params?.[0]?.axisValueIndex??0,item=byDate.get(labels[index]);return `${labels[index]}<br/>点击UV：${item?fmt(item.click):'--'}<br/>转化率：${item&&item.exposure>0?bannerFormatPct(item.click/item.exposure):'--'}`}},xAxis:{type:'category',data:labels,axisLabel:{color:'#8392a7',formatter:value=>value.slice(5)},boundaryGap:false},yAxis:[{type:'value',name:'点击UV',axisLabel:{color:'#8392a7'},splitLine:{lineStyle:{color:'#edf1f6'}}},{type:'value',name:'转化率',axisLabel:{color:'#8392a7',formatter:value=>`${(Number(value)*100).toFixed(0)}%`},splitLine:{show:false}}],series:[{name:'点击UV',type:'line',data:clicks,smooth:true,connectNulls:false,symbol:'circle',symbolSize:7,lineStyle:{width:3,color:'#2f76e8'},itemStyle:{color:'#2f76e8'}},{name:'转化率',type:'line',yAxisIndex:1,data:ctrs,smooth:true,connectNulls:false,symbol:'circle',symbolSize:7,lineStyle:{width:3,color:'#f08a53'},itemStyle:{color:'#f08a53'}}]});instance.resize();
+}
+function bannerBurstRows(){
+  const month=String(bannerViewState.burstMonth||''), grouped=new Map();
+  bannerSourceRows().filter(row=>{const client=String(row.clienttype||'').trim().toLowerCase(),date=bannerDate(row);return ['and','web'].includes(client)&&date.slice(0,7)===month&&(bannerNumber(row.uv_expose_count)??0)>=1000}).forEach(row=>{
+    const key=String(row.title||'').trim(),client=String(row.clienttype||'').trim().toLowerCase();if(!key)return;const item=grouped.get(key)||{title:key,exposure:0,click:0,ctrs:[],dates:new Set(),clients:new Set(),positions:new Set(),genre:String(row.genre||row.season_type||row.drama_type||'未返回')};item.exposure+=bannerNumber(row.uv_expose_count)||0;item.click+=bannerNumber(row.uv_click_count)||0;const ctr=bannerNumber(row.ctr_uv);if(ctr!==null)item.ctrs.push(ctr);item.dates.add(bannerDate(row));item.clients.add(client);if(bannerPosition(row))item.positions.add(bannerPosition(row));if(item.genre==='未返回')item.genre=String(row.genre||row.season_type||row.drama_type||'未返回');grouped.set(key,item);
+  });
+  return [...grouped.values()].map(item=>({...item,avgCtr:item.ctrs.length?item.ctrs.reduce((sum,value)=>sum+value,0)/item.ctrs.length:0,days:item.dates.size,clientText:[...item.clients].join('、'),positionText:[...item.positions].join('、')})).sort((a,b)=>b.click-a.click||b.exposure-a.exposure).slice(0,10);
+}
+function bannerBurstMonths(){return [...new Set(bannerSourceRows().map(row=>bannerDate(row).slice(0,7)).filter(Boolean))].sort()}
+function bannerBurstJudgment(item,topTotal){const monthlyCtr=item.exposure>0?item.click/item.exposure:0;let judgment='点击规模和点击效率均较高，可继续关注。';if(item.click>=topTotal*.25&&monthlyCtr<.03)judgment='点击规模较高，但月度CTR偏低，建议关注投放效率。';else if(item.click<topTotal*.12&&monthlyCtr>=.08)judgment='点击规模一般，但月度CTR较高，可评估增加曝光。';else if(item.days<=7)judgment='点击集中在较短周期内，建议结合后续趋势观察。';return judgment}
+function bannerBurstDetailMarkup(item){
+  const rows=bannerUniqueRows(bannerSourceRows().filter(row=>bannerDate(row).slice(0,7)===bannerViewState.burstMonth&&String(row.title||'').trim()===item.title&&['and','web'].includes(String(row.clienttype||'').trim().toLowerCase()))).filter(row=>(bannerNumber(row.uv_expose_count)??0)>=1000).sort((a,b)=>bannerDate(a).localeCompare(bannerDate(b))||String(a.clienttype||'').localeCompare(String(b.clienttype||''))||bannerPosition(a).localeCompare(bannerPosition(b)));
+  const detail=$('#banner-burst-detail');if(!detail)return;
+  const topTotal=bannerBurstRows().reduce((sum,row)=>sum+row.click,0),monthlyCtr=item.exposure>0?item.click/item.exposure:0,positionClicks=new Map(),clientClicks=new Map();rows.forEach(row=>{const position=bannerPosition(row)||'未标注位置',client=String(row.clienttype||'').trim().toLowerCase();positionClicks.set(position,(positionClicks.get(position)||0)+(bannerNumber(row.uv_click_count)||0));clientClicks.set(client,(clientClicks.get(client)||0)+(bannerNumber(row.uv_click_count)||0))});const majorPositions=[...positionClicks.entries()].sort((a,b)=>b[1]-a[1]).slice(0,3).map(([key])=>key),majorClients=[...clientClicks.entries()].sort((a,b)=>b[1]-a[1]).map(([key])=>key).filter(Boolean),contribution=topTotal>0?item.click/topTotal:0,judgment=bannerBurstJudgment(item,topTotal);
+  detail.hidden=false;detail.innerHTML=`<div class="banner-burst-detail-head"><strong>${esc(item.title)}</strong><button type="button" class="banner-burst-detail-close" aria-label="关闭大爆剧详情">×</button><span>运营判断：${esc(judgment)}</span></div><div class="banner-burst-detail-grid"><div><span>月累计点击UV</span><b>${fmt(item.click)}</b></div><div><span>月累计曝光UV</span><b>${fmt(item.exposure)}</b></div><div><span>月度CTR</span><b>${bannerFormatPct(monthlyCtr)}</b></div><div><span>Top10点击贡献</span><b>${bannerFormatPct(contribution)}</b></div><div><span>覆盖天数</span><b>${item.days}天</b></div><div><span>主要投放位置</span><b>${esc(majorPositions.join('、')||'--')}</b></div><div><span>主要平台</span><b>${esc(majorClients.join('、')||'--')}</b></div></div><table class="banner-burst-detail-table"><thead><tr><th>日期</th><th>平台</th><th>位置</th><th>曝光UV</th><th>点击UV</th><th>转化率</th></tr></thead><tbody>${rows.slice(0,12).map(row=>`<tr><td>${esc(bannerDate(row))}</td><td>${esc(row.clienttype||'--')}</td><td>${esc(bannerPosition(row)||'--')}</td><td>${fmt(row.uv_expose_count)}</td><td>${fmt(row.uv_click_count)}</td><td>${bannerFormatPct(row.ctr_uv)}</td></tr>`).join('')||'<tr><td colspan="6">暂无明细</td></tr>'}</tbody></table>`;detail.querySelector('.banner-burst-detail-close')?.addEventListener('click',()=>{detail.hidden=true;bannerViewState.burstSelected=''});
+}
+function bannerRenderBurst(){
+  const monthSelect=$('#banner-burst-month'),chart=$('#banner-burst-chart'),list=$('#banner-burst-list');if(!monthSelect||!chart||!list)return;
+  const months=bannerBurstMonths();if(!months.length){list.innerHTML='<div class="banner-empty">暂无月度数据</div>';return}
+  if(!months.includes(bannerViewState.burstMonth))bannerViewState.burstMonth=months.at(-1);monthSelect.innerHTML=months.map(month=>`<option value="${month}">${month.replace('-','年')}月</option>`).join('');monthSelect.value=bannerViewState.burstMonth;
+  const top=bannerBurstRows(),maxClick=Math.max(...top.map(item=>item.click),1),maxCtr=Math.max(...top.map(item=>item.avgCtr),0),minCtr=Math.min(...top.map(item=>item.avgCtr),0),range=Math.max(maxCtr-minCtr,0.0001);
+  list.innerHTML=top.map((item,index)=>`<button type="button" class="banner-burst-item ${item.title===bannerViewState.burstSelected?'is-active':''}" data-banner-burst-title="${esc(item.title)}"><span class="banner-burst-rank">${index+1}</span><span class="banner-burst-title" title="${esc(item.title)}">${esc(item.title)}</span><b class="banner-burst-value">${fmt(item.click)}</b></button>`).join('')||'<div class="banner-empty">暂无符合条件的数据</div>';
+  $$('.banner-burst-item').forEach(button=>button.addEventListener('click',()=>{const title=button.dataset.bannerBurstTitle||'';bannerViewState.burstSelected=title;const item=top.find(row=>row.title===title);if(item)bannerBurstDetailMarkup(item);bannerRenderBurst()}));
+  if(window.echarts){const instance=echarts.getInstanceByDom(chart)||echarts.init(chart),topClickTotal=top.reduce((sum,item)=>sum+item.click,0),data=top.map((item,index)=>{const ratio=Math.max(0,Math.min(1,(item.avgCtr-minCtr)/range));return {name:item.title,value:item.click,itemStyle:{color:`rgb(${Math.round(186-150*ratio)},${Math.round(226-125*ratio)},${Math.round(250-55*ratio)})`,borderColor:'#fff',borderWidth:1}}});instance.setOption({animation:false,grid:{left:48,right:22,top:24,bottom:82,containLabel:true},tooltip:{trigger:'item',formatter:params=>{const item=top[params.dataIndex],monthlyCtr=item.exposure>0?item.click/item.exposure:0,contribution=topClickTotal>0?item.click/topClickTotal:0;return `<strong>${esc(item.title)}</strong><br/>月累计点击UV：${fmt(item.click)}<br/>月累计曝光UV：${fmt(item.exposure)}<br/>月度CTR：${bannerFormatPct(monthlyCtr)}<br/>Top10点击贡献：${bannerFormatPct(contribution)}<br/>覆盖天数：${item.days}天<br/>主要位置：${esc(item.positionText||'--')}<br/>主要平台：${esc(item.clientText||'--')}<br/>运营建议：${esc(bannerBurstJudgment(item,topClickTotal))}`}},xAxis:{type:'category',data:top.map(item=>item.title.slice(0,9)),axisLabel:{color:'#455b77',rotate:32,interval:0},axisTick:{alignWithLabel:true}},yAxis:{type:'value',name:'累计点击UV',nameTextStyle:{color:'#8393a7',fontSize:11},axisLabel:{color:'#8393a7',formatter:value=>fmt(value)},splitLine:{lineStyle:{color:'#edf1f6'}}},series:[{type:'bar',data,barMaxWidth:42,label:{show:true,position:'top',color:'#385473',fontSize:11,formatter:params=>fmt(params.value)}}]});instance.off('click');instance.on('click',params=>{const item=top[params.dataIndex];if(item){bannerViewState.burstSelected=item.title;bannerBurstDetailMarkup(item)}});instance.resize()}
+  const selected=top.find(item=>item.title===bannerViewState.burstSelected);if(selected)bannerBurstDetailMarkup(selected);else {const detail=$('#banner-burst-detail');if(detail)detail.hidden=true}
+}
 function bannerRenderDetail(list){
   const body=$('#banner-detail-body'),unique=bannerUniqueRows(list).filter(row=>(bannerNumber(row.uv_expose_count)??-Infinity)>=1000);
-  const compare=bannerCompareRows(bannerViewState.detailDate,bannerViewState.client),enriched=unique.map(row=>{const old=compare.map.get(`${bannerPosition(row)}\u0000${row.title||''}`),exposure=bannerNumber(row.uv_expose_count),click=bannerNumber(row.uv_click_count),oldClick=bannerNumber(old?.uv_click_count),ctr=bannerNumber(row.ctr_uv),oldCtr=bannerNumber(old?.ctr_uv),lowSample=(exposure!==null&&exposure<1000)||(click!==null&&click<50);return {...row,exposureValue:exposure,clickValue:click,lowSample,clickChange:oldClick===null||oldClick===0?null:(click-oldClick)/Math.abs(oldClick),ctrChange:oldCtr===null||ctr===null?null:ctr-oldCtr,changeStatus:!old?(compare.date?'新上榜':'暂无昨日数据'):lowSample?'样本不足':''}});
+  const enriched=unique.map(row=>{const old=bannerPreviousRow(row),exposure=bannerNumber(row.uv_expose_count),click=bannerNumber(row.uv_click_count),oldClick=bannerNumber(old?.uv_click_count),ctr=bannerNumber(row.ctr_uv),oldCtr=bannerNumber(old?.ctr_uv),lowSample=(exposure!==null&&exposure<1000)||(click!==null&&click<50);return {...row,exposureValue:exposure,clickValue:click,lowSample,clickChange:oldClick===null||oldClick===0?null:(click-oldClick)/Math.abs(oldClick),ctrChange:oldCtr===null||ctr===null?null:ctr-oldCtr,changeStatus:!old?(bannerPreviousDate(bannerDate(row))?'新上榜':'暂无昨日数据'):lowSample?'样本不足':''}});
   const statusFiltered=bannerViewState.detailStatus==='new'?enriched.filter(row=>row.changeStatus==='新上榜'):enriched;
   const total=statusFiltered.length,pages=Math.max(1,Math.ceil(total/bannerViewState.pageSize));
   bannerViewState.page=Math.min(Math.max(1,bannerViewState.page),pages);
-  const sorted=statusFiltered.sort((a,b)=>{const key=bannerViewState.detailSortKey,dir=bannerViewState.detailSortDir==='asc'?1:-1;if(key==='priority'){if(a.lowSample!==b.lowSample)return a.lowSample?1:-1;const exposure=(b.exposureValue??-Infinity)-(a.exposureValue??-Infinity);if(exposure)return exposure;const click=(b.clickValue??-Infinity)-(a.clickValue??-Infinity);if(click)return click;return (b.clickChange??-Infinity)-(a.clickChange??-Infinity)}const av=a[key],bv=b[key];if(av===null&&bv===null)return 0;if(av===null)return 1;if(bv===null)return -1;return (av-bv)*dir});
+  const sorted=statusFiltered.sort((a,b)=>{const key=bannerViewState.detailSortKey,dir=bannerViewState.detailSortDir==='asc'?1:-1;if(key==='date'){const dateOrder=bannerDate(a).localeCompare(bannerDate(b));if(dateOrder)return dateOrder*dir;const titleOrder=String(a.title||'').localeCompare(String(b.title||''),'zh-CN');if(titleOrder)return titleOrder;const clientOrder=String(a.clienttype||'').localeCompare(String(b.clienttype||''),'zh-CN');if(clientOrder)return clientOrder;return bannerPosition(a).localeCompare(bannerPosition(b),'zh-CN')}if(key==='priority'){if(a.lowSample!==b.lowSample)return a.lowSample?1:-1;const exposure=(b.exposureValue??-Infinity)-(a.exposureValue??-Infinity);if(exposure)return exposure;const click=(b.clickValue??-Infinity)-(a.clickValue??-Infinity);if(click)return click;return (b.clickChange??-Infinity)-(a.clickChange??-Infinity)}const av=a[key],bv=b[key];if(av===null&&bv===null)return 0;if(av===null)return 1;if(bv===null)return -1;return (av-bv)*dir});
   const shown=sorted.slice((bannerViewState.page-1)*bannerViewState.pageSize,bannerViewState.page*bannerViewState.pageSize);
-  body.innerHTML=shown.map(row=>{const anomaly=Boolean(bannerAnomaly(row)),status=row.changeStatus==='新上榜'?'新上榜':'',comparable=row.changeStatus==='新上榜'||row.changeStatus==='暂无昨日数据'?null:row.clickChange,ctrComparable=row.changeStatus==='新上榜'||row.changeStatus==='暂无昨日数据'?null:row.ctrChange;return `<tr class="${anomaly?'banner-anomaly-row':''}"><td>${esc(row.date||bannerViewState.detailDate||'--')}</td><td>${esc(bannerPosition(row))}</td><td class="banner-title" title="${esc(row.title)}">${esc(row.title)}</td><td class="banner-number">${fmt(row.uv_expose_count)}</td><td class="banner-number">${fmt(row.uv_click_count)}</td><td class="banner-ctr">${bannerFormatPct(row.ctr_uv)}${anomaly?`<span class="banner-anomaly-mark" title="${esc(bannerStatus(row))}">异常</span>`:''}</td><td class="banner-change">${bannerChangeBadge(comparable,'uv')}</td><td class="banner-change">${bannerChangeBadge(ctrComparable,'ctr')}</td><td class="${status?'banner-status-new':''}">${status}</td></tr>`}).join('')||'<tr><td colspan="9" class="empty">暂无真实数据</td></tr>';
-  $('#banner-detail-count').textContent=`${total.toLocaleString('zh-CN')} 条`;
+  const positionSpans=new Map();shown.forEach(row=>{const key=bannerPosition(row);positionSpans.set(key,(positionSpans.get(key)||0)+1)});
+  const positionSeen=new Set();
+  body.innerHTML=shown.map(row=>{const anomaly=Boolean(bannerAnomaly(row)),status=row.changeStatus==='新上榜'?'新上榜':'',comparable=row.changeStatus==='新上榜'||row.changeStatus==='暂无昨日数据'?null:row.clickChange,ctrComparable=row.changeStatus==='新上榜'||row.changeStatus==='暂无昨日数据'?null:row.ctrChange;return `<tr class="${anomaly?'banner-anomaly-row':''}"><td>${esc(row.date||bannerViewState.detailDate||'--')}</td><td>${esc(row.clienttype||'--')}</td><td>${esc(bannerPosition(row))}</td><td class="banner-title" title="${esc(row.title)}">${esc(row.title)}</td><td class="banner-number">${fmt(row.uv_expose_count)}</td><td class="banner-number">${fmt(row.uv_click_count)}</td><td class="banner-ctr">${bannerFormatPct(row.ctr_uv)}${anomaly?`<span class="banner-anomaly-mark" title="${esc(bannerStatus(row))}">异常</span>`:''}</td><td class="banner-change">${bannerChangeBadge(comparable,'uv')}</td><td class="banner-change">${bannerChangeBadge(ctrComparable,'ctr')}</td></tr>`}).join('')||'<tr><td colspan="9" class="empty">暂无真实数据</td></tr>';
+  const renderedRows=[...body.querySelectorAll('tr')].filter(row=>!row.querySelector('.empty')),cells=renderedRows.map(row=>[...row.querySelectorAll('td')]);
+  const mergeRepeated=(column,keyFor)=>{let start=0;while(start<shown.length){const key=keyFor(shown[start]);let span=1;while(start+span<shown.length&&keyFor(shown[start+span])===key)span++;if(span>1){cells[start][column].rowSpan=span;for(let offset=1;offset<span;offset++)cells[start+offset][column].remove()}start+=span}};
+  mergeRepeated(0,row=>bannerDate(row));
+  mergeRepeated(3,row=>`${bannerDate(row)}\u0000${String(row.title||'')}`);
+  mergeRepeated(1,row=>`${bannerDate(row)}\u0000${String(row.title||'')}\u0000${String(row.clienttype||'')}`);
+  const bannerDetailCount=$('#banner-detail-count');
+  if(bannerDetailCount)bannerDetailCount.textContent=`${total.toLocaleString('zh-CN')} 条`;
   const bannerPager=$('#banner-pagination-host');
   if(bannerPager){bannerPager.innerHTML=dashboardPagerMarkup({prefix:'banner',total,page:total?bannerViewState.page:0,pages:total?pages:0,pageSize:bannerViewState.pageSize});bindDashboardPager(bannerPager,'banner',bannerViewState,renderBannerPage)}
   bannerSyncSortHeaders();
@@ -2335,8 +2846,34 @@ function bannerToggleDetailSort(key){
   bannerViewState.page=1;
   renderBannerPage();
 }
+function bannerTitleSuggestions(query){
+  const normalized=bannerNormalizeSearchText(query);
+  if(!normalized)return [];
+  const source=bannerViewState.titleSuggestionTarget==='trend'?bannerClientRows(bannerViewState.trendClient):bannerSourceRows();
+  const titles=[...new Set(source.map(row=>String(row.title||'').trim()).filter(Boolean))];
+  return titles.filter(title=>bannerNormalizeSearchText(title).includes(normalized)).sort((a,b)=>{
+    const aStarts=bannerNormalizeSearchText(a).startsWith(normalized),bStarts=bannerNormalizeSearchText(b).startsWith(normalized);
+    return aStarts===bStarts?a.localeCompare(b,'zh-CN'):(aStarts?-1:1);
+  }).slice(0,8);
+}
+function bannerRenderTitleSuggestions(){
+  const suggestions=bannerViewState.titleSuggestionsOpen?bannerTitleSuggestions(bannerViewState.detailTitle):[];
+  const markup=suggestions.map(title=>`<button type="button" data-banner-title-suggestion="${esc(title)}">${esc(title)}</button>`).join('');
+  [['trend','#banner-trend-title-suggestions'],['detail','#banner-detail-title-suggestions']].forEach(([target,selector])=>{const host=$(selector);if(host)host.innerHTML=target===bannerViewState.titleSuggestionTarget?markup:''});
+  $$('[data-banner-title-suggestion]').forEach(button=>button.addEventListener('click',()=>{
+    bannerViewState.detailTitle=button.dataset.bannerTitleSuggestion||button.textContent||'';
+    bannerViewState.titleSuggestionsOpen=false;
+    bannerViewState.page=1;
+    renderBannerPage();
+  }));
+}
 function renderBannerPage(){
   const host=$('#page-banner');if(!host)return;
+  const trendSearch=$('#banner-trend-title-search');
+  if(trendSearch&&String(trendSearch.value||'').trim()&&!String(bannerViewState.detailTitle||'').trim())bannerViewState.detailTitle=trendSearch.value;
+  // Banner trend is intentionally limited to the post-launch first week.
+  document.querySelector('[data-banner-trend-window="30"]')?.remove();
+  bannerViewState.trendWindow=7;
   bannerSetOptions();
   const statusSelect=$('#banner-detail-status');
   $$('.page').forEach(page=>page.classList.toggle('active',page===host));
@@ -2347,11 +2884,18 @@ function renderBannerPage(){
   $$('.banner-ranking-tabs button').forEach(button=>button.classList.toggle('active',button.dataset.bannerRanking===bannerViewState.ranking));
   const rankList=bannerFilteredRows('rank'),detailList=bannerFilteredRows('detail');
   $('#banner-ranking-caption').textContent=`${bannerViewState.rankDate||'--'} · ${bannerFormatClient(bannerViewState.client)} · ${bannerViewState.rankPosition==='all'?'全部位置':bannerViewState.rankPosition}`;
-  bannerRenderRanking(rankList);bannerRenderDetail(detailList);
+  bannerRenderRanking(rankList);bannerRenderDetail(detailList);bannerRenderTrend();bannerRenderBurst();bannerRenderTitleSuggestions();
   if(!bannerViewState.bound){
     bannerViewState.bound=true;
     $('#banner-date')?.addEventListener('change',event=>{bannerViewState.rankDate=event.target.value;renderBannerPage()});
     $('#banner-detail-date')?.addEventListener('change',event=>{bannerViewState.detailDate=event.target.value;bannerViewState.page=1;renderBannerPage()});
+    $('#banner-detail-title-search')?.addEventListener('input',event=>{bannerViewState.detailTitle=event.target.value;bannerViewState.titleSuggestionsOpen=Boolean(event.target.value.trim());bannerViewState.titleSuggestionTarget='detail';const trendTitle=$('#banner-trend-title-search');if(trendTitle&&trendTitle.value!==event.target.value)trendTitle.value=event.target.value;bannerViewState.page=1;renderBannerPage()});
+    $('#banner-detail-start-date')?.addEventListener('change',event=>{bannerViewState.detailStartDate=event.target.value;if(bannerViewState.detailEndDate&&event.target.value>bannerViewState.detailEndDate)bannerViewState.detailEndDate=event.target.value;bannerViewState.page=1;renderBannerPage()});
+    $('#banner-detail-end-date')?.addEventListener('change',event=>{bannerViewState.detailEndDate=event.target.value;if(bannerViewState.detailStartDate&&event.target.value<bannerViewState.detailStartDate)bannerViewState.detailStartDate=event.target.value;bannerViewState.page=1;renderBannerPage()});
+    $('#banner-export-excel')?.addEventListener('click',exportBannerDetail);
+    $$('.banner-trend-period').forEach(button=>button.addEventListener('click',()=>{bannerViewState.trendWindow=Number(button.dataset.bannerTrendWindow)||7;bannerViewState.page=1;renderBannerPage()}));
+    $('#banner-trend-client')?.addEventListener('change',event=>{bannerViewState.trendClient=event.target.value;bannerViewState.page=1;renderBannerPage()});
+    $('#banner-burst-month')?.addEventListener('change',event=>{bannerViewState.burstMonth=event.target.value;bannerViewState.burstSelected='';renderBannerPage()});
     $$('.banner-client-filter button').forEach(button=>button.addEventListener('click',()=>{bannerViewState.client=button.dataset.bannerClient;bannerViewState.page=1;renderBannerPage()}));
     $$('.banner-position-select').forEach(select=>select.addEventListener('change',event=>{if(event.target.dataset.bannerPositionScope==='detail')bannerViewState.detailPosition=event.target.value;else bannerViewState.rankPosition=event.target.value;bannerViewState.page=1;renderBannerPage()}));
     $('#banner-detail-status')?.addEventListener('change',event=>{bannerViewState.detailStatus=event.target.value;bannerViewState.page=1;renderBannerPage()});
@@ -2363,6 +2907,8 @@ function renderBannerPage(){
     $('#banner-prev')?.addEventListener('click',()=>{bannerViewState.page-=1;renderBannerPage()});
     $('#banner-next')?.addEventListener('click',()=>{bannerViewState.page+=1;renderBannerPage()});
   }
+  const trendTitleInput=$('#banner-trend-title-search');
+  if(trendTitleInput&&!trendTitleInput.__bannerSearchBound){trendTitleInput.__bannerSearchBound=true;const applyTrendSearch=event=>{bannerViewState.detailTitle=event.target.value;bannerViewState.titleSuggestionsOpen=Boolean(event.target.value.trim());bannerViewState.titleSuggestionTarget='trend';const detailTitle=$('#banner-detail-title-search');if(detailTitle&&detailTitle.value!==event.target.value)detailTitle.value=event.target.value;bannerViewState.page=1;renderBannerPage()};trendTitleInput.addEventListener('input',applyTrendSearch);trendTitleInput.addEventListener('change',applyTrendSearch);trendTitleInput.addEventListener('search',applyTrendSearch)}
 }
 const renderPageBeforeBanner=renderPage;
 renderPage=function(){
@@ -2596,7 +3142,7 @@ function insightBuild(date){
   bannerPair.current.filter(insightSampleOk).forEach(r=>{const old=oldBanners.get(`${r.position_id}\u0000${r.title}`),change=insightPctChange(r.uv_click_count,old?.uv_click_count);if(change===null||Math.abs(change)<0.03)return;add({kind:'banner',priority:3,title:`Banner「${r.title||'未命名'}」点击UV变化`,value:r.uv_click_count,previous:old?.uv_click_count,change,date,source:'Banner点击分析',scope:`位置：${r.position_id}`,context:{exposure:r.uv_expose_count,ctr:r.ctr_uv,previousExposure:old?.uv_expose_count,previousCtr:old?.ctr_uv},page:'banner',params:{date,position:r.position_id}})});
   const ranking=rows(state.data.ranking),rankPair=insightPair(ranking,date),previousTitles=new Set(rankPair.previous.map(r=>`${r['榜单分类']||'总榜'}\u0000${r['内容名称']||''}`));
   rankPair.current.filter(r=>r['内容名称']&&!previousTitles.has(`${r['榜单分类']||'总榜'}\u0000${r['内容名称']}`)).slice(0,5).forEach(r=>{const item={kind:'ranking',priority:3,title:`${r['内容名称']}新入榜`,value:r['播放VV'],previous:null,change:0,date,source:'内容榜单',scope:`${r['榜单分类']||'总榜'} · 排名${r['排名']||'--'}`,confidence:'low',opportunityEvidence:[],page:'content',params:{date,listType:r['榜单分类']||'总榜'}};item.action=insightAction(item);newRows.push(item)});
-  const hot=rows(state.data.hotSearch),hotPair=insightPair(hot,date);hotPair.current.filter(r=>insightSampleOk({exposure_user:r.search_uv,click_user:r.search_uv})).forEach(r=>{let change=r.day_over_day_pct!=null?insightNum(r.day_over_day_pct):null;if(change!==null)change/=100;if(change===null||Math.abs(change)<0.005)return;add({kind:'search',priority:2,title:`热搜词「${r.title||'--'}」搜索UV变化`,value:r.search_uv,previous:null,change,date,source:'搜索分析',scope:`搜索词排名：${r.rank||'--'}`,page:'search',params:{date}})});
+  const hot=rows(state.data.hotSearch),hotPair=insightPair(hot,date);hotPair.current.filter(r=>insightSampleOk({exposure_user:r.search_uv,click_user:r.search_uv})).forEach(r=>{let change=r.day_over_day_pct!=null?insightNum(r.day_over_day_pct):null;if(change!==null)change/=100;if(change===null||Math.abs(change)<0.005)return;const dramaName=hotDramaName(r);add({kind:'search',priority:2,title:`${dramaName==='--'?'未映射热搜词':dramaName}搜索UV变化`,value:r.search_uv,previous:null,change,date,source:'搜索分析',scope:`搜索词排名：${r.rank||'--'}`,page:'search',params:{date}})});
   sections.filter(r=>{const exposure=insightNum(r.exposure_user),click=insightNum(r.click_user);return exposure!==null&&click!==null&&(exposure<1000||click<50)}).slice(0,5).forEach(r=>anomaly.push({title:`${r.channel}「${r.group_name||'未命名板块'}」样本量不足`,source:'首页板块运营分析',scope:`曝光UV ${fmt(r.exposure_user)} · 点击UV ${fmt(r.click_user)}`,page:'sections',params:{date,channel:r.channel,group:r.group_name}}));
   banners.filter(r=>bannerAnomaly(r)).slice(0,5).forEach(r=>anomaly.push({title:`Banner「${r.title||'未命名'}」数据异常`,source:'Banner点击分析',scope:bannerStatus(r),page:'banner',params:{date,position:r.position_id}}));
   const genres=rows(state.data.genreRatio),genrePair=insightPair(genres,date),oldGenres=new Map(genrePair.previous.map(r=>[String(r['剧种']||r.genre||''),r]));
@@ -2811,7 +3357,7 @@ function renderInsightPage(){
   const selected=result.top;setText('#insight-focus-title','今日关注');setText('#insight-focus-subtitle','只保留影响核心业务且证据充分的重点事件，重复和低价值变化不占位');setText('#insight-focus-count',`${selected.length} 条`);
   const focus=$('#insight-focus-list');if(focus)focus.innerHTML=selected.length?selected.map((item,index)=>renderInsightEventCard(item,date,index)).join(''):`<div class="insight-empty">当前没有达到关注优先级的重点变化。</div>`;
   renderInsightMini('#insight-up-list',result.up,'暂无明显上升变化');renderInsightMini('#insight-down-list',result.down,'暂无明显下降变化');renderInsightMini('#insight-new-list',result.newRows,'暂无新入榜');renderInsightMini('#insight-anomaly-list',result.anomaly,'暂无数据异常');
-  host.querySelectorAll('[data-insight-page]').forEach(button=>button.addEventListener('click',()=>{state.page=button.dataset.insightPage;const params=JSON.parse(button.dataset.insightParams||'{}');if(params.date){state.start=params.date;state.end=params.date;window.__dashboardDefaultDate=params.date}if(state.page==='overview'&&params.client)state.client=params.client;if(state.page==='sections'){sectionOpsState.detailDate=params.date||sectionOpsState.detailDate;sectionOpsState.detailChannel=params.channel||'全部频道';sectionOpsState.detailGroup=params.group||'';sectionOpsState.page=1}if(state.page==='home'&&params.date){tab4KpiState.date=params.date;tab4UvState.date=params.date}if(state.page==='banner'){bannerViewState.date=params.date||bannerViewState.date;bannerViewState.detailPosition=params.position||'all'}renderPage()}));
+  if(!host.dataset.insightNavigationBound){host.dataset.insightNavigationBound='1';host.addEventListener('click',event=>{const button=event.target.closest('[data-insight-page]');if(!button||!host.contains(button))return;state.page=button.dataset.insightPage;const params=JSON.parse(button.dataset.insightParams||'{}');if(params.date){state.start=params.date;state.end=params.date;window.__dashboardDefaultDate=params.date}if(state.page==='overview'&&params.client)state.client=params.client;if(state.page==='sections'){sectionOpsState.detailDate=params.date||sectionOpsState.detailDate;sectionOpsState.detailChannel=params.channel||'全部频道';sectionOpsState.detailGroup=params.group||'';sectionOpsState.page=1}if(state.page==='home'&&params.date){tab4KpiState.date=params.date;tab4UvState.date=params.date}if(state.page==='banner'){bannerViewState.date=params.date||bannerViewState.date;bannerViewState.detailPosition=params.position||'all'}renderPage()})}
 }
 const renderPageBeforeInsight=renderPage;
 renderPage=function(){if(state.page==='insight'){renderInsightPage();return}renderPageBeforeInsight()};
@@ -2819,7 +3365,7 @@ renderPage=function(){if(state.page==='insight'){renderInsightPage();return}rend
 // Standalone genre share page: keep this analysis outside the hot ranking tab.
 let genreStandaloneDate='';
 function renderGenreStandalone(){
-  const host=$('#page-genre');if(!host)return;const source=rows(state.data.genreRatio),dates=[...new Set(source.map(r=>String(r['日期']||r.date||'')).filter(Boolean))].sort();
+  const host=$('#page-genre');if(!host)return;if(!state.data.genreRatioMapped){ensureGenreDisplayRows().then(()=>renderGenreStandalone());return}const source=rows(state.data.genreRatioMapped),dates=[...new Set(source.map(r=>String(r['日期']||r.date||'')).filter(Boolean))].sort();
   if(!genreStandaloneDate||!dates.includes(genreStandaloneDate))genreStandaloneDate=dates.includes(state.end)?state.end:(dates.at(-1)||'');
   $$('.page').forEach(page=>page.classList.toggle('active',page===host));$$('.nav-item').forEach(button=>button.classList.toggle('active',button.dataset.page==='genre'));setText('#page-title','剧种播放占比');
   const input=$('#genre-standalone-date');if(input){input.min=dates[0]||'';input.max=dates.at(-1)||'';input.value=genreStandaloneDate;if(!input.dataset.bound){input.dataset.bound='1';input.addEventListener('change',()=>{genreStandaloneDate=input.value;renderGenreStandalone()})}}
@@ -2922,7 +3468,7 @@ renderPage=function(){
 };
 
 // Standalone search funnel tab. It uses only the verified Quick BI same-component rows.
-let searchFunnelDate='20260825',searchFunnelBuilt=false;
+let searchFunnelDate=DASHBOARD_RANGE_END.replaceAll('-',''),searchFunnelBuilt=false;
 function renderSearchFunnel(){
   const host=$('#page-search-funnel');if(!host)return;
   if(!searchFunnelBuilt){
@@ -2940,14 +3486,14 @@ function renderSearchFunnel(){
 const renderPageBeforeSearchFunnel=renderPage;
 renderPage=function(){if(state.page==='search-funnel'){renderSearchFunnel();$$('.page').forEach(page=>page.classList.toggle('active',page.id==='page-search-funnel'));$$('.nav-item').forEach(button=>button.classList.toggle('active',button.dataset.page==='search-funnel'));setText('page-title','搜索漏斗');deferResize();return}renderPageBeforeSearchFunnel()};
 
-let guessQuickBiDate='20260825',guessQuickBiMetric='front_tab_uv',guessQuickBiBuilt=false;
+let guessQuickBiDate=DASHBOARD_RANGE_END.replaceAll('-',''),guessQuickBiMetric='front_tab_uv',guessQuickBiBuilt=false;
 const guessQuickBiMeta={front_tab_uv:['Tab点击UV','人数','#2879d5'],total_content_exposure_uv:['内容曝光UV','人数','#45a987'],total_content_click_uv:['内容点击UV','人数','#eb9a2f'],total_content_click_rate:['内容点击率','比例','#5b77d6'],ff_play_convert_rate:['首帧转化率','比例','#34a886'],play_convert_rate:['播放转化率','比例','#22a78a'],play_5min_rate_uv:['5分钟转化率','比例','#e49a2d'],avg_time_uv:['人均播放时长','分钟','#8b6bd6']};
 function guessQuickBiRows(){return rows(state.data.guessQuickBi?.rows||state.data.guessQuickBi||[]).filter(r=>String(r.page||'首页')==='首页').sort((a,b)=>String(a.date).localeCompare(String(b.date)))}
 function guessQuickBiNum(v){const n=Number(String(v??'').replace(/[% ,]/g,''));return Number.isFinite(n)?(String(v).includes('%')?n/100:n):null}
 function guessQuickBiFmt(v,key){if(v==null||v==='')return '--';if(key==='avg_time_uv')return `${Number(v).toFixed(2)} 分钟`;if(String(v).includes('%'))return String(v);return Number(v).toLocaleString('zh-CN')}
 function renderGuessQuickBi(){
  const host=$('#page-guess');if(!host)return;const source=guessQuickBiRows();if(!source.length){host.innerHTML='<div class="guess-empty panel">暂无猜你喜欢 Quick BI 数据</div>';return}
- if(!guessQuickBiBuilt){host.innerHTML=`<div class="section-heading guess-page-heading"><div><span>RECOMMENDATION ANALYSIS</span><h2>猜你喜欢</h2><p>推荐入口效率与播放消费质量</p></div><label class="guess-date-control"><span>数据日期</span><input id="guess-quickbi-date" type="date" min="${DASHBOARD_RANGE_START}" max="${DASHBOARD_RANGE_END}" value="${DASHBOARD_RANGE_END}"></label></div><section class="panel search-funnel-card guess-funnel-card"><div class="search-funnel-card-head guess-card-head"><div><span class="region-kicker">01</span><div><h3>猜你喜欢整体转化漏斗</h3><p>选择日期查看推荐入口到内容点击的完整行为链路</p></div></div></div><div id="guess-funnel-content"></div></section><section class="panel guess-trend-card"><div class="guess-card-head"><div><span class="region-kicker">02</span><div><h3>指标趋势</h3><p>选择一个指标，使用全宽图查看 7月1日—8月27日变化</p></div></div></div><div id="guess-trend-tabs" class="guess-trend-tabs" role="tablist"></div><div id="guess-trend-chart" class="guess-trend-chart"></div></section><p class="guess-data-note">数据源：Quick BI / recommend_data / source_type=猜你喜欢 / page=首页 / 全客户端 · ${DASHBOARD_RANGE_START} 至 ${DASHBOARD_RANGE_END}</p>`;guessQuickBiBuilt=true;$('#guess-quickbi-date').addEventListener('change',e=>{guessQuickBiDate=e.target.value.replaceAll('-','');renderGuessQuickBi()})}
+ if(!guessQuickBiBuilt){host.innerHTML=`<div class="section-heading guess-page-heading"><div><span>RECOMMENDATION ANALYSIS</span><h2>猜你喜欢</h2><p>推荐入口效率与播放消费质量</p></div><label class="guess-date-control"><span>数据日期</span><input id="guess-quickbi-date" type="date" min="${DASHBOARD_RANGE_START}" max="${DASHBOARD_RANGE_END}" value="${DASHBOARD_RANGE_END}"></label></div><section class="panel search-funnel-card guess-funnel-card"><div class="search-funnel-card-head guess-card-head"><div><span class="region-kicker">01</span><div><h3>猜你喜欢整体转化漏斗</h3><p>选择日期查看推荐入口到内容点击的完整行为链路</p></div></div></div><div id="guess-funnel-content"></div></section><section class="panel guess-trend-card"><div class="guess-card-head"><div><span class="region-kicker">02</span><div><h3>指标趋势</h3><p>选择一个指标，使用全宽图查看 ${DASHBOARD_RANGE_START}—${DASHBOARD_RANGE_END} 变化</p></div></div></div><div id="guess-trend-tabs" class="guess-trend-tabs" role="tablist"></div><div id="guess-trend-chart" class="guess-trend-chart"></div></section><p class="guess-data-note">数据源：Quick BI / recommend_data / source_type=猜你喜欢 / page=首页 / 全客户端 · ${DASHBOARD_RANGE_START} 至 ${DASHBOARD_RANGE_END}</p>`;guessQuickBiBuilt=true;$('#guess-quickbi-date').addEventListener('change',e=>{guessQuickBiDate=e.target.value.replaceAll('-','');renderGuessQuickBi()})}
  const current=source.find(r=>String(r.date)===guessQuickBiDate)||source.at(-1);guessQuickBiDate=String(current.date);const previous=source.filter(r=>String(r.date)<String(current.date)).at(-1);const funnel=[['Tab点击UV','front_tab_uv'],['内容曝光UV','total_content_exposure_uv'],['内容点击UV','total_content_click_uv']];const rates=[null,Number(current.total_content_exposure_uv)/Number(current.front_tab_uv),Number(current.total_content_click_uv)/Number(current.total_content_exposure_uv)];const guessDelta=(now,before)=>{const a=guessQuickBiNum(now),b=guessQuickBiNum(before);if(!Number.isFinite(a)||!Number.isFinite(b)||b===0)return '';const d=(a-b)/b;return `<span class="search-funnel-delta ${d>=0?'is-up':'is-down'}">${d>=0?'↑':'↓'} ${Math.abs(d*100).toFixed(1)}%</span>`};
  const quality=[['首帧播放整体转化率','ff_play_convert_rate'],['播放转化率','play_convert_rate'],['5分钟转化率','play_5min_rate_uv'],['人均播放时长','avg_time_uv']];
  if(!$('#guess-diagnosis')){const hiddenDiagnosis=document.createElement('section');hiddenDiagnosis.id='guess-diagnosis';hiddenDiagnosis.hidden=true;document.body.appendChild(hiddenDiagnosis)}
@@ -2962,7 +3508,7 @@ const renderSearchWithHotDateFallback=renderSearch;
 renderSearch=function(){if(state.page==='search'&&!rows(state.data.hotSearch||[]).length&&!renderSearch.__fallbackLoading){renderSearch.__fallbackLoading=true;fetch('data/%E7%83%AD%E6%90%9C%E6%80%BB%E6%A6%9C_20260704_20260804.json').then(r=>r.json()).then(v=>{state.data.hotSearch=rows(v);renderSearch.__fallbackLoading=false;renderSearch()}).catch(()=>{renderSearch.__fallbackLoading=false})}if(state.page==='search'){const hot=rows(state.data.hotSearch||[]),dates=[...new Set(hot.map(r=>String(r.date||r['日期']||'')).filter(Boolean))].sort();if(dates.length&&!hot.some(r=>String(r.date||r['日期']||'')===state.end))state.end=dates.at(-1)}renderSearchWithHotDateFallback()};
 const renderPageBeforeHotSearch=renderPage;
 function renderHotSearchOnly(){
-  const draw=source=>{const dates=[...new Set(source.map(r=>String(r.date||r['日期']||'')).filter(Boolean))].sort(),date=dates.at(-1)||'';const list=source.filter(r=>String(r.date||r['日期']||'')===date).sort((a,b)=>(Number(a.rank??a['排名'])||999)-(Number(b.rank??b['排名'])||999)).slice(0,30);const table=$('#hot-search-table');if(table)table.innerHTML=list.map(r=>'<tr><td>'+esc(r.rank??r['排名'])+'</td><td>'+esc(r.title??r['搜索词'])+'</td><td>'+fmt(r.search_vv??r.search_count??r['搜索次数'])+'</td><td>'+fmt(r.search_uv??r['搜索UV'])+'</td><td>'+esc(r.day_over_day_pct??r.day_over_day??r['昨日环比'])+'</td></tr>').join('')||'<tr><td colspan="5" class="empty">暂无热搜记录</td></tr>';const heading=document.querySelector('#page-search .section-heading em');if(heading)heading.textContent='最新数据日期：'+date};
+  const draw=source=>{const dates=[...new Set(source.map(r=>String(r.date||r['日期']||'')).filter(Boolean))].sort(),date=dates.at(-1)||'';const list=source.filter(r=>String(r.date||r['日期']||'')===date).filter(r=>hotDramaName(r)!=='--').sort((a,b)=>(Number(a.rank??a['排名'])||999)-(Number(b.rank??b['排名'])||999)).slice(0,30);const table=$('#hot-search-table');if(table)table.innerHTML=list.map(r=>'<tr><td>'+esc(r.rank??r['排名'])+'</td><td>'+esc(hotDramaName(r))+'</td><td>'+fmt(r.search_vv??r.search_count??r['搜索次数'])+'</td><td>'+fmt(r.search_uv??r['搜索UV'])+'</td><td>'+esc(r.day_over_day_pct??r.day_over_day??r['昨日环比'])+'</td></tr>').join('')||'<tr><td colspan="5" class="empty">暂无热搜记录</td></tr>';const heading=document.querySelector('#page-search .section-heading em');if(heading)heading.textContent='最新数据日期：'+date};
   const source=rows(state.data.hotSearch||[]);if(source.length){draw(source);return}if(!renderHotSearchOnly.loading){renderHotSearchOnly.loading=true;fetch('data/%E7%83%AD%E6%90%9C%E6%80%BB%E6%A6%9C_20260704_20260804.json').then(r=>r.json()).then(v=>{state.data.hotSearch=rows(v);renderHotSearchOnly.loading=false;draw(state.data.hotSearch)}).catch(()=>{renderHotSearchOnly.loading=false})}
 }
 // 热搜榜单属于“内容榜单”的子视图：复用热播榜单的明细面板和工具栏，
@@ -2989,12 +3535,12 @@ function renderContentSearchBoard(){
   rankingBoardState.search.direction='asc';
   const dates=[...new Set(source.map(rankingDate).filter(Boolean))].sort();
   const latest=dates.at(-1)||state.end||'';
-  const latestValid=source.filter(r=>rankingDate(r)===latest&&String(r.title??'').trim()&&String(r.title??'').trim()!=='--');
+  const latestValid=source.filter(r=>rankingDate(r)===latest&&hotDramaName(r)!=='--');
   // 主接口不足30条时，再请求旧版 Top30 接口作为补充；只补同一天且不重复的记录。
   if(latest&&latestValid.length<30&&!renderContentSearchBoard.fillLoading&&!renderContentSearchBoard.fillTried){
     renderContentSearchBoard.fillLoading=true;renderContentSearchBoard.fillTried=true;
     fetch('data/%E7%83%AD%E6%90%9CTop30_20260706_20260804.json').then(r=>r.json()).then(v=>{
-      const extra=rows(v).filter(r=>rankingDate(r)===latest&&String(r.title??'').trim());
+      const extra=rows(v).filter(r=>rankingDate(r)===latest&&hotDramaName(r)!=='--');
       const seen=new Set(source.map(r=>`${rankingDate(r)}\u0000${String(r.title??'').trim()}`));
       state.data.hotSearch=[...source,...extra.filter(r=>!seen.has(`${rankingDate(r)}\u0000${String(r.title??'').trim()}`))];
       renderContentSearchBoard.fillLoading=false;renderContentSearchBoard();
@@ -3040,7 +3586,7 @@ insightBuild=function(date){
 };
 
 /* Popup operations: fixed to the verified Android New People Video client. */
-const popupViewState={tab:'overview',date:'2026-08-27',metric:'play_uv',threshold:1000,page:1,pageSize:20,search:'',sortKey:'play_uv',sortDir:'desc',built:false};
+const popupViewState={tab:'overview',date:DASHBOARD_RANGE_END,metric:'play_uv',threshold:1000,page:1,pageSize:20,search:'',sortKey:'play_uv',sortDir:'desc',trendWindow:7,detailStart:'',detailEnd:'',built:false};
 const popupMetricMap={expost_uv:'曝光UV',click_uv:'点击UV',ctr:'点击率',jump_uv:'跳转播放UV',play_uv:'有效播放UV',play_rate:'有效播放率'};
 function popupNum(v){const n=Number(v);return Number.isFinite(n)?n:null}
 function popupDate(r){return String(r?.date||r?.['日期']||'').slice(0,10)}
@@ -3110,9 +3656,12 @@ popupChart=function(id,option){
 const groupedNavMap={insight:'insight',overview:'overview',content:'overview',search:'overview',genre:'overview',home:'home',guess:'home',sections:'home','search-funnel':'search-funnel',banner:'banner',popup:'banner'};
 const renderPageBeforeGroupedNav=renderPage;
 renderPage=function(){renderPageBeforeGroupedNav();const group=groupedNavMap[state.page]||state.page;$$('.nav-parent').forEach(button=>button.classList.toggle('active',button.dataset.page===group));$$('.nav-subitem').forEach(button=>button.classList.toggle('active',button.dataset.page===state.page))};
-$$('.nav-subitem').forEach(button=>button.addEventListener('click',()=>{state.page=button.dataset.page;renderPage()}));
+$$('.nav-subitem').forEach(button=>{if(button.tagName==='A'||button.dataset.navBound)return;button.dataset.navBound='1';button.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();state.page=button.dataset.page;renderPage()})});
+window.__openResourcePage=()=>{state.page='banner';renderPage()};
 
 const popupOverviewBase=renderPopupOverview;
+new MutationObserver(()=>{const tb=document.querySelector('#popup-detail .popup-toolbar');if(tb&&!tb.querySelector('.popup-detail-dates')){const box=document.createElement('label');box.className='popup-detail-dates';box.innerHTML='<span>日期范围</span><input type="date"><span>至</span><input type="date">';tb.appendChild(box)}}).observe(document.body,{subtree:true,childList:true});
+document.addEventListener('click',event=>{if(!event.target.closest?.('[data-page="popup"]'))return;setTimeout(()=>{const host=$('#page-popup'),rank=$('#popup-ranking'),trend=$('#popup-overview'),detail=$('#popup-detail');if(!host||!rank||!trend||!detail)return;host.append(rank,trend,detail);const h=rank.querySelector('.panel-head');if(h&&!h.querySelector('.popup-rank-date')){const l=document.createElement('label');l.className='popup-rank-date';l.innerHTML='<span>日期</span><input type="date" value="'+popupViewState.date+'">';l.querySelector('input').addEventListener('change',e=>{popupViewState.date=e.target.value;renderPopupPage()});h.appendChild(l)}const tb=detail.querySelector('.popup-toolbar');if(tb&&!tb.querySelector('.popup-detail-dates')){const box=document.createElement('label');box.className='popup-detail-dates';box.innerHTML='<span>日期范围</span><input type="date"><span>至</span><input type="date">';tb.appendChild(box)}},120)});
 renderPopupOverview=function(){
   popupOverviewBase();
   const dates=popupDates(),previous=dates.filter(date=>date<popupViewState.date).at(-1);if(!previous)return;
@@ -3120,3 +3669,141 @@ renderPopupOverview=function(){
   const changes=[current.exposure!=null&&prior.exposure?((current.exposure-prior.exposure)/prior.exposure):null,current.ctr!=null&&prior.ctr?((current.ctr-prior.ctr)/prior.ctr):null,current.play!=null&&prior.play?((current.play-prior.play)/prior.play):null,current.playRate!=null&&prior.playRate?((current.playRate-prior.playRate)/prior.playRate):null];
   [0,1,2,3].forEach((index,i)=>{const card=document.querySelectorAll('#popup-overview .popup-kpi')[index],change=changes[i];if(!card||change==null)return;const node=document.createElement('small');node.className=`popup-delta ${change>=0?'is-up':'is-down'}`;node.textContent=`${change>=0?'↑':'↓'} ${(Math.abs(change)*100).toFixed(2)}%`;card.appendChild(node)});
 }
+
+// Final authority for the content ranking page.  Several historical page
+// wrappers still call the legacy snapshot renderer; always hand the content
+// detail back to the season_id-based ranking board after navigation.
+const renderPageBeforeAuthoritativeRanking=renderPage;
+renderPage=function(){
+  renderPageBeforeAuthoritativeRanking();
+  setupRankingBoard();
+  requestAnimationFrame(()=>setupRankingBoard());
+  setTimeout(()=>setupRankingBoard(),0);
+  setTimeout(()=>setupRankingBoard(),500);
+  setTimeout(()=>setupRankingBoard(),3000);
+  setTimeout(()=>setupRankingBoard(),8000);
+};
+// The legacy sidebar listener is bound during the initial bootstrap, before
+// the final renderer wrappers are installed. Re-apply the ranking enhancement
+// after that navigation event as well.
+document.querySelectorAll('[data-page="content"]').forEach(button=>button.addEventListener('click',()=>setTimeout(()=>setupRankingBoard(),800)));
+
+// Load each page's existing data dependencies on first entry. Rendering stays
+// delegated to the established renderer chain so business output is unchanged.
+const PAGE_DATA_KEYS={
+  insight:['daily','playRate','duration','playCount','sectionOps','channelOps','bannerClick','ranking','hotSearch','hotKeywordDramaMap','genreRatio'],
+  report:['daily','duration','playCount','ranking','hotSearch','newHotSearch','hotKeywordDramaMap','genreRatio','genreMapping','channelOps','bannerClick','popupWindow'],
+  overview:['daily','playRate','duration','playCount'],
+  content:['ranking','genreRatio','genreMapping','seasonTitleMap'],
+  search:['hotSearch','newHotSearch','hotKeywordDramaMap','seasonTitleMap'],
+  genre:['genreRatio','genreMapping'],
+  home:['channelOps'],
+  guess:['guessQuickBi'],
+  sections:['sectionOps'],
+  'search-funnel':['searchConversion'],
+  banner:['bannerClick','seasonTitleMap'],
+  popup:['popupWindow']
+};
+const pageDataLoads=new Map();
+function ensurePageData(page){
+  const missing=(PAGE_DATA_KEYS[page]||[]).filter(key=>!Object.prototype.hasOwnProperty.call(state.data,key));
+  if(!missing.length)return null;
+  if(pageDataLoads.has(page))return pageDataLoads.get(page);
+  const sources={...DATA,...DATA_PATHS};
+  const promise=Promise.all(missing.map(async key=>{
+    const path=LOAD_PATH_OVERRIDES[key]||DATA_PATHS[key]||sources[key];
+    if(!path){state.data[key]=[];return}
+    try{state.data[key]=await load(path)}catch(error){console.warn('[dashboard] data resource unavailable',path,error);state.data[key]=[]}
+  })).finally(()=>pageDataLoads.delete(page));
+  pageDataLoads.set(page,promise);
+  return promise;
+}
+
+// Final popup page implementation. Keep this at the end so the historical
+// popup renderers above cannot replace the single-page layout or date limits.
+function popupYesterdayFinal(){const d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-1);return d.toISOString().slice(0,10)}
+function popupValidRowsFinal(){const yesterday=popupYesterdayFinal();return popupMergedRows().filter(r=>r.date&&r.date<=yesterday)}
+function renderPopupRankingFinal(){
+  const root=$('#popup-ranking');if(!root)return;
+  const yesterday=popupYesterdayFinal(),dates=[...new Set(popupValidRowsFinal().map(r=>r.date))].sort();
+  if(!dates.includes(popupViewState.date)||popupViewState.date>yesterday)popupViewState.date=dates.at(-1)||yesterday;
+  // The contribution board is cumulative through yesterday; a single day
+  // with no valid play value must not make the whole board disappear.
+  const dayRows=popupValidRowsFinal();
+  const map=new Map();
+  dayRows.forEach(r=>{const x=map.get(r.name)||{...r,expost_uv:0,click_uv:0,play_uv:0};x.expost_uv+=r.expost_uv||0;x.click_uv+=r.click_uv||0;x.play_uv+=r.play_uv||0;map.set(r.name,x)});
+  const items=[...map.values()].sort((a,b)=>b.play_uv-a.play_uv).slice(0,10);
+  root.innerHTML=`<section class="panel"><div class="panel-head"><div><h3>弹窗有效播放贡献榜</h3><span>累计统计至 ${yesterday} · 按有效播放 UV 排序</span></div><label class="popup-rank-date"><span>日期上限</span><input id="popup-ranking-date" type="date" max="${yesterday}" value="${yesterday}" readonly></label></div><div id="popup-ranking-chart" class="banner-ranking-chart popup-ranking-chart" role="img" aria-label="弹窗有效播放贡献榜"></div></section>`;
+  $('#popup-ranking-date')?.addEventListener('change',e=>{popupViewState.date=e.target.value>yesterday?yesterday:e.target.value;renderPopupPageFinal()});
+  const chart=$('#popup-ranking-chart');
+  if(!chart||!window.echarts)return;
+  const instance=echarts.getInstanceByDom(chart)||echarts.init(chart);
+  if(!items.length){instance.clear();chart.innerHTML='<div class="popup-empty">暂无有效播放数据</div>';return}
+  const chartGreen=getComputedStyle(document.documentElement).getPropertyValue('--green').trim()||'#2f6f3e';
+  const ranked=items.slice().reverse();
+  const compactAxis=chart.clientWidth<800;
+  instance.setOption({
+    animation:false,
+    grid:{left:190,right:76,top:12,bottom:26,containLabel:true},
+    tooltip:{trigger:'axis',axisPointer:{type:'shadow'},formatter:params=>{const item=params?.[0],row=items[items.length-1-(item?.dataIndex??0)];if(!row)return '';return `${esc(row.name||'--')}<br/>有效播放UV：${fmt(row.play_uv)}`}},
+    xAxis:{type:'value',min:0,axisLabel:{color:'#8392a7',formatter:value=>compactAxis&&Number(value)>=10000?`${(Number(value)/10000).toFixed(Number(value)%10000?1:0)}万`:fmt(value)},splitLine:{lineStyle:{color:'#edf1f6'}}},
+    yAxis:{type:'category',data:ranked.map(row=>String(row.name||'--').slice(0,26)),axisLabel:{color:'#455b77',width:178,overflow:'truncate'}},
+    series:[{type:'bar',barMaxWidth:26,data:ranked.map(row=>row.play_uv||0),itemStyle:{color:chartGreen,borderRadius:[0,5,5,0]},label:{show:true,position:'right',color:'#405b78',fontWeight:750,formatter:value=>fmt(value.value)}}]
+  });
+  instance.resize();
+}
+function renderPopupOverviewFinal(){
+  const root=$('#popup-overview');if(!root)return;
+  const windowSize=Number(popupViewState.trendWindow)||7;
+  const query=String(popupViewState.search||'');
+  root.innerHTML=`<section class="panel popup-trend-panel"><div class="panel-head"><div><h3>上线后趋势</h3><span>有效播放 UV · 不区分客户端</span></div><div class="banner-trend-controls"><label class="banner-trend-search popup-title-suggest"><span>剧名搜索</span><input id="popup-trend-search" type="search" placeholder="输入剧名或组件名称" value="${esc(query)}" autocomplete="off"><div id="popup-trend-suggestions" class="popup-title-suggestions"></div></label><div class="banner-trend-periods" role="tablist" aria-label="弹窗趋势观察周期"><button type="button" class="banner-trend-period ${windowSize===7?'is-active':''}" data-popup-trend-window="7" role="tab" aria-selected="${windowSize===7}">上线后一周</button><button type="button" class="banner-trend-period ${windowSize===30?'is-active':''}" data-popup-trend-window="30" role="tab" aria-selected="${windowSize===30}">近30天</button></div></div></div><div id="popup-trend-chart" class="popup-chart" role="img" aria-label="弹窗上线后趋势图"></div></section>`;
+  const input=$('#popup-trend-search');
+  input?.addEventListener('input',e=>{popupViewState.search=e.target.value;renderPopupOverviewFinal()});
+  renderPopupSuggestions('#popup-trend-suggestions',query,()=>renderPopupOverviewFinal());
+  renderPopupTrendFinal(query);
+  root.querySelectorAll('[data-popup-trend-window]').forEach(btn=>btn.addEventListener('click',()=>{popupViewState.trendWindow=Number(btn.dataset.popupTrendWindow)||7;renderPopupOverviewFinal()}));
+}
+function popupTitleSuggestions(query){
+  const normalized=String(query||'').trim().toLowerCase();
+  if(!normalized)return [];
+  return [...new Set(popupValidRowsFinal().map(row=>String(row.name||'').trim()).filter(Boolean))]
+    .filter(name=>name.toLowerCase().includes(normalized))
+    .sort((a,b)=>{const as=a.toLowerCase().startsWith(normalized),bs=b.toLowerCase().startsWith(normalized);return as===bs?a.localeCompare(b,'zh-CN'):(as?-1:1)})
+    .slice(0,8);
+}
+function renderPopupSuggestions(selector,query,onSelect){
+  const host=$(selector);if(!host)return;
+  host.innerHTML=popupTitleSuggestions(query).map(name=>`<button type="button" data-popup-title-suggestion="${esc(name)}">${esc(name)}</button>`).join('');
+  host.querySelectorAll('[data-popup-title-suggestion]').forEach(button=>button.addEventListener('click',()=>{popupViewState.search=button.dataset.popupTitleSuggestion||button.textContent||'';onSelect()}));
+}
+function renderPopupTrendFinal(query){
+  const chart=$('#popup-trend-chart');if(!chart)return;const q=String(query||'').trim().toLowerCase();if(!q){chart.innerHTML='<div class="popup-empty">请输入剧名查看上线后一周趋势</div>';return}
+  const all=popupValidRowsFinal().filter(r=>r.name.toLowerCase().includes(q)),name=all[0]?.name||'';if(!name){chart.innerHTML='<div class="popup-empty">未找到匹配的剧名</div>';return}
+  const dates=[...new Set(all.filter(r=>r.name===name).map(r=>r.date))].sort().slice(0,Number(popupViewState.trendWindow)||7),data=dates.map(d=>all.find(r=>r.name===name&&r.date===d)?.play_uv??null);
+  popupChart('#popup-trend-chart',{animation:false,grid:{left:60,right:24,top:24,bottom:38,containLabel:true},tooltip:{trigger:'axis',formatter:p=>{const i=p?.[0]?.dataIndex??0,r=all.find(x=>x.name===name&&x.date===dates[i]);return `${esc(name)}<br/>日期：${dates[i]}<br/>有效播放UV：${fmt(r?.play_uv)}<br/>点击UV：${fmt(r?.click_uv)}<br/>点击率：${popupRate(r?.ctr)}`}},xAxis:{type:'category',data:dates},yAxis:{type:'value',axisLabel:{formatter:v=>fmt(v)}},series:[{name:'有效播放UV',type:'line',smooth:true,symbol:'circle',symbolSize:7,data,lineStyle:{width:3,color:'#2f76e8'},itemStyle:{color:'#2f76e8'}}]});
+}
+function renderPopupDetailFinal(){
+  const root=$('#popup-detail');if(!root)return;const yesterday=popupYesterdayFinal(),q=String(popupViewState.search||'').trim().toLowerCase();
+  const source=popupValidRowsFinal().filter(r=>(!popupViewState.detailStart||r.date>=popupViewState.detailStart)&&(!popupViewState.detailEnd||r.date<=popupViewState.detailEnd)&&(!q||r.name.toLowerCase().includes(q)));
+  const dateMin=popupValidRowsFinal().map(r=>r.date).sort()[0]||yesterday;
+  root.innerHTML=`<div class="popup-toolbar"><label class="popup-title-suggest">剧名搜索<input id="popup-detail-search" type="search" placeholder="输入剧名" value="${esc(popupViewState.search||'')}" autocomplete="off"><div id="popup-detail-suggestions" class="popup-title-suggestions"></div></label><label>日期范围<input id="popup-detail-start" type="date" min="${dateMin}" max="${yesterday}" value="${popupViewState.detailStart||''}"></label><span class="popup-date-separator">至</span><label class="popup-date-end"><span>&nbsp;</span><input id="popup-detail-end" type="date" min="${dateMin}" max="${yesterday}" value="${popupViewState.detailEnd||''}"></label><button type="button" class="banner-excel-button" id="popup-export-excel">导出 Excel</button><span class="popup-toolbar-note">一天一剧一行 · ${source.length} 条</span></div><section class="panel"><div class="popup-detail-wrap"><table class="popup-table"><thead><tr>${['日期','剧名','曝光PV','曝光UV','点击PV','点击UV','跳转播放PV','跳转播放UV','有效播放PV','有效播放UV','点击率','转化率','有效播放率'].map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${source.map(r=>`<tr><td>${esc(r.date)}</td><td class="popup-name">${esc(r.name)}</td><td>${fmt(r.expost_pv)}</td><td>${fmt(r.expost_uv)}</td><td>${fmt(r.click_pv)}</td><td>${fmt(r.click_uv)}</td><td>${fmt(r.jump_pv)}</td><td>${fmt(r.jump_uv)}</td><td>${fmt(r.play_pv)}</td><td>${fmt(r.play_uv)}</td><td>${popupRate(r.ctr)}</td><td>${popupRate(r.conversion_rate)}</td><td>${popupRate(r.play_rate)}</td></tr>`).join('')||'<tr><td colspan="13" class="popup-empty">暂无符合条件的数据</td></tr>'}</tbody></table></div></section>`;
+  $('#popup-detail-search')?.addEventListener('input',e=>{popupViewState.search=e.target.value;renderPopupDetailFinal()});
+  renderPopupSuggestions('#popup-detail-suggestions',popupViewState.search,renderPopupDetailFinal);
+  $('#popup-detail-start')?.addEventListener('change',e=>{popupViewState.detailStart=e.target.value;renderPopupDetailFinal()});$('#popup-detail-end')?.addEventListener('change',e=>{popupViewState.detailEnd=e.target.value;renderPopupDetailFinal()});
+  $('#popup-export-excel')?.addEventListener('click',()=>{const rows4=source.filter(r=>[...new Set(source.map(x=>x.date))].sort().slice(0,4).includes(r.date)),header=['日期','剧名','曝光PV','曝光UV','点击PV','点击UV','跳转播放PV','跳转播放UV','有效播放PV','有效播放UV','点击率','转化率','有效播放率'],html='<table><tr>'+header.map(h=>`<th>${h}</th>`).join('')+'</tr>'+rows4.map(r=>'<tr>'+[r.date,r.name,r.expost_pv,r.expost_uv,r.click_pv,r.click_uv,r.jump_pv,r.jump_uv,r.play_pv,r.play_uv,r.ctr,r.conversion_rate,r.play_rate].map(v=>`<td>${v??''}</td>`).join('')+'</tr>').join('')+'</table>',blob=new Blob(['\ufeff',html],{type:'application/vnd.ms-excel'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='弹窗明细_上线前4个数据日.xls';a.click();URL.revokeObjectURL(url)});
+}
+function renderPopupPageFinal(){const host=$('#page-popup');if(!host)return;const yesterday=popupYesterdayFinal();if(popupViewState.date>yesterday)popupViewState.date=yesterday;$$('.page').forEach(page=>page.classList.toggle('active',page===host));setText('page-title','弹窗数据');$('#client-filter')?.classList.add('banner-global-hidden');document.querySelector('.top-actions .period-filter')?.classList.add('banner-global-hidden');const rank=$('#popup-ranking'),trend=$('#popup-overview'),detail=$('#popup-detail');if(!rank||!trend||!detail)return;host.append(rank,trend,detail);[rank,trend,detail].forEach(p=>{p.classList.add('active');p.style.display='block'});renderPopupRankingFinal();renderPopupOverviewFinal();renderPopupDetailFinal();setTimeout(renderPopupRankingFinal,450);deferResize()}
+renderPopupPage=renderPopupPageFinal;
+// Repaint after legacy navigation listeners finish their delayed snapshot render.
+document.addEventListener('click',event=>{if(event.target.closest?.('[data-page="popup"]'))setTimeout(renderPopupPageFinal,350)});
+const renderPageBeforeLazyData=renderPage;
+renderPage=function(){
+  const requestedPage=state.page;
+  const pending=ensurePageData(requestedPage);
+  if(pending){
+    setDashboardLoading(true);
+    pending.then(()=>{if(state.page===requestedPage)renderPageBeforeLazyData()}).finally(()=>{if(state.page===requestedPage)finishDashboardLoading()});
+    return;
+  }
+  renderPageBeforeLazyData();
+};

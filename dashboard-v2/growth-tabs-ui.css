@@ -1,0 +1,128 @@
+/* 播放增长榜局部 UI 覆盖：仅处理中性色标签与重点卡片排版。 */
+#page-growth .growth-focus-card .growth-focus-tag,
+#page-growth .growth-focus-burst .growth-focus-tag,
+#page-growth .growth-focus-new .growth-focus-tag,
+#page-growth .growth-focus-stable .growth-focus-tag{
+  color:var(--text)!important;
+  background:var(--bg)!important;
+  border:1px solid var(--line)!important;
+}
+
+#page-growth .growth-quadrant-kicker{
+  color:var(--text)!important;
+}
+
+#page-growth .growth-focus-card .growth-focus-metrics,
+#page-growth .growth-focus-card .growth-focus-metrics b,
+#page-growth .growth-focus-card small{
+  color:var(--text)!important;
+}
+
+#page-growth .growth-detail-panel .growth-status,
+#page-growth .growth-detail-panel .growth-status-new,
+#page-growth .growth-detail-panel .growth-status-continuous,
+#page-growth .growth-detail-panel .growth-status-neutral,
+#page-growth .growth-detail-panel .growth-feature,
+#page-growth .growth-detail-panel .growth-feature-new,
+#page-growth .growth-detail-panel .growth-feature-burst,
+#page-growth .growth-detail-panel .growth-feature-stable,
+#page-growth .growth-detail-panel .growth-feature-low{
+  color:var(--text)!important;
+  background:transparent!important;
+}
+
+#page-growth .growth-focus-card{
+  min-height:154px!important;
+  height:154px!important;
+  padding:16px 18px 18px!important;
+  grid-template-rows:auto auto auto auto!important;
+  row-gap:4px!important;
+  align-content:start!important;
+}
+
+#page-growth .growth-focus-card .growth-focus-tag{
+  display:inline-flex!important;
+  align-self:start!important;
+  height:auto!important;
+  min-height:22px!important;
+  line-height:16px!important;
+  box-sizing:border-box!important;
+}
+
+#page-growth .growth-focus-card h3{
+  height:auto!important;
+  min-height:24px!important;
+  margin:0!important;
+  padding:0!important;
+  line-height:24px!important;
+}
+
+#page-growth .growth-focus-card .growth-focus-metrics{
+  height:auto!important;
+  min-height:0!important;
+  align-self:start!important;
+}
+
+#page-growth .growth-focus-card small{
+  height:auto!important;
+  min-height:0!important;
+  margin:0!important;
+  line-height:16px!important;
+  align-self:start!important;
+}
+
+/* 仅收紧标题/日期区域与首个内容模块之间的真实外部间距。 */
+#page-growth .growth-toolbar-growth,
+#page-growth .growth-ops-summary{
+  margin-bottom:0!important;
+}
+
+/* 重点关注 TOP3：保留字号，仅增加卡片高度与纵向呼吸空间。 */
+#page-growth .growth-focus-card{
+  height:190px!important;
+  min-height:190px!important;
+  padding:20px 18px!important;
+  row-gap:10px!important;
+  align-content:start!important;
+}
+
+#page-growth .growth-focus-card .growth-focus-tag,
+#page-growth .growth-focus-card h3,
+#page-growth .growth-focus-card .growth-focus-metrics,
+#page-growth .growth-focus-card small{
+  align-self:start!important;
+}
+
+/* TOP3 卡片内部层级：不改变卡片尺寸，只拉开文字层级。 */
+#page-growth .growth-focus-card{
+  grid-template-rows:auto auto auto auto!important;
+  row-gap:12px!important;
+}
+
+#page-growth .growth-focus-card .growth-focus-tag{
+  line-height:18px!important;
+}
+
+#page-growth .growth-focus-card h3{
+  min-height:26px!important;
+  line-height:26px!important;
+}
+
+#page-growth .growth-focus-card .growth-focus-metrics{
+  row-gap:4px!important;
+  line-height:18px!important;
+}
+
+#page-growth .growth-focus-card .growth-focus-metrics span{
+  line-height:18px!important;
+}
+
+#page-growth .growth-focus-card .growth-focus-metrics b{
+  margin-top:4px!important;
+  line-height:20px!important;
+}
+
+#page-growth .growth-focus-card small{
+  margin-top:0!important;
+  line-height:18px!important;
+}

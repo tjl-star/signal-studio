@@ -6,6 +6,7 @@ import json
 import re
 import threading
 from datetime import datetime, timedelta, timezone
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -34,6 +35,8 @@ app.add_middleware(
 
 LOCAL_HOSTS = {"127.0.0.1", "::1", "localhost", "testclient"}
 TASK_THREADS: dict[str, threading.Thread] = {}
+RANKING_DATA_DIR = ROOT / "dashboard-v2" / "data" / "season_play_daily"
+RANKING_TITLE_MAP = ROOT / "dashboard-v2" / "data" / "season_title_map.json"
 
 
 def ok(data: Any, message: str = "success") -> dict[str, Any]:
@@ -45,6 +48,88 @@ def parse_json(value: str | None, fallback: Any) -> Any:
         return json.loads(value or "")
     except (TypeError, json.JSONDecodeError):
         return fallback
+
+
+def _date_range(start_date: str, end_date: str) -> list[str]:
+    start = datetime.strptime(start_date, "%Y-%m-%d").date()
+    end = datetime.strptime(end_date, "%Y-%m-%d").date()
+    if start > end:
+        raise HTTPException(status_code=400, detail="开始日期不能晚于结束日期")
+    if (end - start).days > 92:
+        raise HTTPException(status_code=400, detail="日期区间不能超过93天")
+    return [(start + timedelta(days=offset)).isoformat() for offset in range((end - start).days + 1)]
+
+
+@lru_cache(maxsize=1)
+def _season_title_map() -> dict[str, str]:
+    if not RANKING_TITLE_MAP.exists():
+        return {}
+    payload = json.loads(RANKING_TITLE_MAP.read_text(encoding="utf-8"))
+    return {str(row.get("season_id")): str(row.get("title") or "--") for row in payload if row.get("season_id")}
+
+
+@lru_cache(maxsize=128)
+def _season_day(date: str) -> list[dict[str, Any]]:
+    path = RANKING_DATA_DIR / f"{date}.json"
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return payload.get("rows", []) if isinstance(payload, dict) else []
+
+
+def _aggregate_season_days(dates: list[str]) -> list[dict[str, Any]]:
+    # The daily snapshot is the atomic VV grain. If an upstream response ever
+    # contains duplicate rows for one season on the same day, keep the largest
+    # slice for that day instead of silently double-counting it.
+    by_day: dict[tuple[str, str], dict[str, Any]] = {}
+    for date in dates:
+        for row in _season_day(date):
+            season_id = str(row.get("season_id") or "").strip()
+            if not season_id:
+                continue
+            key = (date, season_id)
+            current = by_day.get(key)
+            if current is None or int(row.get("play_count") or 0) > int(current.get("play_count") or 0):
+                by_day[key] = row
+    grouped: dict[str, dict[str, Any]] = {}
+    title_map = _season_title_map()
+    for row in by_day.values():
+        season_id = str(row["season_id"]).strip()
+        current = grouped.setdefault(season_id, {
+            "season_id": season_id,
+            "title": title_map.get(season_id, row.get("title") or "--"),
+            "season_type": row.get("season_type"),
+            "season_classify": row.get("season_classify"),
+            "plot_type": row.get("plot_type"),
+            "producer_region": row.get("producer_region"),
+            "play_count": 0,
+            "play_uv": 0,
+        })
+        current["play_count"] += int(row.get("play_count") or 0)
+        current["play_uv"] += int(row.get("play_uv") or 0)
+    return sorted(grouped.values(), key=lambda row: int(row.get("play_count") or 0), reverse=True)[:30]
+
+
+@app.get("/api/hot-ranking")
+def hot_ranking(
+    start_date: str = Query(..., alias="start"),
+    end_date: str = Query(..., alias="end"),
+    ranking_type: str = Query("总榜", alias="type"),
+):
+    dates = _date_range(start_date, end_date)
+    if ranking_type == "新用户榜":
+        # The legacy new-user snapshot is daily and has no reliable range
+        # aggregation, so keep this tab explicitly single-day.
+        if start_date != end_date:
+            raise HTTPException(status_code=400, detail="新用户榜仅支持单日查询")
+        rows = query_all("SELECT 1 WHERE 0")
+        return ok({"start": start_date, "end": end_date, "rows": rows, "previous_ids": []})
+    previous_end = datetime.strptime(start_date, "%Y-%m-%d").date() - timedelta(days=1)
+    previous_start = previous_end - timedelta(days=len(dates) - 1)
+    previous_dates = _date_range(previous_start.isoformat(), previous_end.isoformat())
+    rows = _aggregate_season_days(dates)
+    previous_ids = sorted({str(row.get("season_id")) for row in _aggregate_season_days(previous_dates) if row.get("season_id")})
+    return ok({"start": start_date, "end": end_date, "rows": rows, "previous_ids": previous_ids})
 
 
 def require_local(request: Request) -> None:

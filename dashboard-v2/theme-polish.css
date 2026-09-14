@@ -263,6 +263,7 @@ button,select,input,.nav-item,.analysis-tab,.content-list-tab,.content-view-tab,
 :root[data-chart-theme] .ranking-status-filter{min-width:88px;padding:4px 24px 4px 8px;border:1px solid #cbd9e8;border-radius:6px;background:#fff;color:#304b6d;font:inherit;cursor:pointer}
 :root[data-chart-theme] .ranking-status-filter:focus-visible{outline:2px solid #2f76e8;outline-offset:2px}
 :root[data-chart-theme] .ranking-status-new{color:#c2410c;font-weight:700}
+.dashboard-loading{pointer-events:none}
 .dashboard-chart-enter{opacity:0;transform:translateY(6px) scale(.985);transform-origin:center center}
 .chart,.region-chart,.composition-chart,.content-top10-chart,.search-wide-chart,.tab4-chart,.section-ops-rank-chart{transition:opacity 360ms cubic-bezier(.22,.61,.36,1),transform 360ms cubic-bezier(.22,.61,.36,1);will-change:opacity,transform}
 @media (prefers-reduced-motion: reduce){.dashboard-chart-enter{opacity:1;transform:none}.chart,.region-chart,.composition-chart,.content-top10-chart,.search-wide-chart,.tab4-chart,.section-ops-rank-chart{transition:none}}

@@ -1,0 +1,460 @@
+.growth-heading{margin-bottom:14px}.growth-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:16px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:var(--shadow)}.growth-filter{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px}.growth-filter b{color:var(--text)}.growth-filter i{font-style:normal;color:#a5b1c0}.growth-toolbar label{display:flex;align-items:center;gap:7px;color:#71839c;font-size:12px;font-weight:700}.growth-toolbar select{height:32px;padding:0 28px 0 10px;border:1px solid #d5e2f0;border-radius:8px;background:#fff;color:#304b6d;font:inherit}.growth-kpi-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px;margin-bottom:16px}.growth-kpi-grid-five{grid-template-columns:repeat(5,minmax(0,1fr))}.growth-kpi{min-width:0;min-height:124px;padding:17px 18px;border:1px solid #e3ebf5;border-top:3px solid #6f9fdd;border-radius:10px;background:#fff;box-shadow:var(--shadow)}.growth-kpi-green{border-top-color:#5aa982}.growth-kpi-amber{border-top-color:#c4a15b}.growth-kpi-purple{border-top-color:#887bd0}.growth-kpi-slate{border-top-color:#91a8c7}.growth-kpi label,.growth-kpi small{display:block;color:#6d819b;font-size:12px}.growth-kpi strong{display:block;margin:13px 0 5px;color:#102542;font-size:25px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.growth-kpi small{color:#96a5b7;font-size:11px;line-height:1.4}.growth-note-panel,.growth-detail-panel{margin-bottom:16px;padding:20px 22px}.growth-note-panel p,.growth-data-note{margin:0;color:#71839b;font-size:12px;line-height:1.7}.growth-note-panel code{padding:2px 5px;border-radius:4px;background:#f1f6fb;color:#405f82}.growth-tabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:16px;padding:4px;border:1px solid var(--line);border-radius:22px;background:#f7faff}.growth-tab{border:0;border-radius:18px;padding:8px 18px;background:transparent;color:#75859c;font:600 13px inherit;cursor:pointer}.growth-tab.active{background:#fff;color:#185ec4;box-shadow:0 3px 10px rgba(35,60,98,.1)}.growth-positive{color:var(--green);font-weight:700}.growth-detail-panel .panel-head strong{color:#71839c;font-size:12px}.growth-detail-panel table{min-width:980px}.growth-detail-panel tbody tr:hover{background:#f8fbff}.growth-data-note{margin:0 0 18px;padding:0 4px}.growth-error{padding:30px;color:var(--red)}@media(max-width:1200px){.growth-kpi-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}@media(max-width:760px){.growth-kpi-grid,.growth-kpi-grid-five{grid-template-columns:1fr 1fr}.growth-toolbar{align-items:flex-start}.growth-toolbar label{width:100%;justify-content:space-between}.growth-toolbar select{min-width:150px}.growth-filter{width:100%;justify-content:space-between}.growth-detail-panel{padding:17px 14px}.growth-tabs{width:100%}.growth-tab{flex:1;padding-inline:8px}.growth-kpi strong{font-size:21px}}
+.growth-heading-controls,.bl-table-controls{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}.growth-heading-controls label,.bl-table-controls label{display:flex;align-items:center;gap:6px;color:#71839c;font-size:12px;font-weight:700;white-space:nowrap}.growth-heading-controls select,.growth-heading-controls input,.bl-table-controls select,.bl-table-controls input{height:32px;padding:0 9px;border:1px solid #d5e2f0;border-radius:8px;background:#fff;color:#304b6d;font:inherit}.bl-visual-grid{margin-bottom:16px}.bl-genre-chart,.bl-trend-chart{height:300px}.bl-table-controls{gap:6px}.bl-table-controls label{font-weight:600}.bl-table-controls input{width:130px}@media(max-width:900px){.growth-heading-controls{justify-content:flex-start;margin-top:12px}.bl-table-controls{justify-content:flex-start;margin-top:8px}}@media(max-width:600px){.growth-heading-controls label,.bl-table-controls label{width:100%;justify-content:space-between}.growth-heading-controls select,.growth-heading-controls input,.bl-table-controls select,.bl-table-controls input{min-width:150px}.bl-genre-chart,.bl-trend-chart{height:250px}}
+.growth-detail-panel #bl-table{width:100%;min-width:1080px;table-layout:fixed;border-collapse:collapse}.growth-detail-panel #bl-table th,.growth-detail-panel #bl-table td{padding:12px 16px;vertical-align:middle;white-space:nowrap}.growth-detail-panel #bl-table th{background:#f5f9fe;color:#617791;font-size:12px;font-weight:800;text-align:left;border-bottom:1px solid #e4edf6}.growth-detail-panel #bl-table td{border-bottom:1px solid #edf2f7;color:#344f6e}.growth-detail-panel #bl-table th:nth-child(1),.growth-detail-panel #bl-table td:nth-child(1){width:74px}.growth-detail-panel #bl-table th:nth-child(2),.growth-detail-panel #bl-table td:nth-child(2){width:230px}.growth-detail-panel #bl-table th:nth-child(3),.growth-detail-panel #bl-table td:nth-child(3),.growth-detail-panel #bl-table th:nth-child(4),.growth-detail-panel #bl-table td:nth-child(4){width:145px}.growth-detail-panel #bl-table th:nth-child(5),.growth-detail-panel #bl-table td:nth-child(5){width:95px}.growth-detail-panel #bl-table th:nth-child(6),.growth-detail-panel #bl-table td:nth-child(6){width:105px}.growth-detail-panel #bl-table th:nth-child(7),.growth-detail-panel #bl-table td:nth-child(7){width:230px}.growth-detail-panel #bl-table th:nth-child(8),.growth-detail-panel #bl-table td:nth-child(8){width:135px}.growth-detail-panel #bl-table .growth-sortable-th{cursor:pointer;user-select:none}.growth-detail-panel #bl-table .growth-sortable-th::after{content:'↕';margin-left:6px;color:#a5b4c5;font-size:11px}.growth-detail-panel #bl-table .growth-sortable-th.is-sorted{color:#2367cf}.growth-detail-panel #bl-table .growth-sortable-th.is-sorted::after{content:'↓';color:#2367cf}
+.growth-kpi-grid-four{grid-template-columns:repeat(4,minmax(0,1fr))}.bl-trend-chart{min-width:0}
+#page-growth .growth-detail-panel table{min-width:1380px;table-layout:fixed}#page-growth .growth-detail-panel th,#page-growth .growth-detail-panel td{padding:12px 14px}#page-growth .growth-detail-panel th:nth-child(1),#page-growth .growth-detail-panel td:nth-child(1){width:70px}#page-growth .growth-detail-panel th:nth-child(2),#page-growth .growth-detail-panel td:nth-child(2){width:220px}#page-growth .growth-detail-panel th:nth-child(3),#page-growth .growth-detail-panel td:nth-child(3),#page-growth .growth-detail-panel th:nth-child(4),#page-growth .growth-detail-panel td:nth-child(4),#page-growth .growth-detail-panel th:nth-child(5),#page-growth .growth-detail-panel td:nth-child(5){width:135px}#page-growth .growth-detail-panel th:nth-child(6),#page-growth .growth-detail-panel td:nth-child(6){width:105px}#page-growth .growth-detail-panel th:nth-child(7),#page-growth .growth-detail-panel td:nth-child(7),#page-growth .growth-detail-panel th:nth-child(8),#page-growth .growth-detail-panel td:nth-child(8){width:105px}#page-growth .growth-detail-panel th:nth-child(9),#page-growth .growth-detail-panel td:nth-child(9){width:110px}#page-growth .growth-detail-panel th:nth-child(10),#page-growth .growth-detail-panel td:nth-child(10){width:85px}#page-growth .growth-detail-panel th:nth-child(11),#page-growth .growth-detail-panel td:nth-child(11){width:105px}#page-growth .growth-detail-panel th:nth-child(12),#page-growth .growth-detail-panel td:nth-child(12){width:220px}
+#page-growth .growth-toolbar-growth{justify-content:flex-end}.growth-date-controls{display:flex;align-items:center;gap:8px}.growth-date-controls label{gap:6px}.growth-date-controls input{height:32px;padding:0 9px;border:1px solid #d5e2f0;border-radius:18px;background:#fff;color:#304b6d;font:inherit}.growth-date-controls>span{color:#a5b1c0}.growth-date-controls.is-invalid input{border-color:#e5a1a8}#page-growth .growth-detail-panel th[data-sort]{cursor:pointer;user-select:none}#page-growth .growth-detail-panel th[data-sort]::after{content:'↓';margin-left:6px;color:#a5b4c5;font-size:11px}#page-growth .growth-detail-panel th[data-sort].is-sorted{color:#2367cf}#page-growth .growth-detail-panel th[data-sort].is-sorted::after{color:#2367cf}.growth-status{display:inline-flex;align-items:center;padding:4px 8px;border-radius:12px;font-size:11px;font-weight:700}.growth-status-new{color:#c73845;background:#ffe7ea}.growth-status-continuous{color:#176d9a;background:#e1f3fb}
+.growth-heading-controls input{border-radius:999px;min-width:142px;padding-inline:13px}.growth-heading-controls label{border:1px solid #d5e2f0;border-radius:999px;padding:3px 6px 3px 12px;background:#fff}
+.growth-kpi-green-filled{border-top-color:#2f7d4a;background:#2f7d4a;border-color:#2f7d4a;box-shadow:0 10px 24px rgba(47,125,74,.22)}.growth-kpi-green-filled label,.growth-kpi-green-filled small{color:rgba(255,255,255,.78)}.growth-kpi-green-filled strong{color:#fff}
+.growth-detail-panel #bl-table .growth-sortable-th::after{content:none!important}.growth-detail-panel #bl-table .growth-sortable-th.is-sorted{color:#617791!important}
+.genre-contribution-overview{margin-bottom:16px}.genre-contribution-chart{height:360px}.genre-contribution-list{display:grid;gap:0}.genre-contribution-list-head,.genre-contribution-list-row{display:grid;grid-template-columns:minmax(0,1fr) 120px 130px;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid #edf2f7}.genre-contribution-list-head{background:#f5f9fe;color:#71839c;font-size:12px;font-weight:800}.genre-contribution-list-row{min-height:48px;color:#40536d}.genre-contribution-list-row b{text-align:right;color:#246dc0}.genre-contribution-list-row span{display:flex;align-items:center;gap:9px}.genre-contribution-list-row i{display:grid;place-items:center;width:24px;height:24px;border-radius:8px;background:#eaf2fd;color:#3974b9;font-size:11px;font-style:normal;font-weight:800}.growth-toolbar select#genre-select{min-width:120px}@media(max-width:760px){.genre-contribution-chart{height:300px}.genre-contribution-list-head,.genre-contribution-list-row{grid-template-columns:minmax(0,1fr) 92px 105px;gap:7px;padding-inline:10px}}
+.genre-heading-controls{display:flex;align-items:center;justify-content:flex-end;gap:10px;white-space:nowrap}.genre-heading-controls label,.genre-metric-control label{display:flex;align-items:center;gap:7px;color:#71839c;font-size:12px;font-weight:700}.genre-heading-controls select,.genre-metric-control select{height:34px;padding:0 30px 0 12px;border:1px solid #d5e2f0;border-radius:999px;background:#fff;color:#304b6d;font:inherit}.genre-metric-control select{height:32px;border-radius:8px;padding-left:10px}@media(max-width:760px){.genre-heading-controls{align-items:flex-start;white-space:normal;flex-direction:column;gap:7px}.genre-heading-controls em{order:2}.genre-heading-controls select{min-width:110px}}
+.genre-heading-controls input{height:34px;width:138px;padding:0 12px;border:1px solid #d5e2f0;border-radius:999px;background:#fff;color:#304b6d;font:inherit}.genre-contribution-list-head b{text-align:right}.genre-contribution-list-row b.is-up{color:#d5545f!important}.genre-contribution-list-row b.is-down{color:#159a70!important}.genre-contribution-list-row b.is-flat{color:#96a5b7!important}
+.genre-contribution-list-head b,.genre-contribution-list-row b{text-align:left!important}
+.genre-contribution-list-head,.genre-contribution-list-row{grid-template-columns:minmax(0,1fr) 120px 140px;gap:8px}
+.growth-detail-panel #genre-contribution-table{width:100%;min-width:1180px;table-layout:fixed;border-collapse:collapse}.growth-detail-panel #genre-contribution-table th,.growth-detail-panel #genre-contribution-table td{padding:12px 16px;vertical-align:middle;white-space:nowrap}.growth-detail-panel #genre-contribution-table th{background:#f5f9fe;color:#617791;font-size:12px;font-weight:800;text-align:left;border-bottom:1px solid #e4edf6}.growth-detail-panel #genre-contribution-table td{border-bottom:1px solid #edf2f7;color:#344f6e}.growth-detail-panel #genre-contribution-table th:nth-child(1),.growth-detail-panel #genre-contribution-table td:nth-child(1){width:100px}.growth-detail-panel #genre-contribution-table th:nth-child(2),.growth-detail-panel #genre-contribution-table td:nth-child(2){width:230px}.growth-detail-panel #genre-contribution-table th:nth-child(3),.growth-detail-panel #genre-contribution-table td:nth-child(3),.growth-detail-panel #genre-contribution-table th:nth-child(4),.growth-detail-panel #genre-contribution-table td:nth-child(4){width:145px}.growth-detail-panel #genre-contribution-table th:nth-child(5),.growth-detail-panel #genre-contribution-table td:nth-child(5){width:145px}.growth-detail-panel #genre-contribution-table th:nth-child(6),.growth-detail-panel #genre-contribution-table td:nth-child(6){width:105px}.growth-detail-panel #genre-contribution-table th:nth-child(7),.growth-detail-panel #genre-contribution-table td:nth-child(7){width:105px}.growth-detail-panel #genre-contribution-table th:nth-child(8),.growth-detail-panel #genre-contribution-table td:nth-child(8){width:230px}.growth-detail-panel #genre-contribution-table th:nth-child(9),.growth-detail-panel #genre-contribution-table td:nth-child(9){width:105px}.growth-detail-panel #genre-contribution-table th[data-sort]{cursor:pointer;user-select:none}.growth-detail-panel #genre-contribution-table th[data-sort].is-sorted{color:#617791}
+.growth-toolbar-growth{padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important}
+.growth-toolbar-growth{margin-bottom:8px}.growth-toolbar-growth .growth-date-controls{margin-top:-4px}.growth-date-controls select{height:32px;padding:0 26px 0 10px;border:1px solid #d5e2f0;border-radius:18px;background:#fff;color:#304b6d;font:inherit}.growth-detail-panel{margin-top:0;padding-top:14px}.growth-rank-value{color:#173b68;font-weight:800}.growth-rank-new{color:#d04450;font-weight:900}
+.growth-heading{margin-bottom:2px}.growth-toolbar-growth{margin-bottom:2px}.growth-detail-panel{margin-top:-4px}
+.growth-heading{margin-bottom:2px}.growth-toolbar-growth{margin-bottom:2px}.growth-detail-panel{margin-top:-4px}
+#page-growth .growth-heading{margin-bottom:2px}#page-growth .growth-toolbar-growth{margin-bottom:2px}#page-growth .growth-detail-panel{margin-top:-4px}
+#page-growth .growth-detail-panel th:nth-child(2),#page-growth .growth-detail-panel td:nth-child(2){width:185px}
+.growth-header-filter{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-width:56px}.growth-filter-heading{white-space:nowrap;line-height:1.15;font-size:11px}.growth-header-filter select{width:48px;min-width:48px;height:24px;padding:0 14px 0 4px;border:1px solid #d5e2f0;border-radius:12px;background:#fff;color:#304b6d;font:inherit;font-size:11px;line-height:22px;text-align:center}.growth-detail-panel th:has(.growth-header-filter){padding:5px 3px}.growth-detail-panel th:has(.growth-header-filter)::after{content:none!important}@media(max-width:900px){.growth-header-filter{min-width:52px}.growth-header-filter select{width:46px;min-width:46px}.growth-filter-heading{font-size:10px}}
+.growth-summary{margin:0 0 16px}.growth-summary-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:16px}.growth-summary-kpi{min-width:0;min-height:104px;padding:16px 18px;border:1px solid #e3ebf5;border-top:3px solid #6f9fdd;border-radius:10px;background:#fff;box-shadow:var(--shadow)}.growth-summary-kpi span,.growth-summary-kpi small{display:block;color:#71839c;font-size:12px}.growth-summary-kpi strong{display:block;margin:11px 0 4px;color:#173b68;font-size:22px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.growth-summary-kpi small{color:#96a5b7;font-size:11px}.growth-contribution-chart-panel{padding:16px 20px}.growth-contribution-chart{height:210px}@media(max-width:900px){.growth-summary-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.growth-summary-kpis{grid-template-columns:1fr}.growth-contribution-chart{height:240px}}
+.growth-mom-muted{color:#9aa8b8!important;font-weight:500!important}
+.growth-feature{display:inline-flex;align-items:center;padding:4px 9px;border-radius:12px;font-size:11px;font-weight:700}.growth-feature-new{color:#9b6500;background:#fff1c9}.growth-feature-burst{color:#b52f3c;background:#ffe4e7}.growth-feature-stable{color:#176d9a;background:#e1f3fb}.growth-feature-low{color:#707985;background:#eef1f4}
+.growth-rank-strong{color:#173b68!important;font-weight:900!important}.growth-status-neutral{display:inline-flex;align-items:center;padding:4px 8px;border-radius:12px;color:#71839c;background:#eef2f6;font-size:11px;font-weight:700}
+.growth-ops-summary{margin:0 0 16px}.growth-ops-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.growth-ops-kpi{position:relative;min-width:0;min-height:142px;padding:16px 17px;border:1px solid #e3ebf5;border-top:3px solid #6f9fdd;border-radius:12px;background:#fff;box-shadow:var(--shadow);overflow:hidden}.growth-ops-kpi-primary{border-top-color:#2f7d4a}.growth-ops-kpi-title{color:#617791;font-size:12px;font-weight:800}.growth-ops-kpi strong{display:block;margin:9px 0 3px;color:#173b68;font-size:21px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.growth-ops-kpi-value{color:#d04450;font-size:21px;font-weight:900}.growth-ops-kpi-value small{color:#71839c;font-size:11px;font-weight:600}.growth-ops-kpi p{margin:7px 0 0;color:#8999ac;font-size:11px;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.growth-ops-kpi>small{display:block;margin-top:5px;color:#8999ac;font-size:10px}.growth-ops-sparkline{position:absolute;right:12px;bottom:12px;width:76px;height:30px;opacity:.9}.growth-ops-kpi-donut{display:grid;grid-template-columns:68px 1fr;column-gap:10px}.growth-ops-kpi-donut .growth-ops-kpi-title,.growth-ops-kpi-donut p{grid-column:1 / -1}.growth-ops-donut{width:58px;height:58px;margin-top:7px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#347ee5 var(--growth-donut),#e7eef6 0)}.growth-ops-donut::after{content:'';position:absolute;width:40px;height:40px;border-radius:50%;background:#fff}.growth-ops-donut b{position:relative;z-index:1;color:#2367cf;font-size:12px}.growth-ops-kpi-side{display:grid;align-content:center;gap:7px;color:#71839c;font-size:11px}.growth-ops-kpi-side b{display:block;margin-top:2px;color:#2367cf;font-size:15px}.growth-ops-progress{height:6px;margin-top:14px;border-radius:5px;background:#edf2f7;overflow:hidden}.growth-ops-progress i{display:block;height:100%;border-radius:inherit;background:#2f7d4a}.growth-focus-section,.growth-opportunity-panel{margin:0 0 16px;padding:18px 20px}.growth-focus-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.growth-focus-card{min-width:0;padding:15px 16px;border:1px solid #dce8f4;border-left:3px solid #347ee5;border-radius:10px;background:#fbfdff}.growth-focus-burst{border-left-color:#d04450;background:#fffafb}.growth-focus-new{border-left-color:#347ee5;background:#fbfdff}.growth-focus-stable{border-left-color:#35a86b;background:#fbfffc}.growth-focus-tag{display:inline-flex;padding:4px 8px;border-radius:12px;background:#eaf2fd;color:#2367cf;font-size:11px;font-weight:800}.growth-focus-burst .growth-focus-tag{background:#ffe5e8;color:#b52f3c}.growth-focus-stable .growth-focus-tag{background:#e4f7ed;color:#238455}.growth-focus-card h3{margin:12px 0 10px;color:#173b68;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.growth-focus-metrics{display:flex;gap:14px;color:#71839c;font-size:11px}.growth-focus-metrics b{display:block;margin-top:3px;color:#173b68;font-size:13px}.growth-focus-burst .growth-focus-metrics span:first-child b{color:#d04450}.growth-focus-card small{display:block;margin-top:11px;color:#8a9aae;font-size:11px}.growth-opportunity-layout{display:grid;grid-template-columns:minmax(0,1fr) 210px;gap:14px;align-items:stretch}.growth-opportunity-chart{height:350px;min-width:0;border-radius:10px;background:linear-gradient(90deg,#f7fbff 0 50%,#f7fcf9 50%)}.growth-opportunity-legend{display:grid;align-content:center;gap:13px;padding:14px;border:1px solid #edf2f7;border-radius:10px;background:#fbfcfe}.growth-opportunity-legend>div{display:flex;gap:9px;align-items:flex-start}.growth-opportunity-legend i{flex:0 0 10px;width:10px;height:10px;margin-top:3px;border-radius:50%}.growth-opportunity-legend b,.growth-opportunity-legend small{display:block}.growth-opportunity-legend b{color:#40536d;font-size:12px}.growth-opportunity-legend small{margin-top:3px;color:#91a0b0;font-size:10px;line-height:1.4}@media(max-width:1100px){.growth-ops-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.growth-opportunity-layout{grid-template-columns:1fr}.growth-opportunity-legend{grid-template-columns:repeat(4,minmax(0,1fr));display:grid}}@media(max-width:650px){.growth-ops-kpis,.growth-focus-grid{grid-template-columns:1fr}.growth-focus-section,.growth-opportunity-panel{padding:15px 13px}.growth-opportunity-chart{height:290px}.growth-opportunity-legend{grid-template-columns:1fr 1fr}.growth-ops-kpi-donut{min-height:145px}}
+.growth-ops-donut{position:relative}
+.growth-ops-opportunity-counts{display:flex;gap:8px;margin-top:9px}.growth-ops-opportunity-counts span{display:grid;justify-items:center;gap:3px;min-width:58px}.growth-ops-opportunity-counts i{padding:4px 6px;border-radius:10px;font-style:normal;font-size:10px;font-weight:700}.growth-ops-opportunity-counts b{font-size:17px}.growth-ops-count-new i{color:#2367cf;background:#eaf2fd}.growth-ops-count-new b{color:#2367cf}.growth-ops-count-stable i{color:#238455;background:#e4f7ed}.growth-ops-count-stable b{color:#238455}.growth-ops-count-burst i{color:#b52f3c;background:#ffe5e8}.growth-ops-count-burst b{color:#d04450}.growth-ops-mom{position:relative;z-index:1;margin-top:7px;font-size:13px;font-weight:900}.growth-ops-mom span{margin-left:5px;color:#96a5b7;font-size:10px;font-weight:600}.growth-ops-mom.is-up{color:#d04450}.growth-ops-mom.is-down{color:#159a70}.growth-ops-mom.is-flat{color:#96a5b7}
+.growth-ops-kpi-positive{order:1}.growth-ops-kpi-opportunities{order:2}.growth-ops-kpi-donut{order:3}.growth-ops-kpi-high-value{order:4}
+.growth-ops-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
+.growth-ops-kpi-positive{padding-right:170px}.growth-ops-kpi-positive .growth-ops-sparkline{right:24px;bottom:25px;width:128px;height:44px}.growth-ops-kpi-opportunities{padding-right:24px}.growth-ops-opportunity-counts{justify-content:space-between;width:100%;max-width:none;padding-right:6px}.growth-ops-kpi-donut{grid-template-columns:84px minmax(0,1fr);padding-right:24px}.growth-ops-donut{width:68px;height:68px}.growth-ops-donut::after{width:48px;height:48px}.growth-ops-kpi-side{display:flex;justify-content:space-around;align-items:center;gap:24px}.growth-ops-kpi-side>span{min-width:90px}.growth-focus-card{display:grid;grid-template-columns:minmax(0,1fr);align-content:start}.growth-focus-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:100%}.growth-focus-metrics span{text-align:left}.growth-focus-card small{width:100%}
+.growth-ops-kpi-positive{padding-right:24px}.growth-ops-kpi-positive .growth-ops-sparkline{display:none}
+.growth-ops-kpis{gap:10px}.growth-ops-kpi{min-height:116px;padding:13px 16px;border-radius:10px}.growth-ops-kpi-title{font-size:12px;line-height:1.25}.growth-ops-kpi strong{margin:6px 0 2px;font-size:24px;line-height:1.15}.growth-ops-kpi p{margin-top:5px;font-size:11px;line-height:1.35}.growth-ops-kpi-positive{padding-right:24px}.growth-ops-kpi-positive strong{font-size:26px}.growth-ops-mom{margin-top:5px;font-size:13px}.growth-ops-kpi-opportunities strong{margin-top:5px;font-size:24px}.growth-ops-opportunity-counts{margin-top:6px;gap:6px}.growth-ops-opportunity-counts span{min-width:0;gap:2px;flex:1}.growth-ops-opportunity-counts i{padding:3px 6px;font-size:10px}.growth-ops-opportunity-counts b{font-size:16px}.growth-ops-kpi-donut{grid-template-columns:76px minmax(0,1fr);column-gap:8px;padding-right:16px}.growth-ops-donut{width:62px;height:62px;margin-top:4px}.growth-ops-donut::after{width:44px;height:44px}.growth-ops-kpi-side{gap:12px}.growth-ops-kpi-side>span{min-width:0;flex:1}.growth-ops-kpi-side b{font-size:14px}.growth-ops-kpi-donut p{margin-top:3px}.growth-focus-section,.growth-opportunity-panel{margin-bottom:14px;padding:15px 18px}.growth-focus-section .panel-head{margin-bottom:10px}.growth-focus-grid{gap:10px}.growth-focus-card{min-height:136px;height:100%;padding:12px 14px;border-radius:9px;grid-template-rows:auto auto 1fr auto}.growth-focus-tag{padding:3px 7px;font-size:10px}.growth-focus-card h3{margin:8px 0 8px;font-size:18px;line-height:1.2}.growth-focus-metrics{gap:8px;align-self:end}.growth-focus-metrics span{font-size:10px;line-height:1.25}.growth-focus-metrics b{margin-top:2px;font-size:14px;line-height:1.15}.growth-focus-card small{margin-top:8px;font-size:11px;line-height:1.2}.growth-opportunity-panel .panel-head{margin-bottom:8px}
+.growth-ops-kpi{height:132px;min-height:132px}.growth-ops-kpi-donut{grid-template-columns:62px minmax(0,1fr);padding-right:12px}.growth-ops-donut{width:52px;height:52px;margin-top:1px}.growth-ops-donut::after{width:36px;height:36px}.growth-ops-kpi-side{gap:8px}.growth-ops-kpi-side b{font-size:13px}.growth-ops-kpi-donut p{margin-top:0}
+.growth-ops-kpi{box-sizing:border-box;height:190px;min-height:190px;padding:20px 22px;display:flex;flex-direction:column;justify-content:center;overflow:visible}.growth-ops-kpi-title{font-size:16px;line-height:1.25}.growth-ops-kpi strong{margin:12px 0 0;font-size:34px;line-height:1.1}.growth-ops-kpi p{margin:9px 0 0;font-size:14px;line-height:1.35;white-space:normal;overflow:visible}.growth-ops-kpi-positive{display:grid;grid-template-columns:minmax(0,65fr) minmax(0,35fr);grid-template-rows:auto auto auto auto;column-gap:20px;padding:20px 22px}.growth-ops-kpi-positive .growth-ops-kpi-title,.growth-ops-kpi-positive strong,.growth-ops-kpi-positive p,.growth-ops-kpi-positive .growth-ops-mom{grid-column:1;max-width:100%}.growth-ops-kpi-positive strong{font-size:34px;margin-top:12px}.growth-ops-kpi-positive p{margin-top:8px}.growth-ops-kpi-positive .growth-ops-mom{margin-top:8px;font-size:14px}.growth-ops-kpi-positive .growth-ops-sparkline{display:block;position:static;grid-column:2;grid-row:1 / 5;align-self:center;justify-self:center;width:125px;height:54px}.growth-ops-kpi-opportunities{display:grid;grid-template-rows:auto auto 1fr auto;padding:20px 22px}.growth-ops-kpi-opportunities strong{margin-top:12px;font-size:34px}.growth-ops-opportunity-counts{margin-top:18px;gap:20px;padding:0}.growth-ops-opportunity-counts span{gap:5px}.growth-ops-opportunity-counts i{padding:5px 8px;font-size:13px;white-space:nowrap}.growth-ops-opportunity-counts b{font-size:22px;line-height:1.1}.growth-ops-kpi-opportunities p{margin-top:16px;align-self:end;font-size:13px;line-height:1.3}.growth-ops-kpi-donut{display:grid;grid-template-columns:minmax(0,30%) minmax(0,1fr);grid-template-rows:auto 1fr auto;column-gap:24px;row-gap:0;padding:20px 22px}.growth-ops-kpi-donut .growth-ops-kpi-title{grid-column:1 / -1}.growth-ops-kpi-donut .growth-ops-donut{grid-column:1;grid-row:2;align-self:center;justify-self:center;width:72px;height:72px;margin:0}.growth-ops-kpi-donut .growth-ops-donut::after{width:50px;height:50px}.growth-ops-kpi-donut .growth-ops-kpi-side{grid-column:2;grid-row:2;align-self:center;display:flex;justify-content:flex-start;gap:24px}.growth-ops-kpi-side>span{min-width:80px}.growth-ops-kpi-side b{font-size:20px;line-height:1.1}.growth-ops-kpi-donut p{grid-column:1 / -1;grid-row:3;margin:10px 0 0;font-size:13px;line-height:1.25}.growth-focus-card{box-sizing:border-box;height:150px;min-height:150px;padding:16px 18px;grid-template-rows:auto auto 1fr auto}.growth-focus-section .panel-head{margin-bottom:12px}.growth-focus-tag{padding:4px 8px;font-size:12px}.growth-focus-card h3{margin:10px 0 10px;font-size:20px;line-height:1.2}.growth-focus-metrics{gap:20px}.growth-focus-metrics span{font-size:12px;line-height:1.25}.growth-focus-metrics b{margin-top:4px;font-size:18px;line-height:1.1}.growth-focus-card small{margin-top:10px;font-size:13px;line-height:1.2}@media(max-width:900px){.growth-ops-kpi{height:auto;min-height:190px}.growth-ops-kpi-positive{grid-template-columns:1fr 130px}.growth-ops-kpi-positive .growth-ops-sparkline{width:100px}.growth-ops-opportunity-counts{gap:8px}.growth-ops-kpi-donut{column-gap:18px}}@media(max-width:650px){.growth-ops-kpis{grid-template-columns:1fr}.growth-ops-kpi{height:auto;min-height:180px}.growth-ops-kpi-positive{grid-template-columns:1fr 90px;column-gap:10px}.growth-ops-kpi-positive .growth-ops-sparkline{width:76px}.growth-ops-kpi-donut{grid-template-columns:72px minmax(0,1fr);column-gap:14px}.growth-ops-kpi-donut .growth-ops-donut{width:58px;height:58px}.growth-ops-kpi-donut .growth-ops-donut::after{width:40px;height:40px}.growth-ops-kpi-side{gap:10px}.growth-ops-kpi-side b{font-size:16px}.growth-ops-opportunity-counts{gap:4px}.growth-ops-opportunity-counts i{font-size:11px;padding-inline:4px}.growth-focus-card{height:150px;min-height:150px}}
+.growth-ops-kpi{box-sizing:border-box;height:190px;min-height:190px;padding:20px 24px}.growth-ops-kpi-title{font-size:17px}.growth-ops-kpi strong{font-size:34px}.growth-ops-kpi-positive{grid-template-columns:minmax(0,65%) minmax(0,35%);column-gap:8px;padding:20px 24px}.growth-ops-kpi-positive .growth-ops-sparkline{align-self:center;justify-self:start;margin-left:0;width:116px;height:48px}.growth-ops-kpi-opportunities{grid-template-rows:auto auto 1fr auto;padding:20px 24px}.growth-ops-kpi-opportunities .growth-ops-opportunity-counts{align-self:center;margin-top:0;padding:0;gap:20px}.growth-ops-kpi-opportunities p{margin-top:16px;align-self:end}.growth-ops-kpi-donut{grid-template-columns:minmax(0,30%) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;column-gap:28px;row-gap:0;padding:20px 24px}.growth-ops-kpi-donut .growth-ops-kpi-side{justify-content:space-between;gap:32px}.growth-ops-kpi-donut .growth-ops-donut{align-self:center;justify-self:center}.growth-ops-kpi-donut p{margin-top:12px}.growth-focus-grid{align-items:stretch}.growth-focus-card{box-sizing:border-box;height:190px;min-height:190px;padding:16px 18px;display:grid;grid-template-rows:24px 44px 36px 18px;row-gap:12px;align-content:center}.growth-focus-tag{justify-self:start;align-self:start;height:24px;box-sizing:border-box;max-width:100%;white-space:nowrap}.growth-focus-card h3{height:44px;min-height:44px;margin:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;text-overflow:ellipsis;font-size:20px;line-height:22px}.growth-focus-metrics{height:36px;min-height:36px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:start}.growth-focus-metrics span{font-size:12px;line-height:15px}.growth-focus-metrics b{margin-top:4px;font-size:18px;line-height:19px}.growth-focus-card small{height:18px;min-height:18px;margin:0;line-height:18px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}@media(max-width:900px){.growth-ops-kpi{height:190px;min-height:190px}.growth-ops-kpi-positive{grid-template-columns:minmax(0,65%) minmax(0,35%)}.growth-focus-card{height:190px;min-height:190px}}@media(max-width:650px){.growth-ops-kpis{grid-template-columns:1fr}.growth-ops-kpi{height:190px;min-height:190px}.growth-ops-kpi-positive{grid-template-columns:minmax(0,1fr) 90px;column-gap:10px}.growth-ops-kpi-positive .growth-ops-sparkline{width:76px}.growth-ops-kpi-donut{grid-template-columns:72px minmax(0,1fr);column-gap:18px}.growth-focus-card{height:190px;min-height:190px}}
+.growth-ops-kpi{box-sizing:border-box;height:200px;min-height:200px;padding:20px 24px;justify-content:normal;overflow:visible}.growth-ops-kpi-title{align-self:start;font-size:17px;line-height:20px}.growth-ops-kpi strong{font-size:34px;line-height:36px}.growth-ops-kpi p{font-size:14px;line-height:18px}.growth-ops-kpi-positive{display:grid;grid-template-columns:minmax(0,65%) minmax(0,35%);grid-template-rows:20px 36px 18px 18px;column-gap:8px;row-gap:0;padding:20px 24px;align-content:space-between}.growth-ops-kpi-positive .growth-ops-kpi-title,.growth-ops-kpi-positive strong,.growth-ops-kpi-positive p,.growth-ops-kpi-positive .growth-ops-mom{grid-column:1}.growth-ops-kpi-positive strong{margin:0}.growth-ops-kpi-positive p{margin:0}.growth-ops-kpi-positive .growth-ops-mom{margin:0;font-size:14px;line-height:18px}.growth-ops-kpi-positive .growth-ops-sparkline{display:block;position:static;grid-column:2;grid-row:1 / 5;align-self:center;justify-self:start;margin:0;width:116px;height:48px}.growth-ops-kpi-opportunities{display:grid;grid-template-rows:20px 36px 48px 1fr;row-gap:0;padding:20px 24px}.growth-ops-kpi-opportunities strong{margin:0;line-height:36px}.growth-ops-kpi-opportunities .growth-ops-opportunity-counts{align-self:center;margin:0;padding:0;gap:20px}.growth-ops-opportunity-counts span{gap:5px}.growth-ops-opportunity-counts i{padding:5px 8px;font-size:13px;line-height:16px}.growth-ops-opportunity-counts b{font-size:22px;line-height:24px}.growth-ops-kpi-opportunities p{align-self:end;margin:16px 0 0;font-size:13px;line-height:18px}.growth-ops-kpi-donut{display:grid;grid-template-columns:minmax(0,30%) minmax(0,1fr);grid-template-rows:20px 1fr 18px;column-gap:28px;padding:20px 24px}.growth-ops-kpi-donut .growth-ops-kpi-title{grid-column:1 / -1;line-height:20px}.growth-ops-kpi-donut .growth-ops-donut{grid-column:1;grid-row:2;align-self:center;justify-self:center;width:72px;height:72px}.growth-ops-kpi-donut .growth-ops-kpi-side{grid-column:2;grid-row:2;align-self:center;display:flex;justify-content:flex-start;gap:32px}.growth-ops-kpi-side>span{min-width:88px}.growth-ops-kpi-side b{font-size:20px;line-height:24px}.growth-ops-kpi-donut p{grid-column:1 / -1;grid-row:3;margin:0;font-size:13px;line-height:18px}.growth-focus-card{box-sizing:border-box;height:174px;min-height:174px;padding:10px 18px;display:grid;grid-template-rows:22px 44px 34px 18px;row-gap:0;align-content:space-between}.growth-focus-tag{height:22px;padding:3px 8px;font-size:12px;line-height:16px}.growth-focus-card h3{height:44px;min-height:44px;margin:0;padding-top:10px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;text-overflow:ellipsis;font-size:23px;line-height:22px}.growth-focus-metrics{height:34px;min-height:34px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:start}.growth-focus-metrics span{font-size:13px;line-height:16px}.growth-focus-metrics b{margin-top:4px;font-size:20px;line-height:20px}.growth-focus-card small{height:18px;min-height:18px;margin:0;font-size:13px;line-height:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}@media(max-width:900px){.growth-ops-kpi{height:200px;min-height:200px}.growth-focus-card{height:174px;min-height:174px}}@media(max-width:650px){.growth-ops-kpis{grid-template-columns:1fr}.growth-ops-kpi{height:200px;min-height:200px;padding-inline:20px}.growth-ops-kpi-positive{grid-template-columns:minmax(0,1fr) 90px;padding-inline:20px}.growth-ops-kpi-positive .growth-ops-sparkline{width:76px}.growth-ops-kpi-donut{grid-template-columns:72px minmax(0,1fr);column-gap:18px;padding-inline:20px}.growth-ops-kpi-donut .growth-ops-donut{width:58px;height:58px}.growth-ops-kpi-side{gap:10px}.growth-ops-kpi-side b{font-size:16px}.growth-focus-card{height:174px;min-height:174px}}
+.growth-ops-kpi{height:204px;min-height:204px}@media(max-width:900px){.growth-ops-kpi{height:204px;min-height:204px}}@media(max-width:650px){.growth-ops-kpi{height:204px;min-height:204px}}
+.growth-ops-kpi{height:180px;min-height:180px;padding:18px 24px}.growth-ops-kpi-title{font-size:16px;line-height:20px}.growth-ops-kpi strong{font-size:34px;line-height:36px}.growth-ops-kpi p{font-size:13px;line-height:18px}.growth-ops-kpi-positive{grid-template-rows:20px 36px 18px 18px;align-content:space-between;column-gap:8px;padding:18px 24px}.growth-ops-kpi-positive .growth-ops-sparkline{width:104px;height:44px;align-self:center;justify-self:start}.growth-ops-kpi-opportunities{grid-template-rows:20px 36px 44px 1fr;align-content:space-between;padding:18px 24px}.growth-ops-kpi-opportunities .growth-ops-opportunity-counts{align-self:center;gap:14px}.growth-ops-kpi-opportunities p{margin-top:16px;align-self:end}.growth-ops-kpi-donut{grid-template-rows:20px 1fr 18px;column-gap:30px;align-content:space-between;padding:18px 24px}.growth-ops-kpi-donut .growth-ops-kpi-side{gap:28px}.growth-ops-kpi-donut p{margin-top:10px}.growth-focus-section{padding:12px 18px;margin-bottom:12px}.growth-focus-section .panel-head{margin-bottom:8px}.growth-focus-grid{gap:10px}.growth-focus-card{height:160px;min-height:160px;padding:8px 18px;grid-template-rows:22px 40px 32px 18px;row-gap:10px;align-content:center}.growth-focus-tag{height:22px;line-height:16px}.growth-focus-card h3{height:40px;min-height:40px;padding-top:10px;font-size:23px;line-height:20px}.growth-focus-metrics{height:32px;min-height:32px;gap:10px}.growth-focus-metrics span{font-size:13px;line-height:15px}.growth-focus-metrics b{margin-top:3px;font-size:19px;line-height:19px}.growth-focus-card small{height:18px;min-height:18px;font-size:13px;line-height:18px}@media(max-width:900px){.growth-ops-kpi{height:180px;min-height:180px}.growth-focus-card{height:160px;min-height:160px}}@media(max-width:650px){.growth-ops-kpi{height:190px;min-height:190px}.growth-focus-card{height:160px;min-height:160px}}
+.growth-ops-kpi{height:184px;min-height:184px}.growth-ops-kpi-donut .growth-ops-donut{width:60px;height:60px}.growth-ops-kpi-donut .growth-ops-donut::after{width:42px;height:42px}@media(max-width:900px){.growth-ops-kpi{height:184px;min-height:184px}}@media(max-width:650px){.growth-ops-kpi{height:190px;min-height:190px}}
+.growth-ops-kpi{height:200px;min-height:200px;padding:14px 24px}.growth-ops-kpi-positive{padding:14px 24px}.growth-ops-kpi-opportunities{padding:14px 24px}.growth-ops-kpi-donut{padding:14px 24px}.growth-ops-kpi-donut .growth-ops-donut{width:60px;height:60px}@media(max-width:900px){.growth-ops-kpi{height:200px;min-height:200px}}@media(max-width:650px){.growth-ops-kpi{height:200px;min-height:200px}}
+.growth-ops-kpi-positive{display:flex;flex-direction:column;justify-content:space-between;padding-right:24px}.growth-ops-kpi-positive .growth-ops-sparkline{display:none}.growth-ops-kpi-opportunities .growth-ops-kpi-title{align-self:flex-start}.growth-ops-kpi-opportunities strong{align-self:center}.growth-ops-kpi-opportunities .growth-ops-opportunity-counts{justify-content:center;gap:30px;width:100%}.growth-ops-kpi-opportunities p{text-align:center;align-self:center}.growth-ops-kpi-donut .growth-ops-kpi-side{justify-content:center;gap:34px}.growth-focus-metrics span:first-child b{color:#d04450!important}
+.growth-ops-kpi-positive{align-items:center;justify-content:center;gap:8px}.growth-ops-kpi-positive .growth-ops-kpi-title,.growth-ops-kpi-positive strong,.growth-ops-kpi-positive p,.growth-ops-kpi-positive .growth-ops-mom{width:100%;text-align:center}.growth-ops-kpi-opportunities{grid-template-rows:20px 36px minmax(0,1fr) 18px;align-content:normal}.growth-ops-kpi-opportunities .growth-ops-opportunity-counts{align-self:center;justify-content:center;gap:28px}.growth-ops-kpi-opportunities p{margin-top:16px;text-align:center}.growth-ops-kpi-donut{grid-template-columns:72px auto;grid-template-rows:20px minmax(0,1fr) 18px;column-gap:24px;justify-content:center}.growth-ops-kpi-donut .growth-ops-kpi-side{justify-content:flex-start;gap:20px}.growth-ops-kpi-donut p{text-align:center}
+.growth-ops-kpi{height:190px;min-height:190px;padding:20px 24px;justify-content:flex-start;align-items:stretch}.growth-ops-kpi-title{align-self:flex-start;text-align:left}.growth-ops-kpi-positive{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0;padding:20px 24px}.growth-ops-kpi-positive .growth-ops-kpi-title,.growth-ops-kpi-positive strong,.growth-ops-kpi-positive p,.growth-ops-kpi-positive .growth-ops-mom{width:auto;text-align:left}.growth-ops-kpi-positive strong{margin-top:12px}.growth-ops-kpi-positive p{margin-top:8px}.growth-ops-kpi-positive .growth-ops-mom{margin-top:14px}.growth-ops-kpi-opportunities{display:grid;grid-template-rows:20px 36px 48px 1fr;align-content:start;padding:20px 24px}.growth-ops-kpi-opportunities strong{align-self:start;margin-top:12px}.growth-ops-kpi-opportunities .growth-ops-opportunity-counts{justify-content:flex-start;align-self:start;margin-top:12px;gap:42px}.growth-ops-kpi-opportunities p{align-self:start;margin-top:16px;text-align:left}.growth-ops-kpi-donut{display:grid;grid-template-columns:72px auto;grid-template-rows:20px 1fr 18px;column-gap:30px;align-content:start;justify-content:start;padding:20px 24px}.growth-ops-kpi-donut .growth-ops-kpi-side{justify-content:flex-start;gap:28px}.growth-ops-kpi-donut p{text-align:left;margin-top:10px}@media(max-width:900px){.growth-ops-kpi{height:190px;min-height:190px}}@media(max-width:650px){.growth-ops-kpi{height:190px;min-height:190px}}
+.growth-ops-kpi{box-sizing:border-box;height:190px;min-height:190px;padding:18px 24px;display:block;overflow:hidden}.growth-ops-card-positive{height:100%;display:grid;grid-template-columns:minmax(0,1.65fr) minmax(130px,1fr);gap:18px;align-items:center}.growth-ops-card-positive .growth-ops-kpi-title,.growth-ops-card-positive strong,.growth-ops-card-positive p,.growth-ops-card-positive .growth-ops-mom{display:block;text-align:left;width:auto}.growth-ops-card-positive strong{margin:10px 0 0;font-size:34px}.growth-ops-card-positive p{margin:8px 0 0;font-size:13px}.growth-ops-card-positive .growth-ops-mom{margin:10px 0 0;font-size:14px}.growth-ops-card-visual{display:flex;align-items:center;justify-content:center;min-width:0}.growth-ops-card-visual .growth-ops-sparkline{position:static;display:block;width:120px;height:48px}.growth-ops-card-opportunity{height:100%;display:grid;grid-template-rows:auto 1fr auto;align-items:stretch}.growth-ops-card-opportunity .growth-ops-kpi-title{display:block;text-align:left}.growth-ops-card-opportunity strong{display:block;margin:8px 0 0;text-align:left;font-size:34px}.growth-ops-card-opportunity .growth-ops-opportunity-counts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-self:center;width:100%;margin:0}.growth-ops-card-opportunity .growth-ops-opportunity-counts span{display:grid;justify-items:center;gap:4px}.growth-ops-card-opportunity .growth-ops-opportunity-counts i{font-size:12px}.growth-ops-card-opportunity .growth-ops-opportunity-counts b{font-size:22px}.growth-ops-card-opportunity p{margin:16px 0 0;text-align:left;font-size:13px;line-height:18px}.growth-ops-card-concentration{height:100%;display:grid;grid-template-rows:auto 1fr auto}.growth-ops-card-concentration .growth-ops-kpi-title{text-align:left}.growth-ops-card-concentration .growth-ops-donut,.growth-ops-card-concentration .growth-ops-kpi-side{grid-row:2;align-self:center}.growth-ops-card-concentration .growth-ops-donut{position:static;justify-self:start;width:64px;height:64px;margin:0}.growth-ops-card-concentration .growth-ops-donut::after{width:44px;height:44px}.growth-ops-card-concentration .growth-ops-kpi-side{display:flex;align-items:center;justify-content:flex-start;gap:24px;padding-left:24px}.growth-ops-card-concentration .growth-ops-kpi-side>span{min-width:80px}.growth-ops-card-concentration .growth-ops-kpi-side b{font-size:20px}.growth-ops-card-concentration p{grid-row:3;margin:10px 0 0;text-align:left;font-size:13px;line-height:18px}@media(max-width:900px){.growth-ops-kpi{height:190px;min-height:190px}.growth-ops-card-positive{grid-template-columns:minmax(0,1.45fr) minmax(100px,1fr);gap:12px}.growth-ops-card-concentration .growth-ops-kpi-side{gap:14px;padding-left:14px}}@media(max-width:650px){.growth-ops-kpis{grid-template-columns:1fr}.growth-ops-kpi{height:190px;min-height:190px}.growth-ops-card-positive{grid-template-columns:1fr 76px;gap:8px}.growth-ops-card-visual .growth-ops-sparkline{width:72px}.growth-ops-card-concentration{grid-template-columns:64px minmax(0,1fr);grid-template-rows:auto 1fr auto}.growth-ops-card-concentration .growth-ops-kpi-title,.growth-ops-card-concentration p{grid-column:1 / -1}.growth-ops-card-concentration .growth-ops-kpi-side{padding-left:12px;gap:8px}.growth-ops-card-concentration .growth-ops-kpi-side b{font-size:16px}}
+.growth-ops-card-concentration{grid-template-columns:64px minmax(0,1fr);grid-template-rows:auto 1fr auto}.growth-ops-card-concentration .growth-ops-kpi-title,.growth-ops-card-concentration p{grid-column:1 / -1}
+.growth-ops-card-positive .growth-ops-card-visual{display:none}.growth-ops-card-positive{display:flex;justify-content:center}.growth-ops-card-opportunity p{display:none}.growth-ops-card-opportunity{grid-template-rows:auto 1fr}.growth-ops-card-concentration .growth-ops-donut{width:78px;height:78px}.growth-ops-card-concentration .growth-ops-donut::after{width:54px;height:54px}.growth-ops-card-concentration .growth-ops-kpi-side{gap:30px;padding-left:28px}.growth-ops-card-concentration .growth-ops-kpi-side>span{min-width:96px}.growth-ops-card-concentration .growth-ops-kpi-side b{font-size:24px;line-height:28px}.growth-ops-card-concentration .growth-ops-kpi-side span{font-size:14px}.growth-ops-card-concentration p{font-size:14px}
+.growth-ops-kpi-positive{display:block!important;padding:18px 24px!important;overflow:hidden}.growth-ops-kpi-positive .growth-ops-card-positive{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}.growth-ops-kpi-positive .growth-ops-card-visual{display:none!important}.growth-ops-kpi-positive .growth-ops-kpi-title,.growth-ops-kpi-positive strong,.growth-ops-kpi-positive p,.growth-ops-kpi-positive .growth-ops-mom{width:auto;max-width:100%;text-align:center;white-space:nowrap;overflow:visible;text-overflow:clip}.growth-ops-kpi-positive .growth-ops-kpi-title{font-size:17px;line-height:20px}.growth-ops-kpi-positive strong{margin:12px 0 0;font-size:36px;line-height:40px}.growth-ops-kpi-positive p{margin:8px 0 0;font-size:14px;line-height:18px}.growth-ops-kpi-positive .growth-ops-mom{margin:12px 0 0;font-size:14px;line-height:18px}
+.growth-ops-kpi-positive{align-items:flex-start!important;justify-content:center!important}.growth-ops-kpi-positive .growth-ops-card-positive{align-items:flex-start!important;justify-content:center!important}.growth-ops-kpi-positive .growth-ops-card-positive p{display:none!important}.growth-ops-kpi-positive .growth-ops-kpi-title,.growth-ops-kpi-positive strong,.growth-ops-kpi-positive .growth-ops-mom{width:auto!important;text-align:left!important}.growth-ops-kpi-positive strong{margin-top:12px!important}.growth-ops-kpi-positive .growth-ops-mom{margin-top:14px!important}
+.growth-ops-card-positive{height:100%;display:flex;flex-direction:column;align-items:flex-start!important;justify-content:flex-start!important}.growth-ops-card-positive .growth-ops-kpi-title{margin:0}.growth-ops-card-positive strong{margin-top:12px}.growth-ops-card-positive .growth-ops-mom{margin-top:auto;margin-bottom:0}.growth-ops-card-opportunity{height:100%;display:grid;grid-template-rows:auto 1fr auto;align-items:stretch}.growth-ops-card-opportunity .growth-ops-kpi-title{margin:0}.growth-ops-card-opportunity strong{margin-top:8px}.growth-ops-card-opportunity .growth-ops-opportunity-counts{align-self:end;margin:0 0 0;justify-self:stretch}.growth-ops-card-concentration{height:100%;display:grid;grid-template-rows:auto 1fr auto;align-items:stretch}.growth-ops-card-concentration .growth-ops-kpi-title{margin:0}.growth-ops-card-concentration .growth-ops-donut,.growth-ops-card-concentration .growth-ops-kpi-side{align-self:center}
+.growth-ops-kpi{height:190px!important;min-height:190px!important}.growth-ops-kpi-positive .growth-ops-card-positive{height:auto!important;min-height:0!important;margin:0!important;padding:0!important;justify-content:flex-start!important;align-items:flex-start!important}.growth-ops-kpi-positive .growth-ops-kpi-title{margin:0!important}.growth-ops-kpi-positive strong{margin-top:12px!important}.growth-ops-kpi-positive .growth-ops-mom{margin-top:14px!important}
+.growth-ops-kpi-positive .growth-ops-card-positive{height:100%!important;min-height:0!important;display:flex!important;flex-direction:column!important;justify-content:space-between!important;align-items:flex-start!important;padding:0!important;margin:0!important}.growth-ops-kpi-positive .growth-ops-card-positive strong{margin:0!important;align-self:flex-start}.growth-ops-kpi-positive .growth-ops-card-positive .growth-ops-mom{margin:0!important;align-self:flex-start}
+.growth-opportunity-layout{grid-template-columns:minmax(0,1fr) 165px;gap:12px}.growth-opportunity-chart{height:380px;background:#fbfcfe}.growth-opportunity-legend{gap:9px;padding:10px}.growth-opportunity-legend b{font-size:11px}.growth-opportunity-legend small{font-size:10px}.growth-opportunity-legend>div{gap:7px}@media(max-width:1100px){.growth-opportunity-layout{grid-template-columns:1fr}.growth-opportunity-chart{height:360px}.growth-opportunity-legend{grid-template-columns:repeat(4,minmax(0,1fr));display:grid}}@media(max-width:650px){.growth-opportunity-chart{height:310px}.growth-opportunity-legend{grid-template-columns:1fr 1fr}}
+.growth-quadrant-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.growth-quadrant-card{min-width:0;padding:14px 16px 12px;border:1px solid #e2eaf2;border-top:3px solid var(--quadrant-color);border-radius:10px;background:#fff}.growth-quadrant-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.growth-quadrant-kicker{display:block;color:var(--quadrant-color);font-size:11px;font-weight:800;line-height:1.3}.growth-quadrant-head h3{margin:3px 0 0;color:#173b68;font-size:16px}.growth-quadrant-head>b{flex:0 0 auto;color:#8292a5;font-size:12px;font-weight:700}.growth-quadrant-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px;padding:8px 10px;border:1px solid #edf2f7;border-radius:7px;background:#fbfcfe;color:#8495a7;font-size:11px}.growth-quadrant-metrics span{min-width:0}.growth-quadrant-metrics strong{display:block;margin-top:3px;color:#173b68;font-size:17px;line-height:1.15;white-space:nowrap}.growth-quadrant-metrics strong.is-positive{color:#d04450}.growth-quadrant-metrics strong.is-negative{color:#159a70}.growth-quadrant-chart{height:175px;margin-top:6px;min-width:0}@media(max-width:1100px){.growth-quadrant-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:800px){.growth-quadrant-grid{grid-template-columns:1fr}}@media(max-width:650px){.growth-quadrant-card{padding:12px}.growth-quadrant-chart{height:165px}}
+.growth-quadrant-chart-legend{display:flex;align-items:center;gap:16px;margin-top:10px;color:#7c8da1;font-size:11px}.growth-quadrant-chart-legend span{display:inline-flex;align-items:center;gap:5px}.growth-quadrant-chart-legend i{width:9px;height:9px;border-radius:2px}.growth-quadrant-chart-legend i.is-current{background:#2f9b57}.growth-quadrant-chart-legend i.is-previous{background:#66717d}
+.growth-quadrant-chart svg{display:block;width:100%;height:100%;overflow:visible}
+
+/* Neutral BI presentation: keep color for charts, not for copy or card chrome. */
+#page-growth .growth-ops-kpi,
+#page-growth .growth-focus-card,
+#page-growth .growth-quadrant-card{border:0!important;border-top:0!important;border-left:0!important;box-shadow:none!important;background:#fff!important;color:#111827!important}
+#page-growth .growth-ops-kpi-title,
+#page-growth .growth-ops-kpi strong,
+#page-growth .growth-ops-kpi p,
+#page-growth .growth-ops-kpi small,
+#page-growth .growth-ops-kpi .growth-ops-mom,
+#page-growth .growth-ops-kpi .growth-ops-mom span,
+#page-growth .growth-focus-card h3,
+#page-growth .growth-focus-card small,
+#page-growth .growth-focus-metrics,
+#page-growth .growth-focus-metrics b,
+#page-growth .growth-quadrant-head h3,
+#page-growth .growth-quadrant-head>b,
+#page-growth .growth-quadrant-metrics,
+#page-growth .growth-quadrant-metrics strong,
+#page-growth .growth-quadrant-chart-legend,
+#page-growth .panel-head h3,
+#page-growth .panel-head span,
+#page-growth .panel-head small{color:#111827!important}
+#page-growth .growth-ops-kpi .growth-ops-mom.is-up,
+#page-growth .growth-ops-kpi .growth-ops-mom.is-down,
+#page-growth .growth-quadrant-metrics strong.is-positive,
+#page-growth .growth-quadrant-metrics strong.is-negative,
+#page-growth .growth-focus-burst .growth-focus-metrics span:first-child b{color:#111827!important}
+#page-growth .growth-ops-opportunity-counts i,
+#page-growth .growth-ops-opportunity-counts b,
+#page-growth .growth-focus-tag,
+#page-growth .growth-focus-burst .growth-focus-tag,
+#page-growth .growth-focus-stable .growth-focus-tag{color:#111827!important;background:#f3f4f6!important}
+#page-growth .growth-ops-card-concentration .growth-ops-donut b{color:#111827!important}
+#page-growth .growth-ops-card-concentration .growth-ops-kpi-side b{color:#111827!important}
+
+/* Match the core-data KPI card language: white surface, navy hierarchy, restrained system accents. */
+#page-growth .growth-ops-kpi{
+  border:1px solid #e2eaf3!important;border-top:3px solid #173f73!important;border-radius:14px!important;
+  box-shadow:0 8px 20px rgba(23,63,115,.07)!important;background:#fff!important;color:#173b68!important
+}
+#page-growth .growth-ops-kpi-opportunities{border-top-color:#2f7d4a!important}
+#page-growth .growth-ops-kpi-donut{border-top-color:#173f73!important}
+#page-growth .growth-ops-kpi-title,
+#page-growth .growth-ops-kpi strong,
+#page-growth .growth-quadrant-head h3,
+#page-growth .growth-quadrant-metrics strong{color:#173b68!important}
+#page-growth .growth-focus-card{
+  border:1px solid #e2eaf3!important;border-top:3px solid #173f73!important;border-radius:14px!important;
+  box-shadow:0 8px 20px rgba(23,63,115,.07)!important;background:#fff!important;padding:18px 20px!important
+}
+#page-growth .growth-focus-card:nth-child(2){border-top-color:#2f7d4a!important}
+#page-growth .growth-focus-card:nth-child(3){border-top-color:#173f73!important}
+#page-growth .growth-focus-card h3{color:#173b68!important}
+#page-growth .growth-focus-metrics b{color:#173b68!important}
+#page-growth .growth-focus-card small{color:#8fa0b4!important}
+#page-growth .growth-focus-tag{border-radius:999px!important;background:#f1f4f8!important;color:#173b68!important}
+
+/* 播放增长榜沿用剧种内容贡献的文字层级；环比语义色仅作用于本 Tab。 */
+#page-growth .growth-ops-kpi-title{color:#6d819b!important}
+#page-growth .growth-ops-kpi strong{color:#102542!important}
+#page-growth .growth-ops-kpi p,
+#page-growth .growth-ops-kpi small,
+#page-growth .growth-focus-card small{color:#96a5b7!important}
+#page-growth .growth-focus-card h3,
+#page-growth .growth-quadrant-head h3,
+#page-growth .panel-head h3{color:#243a59!important}
+#page-growth .growth-focus-metrics,
+#page-growth .growth-quadrant-head>b,
+#page-growth .growth-quadrant-metrics,
+#page-growth .growth-quadrant-chart-legend,
+#page-growth .panel-head span,
+#page-growth .panel-head small{color:#40536d!important}
+#page-growth .growth-focus-metrics b,
+#page-growth .growth-quadrant-metrics strong{color:#102542!important}
+#page-growth .growth-focus-burst .growth-focus-metrics span:first-child b{color:#d5545f!important}
+#page-growth .growth-ops-opportunity-counts i,
+#page-growth .growth-ops-opportunity-counts b,
+#page-growth .growth-focus-tag{color:#40536d!important}
+#page-growth .growth-ops-card-concentration .growth-ops-donut b,
+#page-growth .growth-ops-card-concentration .growth-ops-kpi-side b{color:#246dc0!important}
+#page-growth .growth-positive,
+#page-growth .growth-ops-kpi .growth-ops-mom.is-up,
+#page-growth .growth-quadrant-metrics strong.is-positive{color:#d5545f!important}
+#page-growth .growth-negative,
+#page-growth .growth-ops-kpi .growth-ops-mom.is-down,
+#page-growth .growth-quadrant-metrics strong.is-negative{color:#159a70!important}
+
+/* 播放增长榜文字再提亮一档，避免整体视觉过重。 */
+#page-growth .growth-ops-kpi-title,
+#page-growth .growth-filter,
+#page-growth .growth-detail-panel .panel-head strong{color:#8292a5!important}
+#page-growth .growth-ops-kpi strong,
+#page-growth .growth-focus-metrics b,
+#page-growth .growth-quadrant-metrics strong{color:#617792!important}
+#page-growth .growth-ops-kpi p,
+#page-growth .growth-ops-kpi small,
+#page-growth .growth-focus-card small,
+#page-growth .growth-data-note{color:#9aa8b8!important}
+#page-growth .growth-focus-card h3,
+#page-growth .growth-quadrant-head h3,
+#page-growth .panel-head h3{color:#617792!important}
+#page-growth .growth-focus-metrics,
+#page-growth .growth-quadrant-head>b,
+#page-growth .growth-quadrant-metrics,
+#page-growth .growth-quadrant-chart-legend,
+#page-growth .panel-head span,
+#page-growth .panel-head small,
+#page-growth .growth-detail-panel td{color:#71839b!important}
+#page-growth .growth-detail-panel td.content-name,
+#page-growth .growth-rank-value{color:#71839b!important}
+#page-growth .growth-positive,
+#page-growth .growth-ops-kpi .growth-ops-mom.is-up,
+#page-growth .growth-quadrant-metrics strong.is-positive{color:#df7b84!important}
+#page-growth .growth-negative,
+#page-growth .growth-ops-kpi .growth-ops-mom.is-down,
+#page-growth .growth-quadrant-metrics strong.is-negative{color:#62ad88!important}
+
+/* 在上一档基础上轻微加深，保持柔和但提高可读性。 */
+#page-growth .growth-ops-kpi strong,
+#page-growth .growth-focus-metrics b,
+#page-growth .growth-quadrant-metrics strong,
+#page-growth .growth-focus-card h3,
+#page-growth .growth-quadrant-head h3,
+#page-growth .panel-head h3{color:#536b84!important}
+#page-growth .growth-focus-metrics,
+#page-growth .growth-quadrant-head>b,
+#page-growth .growth-quadrant-metrics,
+#page-growth .growth-quadrant-chart-legend,
+#page-growth .panel-head span,
+#page-growth .panel-head small,
+#page-growth .growth-detail-panel td{color:#64788f!important}
+#page-growth .growth-ops-kpi-title{color:#788ba0!important}
+#page-growth .growth-ops-kpi p,
+#page-growth .growth-ops-kpi small,
+#page-growth .growth-focus-card small,
+#page-growth .growth-data-note{color:#8d9daf!important}
+#page-growth .growth-positive,
+#page-growth .growth-ops-kpi .growth-ops-mom.is-up,
+#page-growth .growth-quadrant-metrics strong.is-positive{color:#d96b76!important}
+#page-growth .growth-negative,
+#page-growth .growth-ops-kpi .growth-ops-mom.is-down,
+#page-growth .growth-quadrant-metrics strong.is-negative{color:#4f9b76!important}
+#page-growth .growth-detail-panel td.content-name,
+#page-growth .growth-rank-value{color:#64788f!important}
+#page-growth .growth-ops-opportunity-counts{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important}
+
+/* 播放增长榜统一复用系统文字层级；业务标签和环比语义色保持原有规则。 */
+#page-growth .growth-ops-kpi-title{color:#6d819b!important}
+#page-growth .growth-ops-kpi strong,
+#page-growth .growth-focus-metrics b,
+#page-growth .growth-quadrant-metrics strong{color:#102542!important}
+#page-growth .growth-focus-card h3,
+#page-growth .growth-quadrant-head h3,
+#page-growth .panel-head h3{color:var(--text)!important}
+#page-growth .growth-focus-metrics,
+#page-growth .growth-quadrant-head>b,
+#page-growth .growth-quadrant-metrics,
+#page-growth .growth-quadrant-chart-legend,
+#page-growth .panel-head span,
+#page-growth .panel-head small{color:#94a2b5!important}
+#page-growth .growth-ops-kpi p,
+#page-growth .growth-ops-kpi small,
+#page-growth .growth-focus-card small{color:#96a5b7!important}
+#page-growth .growth-data-note{color:#71839b!important}
+#page-growth .growth-detail-panel th{color:#617791!important}
+#page-growth .growth-detail-panel td{color:#344f6e!important}
+#page-growth .growth-detail-panel td.content-name,
+#page-growth .growth-rank-value{color:var(--text)!important}
+
+#page-growth .growth-positive,
+#page-growth .growth-ops-kpi .growth-ops-mom.is-up,
+#page-growth .growth-quadrant-metrics strong.is-positive{color:var(--red)!important}
+#page-growth .growth-negative,
+#page-growth .growth-ops-kpi .growth-ops-mom.is-down,
+#page-growth .growth-quadrant-metrics strong.is-negative{color:var(--green)!important}
+#page-growth .growth-ops-kpi .growth-ops-mom.is-flat{color:#96a5b7!important}
+
+/* 清除此前页面级中和规则对业务标签的覆盖，沿用既有标签 class 颜色。 */
+#page-growth .growth-ops-opportunity-counts i,
+#page-growth .growth-ops-opportunity-counts b,
+#page-growth .growth-focus-tag{color:inherit!important;background:initial!important}
+#page-growth .growth-ops-count-new i,
+#page-growth .growth-ops-count-new b,
+#page-growth .growth-focus-tag{color:#2367cf!important}
+#page-growth .growth-ops-count-new i,
+#page-growth .growth-focus-new .growth-focus-tag{background:#eaf2fd!important}
+#page-growth .growth-ops-count-stable i,
+#page-growth .growth-ops-count-stable b,
+#page-growth .growth-focus-stable .growth-focus-tag{color:#238455!important}
+#page-growth .growth-ops-count-stable i,
+#page-growth .growth-focus-stable .growth-focus-tag{background:#e4f7ed!important}
+#page-growth .growth-ops-count-burst i,
+#page-growth .growth-ops-count-burst b,
+#page-growth .growth-focus-burst .growth-focus-tag{color:#b52f3c!important}
+#page-growth .growth-ops-count-burst i,
+#page-growth .growth-focus-burst .growth-focus-tag{background:#ffe5e8!important}
+
+/* 播放增长榜顶部 KPI 卡片取消彩色包边，仅保留系统中性边框。 */
+#page-growth .growth-summary-kpi,
+#page-growth .growth-ops-kpi{border-top-color:var(--line)!important}
+#page-growth .growth-focus-card{border-color:var(--line)!important;border-top-color:var(--line)!important;border-left-color:var(--line)!important}
+#page-growth .growth-focus-card:nth-child(1),
+#page-growth .growth-focus-card:nth-child(2),
+#page-growth .growth-focus-card:nth-child(3){border-top-color:var(--line)!important;border-left-color:var(--line)!important}
+#page-growth .growth-ops-kpi{height:160px!important;min-height:160px!important;padding:18px 20px!important}
+#page-growth .growth-focus-burst .growth-focus-metrics span:first-child b{color:#102542!important}
+
+/* 明细表保留红绿语义色，去掉数字/状态/特征的胶囊外观。 */
+#page-growth .growth-detail-panel .rank-badge,
+#page-growth .growth-detail-panel .growth-status,
+#page-growth .growth-detail-panel .growth-feature{
+  display:inline;
+  min-width:0;
+  min-height:0;
+  height:auto;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+}
+#page-growth .growth-detail-panel td.growth-positive,
+#page-growth .growth-detail-panel td.growth-negative{
+  border-radius:0!important;
+  background:transparent!important;
+  padding:12px 14px!important;
+}
+
+/* 当前看板所有明细表统一取消胶囊包装，保留文字本身的颜色和字体。 */
+:where(
+  .detail-panel table,
+  .growth-detail-panel table,
+  .client-detail-panel table,
+  .table-wrap table,
+  .hot-table-wrap table,
+  .banner-detail-table-wrap table,
+  .section-ops-detail table,
+  .tab4-detail table,
+  .tab4-ops-detail-section table,
+  .popup-detail-wrap table,
+  .content-detail table,
+  .genre-detail-scroll table
+) span{
+  display:inline!important;
+  min-width:0!important;
+  min-height:0!important;
+  height:auto!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+}
+/* 三个运营 Tab 的统一单日日期控件，沿用现有日期控件的字体与边框规范。 */
+.single-day-control{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.single-day-control input{height:32px;padding:0 9px;border:1px solid #d5e2f0;border-radius:18px;background:#fff;color:#304b6d;font:inherit}
+.growth-previous-missing{color:#7f8fa2;font-size:11px;font-weight:700;white-space:nowrap}
+
+/* 日环比、周环比保留上涨/下降语义色：上涨红色，下降绿色。 */
+#page-growth .growth-day-mom .growth-positive,
+#page-growth .growth-week-mom .growth-positive{
+  color:var(--red)!important;
+}
+#page-growth .growth-day-mom .growth-negative,
+#page-growth .growth-week-mom .growth-negative{
+  color:var(--green)!important;
+}
+
+/* 播放增长榜仅复用 BL 内容消费的基础组件规范。 */
+#page-growth .growth-focus-section,
+#page-growth .growth-opportunity-panel,
+#page-growth .growth-detail-panel{
+  margin-bottom:16px!important;
+  padding:19px 20px!important;
+  border:1px solid var(--line)!important;
+  border-radius:15px!important;
+  background:var(--surface)!important;
+  box-shadow:var(--shadow)!important;
+}
+#page-growth .growth-focus-grid{gap:14px!important}
+#page-growth .growth-focus-card,
+#page-growth .growth-ops-kpi{
+  box-sizing:border-box!important;
+    min-height:146px!important;
+    height:146px!important;
+    padding:16px 18px 20px!important;
+  border:1px solid var(--line)!important;
+  border-top:3px solid var(--blue)!important;
+  border-radius:10px!important;
+  background:var(--surface)!important;
+  box-shadow:var(--shadow)!important;
+}
+#page-growth .growth-focus-card.growth-focus-burst{border-top-color:var(--red)!important}
+#page-growth .growth-focus-card.growth-focus-new{border-top-color:var(--blue)!important}
+#page-growth .growth-focus-card.growth-focus-stable{border-top-color:var(--green)!important}
+  #page-growth .growth-focus-card{
+    display:grid!important;
+    grid-template-rows:20px 28px 30px 16px!important;
+  row-gap:0!important;
+  align-content:space-between!important;
+}
+#page-growth .growth-ops-kpi-title,
+#page-growth .growth-focus-metrics,
+#page-growth .growth-focus-card small,
+#page-growth .growth-quadrant-head>b,
+#page-growth .growth-quadrant-metrics,
+#page-growth .growth-quadrant-chart-legend,
+#page-growth .panel-head span,
+#page-growth .panel-head small,
+#page-growth .growth-data-note{
+  color:var(--muted)!important;
+}
+#page-growth .growth-focus-card h3,
+#page-growth .growth-focus-metrics b,
+#page-growth .growth-quadrant-head h3,
+#page-growth .growth-quadrant-metrics strong,
+#page-growth .growth-detail-panel td.content-name,
+#page-growth .growth-detail-panel .growth-rank-value,
+#page-growth .growth-ops-kpi strong{
+  color:var(--text)!important;
+}
+#page-growth .growth-detail-panel th{
+  background:var(--bg)!important;
+  color:var(--muted)!important;
+  border-bottom:1px solid var(--line)!important;
+}
+#page-growth .growth-detail-panel td{
+  color:var(--muted)!important;
+  border-bottom:1px solid var(--line)!important;
+}
+#page-growth .growth-positive,
+#page-growth .growth-day-mom .growth-positive,
+#page-growth .growth-week-mom .growth-positive,
+#page-growth .growth-quadrant-metrics strong.is-positive{
+  color:var(--red)!important;
+}
+#page-growth .growth-negative,
+#page-growth .growth-day-mom .growth-negative,
+#page-growth .growth-week-mom .growth-negative,
+#page-growth .growth-quadrant-metrics strong.is-negative{
+  color:var(--green)!important;
+}
+
+/* 播放增长榜标签与状态统一使用系统中性色；仅保留条形图和环比语义色。 */
+#page-growth .growth-focus-card .growth-focus-tag,
+#page-growth .growth-focus-burst .growth-focus-tag,
+#page-growth .growth-focus-new .growth-focus-tag,
+#page-growth .growth-focus-stable .growth-focus-tag{
+  color:var(--muted)!important;
+  background:var(--bg)!important;
+  border:1px solid var(--line)!important;
+}
+#page-growth .growth-quadrant-kicker{
+  color:var(--muted)!important;
+}
+#page-growth .growth-detail-panel .growth-status,
+#page-growth .growth-detail-panel .growth-status-new,
+#page-growth .growth-detail-panel .growth-status-continuous,
+#page-growth .growth-detail-panel .growth-status-neutral,
+#page-growth .growth-detail-panel .growth-feature,
+#page-growth .growth-detail-panel .growth-feature-new,
+#page-growth .growth-detail-panel .growth-feature-burst,
+#page-growth .growth-detail-panel .growth-feature-stable,
+#page-growth .growth-detail-panel .growth-feature-low{
+  color:var(--text)!important;
+  background:transparent!important;
+}
+
+/* 顶部重点卡片按“标签 → 剧名 → 指标 → 归属”分行，避免文字重叠。 */
+#page-growth .growth-focus-card{
+  min-height:154px!important;
+  height:154px!important;
+  padding:16px 18px 18px!important;
+  grid-template-rows:auto auto auto auto!important;
+  row-gap:4px!important;
+  align-content:start!important;
+}
+#page-growth .growth-focus-card .growth-focus-tag{
+  display:inline-flex!important;
+  align-self:start!important;
+  height:auto!important;
+  min-height:22px!important;
+  line-height:16px!important;
+  box-sizing:border-box!important;
+}
+#page-growth .growth-focus-card h3{
+  height:auto!important;
+  min-height:24px!important;
+  margin:0!important;
+  padding:0!important;
+  line-height:24px!important;
+}
+#page-growth .growth-focus-card .growth-focus-metrics{
+  height:auto!important;
+  min-height:0!important;
+  align-self:start!important;
+}
+#page-growth .growth-focus-card small{
+  height:auto!important;
+  min-height:0!important;
+  margin:0!important;
+  line-height:16px!important;
+  align-self:start!important;
+}

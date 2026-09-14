@@ -1,0 +1,610 @@
+{
+  "season_new_user_top10": [
+    {
+      "name": "我的女神室友斗娜",
+      "video_type": "剧集",
+      "vv": 6061
+    },
+    {
+      "name": "天定良元",
+      "video_type": "剧集",
+      "vv": 4486
+    },
+    {
+      "name": "挚爱",
+      "video_type": "剧集",
+      "vv": 2913
+    },
+    {
+      "name": "寒阳风起春山境",
+      "video_type": "剧集",
+      "vv": 2877
+    },
+    {
+      "name": "寒阳风起春山境小剧场",
+      "video_type": "剧集",
+      "vv": 2598
+    },
+    {
+      "name": "伍贰",
+      "video_type": "剧集",
+      "vv": 2273
+    },
+    {
+      "name": "双程",
+      "video_type": "剧集",
+      "vv": 1955
+    },
+    {
+      "name": "烟灰",
+      "video_type": "剧集",
+      "vv": 1891
+    },
+    {
+      "name": "垂涎",
+      "video_type": "剧集",
+      "vv": 1832
+    },
+    {
+      "name": "偿还",
+      "video_type": "剧集",
+      "vv": 1819
+    },
+    {
+      "name": "检察官的禁忌",
+      "video_type": "剧集",
+      "vv": 1523
+    },
+    {
+      "name": "靶心之外",
+      "video_type": "剧集",
+      "vv": 1216
+    },
+    {
+      "name": "嫁入高门的男人",
+      "video_type": "剧集",
+      "vv": 1158
+    },
+    {
+      "name": "怪奇物语 第一季",
+      "video_type": "剧集",
+      "vv": 1088
+    },
+    {
+      "name": "寒阳风起春山境花絮",
+      "video_type": "剧集",
+      "vv": 1052
+    },
+    {
+      "name": "无耻之徒(美版) 第一季",
+      "video_type": "剧集",
+      "vv": 1004
+    },
+    {
+      "name": "校园之外 第一季",
+      "video_type": "剧集",
+      "vv": 939
+    },
+    {
+      "name": "铁拳教育",
+      "video_type": "剧集",
+      "vv": 932
+    },
+    {
+      "name": "挚爱采访+花絮",
+      "video_type": "剧集",
+      "vv": 919
+    },
+    {
+      "name": "初三的六一儿童节",
+      "video_type": "剧集",
+      "vv": 889
+    },
+    {
+      "name": "鼠惑",
+      "video_type": "剧集",
+      "vv": 768
+    },
+    {
+      "name": "心动禁止",
+      "video_type": "剧集",
+      "vv": 727
+    },
+    {
+      "name": "伍贰花絮",
+      "video_type": "剧集",
+      "vv": 687
+    },
+    {
+      "name": "和你在一起",
+      "video_type": "剧集",
+      "vv": 590
+    },
+    {
+      "name": "天定良元花絮",
+      "video_type": "剧集",
+      "vv": 571
+    },
+    {
+      "name": "珍爱",
+      "video_type": "剧集",
+      "vv": 537
+    },
+    {
+      "name": "现在不是出轨的问题",
+      "video_type": "剧集",
+      "vv": 532
+    },
+    {
+      "name": "爱情契约",
+      "video_type": "剧集",
+      "vv": 524
+    },
+    {
+      "name": "等待黎明破晓时",
+      "video_type": "剧集",
+      "vv": 514
+    },
+    {
+      "name": "伍贰番外",
+      "video_type": "剧集",
+      "vv": 487
+    }
+  ],
+  "season_top10": [
+    {
+      "name": "烟灰",
+      "video_type": "剧集",
+      "vv": 154294
+    },
+    {
+      "name": "靶心之外",
+      "video_type": "剧集",
+      "vv": 123949
+    },
+    {
+      "name": "寒阳风起春山境",
+      "video_type": "剧集",
+      "vv": 120585
+    },
+    {
+      "name": "寒阳风起春山境小剧场",
+      "video_type": "剧集",
+      "vv": 95664
+    },
+    {
+      "name": "心动禁止",
+      "video_type": "剧集",
+      "vv": 88410
+    },
+    {
+      "name": "天定良元",
+      "video_type": "剧集",
+      "vv": 86892
+    },
+    {
+      "name": "鼠惑",
+      "video_type": "剧集",
+      "vv": 85561
+    },
+    {
+      "name": "等待黎明破晓时",
+      "video_type": "剧集",
+      "vv": 82538
+    },
+    {
+      "name": "偿还",
+      "video_type": "剧集",
+      "vv": 60514
+    },
+    {
+      "name": "赴海",
+      "video_type": "剧集",
+      "vv": 56197
+    },
+    {
+      "name": "嫁入高门的男人",
+      "video_type": "剧集",
+      "vv": 52870
+    },
+    {
+      "name": "爱情契约",
+      "video_type": "剧集",
+      "vv": 50348
+    },
+    {
+      "name": "挚爱",
+      "video_type": "剧集",
+      "vv": 49027
+    },
+    {
+      "name": "寒阳风起春山境花絮",
+      "video_type": "剧集",
+      "vv": 47216
+    },
+    {
+      "name": "现在不是出轨的问题",
+      "video_type": "剧集",
+      "vv": 44324
+    },
+    {
+      "name": "杀手妈咪",
+      "video_type": "剧集",
+      "vv": 44219
+    },
+    {
+      "name": "伍贰",
+      "video_type": "剧集",
+      "vv": 42292
+    },
+    {
+      "name": "夏季",
+      "video_type": "剧集",
+      "vv": 38836
+    },
+    {
+      "name": "垂涎",
+      "video_type": "剧集",
+      "vv": 38773
+    },
+    {
+      "name": "检察官的禁忌",
+      "video_type": "剧集",
+      "vv": 38426
+    },
+    {
+      "name": "双程",
+      "video_type": "剧集",
+      "vv": 38207
+    },
+    {
+      "name": "校园暗恋警报",
+      "video_type": "剧集",
+      "vv": 34807
+    },
+    {
+      "name": "挚爱采访+花絮",
+      "video_type": "剧集",
+      "vv": 31163
+    },
+    {
+      "name": "光点",
+      "video_type": "剧集",
+      "vv": 30779
+    },
+    {
+      "name": "和你在一起",
+      "video_type": "剧集",
+      "vv": 22670
+    },
+    {
+      "name": "蓝嘴唇",
+      "video_type": "剧集",
+      "vv": 20336
+    },
+    {
+      "name": "执爱",
+      "video_type": "剧集",
+      "vv": 19903
+    },
+    {
+      "name": "初三的六一儿童节",
+      "video_type": "剧集",
+      "vv": 19602
+    },
+    {
+      "name": "我们之间的引力",
+      "video_type": "剧集",
+      "vv": 18888
+    },
+    {
+      "name": "铁拳教育",
+      "video_type": "剧集",
+      "vv": 18749
+    }
+  ],
+  "movie_top10": [
+    {
+      "name": "最后的日出",
+      "video_type": "电影",
+      "vv": 10195
+    },
+    {
+      "name": "耳语者",
+      "video_type": "电影",
+      "vv": 8312
+    },
+    {
+      "name": "蜘蛛侠：英雄无归",
+      "video_type": "电影",
+      "vv": 4437
+    },
+    {
+      "name": "群体",
+      "video_type": "电影",
+      "vv": 3815
+    },
+    {
+      "name": "奥德赛",
+      "video_type": "电影",
+      "vv": 3615
+    },
+    {
+      "name": "狂暴对峙",
+      "video_type": "电影",
+      "vv": 3516
+    },
+    {
+      "name": "牢笼鬼魂",
+      "video_type": "电影",
+      "vv": 1365
+    },
+    {
+      "name": "匹诺曹：弦断",
+      "video_type": "电影",
+      "vv": 800
+    },
+    {
+      "name": "极速恋人(电影版)",
+      "video_type": "电影",
+      "vv": 618
+    },
+    {
+      "name": "最后孤屋",
+      "video_type": "电影",
+      "vv": 576
+    },
+    {
+      "name": "福尔摩斯小姐3",
+      "video_type": "电影",
+      "vv": 537
+    },
+    {
+      "name": "杀死比尔：整个血腥事件",
+      "video_type": "电影",
+      "vv": 504
+    },
+    {
+      "name": "小丑回魂2",
+      "video_type": "电影",
+      "vv": 435
+    },
+    {
+      "name": "惩罚者：最后一击",
+      "video_type": "电影",
+      "vv": 408
+    },
+    {
+      "name": "语义错误(电影版)",
+      "video_type": "电影",
+      "vv": 379
+    },
+    {
+      "name": "哆啦A梦：新·大雄的海底鬼岩城",
+      "video_type": "电影",
+      "vv": 351
+    },
+    {
+      "name": "恶魔之口",
+      "video_type": "电影",
+      "vv": 336
+    },
+    {
+      "name": "夜巡毒枭",
+      "video_type": "电影",
+      "vv": 302
+    },
+    {
+      "name": "人间中毒",
+      "video_type": "电影",
+      "vv": 297
+    },
+    {
+      "name": "鬼玩人6：炼狱",
+      "video_type": "电影",
+      "vv": 292
+    },
+    {
+      "name": "与王生活的男人",
+      "video_type": "电影",
+      "vv": 278
+    },
+    {
+      "name": "冥婚红包",
+      "video_type": "电影",
+      "vv": 277
+    },
+    {
+      "name": "我的错误",
+      "video_type": "电影",
+      "vv": 273
+    },
+    {
+      "name": "黑帮大佬和我的365日",
+      "video_type": "电影",
+      "vv": 244
+    },
+    {
+      "name": "恩娇",
+      "video_type": "电影",
+      "vv": 231
+    },
+    {
+      "name": "夺命航班",
+      "video_type": "电影",
+      "vv": 217
+    },
+    {
+      "name": "利刃出鞘3",
+      "video_type": "电影",
+      "vv": 204
+    },
+    {
+      "name": "灵魂伴侣",
+      "video_type": "电影",
+      "vv": 198
+    },
+    {
+      "name": "永远心跳漏一拍",
+      "video_type": "电影",
+      "vv": 170
+    },
+    {
+      "name": "请以你的名字呼唤我",
+      "video_type": "电影",
+      "vv": 170
+    }
+  ],
+  "movie_new_user_top10": [
+    {
+      "name": "蜘蛛侠：英雄无归",
+      "video_type": "电影",
+      "vv": 281
+    },
+    {
+      "name": "最后的日出",
+      "video_type": "电影",
+      "vv": 241
+    },
+    {
+      "name": "群体",
+      "video_type": "电影",
+      "vv": 166
+    },
+    {
+      "name": "奥德赛",
+      "video_type": "电影",
+      "vv": 99
+    },
+    {
+      "name": "耳语者",
+      "video_type": "电影",
+      "vv": 76
+    },
+    {
+      "name": "黑帮大佬和我的365日",
+      "video_type": "电影",
+      "vv": 59
+    },
+    {
+      "name": "狂暴对峙",
+      "video_type": "电影",
+      "vv": 57
+    },
+    {
+      "name": "小丑回魂2",
+      "video_type": "电影",
+      "vv": 46
+    },
+    {
+      "name": "牢笼鬼魂",
+      "video_type": "电影",
+      "vv": 43
+    },
+    {
+      "name": "我的错误",
+      "video_type": "电影",
+      "vv": 43
+    },
+    {
+      "name": "新世界",
+      "video_type": "电影",
+      "vv": 43
+    },
+    {
+      "name": "福尔摩斯小姐3",
+      "video_type": "电影",
+      "vv": 37
+    },
+    {
+      "name": "人间中毒",
+      "video_type": "电影",
+      "vv": 33
+    },
+    {
+      "name": "小姐",
+      "video_type": "电影",
+      "vv": 31
+    },
+    {
+      "name": "与王生活的男人",
+      "video_type": "电影",
+      "vv": 31
+    },
+    {
+      "name": "请以你的名字呼唤我",
+      "video_type": "电影",
+      "vv": 30
+    },
+    {
+      "name": "首尔之春",
+      "video_type": "电影",
+      "vv": 30
+    },
+    {
+      "name": "杀死比尔：整个血腥事件",
+      "video_type": "电影",
+      "vv": 30
+    },
+    {
+      "name": "极速恋人(电影版)",
+      "video_type": "电影",
+      "vv": 26
+    },
+    {
+      "name": "浴血黑帮：不朽传奇",
+      "video_type": "电影",
+      "vv": 22
+    },
+    {
+      "name": "之后",
+      "video_type": "电影",
+      "vv": 21
+    },
+    {
+      "name": "之后2",
+      "video_type": "电影",
+      "vv": 21
+    },
+    {
+      "name": "釜山行",
+      "video_type": "电影",
+      "vv": 20
+    },
+    {
+      "name": "恶魔之口",
+      "video_type": "电影",
+      "vv": 20
+    },
+    {
+      "name": "永远心跳漏一拍",
+      "video_type": "电影",
+      "vv": 20
+    },
+    {
+      "name": "你的错误",
+      "video_type": "电影",
+      "vv": 20
+    },
+    {
+      "name": "惩罚者：最后一击",
+      "video_type": "电影",
+      "vv": 19
+    },
+    {
+      "name": "营救夜莺",
+      "video_type": "电影",
+      "vv": 19
+    },
+    {
+      "name": "哆啦A梦：新·大雄的海底鬼岩城",
+      "video_type": "电影",
+      "vv": 19
+    },
+    {
+      "name": "夺命航班",
+      "video_type": "电影",
+      "vv": 19
+    }
+  ]
+}

@@ -1,408 +1,534 @@
 [
   {
-    "日期": "2026-07-01",
-    "安卓": 7.7083,
-    "iOS": 7.2346,
-    "M站": 4.4449,
-    "全部": 7.2712
+    "日期": "2026-09-07",
+    "安卓": 7.8314,
+    "iOS": 8.0352,
+    "M站": 4.02,
+    "全部": 7.3601
   },
   {
-    "日期": "2026-07-02",
-    "安卓": 7.8717,
-    "iOS": 7.141,
-    "M站": 4.2325,
-    "全部": 7.3705
+    "日期": "2026-09-08",
+    "安卓": 7.9766,
+    "iOS": 8.5345,
+    "M站": 4.0136,
+    "全部": 7.5715
   },
   {
-    "日期": "2026-07-03",
-    "安卓": 8.1261,
-    "iOS": 7.6047,
-    "M站": 4.5143,
-    "全部": 7.6937
+    "日期": "2026-09-09",
+    "安卓": 8.0462,
+    "iOS": 7.6454,
+    "M站": 3.8247,
+    "全部": 7.4583
   },
   {
-    "日期": "2026-07-04",
-    "安卓": 9.0585,
-    "iOS": 8.3516,
-    "M站": 4.8507,
-    "全部": 8.5252
+    "日期": "2026-09-10",
+    "安卓": 8.034,
+    "iOS": 8.5936,
+    "M站": 3.8812,
+    "全部": 7.5835
   },
   {
-    "日期": "2026-07-05",
-    "安卓": 9.0023,
-    "iOS": 7.8205,
-    "M站": 4.9028,
-    "全部": 8.4469
+    "日期": "2026-09-11",
+    "安卓": 8.3599,
+    "iOS": 8.4372,
+    "M站": 4.0432,
+    "全部": 7.8488
   },
   {
-    "日期": "2026-07-06",
-    "安卓": 8.3237,
-    "iOS": 6.8395,
-    "M站": 4.294,
-    "全部": 7.7104
+    "日期": "2026-09-12",
+    "安卓": 8.7925,
+    "iOS": 8.3292,
+    "M站": 4.1128,
+    "全部": 8.1955
   },
   {
-    "日期": "2026-07-07",
-    "安卓": 8.4182,
-    "iOS": 7.9424,
-    "M站": 4.3643,
-    "全部": 7.9449
+    "日期": "2026-09-13",
+    "安卓": 8.6933,
+    "iOS": 9.3169,
+    "M站": 4.1172,
+    "全部": 8.2738
   },
   {
-    "日期": "2026-07-08",
-    "安卓": 8.7691,
-    "iOS": 7.9412,
-    "M站": 4.3918,
-    "全部": 8.2334
+    "date": "2026-07-01",
+    "movie_avg_play_count": 2.3421,
+    "short_avg_play_count": 3.5442,
+    "total_avg_play_count": 7.7971,
+    "tv_avg_play_count": 7.127
   },
   {
-    "日期": "2026-07-09",
-    "安卓": 8.5621,
-    "iOS": 7.5872,
-    "M站": 4.4077,
-    "全部": 8.0413
+    "date": "2026-07-02",
+    "movie_avg_play_count": 2.3192,
+    "short_avg_play_count": 3.555,
+    "total_avg_play_count": 7.9498,
+    "tv_avg_play_count": 7.2331
   },
   {
-    "日期": "2026-07-10",
-    "安卓": 8.9505,
-    "iOS": 7.9648,
-    "M站": 4.5981,
-    "全部": 8.4055
+    "date": "2026-07-03",
+    "movie_avg_play_count": 2.2387,
+    "short_avg_play_count": 3.4281,
+    "total_avg_play_count": 8.1734,
+    "tv_avg_play_count": 7.3315
   },
   {
-    "日期": "2026-07-11",
-    "安卓": 9.1821,
-    "iOS": 8.3213,
-    "M站": 4.7879,
-    "全部": 8.6648
+    "date": "2026-07-04",
+    "movie_avg_play_count": 2.326,
+    "short_avg_play_count": 3.8622,
+    "total_avg_play_count": 9.1365,
+    "tv_avg_play_count": 8.2649
   },
   {
-    "日期": "2026-07-12",
-    "安卓": 8.7333,
-    "iOS": 8.3162,
-    "M站": 4.6131,
-    "全部": 8.2872
+    "date": "2026-07-05",
+    "movie_avg_play_count": 2.4031,
+    "short_avg_play_count": 3.6522,
+    "total_avg_play_count": 9.0917,
+    "tv_avg_play_count": 8.2524
   },
   {
-    "日期": "2026-07-13",
-    "安卓": 8.0528,
-    "iOS": 7.8661,
-    "M站": 4.3283,
-    "全部": 7.66
+    "date": "2026-07-06",
+    "movie_avg_play_count": 2.262,
+    "short_avg_play_count": 3.8837,
+    "total_avg_play_count": 8.4175,
+    "tv_avg_play_count": 7.6877
   },
   {
-    "日期": "2026-07-14",
-    "安卓": 8.0826,
-    "iOS": 7.5671,
-    "M站": 4.1241,
-    "全部": 7.6156
+    "date": "2026-07-07",
+    "movie_avg_play_count": 2.2855,
+    "short_avg_play_count": 3.8555,
+    "total_avg_play_count": 8.504,
+    "tv_avg_play_count": 7.7713
   },
   {
-    "日期": "2026-07-15",
-    "安卓": 8.0498,
-    "iOS": 7.5617,
-    "M站": 4.0054,
-    "全部": 7.5755
+    "date": "2026-07-08",
+    "movie_avg_play_count": 2.2928,
+    "short_avg_play_count": 3.9637,
+    "total_avg_play_count": 8.8448,
+    "tv_avg_play_count": 8.0775
   },
   {
-    "日期": "2026-07-16",
-    "安卓": 8.5315,
-    "iOS": 7.6634,
-    "M站": 4.342,
-    "全部": 8.0018
+    "date": "2026-07-09",
+    "movie_avg_play_count": 2.3184,
+    "short_avg_play_count": 4.1019,
+    "total_avg_play_count": 8.6218,
+    "tv_avg_play_count": 7.8817
   },
   {
-    "日期": "2026-07-17",
-    "安卓": 8.7808,
-    "iOS": 7.9298,
-    "M站": 4.682,
-    "全部": 8.296
+    "date": "2026-07-10",
+    "movie_avg_play_count": 2.3653,
+    "short_avg_play_count": 4.1888,
+    "total_avg_play_count": 9.0192,
+    "tv_avg_play_count": 8.1453
   },
   {
-    "日期": "2026-07-18",
-    "安卓": 9.1356,
-    "iOS": 8.3117,
-    "M站": 4.5139,
-    "全部": 8.6124
+    "date": "2026-07-11",
+    "movie_avg_play_count": 2.4887,
+    "short_avg_play_count": 3.9039,
+    "total_avg_play_count": 9.2619,
+    "tv_avg_play_count": 8.3608
   },
   {
-    "日期": "2026-07-19",
-    "安卓": 8.4992,
-    "iOS": 8.1022,
-    "M站": 4.6811,
-    "全部": 8.1197
+    "date": "2026-07-12",
+    "movie_avg_play_count": 2.4962,
+    "short_avg_play_count": 4.0908,
+    "total_avg_play_count": 8.8148,
+    "tv_avg_play_count": 7.8617
   },
   {
-    "日期": "2026-07-20",
-    "安卓": 7.8749,
-    "iOS": 6.6679,
-    "M站": 4.072,
-    "全部": 7.3638
+    "date": "2026-07-13",
+    "movie_avg_play_count": 2.3907,
+    "short_avg_play_count": 4.0898,
+    "total_avg_play_count": 8.1488,
+    "tv_avg_play_count": 7.3112
   },
   {
-    "日期": "2026-07-21",
-    "安卓": 8.0376,
-    "iOS": 6.9981,
-    "M站": 4.2515,
-    "全部": 7.5397
+    "date": "2026-07-14",
+    "movie_avg_play_count": 2.387,
+    "short_avg_play_count": 4.2039,
+    "total_avg_play_count": 8.1692,
+    "tv_avg_play_count": 7.333
   },
   {
-    "日期": "2026-07-22",
-    "安卓": 8.2408,
-    "iOS": 7.1177,
-    "M站": 4.2154,
-    "全部": 7.6839
+    "date": "2026-07-15",
+    "movie_avg_play_count": 2.3631,
+    "short_avg_play_count": 4.2023,
+    "total_avg_play_count": 8.1089,
+    "tv_avg_play_count": 7.225
   },
   {
-    "日期": "2026-07-23",
-    "安卓": 8.5671,
-    "iOS": 7.2468,
-    "M站": 4.4382,
-    "全部": 7.9951
+    "date": "2026-07-16",
+    "movie_avg_play_count": 2.3442,
+    "short_avg_play_count": 4.6285,
+    "total_avg_play_count": 8.5858,
+    "tv_avg_play_count": 7.7141
   },
   {
-    "日期": "2026-07-24",
-    "安卓": 8.7709,
-    "iOS": 7.8561,
-    "M站": 4.5799,
-    "全部": 8.2582
+    "date": "2026-07-17",
+    "movie_avg_play_count": 2.2839,
+    "short_avg_play_count": 4.3332,
+    "total_avg_play_count": 8.8393,
+    "tv_avg_play_count": 7.834
   },
   {
-    "日期": "2026-07-25",
-    "安卓": 9.0741,
-    "iOS": 8.3241,
-    "M站": 4.8152,
-    "全部": 8.5778
+    "date": "2026-07-18",
+    "movie_avg_play_count": 2.3704,
+    "short_avg_play_count": 3.794,
+    "total_avg_play_count": 9.2011,
+    "tv_avg_play_count": 8.1894
   },
   {
-    "日期": "2026-07-26",
-    "安卓": 8.4925,
-    "iOS": 7.8353,
-    "M站": 4.5516,
-    "全部": 8.0459
+    "date": "2026-07-19",
+    "movie_avg_play_count": 2.3756,
+    "short_avg_play_count": 3.8698,
+    "total_avg_play_count": 8.5428,
+    "tv_avg_play_count": 7.561
   },
   {
-    "日期": "2026-07-27",
-    "安卓": 7.8905,
-    "iOS": 7.1209,
-    "M站": 4.2473,
-    "全部": 7.431
+    "date": "2026-07-20",
+    "movie_avg_play_count": 2.2864,
+    "short_avg_play_count": 3.8689,
+    "total_avg_play_count": 7.9245,
+    "tv_avg_play_count": 7.0989
   },
   {
-    "日期": "2026-07-28",
-    "安卓": 8.0968,
-    "iOS": 7.1328,
-    "M站": 4.0977,
-    "全部": 7.5393
+    "date": "2026-07-21",
+    "movie_avg_play_count": 2.3232,
+    "short_avg_play_count": 4.0681,
+    "total_avg_play_count": 8.0906,
+    "tv_avg_play_count": 7.2333
   },
   {
-    "日期": "2026-07-29",
-    "安卓": 8.2681,
-    "iOS": 7.3794,
-    "M站": 4.3676,
-    "全部": 7.7482
+    "date": "2026-07-22",
+    "movie_avg_play_count": 2.351,
+    "short_avg_play_count": 3.5953,
+    "total_avg_play_count": 8.2816,
+    "tv_avg_play_count": 7.3719
   },
   {
-    "日期": "2026-07-30",
-    "安卓": 8.342,
-    "iOS": 7.6893,
-    "M站": 4.5499,
-    "全部": 7.8384
+    "date": "2026-07-23",
+    "movie_avg_play_count": 2.293,
+    "short_avg_play_count": 4.2882,
+    "total_avg_play_count": 8.6008,
+    "tv_avg_play_count": 7.658
   },
   {
-    "日期": "2026-07-31",
-    "安卓": 9.218,
-    "iOS": 8.4544,
-    "M站": 4.5328,
-    "全部": 8.6258
+    "date": "2026-07-24",
+    "movie_avg_play_count": 2.305,
+    "short_avg_play_count": 4.1339,
+    "total_avg_play_count": 8.8079,
+    "tv_avg_play_count": 7.842
   },
   {
-    "日期": "2026-08-01",
-    "安卓": 9.2046,
-    "iOS": 9.3419,
-    "M站": 4.5714,
-    "全部": 8.7439
+    "date": "2026-07-25",
+    "movie_avg_play_count": 2.3897,
+    "short_avg_play_count": 4.4929,
+    "total_avg_play_count": 9.1381,
+    "tv_avg_play_count": 8.0968
   },
   {
-    "日期": "2026-08-02",
-    "安卓": 8.542,
-    "iOS": 8.4342,
-    "M站": 4.3257,
-    "全部": 8.098
+    "date": "2026-07-26",
+    "movie_avg_play_count": 2.4045,
+    "short_avg_play_count": 4.5504,
+    "total_avg_play_count": 8.5447,
+    "tv_avg_play_count": 7.519
   },
   {
-    "日期": "2026-08-03",
-    "安卓": 8.0555,
-    "iOS": 7.6721,
-    "M站": 4.2748,
-    "全部": 7.5829
+    "date": "2026-07-27",
+    "movie_avg_play_count": 2.3184,
+    "short_avg_play_count": 4.2068,
+    "total_avg_play_count": 7.9423,
+    "tv_avg_play_count": 7.0795
   },
   {
-    "日期": "2026-08-04",
-    "安卓": 8.2042,
-    "iOS": 7.5559,
-    "M站": 4.1094,
-    "全部": 7.6671
+    "date": "2026-07-28",
+    "movie_avg_play_count": 2.3418,
+    "short_avg_play_count": 3.8968,
+    "total_avg_play_count": 8.159,
+    "tv_avg_play_count": 7.2718
   },
   {
-    "日期": "2026-08-05",
-    "安卓": 8.3534,
-    "iOS": 7.7626,
-    "M站": 4.2707,
-    "全部": 7.81
+    "date": "2026-07-29",
+    "movie_avg_play_count": 2.3236,
+    "short_avg_play_count": 4.2977,
+    "total_avg_play_count": 8.3267,
+    "tv_avg_play_count": 7.3683
   },
   {
-    "日期": "2026-08-06",
-    "安卓": 8.3759,
-    "iOS": 7.9958,
-    "M站": 4.1444,
-    "全部": 7.825
+    "date": "2026-07-30",
+    "movie_avg_play_count": 2.3528,
+    "short_avg_play_count": 4.4283,
+    "total_avg_play_count": 8.3823,
+    "tv_avg_play_count": 7.4451
   },
   {
-    "日期": "2026-08-07",
-    "安卓": 9.0334,
-    "iOS": 8.3003,
-    "M站": 4.262,
-    "全部": 8.3553
+    "date": "2026-07-31",
+    "movie_avg_play_count": 2.3024,
+    "short_avg_play_count": 3.4696,
+    "total_avg_play_count": 9.1421,
+    "tv_avg_play_count": 8.0863
   },
   {
-    "日期": "2026-08-08",
-    "安卓": 9.0214,
-    "iOS": 8.8807,
-    "M站": 4.4673,
-    "全部": 8.4893
+    "date": "2026-08-01",
+    "movie_avg_play_count": 2.3884,
+    "short_avg_play_count": 2.9386,
+    "total_avg_play_count": 9.2627,
+    "tv_avg_play_count": 8.2938
   },
   {
-    "日期": "2026-08-09",
-    "安卓": 8.6492,
-    "iOS": 10.1248,
-    "M站": 4.3471,
-    "全部": 8.3132
+    "date": "2026-08-02",
+    "movie_avg_play_count": 2.4127,
+    "short_avg_play_count": 3.1771,
+    "total_avg_play_count": 8.578,
+    "tv_avg_play_count": 7.5869
   },
   {
-    "日期": "2026-08-10",
-    "安卓": 8.5534,
-    "iOS": 7.5971,
-    "M站": 4.2827,
-    "全部": 7.9239
+    "date": "2026-08-03",
+    "movie_avg_play_count": 2.294,
+    "short_avg_play_count": 4.4599,
+    "total_avg_play_count": 8.1159,
+    "tv_avg_play_count": 7.2551
   },
   {
-    "日期": "2026-08-11",
-    "安卓": 8.6872,
-    "iOS": 7.4816,
-    "M站": 4.5072,
-    "全部": 8.0339
+    "date": "2026-08-04",
+    "movie_avg_play_count": 2.2996,
+    "short_avg_play_count": 4.6191,
+    "total_avg_play_count": 8.2642,
+    "tv_avg_play_count": 7.4132
   },
   {
-    "日期": "2026-08-12",
-    "安卓": 8.6488,
-    "iOS": 7.8116,
-    "M站": 4.4344,
-    "全部": 8.079
+    "date": "2026-08-05",
+    "movie_avg_play_count": 2.2901,
+    "short_avg_play_count": 4.8415,
+    "total_avg_play_count": 8.4077,
+    "tv_avg_play_count": 7.4975
   },
   {
-    "日期": "2026-08-13",
-    "安卓": 8.5517,
-    "iOS": 7.426,
-    "M站": 4.5926,
-    "全部": 7.9772
+    "date": "2026-08-06",
+    "movie_avg_play_count": 2.3282,
+    "short_avg_play_count": 4.5761,
+    "total_avg_play_count": 8.4347,
+    "tv_avg_play_count": 7.5531
   },
   {
-    "日期": "2026-08-14",
-    "安卓": 9.1293,
-    "iOS": 7.6845,
-    "M站": 4.2947,
-    "全部": 8.412
+    "date": "2026-08-07",
+    "movie_avg_play_count": 2.3516,
+    "short_avg_play_count": 3.948,
+    "total_avg_play_count": 9.1007,
+    "tv_avg_play_count": 8.164
   },
   {
-    "日期": "2026-08-15",
-    "安卓": 9.1268,
-    "iOS": 8.4418,
-    "M站": 4.2207,
-    "全部": 8.5271
+    "date": "2026-08-08",
+    "movie_avg_play_count": 2.4676,
+    "short_avg_play_count": 3.9882,
+    "total_avg_play_count": 9.0823,
+    "tv_avg_play_count": 8.1235
   },
   {
-    "日期": "2026-08-16",
-    "安卓": 8.777,
-    "iOS": 8.8004,
-    "M站": 4.0566,
-    "全部": 8.248
+    "date": "2026-08-09",
+    "movie_avg_play_count": 2.4938,
+    "short_avg_play_count": 4.0718,
+    "total_avg_play_count": 8.7289,
+    "tv_avg_play_count": 7.7619
   },
   {
-    "日期": "2026-08-17",
-    "安卓": 8.422,
-    "iOS": 9.0073,
-    "M站": 4.133,
-    "全部": 7.9561
+    "date": "2026-08-10",
+    "movie_avg_play_count": 2.4208,
+    "short_avg_play_count": 4.1108,
+    "total_avg_play_count": 8.6459,
+    "tv_avg_play_count": 7.7124
   },
   {
-    "日期": "2026-08-18",
-    "安卓": 8.5229,
-    "iOS": 7.9987,
-    "M站": 4.1692,
-    "全部": 7.9296
+    "date": "2026-08-11",
+    "movie_avg_play_count": 2.4218,
+    "short_avg_play_count": 4.1224,
+    "total_avg_play_count": 8.7798,
+    "tv_avg_play_count": 7.8205
   },
   {
-    "日期": "2026-08-19",
-    "安卓": 8.3626,
-    "iOS": 11.9366,
-    "M站": 4.0382,
-    "全部": 8.8476
+    "date": "2026-08-12",
+    "movie_avg_play_count": 2.4117,
+    "short_avg_play_count": 4.4224,
+    "total_avg_play_count": 8.7262,
+    "tv_avg_play_count": 7.7015
   },
   {
-    "日期": "2026-08-20",
-    "安卓": 8.5557,
-    "iOS": 7.2908,
-    "M站": 3.9545,
-    "全部": 7.8127
+    "date": "2026-08-13",
+    "movie_avg_play_count": 2.3987,
+    "short_avg_play_count": 4.0657,
+    "total_avg_play_count": 8.6375,
+    "tv_avg_play_count": 7.6053
   },
   {
-    "日期": "2026-08-21",
-    "安卓": 8.9891,
-    "iOS": 8.5508,
-    "M站": 4.167,
-    "全部": 8.3635
+    "date": "2026-08-14",
+    "movie_avg_play_count": 2.4122,
+    "short_avg_play_count": 3.6026,
+    "total_avg_play_count": 9.2109,
+    "tv_avg_play_count": 8.1158
   },
   {
-    "日期": "2026-08-22",
-    "安卓": 8.6944,
-    "iOS": 8.5861,
-    "M站": 4.0609,
-    "全部": 8.1379
+    "date": "2026-08-15",
+    "movie_avg_play_count": 2.5308,
+    "short_avg_play_count": 4.9369,
+    "total_avg_play_count": 9.2023,
+    "tv_avg_play_count": 8.1205
   },
   {
-    "日期": "2026-08-23",
-    "安卓": 8.573,
-    "iOS": 7.4869,
-    "M站": 4.2897,
-    "全部": 7.9478
+    "date": "2026-08-16",
+    "movie_avg_play_count": 2.4921,
+    "short_avg_play_count": 4.927,
+    "total_avg_play_count": 8.8633,
+    "tv_avg_play_count": 7.7706
   },
   {
-    "日期": "2026-08-24",
-    "安卓": 8.2635,
-    "iOS": 7.2663,
-    "M站": 3.9034,
-    "全部": 7.5748
+    "date": "2026-08-17",
+    "movie_avg_play_count": 2.3984,
+    "short_avg_play_count": 4.7131,
+    "total_avg_play_count": 8.4981,
+    "tv_avg_play_count": 7.4453
   },
   {
-    "日期": "2026-08-25",
-    "安卓": 8.2529,
-    "iOS": 7.1855,
-    "M站": 4.0128,
-    "全部": 7.5765
+    "date": "2026-08-18",
+    "movie_avg_play_count": 2.4036,
+    "short_avg_play_count": 5.0967,
+    "total_avg_play_count": 8.6069,
+    "tv_avg_play_count": 7.5214
   },
   {
-    "日期": "2026-08-26",
-    "安卓": 8.1839,
-    "iOS": 6.6771,
-    "M站": 4.245,
-    "全部": 7.5426
+    "date": "2026-08-19",
+    "movie_avg_play_count": 2.3863,
+    "short_avg_play_count": 4.9505,
+    "total_avg_play_count": 8.4381,
+    "tv_avg_play_count": 7.4091
   },
   {
-    "日期": "2026-08-27",
-    "安卓": 8.2201,
-    "iOS": 7.6405,
-    "M站": 4.0529,
-    "全部": 7.6346
+    "date": "2026-08-20",
+    "movie_avg_play_count": 2.4002,
+    "short_avg_play_count": 5.0193,
+    "total_avg_play_count": 8.6356,
+    "tv_avg_play_count": 7.6045
+  },
+  {
+    "date": "2026-08-21",
+    "movie_avg_play_count": 2.4313,
+    "short_avg_play_count": 3.9586,
+    "total_avg_play_count": 9.0611,
+    "tv_avg_play_count": 8.0299
+  },
+  {
+    "date": "2026-08-22",
+    "movie_avg_play_count": 2.5649,
+    "short_avg_play_count": 4.1261,
+    "total_avg_play_count": 8.7583,
+    "tv_avg_play_count": 7.7528
+  },
+  {
+    "date": "2026-08-23",
+    "movie_avg_play_count": 2.5724,
+    "short_avg_play_count": 4.0242,
+    "total_avg_play_count": 8.6507,
+    "tv_avg_play_count": 7.6621
+  },
+  {
+    "date": "2026-08-24",
+    "movie_avg_play_count": 2.4364,
+    "short_avg_play_count": 4.2065,
+    "total_avg_play_count": 8.3478,
+    "tv_avg_play_count": 7.3685
+  },
+  {
+    "date": "2026-08-25",
+    "movie_avg_play_count": 2.4187,
+    "short_avg_play_count": 4.1462,
+    "total_avg_play_count": 8.3206,
+    "tv_avg_play_count": 7.2949
+  },
+  {
+    "date": "2026-08-26",
+    "movie_avg_play_count": 2.4324,
+    "short_avg_play_count": 3.705,
+    "total_avg_play_count": 8.2414,
+    "tv_avg_play_count": 7.1952
+  },
+  {
+    "date": "2026-08-27",
+    "movie_avg_play_count": 2.3872,
+    "short_avg_play_count": 4.2763,
+    "total_avg_play_count": 8.2929,
+    "tv_avg_play_count": 7.2253
+  },
+  {
+    "date": "2026-08-28",
+    "movie_avg_play_count": 2.4204,
+    "short_avg_play_count": 4.2538,
+    "total_avg_play_count": 8.6913,
+    "tv_avg_play_count": 7.5553
+  },
+  {
+    "date": "2026-08-29",
+    "movie_avg_play_count": 2.4788,
+    "short_avg_play_count": 3.4206,
+    "total_avg_play_count": 8.6445,
+    "tv_avg_play_count": 7.471
+  },
+  {
+    "date": "2026-08-30",
+    "movie_avg_play_count": 2.4857,
+    "short_avg_play_count": 4.1003,
+    "total_avg_play_count": 8.3519,
+    "tv_avg_play_count": 7.2124
+  },
+  {
+    "date": "2026-08-31",
+    "movie_avg_play_count": 2.3793,
+    "short_avg_play_count": 5.2186,
+    "total_avg_play_count": 7.8526,
+    "tv_avg_play_count": 6.7736
+  },
+  {
+    "date": "2026-09-01",
+    "movie_avg_play_count": 2.4245,
+    "short_avg_play_count": 4.9352,
+    "total_avg_play_count": 7.8753,
+    "tv_avg_play_count": 6.7409
+  },
+  {
+    "date": "2026-09-02",
+    "movie_avg_play_count": 2.4939,
+    "short_avg_play_count": 4.0022,
+    "total_avg_play_count": 7.9532,
+    "tv_avg_play_count": 6.7968
+  },
+  {
+    "date": "2026-09-03",
+    "movie_avg_play_count": 2.4201,
+    "short_avg_play_count": 4.4244,
+    "total_avg_play_count": 7.9786,
+    "tv_avg_play_count": 6.7172
+  },
+  {
+    "date": "2026-09-04",
+    "movie_avg_play_count": 2.386,
+    "short_avg_play_count": 3.8204,
+    "total_avg_play_count": 8.0821,
+    "tv_avg_play_count": 6.8135
+  },
+  {
+    "date": "2026-09-05",
+    "movie_avg_play_count": 2.5506,
+    "short_avg_play_count": 3.8844,
+    "total_avg_play_count": 8.5999,
+    "tv_avg_play_count": 7.2707
+  },
+  {
+    "date": "2026-09-06",
+    "movie_avg_play_count": 2.5328,
+    "short_avg_play_count": 3.7897,
+    "total_avg_play_count": 8.5567,
+    "tv_avg_play_count": 7.1977
+  },
+  {
+    "date": "2026-09-07",
+    "movie_avg_play_count": 2.4508,
+    "short_avg_play_count": 4.0106,
+    "total_avg_play_count": 7.9099,
+    "tv_avg_play_count": 6.652
   }
 ]

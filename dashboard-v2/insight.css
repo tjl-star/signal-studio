@@ -354,4 +354,4 @@
 #page-insight .insight-proto-event.is-up,
 #page-insight .insight-proto-event.is-down,
 #page-insight .insight-proto-event.is-risk,
-#page-insight .insight-proto-event.is-opportunity{border-left:0!important}
+#page-insight .insight-proto-event.is-opportunity{border-left:0!important;border-inline-start:0!important}
