@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import os
 import tempfile
+import time
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -47,7 +48,17 @@ def write_json(path: Path, value) -> None:
     try:
         with os.fdopen(fd, "w", encoding="utf-8") as handle:
             json.dump(value, handle, ensure_ascii=False, separators=(",", ":"))
-        os.replace(temp_name, path)
+        # Windows may briefly hold the destination while the dashboard server
+        # or another scheduled process is reading it.  Retry the atomic swap
+        # so a transient sharing violation does not discard a valid refresh.
+        for attempt in range(4):
+            try:
+                os.replace(temp_name, path)
+                break
+            except PermissionError:
+                if attempt == 3:
+                    raise
+                time.sleep(0.25 * (attempt + 1))
     finally:
         if os.path.exists(temp_name):
             os.unlink(temp_name)

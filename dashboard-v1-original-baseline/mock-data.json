@@ -1,0 +1,234 @@
+{
+  "dashboard_date": "2026-07-28",
+  "generated_at": "2026-07-29T10:00:00+08:00",
+  "source": "Quick BI自然语言查询 / Quick BI看板接口",
+  "pages": {
+    "overview": {
+      "filters": {
+        "date": "2026-07-28",
+        "platforms": ["all", "iOS", "Android", "M站"]
+      },
+      "metric_cards": [
+        {
+          "metric_key": "dau",
+          "metric_name": "DAU",
+          "value": 1468200,
+          "unit": "人",
+          "wow": 0.032,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "基础数据 → 日活数据 → 账号日活"
+        },
+        {
+          "metric_key": "new_users",
+          "metric_name": "新增用户",
+          "value": 68420,
+          "unit": "人",
+          "wow": -0.018,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "留存分析 → 新账号留存"
+        },
+        {
+          "metric_key": "retention_1d",
+          "metric_name": "一日留存",
+          "value": 0.428,
+          "unit": "%",
+          "wow": 0.006,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "留存分析 → 新账号留存"
+        },
+        {
+          "metric_key": "retention_3d",
+          "metric_name": "三日留存",
+          "value": 0.286,
+          "unit": "%",
+          "wow": -0.004,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "留存分析 → 新账号留存"
+        },
+        {
+          "metric_key": "play_uv",
+          "metric_name": "播放人数",
+          "value": 1039400,
+          "unit": "人",
+          "wow": 0.041,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "播放数据"
+        },
+        {
+          "metric_key": "play_count",
+          "metric_name": "播放次数",
+          "value": 5287600,
+          "unit": "次",
+          "wow": 0.055,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "播放数据"
+        },
+        {
+          "metric_key": "play_rate",
+          "metric_name": "播放率",
+          "value": 0.708,
+          "unit": "%",
+          "wow": 0.009,
+          "trend_30d": [],
+          "status": "calculated",
+          "source": "播放人数 / DAU"
+        },
+        {
+          "metric_key": "avg_play_count",
+          "metric_name": "人均播放次数",
+          "value": 5.09,
+          "unit": "次/人",
+          "wow": 0.013,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "播放数据"
+        },
+        {
+          "metric_key": "avg_play_time",
+          "metric_name": "人均播放时长",
+          "value": null,
+          "unit": "秒",
+          "wow": null,
+          "trend_30d": null,
+          "status": "pending",
+          "source": "后续补充"
+        }
+      ],
+      "trends": {
+        "dau_30d": [
+          {"date":"2026-06-29","platform":"all","value":1312000},{"date":"2026-06-30","platform":"all","value":1328600},{"date":"2026-07-01","platform":"all","value":1334200},{"date":"2026-07-02","platform":"all","value":1341800},{"date":"2026-07-03","platform":"all","value":1329900},{"date":"2026-07-04","platform":"all","value":1384000},{"date":"2026-07-05","platform":"all","value":1392500},{"date":"2026-07-06","platform":"all","value":1357600},{"date":"2026-07-07","platform":"all","value":1361000},{"date":"2026-07-08","platform":"all","value":1374400},{"date":"2026-07-09","platform":"all","value":1380200},{"date":"2026-07-10","platform":"all","value":1371800},{"date":"2026-07-11","platform":"all","value":1419600},{"date":"2026-07-12","platform":"all","value":1424800},{"date":"2026-07-13","platform":"all","value":1393000},{"date":"2026-07-14","platform":"all","value":1400500},{"date":"2026-07-15","platform":"all","value":1412200},{"date":"2026-07-16","platform":"all","value":1407700},{"date":"2026-07-17","platform":"all","value":1418800},{"date":"2026-07-18","platform":"all","value":1450200},{"date":"2026-07-19","platform":"all","value":1458600},{"date":"2026-07-20","platform":"all","value":1429000},{"date":"2026-07-21","platform":"all","value":1433600},{"date":"2026-07-22","platform":"all","value":1439800},{"date":"2026-07-23","platform":"all","value":1447200},{"date":"2026-07-24","platform":"all","value":1438800},{"date":"2026-07-25","platform":"all","value":1471200},{"date":"2026-07-26","platform":"all","value":1478400},{"date":"2026-07-27","platform":"all","value":1423000},{"date":"2026-07-28","platform":"all","value":1468200}
+        ],
+        "new_users_30d": [
+          {"date":"2026-06-29","platform":"all","value":58600},{"date":"2026-06-30","platform":"all","value":60400},{"date":"2026-07-01","platform":"all","value":61800},{"date":"2026-07-02","platform":"all","value":62900},{"date":"2026-07-03","platform":"all","value":61200},{"date":"2026-07-04","platform":"all","value":67100},{"date":"2026-07-05","platform":"all","value":69300},{"date":"2026-07-06","platform":"all","value":63500},{"date":"2026-07-07","platform":"all","value":64200},{"date":"2026-07-08","platform":"all","value":65400},{"date":"2026-07-09","platform":"all","value":66100},{"date":"2026-07-10","platform":"all","value":65000},{"date":"2026-07-11","platform":"all","value":70400},{"date":"2026-07-12","platform":"all","value":72100},{"date":"2026-07-13","platform":"all","value":66600},{"date":"2026-07-14","platform":"all","value":67200},{"date":"2026-07-15","platform":"all","value":68100},{"date":"2026-07-16","platform":"all","value":67600},{"date":"2026-07-17","platform":"all","value":68900},{"date":"2026-07-18","platform":"all","value":73800},{"date":"2026-07-19","platform":"all","value":74600},{"date":"2026-07-20","platform":"all","value":69800},{"date":"2026-07-21","platform":"all","value":70500},{"date":"2026-07-22","platform":"all","value":71100},{"date":"2026-07-23","platform":"all","value":72400},{"date":"2026-07-24","platform":"all","value":70600},{"date":"2026-07-25","platform":"all","value":75200},{"date":"2026-07-26","platform":"all","value":75900},{"date":"2026-07-27","platform":"all","value":69680},{"date":"2026-07-28","platform":"all","value":68420}
+        ],
+        "play_rate_30d": [
+          {"date":"2026-06-29","platform":"all","value":0.666},{"date":"2026-06-30","platform":"all","value":0.671},{"date":"2026-07-01","platform":"all","value":0.674},{"date":"2026-07-02","platform":"all","value":0.669},{"date":"2026-07-03","platform":"all","value":0.672},{"date":"2026-07-04","platform":"all","value":0.689},{"date":"2026-07-05","platform":"all","value":0.692},{"date":"2026-07-06","platform":"all","value":0.681},{"date":"2026-07-07","platform":"all","value":0.678},{"date":"2026-07-08","platform":"all","value":0.682},{"date":"2026-07-09","platform":"all","value":0.685},{"date":"2026-07-10","platform":"all","value":0.683},{"date":"2026-07-11","platform":"all","value":0.697},{"date":"2026-07-12","platform":"all","value":0.701},{"date":"2026-07-13","platform":"all","value":0.688},{"date":"2026-07-14","platform":"all","value":0.691},{"date":"2026-07-15","platform":"all","value":0.693},{"date":"2026-07-16","platform":"all","value":0.694},{"date":"2026-07-17","platform":"all","value":0.696},{"date":"2026-07-18","platform":"all","value":0.706},{"date":"2026-07-19","platform":"all","value":0.709},{"date":"2026-07-20","platform":"all","value":0.698},{"date":"2026-07-21","platform":"all","value":0.701},{"date":"2026-07-22","platform":"all","value":0.703},{"date":"2026-07-23","platform":"all","value":0.704},{"date":"2026-07-24","platform":"all","value":0.699},{"date":"2026-07-25","platform":"all","value":0.713},{"date":"2026-07-26","platform":"all","value":0.715},{"date":"2026-07-27","platform":"all","value":0.699},{"date":"2026-07-28","platform":"all","value":0.708}
+        ]
+      },
+      "platform_breakdown": [
+        {"platform":"iOS","dau":502400,"play_uv":366800,"play_count":1896400,"play_rate":0.730,"avg_play_count":5.17},
+        {"platform":"Android","dau":781600,"play_uv":548200,"play_count":2793200,"play_rate":0.701,"avg_play_count":5.10},
+        {"platform":"M站","dau":184200,"play_uv":124400,"play_count":598000,"play_rate":0.675,"avg_play_count":4.81}
+      ]
+    },
+    "content_analysis": {
+      "filters": {
+        "date": "2026-07-28",
+        "ranking_type": "total"
+      },
+      "hot_play_top30": [
+        {"rank":1,"title":"鬼迷东宫","play_count":347200,"play_uv":216400,"day_change":0.082,"country_region":null,"content_type":"电视剧","genre":"动作,奇幻,悬疑","is_new_entry":false,"status":"confirmed"},
+        {"rank":2,"title":"偿还","play_count":321800,"play_uv":202700,"day_change":0.061,"country_region":null,"content_type":"电视剧","genre":"剧情,同性","is_new_entry":false,"status":"confirmed"},
+        {"rank":3,"title":"爱情契约","play_count":296400,"play_uv":188200,"day_change":0.048,"country_region":null,"content_type":"电视剧","genre":"爱情,同性","is_new_entry":false,"status":"confirmed"},
+        {"rank":4,"title":"寒阳风起香山境","play_count":258900,"play_uv":169500,"day_change":0.033,"country_region":null,"content_type":"电视剧","genre":"剧情,爱情","is_new_entry":true,"status":"confirmed"},
+        {"rank":5,"title":"嫉妒高门的男人","play_count":243100,"play_uv":151800,"day_change":-0.014,"country_region":null,"content_type":"电视剧","genre":"爱情,同性","is_new_entry":false,"status":"confirmed"},
+        {"rank":6,"title":"心动禁止","play_count":231900,"play_uv":147200,"day_change":0.026,"country_region":null,"content_type":"电视剧","genre":"剧情,悬疑","is_new_entry":false,"status":"confirmed"},
+        {"rank":7,"title":"检察官室的提案花絮","play_count":218600,"play_uv":139100,"day_change":0.019,"country_region":null,"content_type":"综艺","genre":"花絮,访谈","is_new_entry":false,"status":"confirmed"},
+        {"rank":8,"title":"天生一对","play_count":205300,"play_uv":132600,"day_change":0.011,"country_region":null,"content_type":"电视剧","genre":"剧情,爱情","is_new_entry":false,"status":"confirmed"},
+        {"rank":9,"title":"蓝嘴唇","play_count":197400,"play_uv":126100,"day_change":-0.022,"country_region":null,"content_type":"电视剧","genre":"爱情,同性","is_new_entry":false,"status":"confirmed"},
+        {"rank":10,"title":"十月拉锯战","play_count":184900,"play_uv":119400,"day_change":0.044,"country_region":null,"content_type":"电视剧","genre":"剧情,喜剧","is_new_entry":true,"status":"confirmed"},
+        {"rank":11,"title":"杀人者的购物中心 第二季","play_count":177500,"play_uv":116800,"day_change":0.029,"country_region":null,"content_type":"电视剧","genre":"动作,悬疑,惊悚","is_new_entry":false,"status":"confirmed"},
+        {"rank":12,"title":"治疗","play_count":169300,"play_uv":109200,"day_change":0.017,"country_region":null,"content_type":"电视剧","genre":"同性","is_new_entry":false,"status":"confirmed"},
+        {"rank":13,"title":"毛骨悚然的恋爱","play_count":161700,"play_uv":103800,"day_change":-0.008,"country_region":null,"content_type":"电视剧","genre":"喜剧,爱情","is_new_entry":false,"status":"confirmed"},
+        {"rank":14,"title":"和你在一起","play_count":154100,"play_uv":99000,"day_change":0.015,"country_region":null,"content_type":"电视剧","genre":"同性","is_new_entry":false,"status":"confirmed"},
+        {"rank":15,"title":"士卒","play_count":148600,"play_uv":95200,"day_change":0.006,"country_region":null,"content_type":"电影","genre":"动作","is_new_entry":false,"status":"confirmed"},
+        {"rank":16,"title":"赴汤蹈火","play_count":143800,"play_uv":92300,"day_change":-0.013,"country_region":null,"content_type":"电视剧","genre":"喜剧","is_new_entry":false,"status":"confirmed"},
+        {"rank":17,"title":"斜坡上的家","play_count":137900,"play_uv":88700,"day_change":0.021,"country_region":null,"content_type":"电视剧","genre":"剧情","is_new_entry":true,"status":"confirmed"},
+        {"rank":18,"title":"云端恋人","play_count":132700,"play_uv":84200,"day_change":0.012,"country_region":null,"content_type":"电视剧","genre":"爱情","is_new_entry":false,"status":"confirmed"},
+        {"rank":19,"title":"无人之境","play_count":126300,"play_uv":80900,"day_change":-0.019,"country_region":null,"content_type":"电影","genre":"悬疑","is_new_entry":false,"status":"confirmed"},
+        {"rank":20,"title":"夜航西行","play_count":119600,"play_uv":77600,"day_change":0.008,"country_region":null,"content_type":"纪录片","genre":"旅行","is_new_entry":false,"status":"confirmed"},
+        {"rank":21,"title":"你的名字在雨里","play_count":113900,"play_uv":74300,"day_change":0.024,"country_region":null,"content_type":"电视剧","genre":"爱情,剧情","is_new_entry":false,"status":"confirmed"},
+        {"rank":22,"title":"追踪者","play_count":109400,"play_uv":70800,"day_change":-0.006,"country_region":null,"content_type":"电视剧","genre":"悬疑,动作","is_new_entry":false,"status":"confirmed"},
+        {"rank":23,"title":"春山记","play_count":103200,"play_uv":68100,"day_change":0.018,"country_region":null,"content_type":"电视剧","genre":"剧情,爱情","is_new_entry":true,"status":"confirmed"},
+        {"rank":24,"title":"夏日未满","play_count":98700,"play_uv":64600,"day_change":0.004,"country_region":null,"content_type":"电视剧","genre":"青春","is_new_entry":false,"status":"confirmed"},
+        {"rank":25,"title":"暗河","play_count":94600,"play_uv":62100,"day_change":-0.011,"country_region":null,"content_type":"电视剧","genre":"悬疑","is_new_entry":false,"status":"confirmed"},
+        {"rank":26,"title":"便利店夜话","play_count":90300,"play_uv":59400,"day_change":0.031,"country_region":null,"content_type":"综艺","genre":"生活,访谈","is_new_entry":true,"status":"confirmed"},
+        {"rank":27,"title":"七号病房","play_count":86200,"play_uv":56800,"day_change":0.009,"country_region":null,"content_type":"电影","genre":"剧情","is_new_entry":false,"status":"confirmed"},
+        {"rank":28,"title":"风中的来信","play_count":82400,"play_uv":54100,"day_change":-0.017,"country_region":null,"content_type":"电视剧","genre":"爱情","is_new_entry":false,"status":"confirmed"},
+        {"rank":29,"title":"明日边界","play_count":78900,"play_uv":51600,"day_change":0.022,"country_region":null,"content_type":"电视剧","genre":"科幻,动作","is_new_entry":false,"status":"confirmed"},
+        {"rank":30,"title":"周末厨房","play_count":75100,"play_uv":49300,"day_change":0.007,"country_region":null,"content_type":"综艺","genre":"美食,生活","is_new_entry":false,"status":"confirmed"}
+      ],
+      "genre_play_share": [
+        {"genre_group":"泰剧","play_count":null,"share":null,"day_change":null,"status":"pending"},
+        {"genre_group":"韩剧","play_count":null,"share":null,"day_change":null,"status":"pending"},
+        {"genre_group":"美剧","play_count":null,"share":null,"day_change":null,"status":"pending"},
+        {"genre_group":"其他","play_count":null,"share":null,"day_change":null,"status":"pending"}
+      ]
+    },
+    "search_analysis": {
+      "filters": {
+        "date": "2026-07-28",
+        "user_type": "all"
+      },
+      "hot_search_top30": [
+        {"rank":null,"keyword":null,"search_count":null,"search_uv":null,"day_change":null,"content_type":null,"genre":null,"status":"pending"}
+      ],
+      "search_funnel": {
+        "steps": [
+          {"step_key":"search","step_name":"搜索","uv":null,"status":"pending"},
+          {"step_key":"detail","step_name":"详情页","uv":null,"status":"pending"},
+          {"step_key":"first_play","step_name":"首帧播放","uv":null,"status":"pending"},
+          {"step_key":"effective_5min_play","step_name":"5分钟有效播放","uv":null,"status":"pending"},
+          {"step_key":"finish","step_name":"完成播放","uv":null,"status":"pending"}
+        ],
+        "conversion_rates": {
+          "search_to_detail": null,
+          "detail_to_first_play": null,
+          "effective_play_rate": null,
+          "finish_rate": null
+        }
+      }
+    },
+    "traffic_analysis": {
+      "filters": {
+        "date": "2026-07-28",
+        "channels": ["精选", "电影", "美剧", "英剧", "韩剧"]
+      },
+      "channel_funnels": [
+        {"channel":"精选","home_uv":null,"channel_uv":null,"detail_uv":null,"play_uv":null,"conversion_rate":null,"day_change":null,"status":"pending"},
+        {"channel":"电影","home_uv":null,"channel_uv":null,"detail_uv":null,"play_uv":null,"conversion_rate":null,"day_change":null,"status":"pending"},
+        {"channel":"美剧","home_uv":null,"channel_uv":null,"detail_uv":null,"play_uv":null,"conversion_rate":null,"day_change":null,"status":"pending"},
+        {"channel":"英剧","home_uv":null,"channel_uv":null,"detail_uv":null,"play_uv":null,"conversion_rate":null,"day_change":null,"status":"pending"},
+        {"channel":"韩剧","home_uv":null,"channel_uv":null,"detail_uv":null,"play_uv":null,"conversion_rate":null,"day_change":null,"status":"pending"}
+      ],
+      "home_sections": [
+        {"section_name":"推荐位","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"section_name":"热播区","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"}
+      ]
+    },
+    "recommendation_analysis": {
+      "filters": {
+        "date": "2026-07-28",
+        "component_types": ["Banner", "弹窗", "猜你喜欢"],
+        "channels": ["韩", "日", "美", "泰"],
+        "banner_positions": ["第一针", "第二针", "第三针"]
+      },
+      "banners": [
+        {"component_name":"Banner","title":null,"channel":"韩","position":"第一针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"component_name":"Banner","title":null,"channel":"韩","position":"第二针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"component_name":"Banner","title":null,"channel":"韩","position":"第三针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"component_name":"Banner","title":null,"channel":"日","position":"第一针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"component_name":"Banner","title":null,"channel":"日","position":"第二针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"component_name":"Banner","title":null,"channel":"日","position":"第三针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"component_name":"Banner","title":null,"channel":"美","position":"第一针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"component_name":"Banner","title":null,"channel":"美","position":"第二针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"component_name":"Banner","title":null,"channel":"美","position":"第三针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"component_name":"Banner","title":null,"channel":"泰","position":"第一针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"component_name":"Banner","title":null,"channel":"泰","position":"第二针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"},
+        {"component_name":"Banner","title":null,"channel":"泰","position":"第三针","exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"}
+      ],
+      "popups": [
+        {"component_name":"弹窗","title":null,"exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"status":"pending"}
+      ],
+      "guess_you_like": [
+        {"component_name":"猜你喜欢","exposure_count":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"}
+      ]
+    }
+  }
+}

@@ -5,10 +5,10 @@
     "page": "首页",
     "client_scope": "全客户端",
     "date_start": "2026-07-01",
-    "date_end": "2026-09-13",
-    "row_count": 75,
+    "date_end": "2026-09-15",
+    "row_count": 77,
     "notes": "首页口径；百分比保留 Quick BI 原始字符串；曝光覆盖率由前端按曝光UV/Tab点击UV计算。",
-    "endDate": "20260913"
+    "endDate": "20260915"
   },
   "rows": [
     {
@@ -984,6 +984,32 @@
       "page": "首页",
       "avg_time_uv": 25.85,
       "front_tab_uv": 587549,
+      "source_type": "猜你喜欢"
+    },
+    {
+      "date": "20260914",
+      "ff_play_convert_rate": "33.63%",
+      "play_convert_rate": "92.91%",
+      "total_content_click_rate": "36.20%",
+      "total_content_click_uv": 22743,
+      "play_5min_rate_uv": "10.26%",
+      "total_content_exposure_uv": 62825,
+      "page": "首页",
+      "avg_time_uv": 25.42,
+      "front_tab_uv": 489172,
+      "source_type": "猜你喜欢"
+    },
+    {
+      "date": "20260915",
+      "ff_play_convert_rate": "34.46%",
+      "play_convert_rate": "92.94%",
+      "total_content_click_rate": "37.08%",
+      "total_content_click_uv": 22874,
+      "play_5min_rate_uv": "10.80%",
+      "total_content_exposure_uv": 61684,
+      "page": "首页",
+      "avg_time_uv": 25.99,
+      "front_tab_uv": 474039,
       "source_type": "猜你喜欢"
     }
   ]

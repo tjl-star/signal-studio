@@ -1,7 +1,7 @@
 {
   "metric": "play_rate",
   "start_date": "2026-07-01",
-  "end_date": "2026-09-13",
+  "end_date": "2026-09-15",
   "clients": [
     "安卓",
     "iOS",
@@ -1508,6 +1508,46 @@
       "date": "2026-09-13",
       "client_type": "全部",
       "play_rate": 0.7345
+    },
+    {
+      "date": "2026-09-14",
+      "client_type": "安卓",
+      "play_rate": 0.7723
+    },
+    {
+      "date": "2026-09-14",
+      "client_type": "iOS",
+      "play_rate": 0.7447
+    },
+    {
+      "date": "2026-09-14",
+      "client_type": "M站",
+      "play_rate": 0.6992
+    },
+    {
+      "date": "2026-09-14",
+      "client_type": "全部",
+      "play_rate": 0.7035
+    },
+    {
+      "date": "2026-09-15",
+      "client_type": "安卓",
+      "play_rate": 0.7641
+    },
+    {
+      "date": "2026-09-15",
+      "client_type": "iOS",
+      "play_rate": 0.7422
+    },
+    {
+      "date": "2026-09-15",
+      "client_type": "M站",
+      "play_rate": 0.7093
+    },
+    {
+      "date": "2026-09-15",
+      "client_type": "全部",
+      "play_rate": 0.6984
     }
   ],
   "source": "data_provider /skill/coreData"

@@ -15,15 +15,13 @@
     <aside class="sidebar">
       <div class="brand"><span class="brand-mark">RR</span><div><strong>视频运营数据平台</strong></div></div>
       <nav class="page-nav" aria-label="页面导航">
-        <button class="nav-item nav-parent active" data-page="insight">◈ <span>运营总览</span></button>
         <button class="nav-item nav-parent" data-page="report">▤ <span>运营月报</span></button>
         <button class="nav-item nav-parent nav-group-toggle" data-page="overview" aria-expanded="false">◉ <span>用户与内容</span></button>
-        <div class="nav-subnav"><button class="nav-subitem" data-page="overview">核心数据</button><button class="nav-subitem" data-page="content">热播榜单</button><button class="nav-subitem" data-page="search">热搜榜单</button><button class="nav-subitem" data-page="bl">BL内容消费</button><button class="nav-subitem" data-page="genre-contribution">剧种内容贡献</button><button class="nav-subitem" data-page="growth">播放增长榜</button></div>
+        <div class="nav-subnav"><button class="nav-subitem" data-page="overview">核心数据</button><button class="nav-subitem" data-page="search-funnel">搜索转化</button><button class="nav-subitem" data-page="content">热播榜单</button><button class="nav-subitem" data-page="search">热搜榜单</button><button class="nav-subitem" data-page="bl">BL内容消费</button><button class="nav-subitem" data-page="genre-contribution">剧种内容贡献</button><button class="nav-subitem" data-page="growth">播放增长榜</button></div>
         <button class="nav-item nav-parent nav-group-toggle" data-page="home" aria-expanded="false">◌ <span>首页运营</span></button>
-        <div class="nav-subnav"><button class="nav-subitem" data-page="home">首页频道</button><button class="nav-subitem" data-page="guess">猜你喜欢</button><button class="nav-subitem" data-page="sections">首页板块</button></div>
-        <button class="nav-item nav-parent" data-page="search-funnel">⌕ <span>搜索运营</span></button>
+        <div class="nav-subnav"><button class="nav-subitem" data-page="home">首页频道</button></div>
         <button class="nav-item nav-parent nav-group-toggle" data-page="banner" aria-expanded="false">▧ <span>资源位运营</span></button>
-        <div class="nav-subnav"><button class="nav-subitem" data-page="banner">Banner点击</button><button class="nav-subitem" data-page="popup">弹窗数据</button></div>
+        <div class="nav-subnav"><button class="nav-subitem" data-page="banner">Banner点击</button><button class="nav-subitem" data-page="popup">弹窗数据</button><button class="nav-subitem" data-page="sections">首页板块</button><button class="nav-subitem" data-page="guess">猜你喜欢</button></div>
         <div id="content-sidebar-tree" class="content-sidebar-tree" aria-hidden="true" style="display:none!important"></div>
         <div id="tab4-sidebar-tree" class="tab4-sidebar-tree" aria-hidden="true" style="display:none!important"></div>
       </nav>
@@ -32,10 +30,6 @@
       <div id="dashboard-loading" class="dashboard-loading" role="status" aria-live="polite">
         <div class="dashboard-loading-card"><span class="dashboard-loading-spinner" aria-hidden="true"></span><span>数据加载中</span></div>
       </div>
-      <section id="page-insight" class="page active">
-        <div class="section-heading insight-heading"><div></div><em id="insight-date-label">--</em></div>
-        <section class="insight-events-panel"><div class="insight-events-head"><div><h3 id="insight-focus-title">今日重点事件</h3><span id="insight-focus-subtitle">从全量业务变化中筛选最值得运营关注的事件</span></div><strong id="insight-focus-count">0 条</strong></div><div id="insight-focus-list" class="insight-event-feed"></div></section>
-      </section>
       <section id="page-report" class="page report-page"></section>
       <section id="page-overview" class="page">
         <div class="hero-strip"><p class="eyebrow">DAILY HEALTH CHECK</p><h2>先看大盘健康度，再定位趋势异常</h2></div>

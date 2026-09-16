@@ -1,0 +1,540 @@
+﻿date,client_type,client_type_name,new_device,new_account,new_account_status,device_dau,play_rate
+2026-07-30,android_fast,安卓智美人人,2,,unavailable:data-provider has no new account field by clienttype,1227,0.0
+2026-07-30,android_qwtv,青蛙TV,139,,unavailable:data-provider has no new account field by clienttype,5058,0.8456
+2026-07-30,android_rrjc,安卓人人剧场,2038,,unavailable:data-provider has no new account field by clienttype,43763,0.8237
+2026-07-30,android_rrsp_hm_Harmony,安卓鸿蒙,3247,,unavailable:data-provider has no new account field by clienttype,70908,0.8383
+2026-07-30,android_rrsp_xb,安卓新人人android_rrsp_xb,20812,,unavailable:data-provider has no new account field by clienttype,627440,0.8055
+2026-07-30,android_tiantianhanju,安卓天天韩剧,1,,unavailable:data-provider has no new account field by clienttype,12,0.6667
+2026-07-30,android_tv,安卓TV版,20,,unavailable:data-provider has no new account field by clienttype,1101,0.0
+2026-07-30,ios_andrew,iOS多多60,2,,unavailable:data-provider has no new account field by clienttype,144,0.0
+2026-07-30,ios_assemble,iOS多多39,1,,unavailable:data-provider has no new account field by clienttype,10,0.2
+2026-07-30,ios_aura,iOS多多110,19,,unavailable:data-provider has no new account field by clienttype,8772,0.7527
+2026-07-30,ios_beat,iOS多多99,4,,unavailable:data-provider has no new account field by clienttype,4643,0.7586
+2026-07-30,ios_bryan,iOS多多88,20,,unavailable:data-provider has no new account field by clienttype,8710,0.7392
+2026-07-30,ios_collector,iOS多多47,3,,unavailable:data-provider has no new account field by clienttype,83,0.2289
+2026-07-30,ios_coulson,iOS多多50,73,,unavailable:data-provider has no new account field by clienttype,16177,0.7388
+2026-07-30,ios_daisy,iOS多多53,1,,unavailable:data-provider has no new account field by clienttype,139,0.3237
+2026-07-30,ios_duoduoshipin,IOS多多6（已下架）,8,,unavailable:data-provider has no new account field by clienttype,2153,0.0
+2026-07-30,ios_early,iOS多多72,3,,unavailable:data-provider has no new account field by clienttype,506,0.4407
+2026-07-30,ios_executive,iOS多多98,43,,unavailable:data-provider has no new account field by clienttype,35480,0.7724
+2026-07-30,ios_fast,iOS韩剧大全TV,1,,unavailable:data-provider has no new account field by clienttype,390,0.4308
+2026-07-30,ios_groot,iOS韩剧6,2,,unavailable:data-provider has no new account field by clienttype,121,0.0
+2026-07-30,ios_hawkeye,iOS多多29,1,,unavailable:data-provider has no new account field by clienttype,59,0.3729
+2026-07-30,ios_jxx,IOS多多jxx版（已下架）,2,,unavailable:data-provider has no new account field by clienttype,431,0.0
+2026-07-30,ios_kevin,iOS多多89,7,,unavailable:data-provider has no new account field by clienttype,415,0.3783
+2026-07-30,ios_knowledge,iOS多多71,1,,unavailable:data-provider has no new account field by clienttype,10,0.1
+2026-07-30,ios_leo,iOS多多114,213,,unavailable:data-provider has no new account field by clienttype,70465,0.9194
+2026-07-30,ios_lyric,iOS多多122,31033,,unavailable:data-provider has no new account field by clienttype,227016,0.7968
+2026-07-30,ios_mas_video,iOS多多19,6,,unavailable:data-provider has no new account field by clienttype,195,0.5231
+2026-07-30,ios_milo,iOS多多109,38,,unavailable:data-provider has no new account field by clienttype,31110,0.7647
+2026-07-30,ios_moment,iOS多多96,10,,unavailable:data-provider has no new account field by clienttype,9731,0.7353
+2026-07-30,ios_nebula,iOS多多43,4,,unavailable:data-provider has no new account field by clienttype,51,0.0
+2026-07-30,ios_onto,iOS多多62,7,,unavailable:data-provider has no new account field by clienttype,788,0.4315
+2026-07-30,ios_orion,iOS多多108,2,,unavailable:data-provider has no new account field by clienttype,7779,0.7627
+2026-07-30,ios_our,iOS多多102,5,,unavailable:data-provider has no new account field by clienttype,1098,0.6985
+2026-07-30,ios_patriot,iOS多多58,19,,unavailable:data-provider has no new account field by clienttype,12757,0.6201
+2026-07-30,ios_pick,iOS多多84,41,,unavailable:data-provider has no new account field by clienttype,22105,0.6517
+2026-07-30,ios_quake,iOS多多56,1,,unavailable:data-provider has no new account field by clienttype,20,0.1
+2026-07-30,ios_role,iOS多多100,42,,unavailable:data-provider has no new account field by clienttype,31136,0.7281
+2026-07-30,ios_rrsp_jzsp,IOS多多专业版（已下架）,1,,unavailable:data-provider has no new account field by clienttype,2088,0.0
+2026-07-30,ios_rrsp_xb_yifanju,IOS人人1（已下架）,3,,unavailable:data-provider has no new account field by clienttype,629,0.0
+2026-07-30,ios_rrtv_jsb,IOS多多极速版（已下架）,5,,unavailable:data-provider has no new account field by clienttype,1746,0.0
+2026-07-30,ios_single,iOS多多64,6,,unavailable:data-provider has no new account field by clienttype,475,0.4021
+2026-07-30,ios_site,iOS多多82,6,,unavailable:data-provider has no new account field by clienttype,229,0.3406
+2026-07-30,ios_start,iOS多多103,54,,unavailable:data-provider has no new account field by clienttype,39040,0.7421
+2026-07-30,ios_sugarbean,iOS多多美剧视频,3,,unavailable:data-provider has no new account field by clienttype,291,0.3299
+2026-07-30,ios_summer,iOS多多104,92,,unavailable:data-provider has no new account field by clienttype,4025,0.5873
+2026-07-30,ios_ward,iOS多多52,2,,unavailable:data-provider has no new account field by clienttype,46,0.2826
+2026-07-30,ios_zyb,IOS多多概念版（已下架）,18,,unavailable:data-provider has no new account field by clienttype,3696,0.0
+2026-07-30,ipad_cover,iOS多多74,2,,unavailable:data-provider has no new account field by clienttype,1728,0.7928
+2026-07-30,mac_rrsp_gw,Mac版,106,,unavailable:data-provider has no new account field by clienttype,2953,0.726
+2026-07-30,web_applet,M站,16307,,unavailable:data-provider has no new account field by clienttype,24589,0.6014
+2026-07-30,web_pc,M站横版,33142,,unavailable:data-provider has no new account field by clienttype,74763,0.7708
+2026-07-30,web_tiantianhanju,iOS天天韩剧,589,,unavailable:data-provider has no new account field by clienttype,693,0.9351
+2026-07-30,win_kf_360,Windows端 360 韩剧圈,41,,unavailable:data-provider has no new account field by clienttype,486,0.3354
+2026-07-30,win_kf_lianxiang,Windows端 联想 韩剧圈,174,,unavailable:data-provider has no new account field by clienttype,2474,0.2199
+2026-07-30,win_rrsp,Windows端,14,,unavailable:data-provider has no new account field by clienttype,214,0.7991
+2026-07-30,win_rrsp_360,Windows端 360,719,,unavailable:data-provider has no new account field by clienttype,26910,0.3019
+2026-07-30,win_rrsp_360xzz,Windows端 360下载站,1,,unavailable:data-provider has no new account field by clienttype,3728,0.191
+2026-07-30,win_rrsp_ZOL,Windows端 ZOL下载站,796,,unavailable:data-provider has no new account field by clienttype,12853,0.3193
+2026-07-30,win_rrsp_baidu,Windows端 百度,1,,unavailable:data-provider has no new account field by clienttype,3809,0.3274
+2026-07-30,win_rrsp_cpayymt,Windows端 CPA雨悦美通,62,,unavailable:data-provider has no new account field by clienttype,1598,0.3242
+2026-07-30,win_rrsp_gmzj,Windows端 社群-乖猫追剧,445,,unavailable:data-provider has no new account field by clienttype,2759,0.3349
+2026-07-30,win_rrsp_gw,Windows端 官网,598,,unavailable:data-provider has no new account field by clienttype,18933,0.4832
+2026-07-30,win_rrsp_huajuntg,Windows端 华军推广,18,,unavailable:data-provider has no new account field by clienttype,895,0.3888
+2026-07-30,win_rrsp_huawei,Windows端 华为,119,,unavailable:data-provider has no new account field by clienttype,5077,0.2592
+2026-07-30,win_rrsp_lianxiang,Windows端 联想,796,,unavailable:data-provider has no new account field by clienttype,29703,0.2404
+2026-07-30,win_rrsp_ms,Windows端 微软,147,,unavailable:data-provider has no new account field by clienttype,7861,0.302
+2026-07-30,win_rrsp_sc11,Windows端 市场11,21,,unavailable:data-provider has no new account field by clienttype,394,0.3909
+2026-07-30,win_rrsp_sc14,Windows端 市场14,590,,unavailable:data-provider has no new account field by clienttype,7931,0.3435
+2026-07-30,win_rrsp_sc15,Windows端 市场15,4,,unavailable:data-provider has no new account field by clienttype,21,0.7619
+2026-07-30,win_rrsp_sc16,Windows端 市场16,1,,unavailable:data-provider has no new account field by clienttype,284,0.3944
+2026-07-30,win_rrsp_sc17,Windows端 市场17,5,,unavailable:data-provider has no new account field by clienttype,17,0.5882
+2026-07-30,win_rrsp_sc18,Windows端 市场18,19,,unavailable:data-provider has no new account field by clienttype,120,0.1
+2026-07-30,win_rrsp_sc19,Windows端 市场19,1,,unavailable:data-provider has no new account field by clienttype,83,0.0482
+2026-07-30,win_rrsp_sc20,Windows端 市场20,40,,unavailable:data-provider has no new account field by clienttype,466,0.4099
+2026-07-30,win_rrsp_sc3,Windows端 市场3,2,,unavailable:data-provider has no new account field by clienttype,125,0.12
+2026-07-30,win_rrsp_sc4,Windows端 市场4,1,,unavailable:data-provider has no new account field by clienttype,135,0.3259
+2026-07-30,win_rrsp_sc8,Windows端 市场8,70,,unavailable:data-provider has no new account field by clienttype,333,0.4745
+2026-07-30,win_rrsp_sc9,Windows端 市场9,243,,unavailable:data-provider has no new account field by clienttype,11800,0.3891
+2026-07-30,win_rrsp_tftj,Windows端 天府泰剧字幕组,2,,unavailable:data-provider has no new account field by clienttype,42,0.4048
+2026-07-30,win_rrsp_tt,Windows端 社群-图图,6,,unavailable:data-provider has no new account field by clienttype,132,0.3333
+2026-07-31,android_fast,安卓智美人人,9,,unavailable:data-provider has no new account field by clienttype,1240,0.0
+2026-07-31,android_qwtv,青蛙TV,165,,unavailable:data-provider has no new account field by clienttype,5118,0.8488
+2026-07-31,android_rrjc,安卓人人剧场,2445,,unavailable:data-provider has no new account field by clienttype,54047,0.8607
+2026-07-31,android_rrsp_hm_Harmony,安卓鸿蒙,3766,,unavailable:data-provider has no new account field by clienttype,77251,0.8517
+2026-07-31,android_rrsp_xb,安卓新人人android_rrsp_xb,24639,,unavailable:data-provider has no new account field by clienttype,720111,0.8354
+2026-07-31,android_tiantianhanju,安卓天天韩剧,1,,unavailable:data-provider has no new account field by clienttype,17,0.5294
+2026-07-31,android_tv,安卓TV版,16,,unavailable:data-provider has no new account field by clienttype,1118,0.0
+2026-07-31,ios_aura,iOS多多110,11,,unavailable:data-provider has no new account field by clienttype,8714,0.76
+2026-07-31,ios_beat,iOS多多99,3,,unavailable:data-provider has no new account field by clienttype,4651,0.7674
+2026-07-31,ios_beit,iOS韩剧TV,1,,unavailable:data-provider has no new account field by clienttype,437,0.6773
+2026-07-31,ios_bryan,iOS多多88,20,,unavailable:data-provider has no new account field by clienttype,8612,0.7404
+2026-07-31,ios_coulson,iOS多多50,70,,unavailable:data-provider has no new account field by clienttype,16704,0.7433
+2026-07-31,ios_daisy,iOS多多53,1,,unavailable:data-provider has no new account field by clienttype,145,0.4483
+2026-07-31,ios_duoduoshipin,IOS多多6（已下架）,6,,unavailable:data-provider has no new account field by clienttype,2112,0.0
+2026-07-31,ios_early,iOS多多72,8,,unavailable:data-provider has no new account field by clienttype,551,0.4374
+2026-07-31,ios_executive,iOS多多98,42,,unavailable:data-provider has no new account field by clienttype,37203,0.7912
+2026-07-31,ios_fast,iOS韩剧大全TV,2,,unavailable:data-provider has no new account field by clienttype,377,0.3369
+2026-07-31,ios_groot,iOS韩剧6,1,,unavailable:data-provider has no new account field by clienttype,113,0.0
+2026-07-31,ios_kevin,iOS多多89,8,,unavailable:data-provider has no new account field by clienttype,442,0.3439
+2026-07-31,ios_leo,iOS多多114,217,,unavailable:data-provider has no new account field by clienttype,77899,0.9293
+2026-07-31,ios_long,iOS多多20,1,,unavailable:data-provider has no new account field by clienttype,200,0.37
+2026-07-31,ios_lyric,iOS多多122,33446,,unavailable:data-provider has no new account field by clienttype,252166,0.8196
+2026-07-31,ios_mas_video,iOS多多19,6,,unavailable:data-provider has no new account field by clienttype,199,0.4874
+2026-07-31,ios_milo,iOS多多109,39,,unavailable:data-provider has no new account field by clienttype,31708,0.7687
+2026-07-31,ios_moment,iOS多多96,2,,unavailable:data-provider has no new account field by clienttype,10070,0.7405
+2026-07-31,ios_nebula,iOS多多43,4,,unavailable:data-provider has no new account field by clienttype,52,0.0
+2026-07-31,ios_onto,iOS多多62,7,,unavailable:data-provider has no new account field by clienttype,810,0.3815
+2026-07-31,ios_orion,iOS多多108,9,,unavailable:data-provider has no new account field by clienttype,7964,0.7657
+2026-07-31,ios_our,iOS多多102,3,,unavailable:data-provider has no new account field by clienttype,1138,0.6784
+2026-07-31,ios_patriot,iOS多多58,22,,unavailable:data-provider has no new account field by clienttype,13266,0.6269
+2026-07-31,ios_pick,iOS多多84,43,,unavailable:data-provider has no new account field by clienttype,22098,0.6491
+2026-07-31,ios_quake,iOS多多56,1,,unavailable:data-provider has no new account field by clienttype,17,0.1176
+2026-07-31,ios_role,iOS多多100,55,,unavailable:data-provider has no new account field by clienttype,31530,0.7432
+2026-07-31,ios_rrsp_jzsp,IOS多多专业版（已下架）,4,,unavailable:data-provider has no new account field by clienttype,2058,0.0
+2026-07-31,ios_rrtv_jsb,IOS多多极速版（已下架）,1,,unavailable:data-provider has no new account field by clienttype,1753,0.0
+2026-07-31,ios_single,iOS多多64,2,,unavailable:data-provider has no new account field by clienttype,480,0.4375
+2026-07-31,ios_site,iOS多多82,2,,unavailable:data-provider has no new account field by clienttype,195,0.4103
+2026-07-31,ios_start,iOS多多103,55,,unavailable:data-provider has no new account field by clienttype,38916,0.7467
+2026-07-31,ios_sugarbean,iOS多多美剧视频,5,,unavailable:data-provider has no new account field by clienttype,282,0.4574
+2026-07-31,ios_summer,iOS多多104,68,,unavailable:data-provider has no new account field by clienttype,3953,0.577
+2026-07-31,ios_ward,iOS多多52,4,,unavailable:data-provider has no new account field by clienttype,46,0.3043
+2026-07-31,ios_zyb,IOS多多概念版（已下架）,15,,unavailable:data-provider has no new account field by clienttype,3760,0.0
+2026-07-31,ipad_cover,iOS多多74,4,,unavailable:data-provider has no new account field by clienttype,1682,0.7973
+2026-07-31,mac_rrsp_gw,Mac版,124,,unavailable:data-provider has no new account field by clienttype,2879,0.7239
+2026-07-31,web_applet,M站,17672,,unavailable:data-provider has no new account field by clienttype,27496,0.6392
+2026-07-31,web_pc,M站横版,37552,,unavailable:data-provider has no new account field by clienttype,79905,0.7624
+2026-07-31,web_tiantianhanju,iOS天天韩剧,523,,unavailable:data-provider has no new account field by clienttype,624,0.9471
+2026-07-31,win_kf_360,Windows端 360 韩剧圈,44,,unavailable:data-provider has no new account field by clienttype,462,0.3268
+2026-07-31,win_kf_lianxiang,Windows端 联想 韩剧圈,168,,unavailable:data-provider has no new account field by clienttype,2383,0.2161
+2026-07-31,win_rrsp,Windows端,19,,unavailable:data-provider has no new account field by clienttype,212,0.7972
+2026-07-31,win_rrsp_360,Windows端 360,700,,unavailable:data-provider has no new account field by clienttype,26687,0.3026
+2026-07-31,win_rrsp_ZOL,Windows端 ZOL下载站,780,,unavailable:data-provider has no new account field by clienttype,12635,0.3058
+2026-07-31,win_rrsp_baidu,Windows端 百度,1,,unavailable:data-provider has no new account field by clienttype,3709,0.3136
+2026-07-31,win_rrsp_cpayymt,Windows端 CPA雨悦美通,47,,unavailable:data-provider has no new account field by clienttype,1589,0.3386
+2026-07-31,win_rrsp_gmzj,Windows端 社群-乖猫追剧,441,,unavailable:data-provider has no new account field by clienttype,2700,0.35
+2026-07-31,win_rrsp_gw,Windows端 官网,684,,unavailable:data-provider has no new account field by clienttype,18774,0.4847
+2026-07-31,win_rrsp_huajuntg,Windows端 华军推广,26,,unavailable:data-provider has no new account field by clienttype,886,0.3973
+2026-07-31,win_rrsp_huawei,Windows端 华为,115,,unavailable:data-provider has no new account field by clienttype,5163,0.264
+2026-07-31,win_rrsp_lianxiang,Windows端 联想,806,,unavailable:data-provider has no new account field by clienttype,29204,0.2362
+2026-07-31,win_rrsp_ms,Windows端 微软,160,,unavailable:data-provider has no new account field by clienttype,7701,0.3042
+2026-07-31,win_rrsp_sc10,Windows端 市场10,2,,unavailable:data-provider has no new account field by clienttype,255,0.2118
+2026-07-31,win_rrsp_sc11,Windows端 市场11,24,,unavailable:data-provider has no new account field by clienttype,408,0.3946
+2026-07-31,win_rrsp_sc14,Windows端 市场14,623,,unavailable:data-provider has no new account field by clienttype,7909,0.3497
+2026-07-31,win_rrsp_sc15,Windows端 市场15,4,,unavailable:data-provider has no new account field by clienttype,24,0.7083
+2026-07-31,win_rrsp_sc16,Windows端 市场16,1,,unavailable:data-provider has no new account field by clienttype,277,0.3574
+2026-07-31,win_rrsp_sc17,Windows端 市场17,3,,unavailable:data-provider has no new account field by clienttype,23,0.3913
+2026-07-31,win_rrsp_sc18,Windows端 市场18,43,,unavailable:data-provider has no new account field by clienttype,144,0.1389
+2026-07-31,win_rrsp_sc19,Windows端 市场19,2,,unavailable:data-provider has no new account field by clienttype,91,0.011
+2026-07-31,win_rrsp_sc20,Windows端 市场20,48,,unavailable:data-provider has no new account field by clienttype,467,0.4218
+2026-07-31,win_rrsp_sc3,Windows端 市场3,11,,unavailable:data-provider has no new account field by clienttype,152,0.1842
+2026-07-31,win_rrsp_sc6,Windows端 市场6,3,,unavailable:data-provider has no new account field by clienttype,3,0.3333
+2026-07-31,win_rrsp_sc8,Windows端 市场8,96,,unavailable:data-provider has no new account field by clienttype,377,0.496
+2026-07-31,win_rrsp_sc9,Windows端 市场9,329,,unavailable:data-provider has no new account field by clienttype,11749,0.3922
+2026-07-31,win_rrsp_tt,Windows端 社群-图图,5,,unavailable:data-provider has no new account field by clienttype,128,0.2656
+2026-07-31,win_rrsp_xzdj,Windows端 快手直播+社群-小嘴短剧,1,,unavailable:data-provider has no new account field by clienttype,320,0.3625
+2026-07-31,win_rrsp_yyb,Windows端 应用宝,2,,unavailable:data-provider has no new account field by clienttype,44,0.2273
+2026-08-01,android_fast,安卓智美人人,17,,unavailable:data-provider has no new account field by clienttype,1308,0.0
+2026-08-01,android_qwtv,青蛙TV,204,,unavailable:data-provider has no new account field by clienttype,5903,0.8484
+2026-08-01,android_rrjc,安卓人人剧场,2806,,unavailable:data-provider has no new account field by clienttype,56043,0.8605
+2026-08-01,android_rrsp_hm_Harmony,安卓鸿蒙,4302,,unavailable:data-provider has no new account field by clienttype,82882,0.8572
+2026-08-01,android_rrsp_xb,安卓新人人android_rrsp_xb,28010,,unavailable:data-provider has no new account field by clienttype,761059,0.8358
+2026-08-01,android_tiantianhanju,安卓天天韩剧,1,,unavailable:data-provider has no new account field by clienttype,11,0.8182
+2026-08-01,android_tv,安卓TV版,19,,unavailable:data-provider has no new account field by clienttype,1297,0.0
+2026-08-01,ios_andrew,iOS多多60,1,,unavailable:data-provider has no new account field by clienttype,127,0.0
+2026-08-01,ios_aura,iOS多多110,16,,unavailable:data-provider has no new account field by clienttype,9433,0.766
+2026-08-01,ios_beat,iOS多多99,4,,unavailable:data-provider has no new account field by clienttype,5050,0.7693
+2026-08-01,ios_beit,iOS韩剧TV,1,,unavailable:data-provider has no new account field by clienttype,482,0.6577
+2026-08-01,ios_bryan,iOS多多88,25,,unavailable:data-provider has no new account field by clienttype,9060,0.7643
+2026-08-01,ios_collector,iOS多多47,1,,unavailable:data-provider has no new account field by clienttype,85,0.1529
+2026-08-01,ios_coulson,iOS多多50,70,,unavailable:data-provider has no new account field by clienttype,17460,0.7592
+2026-08-01,ios_daisy,iOS多多53,3,,unavailable:data-provider has no new account field by clienttype,147,0.449
+2026-08-01,ios_duoduoshipin,IOS多多6（已下架）,3,,unavailable:data-provider has no new account field by clienttype,2306,0.0
+2026-08-01,ios_early,iOS多多72,8,,unavailable:data-provider has no new account field by clienttype,583,0.4768
+2026-08-01,ios_executive,iOS多多98,54,,unavailable:data-provider has no new account field by clienttype,38611,0.7992
+2026-08-01,ios_fast,iOS韩剧大全TV,2,,unavailable:data-provider has no new account field by clienttype,454,0.3833
+2026-08-01,ios_gamora,iOS韩剧7,1,,unavailable:data-provider has no new account field by clienttype,408,0.7255
+2026-08-01,ios_groot,iOS韩剧6,1,,unavailable:data-provider has no new account field by clienttype,108,0.0
+2026-08-01,ios_jade,iOS多多113,1,,unavailable:data-provider has no new account field by clienttype,64,0.9063
+2026-08-01,ios_kevin,iOS多多89,8,,unavailable:data-provider has no new account field by clienttype,476,0.395
+2026-08-01,ios_leo,iOS多多114,259,,unavailable:data-provider has no new account field by clienttype,82035,0.9275
+2026-08-01,ios_long,iOS多多20,1,,unavailable:data-provider has no new account field by clienttype,240,0.3792
+2026-08-01,ios_lyric,iOS多多122,39229,,unavailable:data-provider has no new account field by clienttype,268517,0.826
+2026-08-01,ios_mas_video,iOS多多19,7,,unavailable:data-provider has no new account field by clienttype,225,0.5511
+2026-08-01,ios_milo,iOS多多109,35,,unavailable:data-provider has no new account field by clienttype,33690,0.7867
+2026-08-01,ios_moment,iOS多多96,8,,unavailable:data-provider has no new account field by clienttype,10748,0.7529
+2026-08-01,ios_nebula,iOS多多43,4,,unavailable:data-provider has no new account field by clienttype,68,0.0
+2026-08-01,ios_onto,iOS多多62,14,,unavailable:data-provider has no new account field by clienttype,922,0.4273
+2026-08-01,ios_orion,iOS多多108,15,,unavailable:data-provider has no new account field by clienttype,8255,0.7701
+2026-08-01,ios_our,iOS多多102,6,,unavailable:data-provider has no new account field by clienttype,1095,0.7224
+2026-08-01,ios_patriot,iOS多多58,20,,unavailable:data-provider has no new account field by clienttype,14464,0.6433
+2026-08-01,ios_pick,iOS多多84,46,,unavailable:data-provider has no new account field by clienttype,23601,0.6676
+2026-08-01,ios_quake,iOS多多56,2,,unavailable:data-provider has no new account field by clienttype,23,0.1304
+2026-08-01,ios_rocket,iOS多多46,1,,unavailable:data-provider has no new account field by clienttype,10,0.0
+2026-08-01,ios_role,iOS多多100,64,,unavailable:data-provider has no new account field by clienttype,33717,0.7533
+2026-08-01,ios_rrsp_jzsp,IOS多多专业版（已下架）,2,,unavailable:data-provider has no new account field by clienttype,2234,0.0
+2026-08-01,ios_rrsp_xb_yifanju,IOS人人1（已下架）,4,,unavailable:data-provider has no new account field by clienttype,720,0.0
+2026-08-01,ios_rrtv_jsb,IOS多多极速版（已下架）,1,,unavailable:data-provider has no new account field by clienttype,1963,0.0
+2026-08-01,ios_single,iOS多多64,6,,unavailable:data-provider has no new account field by clienttype,582,0.4845
+2026-08-01,ios_site,iOS多多82,4,,unavailable:data-provider has no new account field by clienttype,225,0.4267
+2026-08-01,ios_start,iOS多多103,66,,unavailable:data-provider has no new account field by clienttype,40923,0.7594
+2026-08-01,ios_steve,iOS多多27,1,,unavailable:data-provider has no new account field by clienttype,138,0.4203
+2026-08-01,ios_sugarbean,iOS多多美剧视频,5,,unavailable:data-provider has no new account field by clienttype,305,0.4492
+2026-08-01,ios_summer,iOS多多104,86,,unavailable:data-provider has no new account field by clienttype,4045,0.5931
+2026-08-01,ios_ward,iOS多多52,5,,unavailable:data-provider has no new account field by clienttype,59,0.2542
+2026-08-01,ios_xgdd,iOS多多15,1,,unavailable:data-provider has no new account field by clienttype,505,0.4614
+2026-08-01,ios_zyb,IOS多多概念版（已下架）,3,,unavailable:data-provider has no new account field by clienttype,3984,0.0
+2026-08-01,ipad_cover,iOS多多74,13,,unavailable:data-provider has no new account field by clienttype,1874,0.8026
+2026-08-01,mac_rrsp_gw,Mac版,157,,unavailable:data-provider has no new account field by clienttype,3013,0.7381
+2026-08-01,web_applet,M站,21232,,unavailable:data-provider has no new account field by clienttype,31783,0.6816
+2026-08-01,web_pc,M站横版,39522,,unavailable:data-provider has no new account field by clienttype,82387,0.7711
+2026-08-01,web_tiantianhanju,iOS天天韩剧,445,,unavailable:data-provider has no new account field by clienttype,550,0.9382
+2026-08-01,win_kf_360,Windows端 360 韩剧圈,28,,unavailable:data-provider has no new account field by clienttype,418,0.3373
+2026-08-01,win_kf_lianxiang,Windows端 联想 韩剧圈,171,,unavailable:data-provider has no new account field by clienttype,2320,0.225
+2026-08-01,win_rrsp,Windows端,16,,unavailable:data-provider has no new account field by clienttype,237,0.7806
+2026-08-01,win_rrsp_360,Windows端 360,707,,unavailable:data-provider has no new account field by clienttype,23667,0.3267
+2026-08-01,win_rrsp_ZOL,Windows端 ZOL下载站,864,,unavailable:data-provider has no new account field by clienttype,11757,0.3287
+2026-08-01,win_rrsp_baidu,Windows端 百度,2,,unavailable:data-provider has no new account field by clienttype,3465,0.357
+2026-08-01,win_rrsp_cpayymt,Windows端 CPA雨悦美通,56,,unavailable:data-provider has no new account field by clienttype,1542,0.358
+2026-08-01,win_rrsp_gmzj,Windows端 社群-乖猫追剧,413,,unavailable:data-provider has no new account field by clienttype,2540,0.3709
+2026-08-01,win_rrsp_gw,Windows端 官网,774,,unavailable:data-provider has no new account field by clienttype,18351,0.5042
+2026-08-01,win_rrsp_huajuntg,Windows端 华军推广,19,,unavailable:data-provider has no new account field by clienttype,875,0.4
+2026-08-01,win_rrsp_huawei,Windows端 华为,133,,unavailable:data-provider has no new account field by clienttype,4758,0.2867
+2026-08-01,win_rrsp_lianxiang,Windows端 联想,838,,unavailable:data-provider has no new account field by clienttype,27111,0.2548
+2026-08-01,win_rrsp_ms,Windows端 微软,144,,unavailable:data-provider has no new account field by clienttype,7314,0.3146
+2026-08-01,win_rrsp_sc10,Windows端 市场10,1,,unavailable:data-provider has no new account field by clienttype,215,0.2465
+2026-08-01,win_rrsp_sc11,Windows端 市场11,26,,unavailable:data-provider has no new account field by clienttype,411,0.4039
+2026-08-01,win_rrsp_sc14,Windows端 市场14,622,,unavailable:data-provider has no new account field by clienttype,7616,0.3621
+2026-08-01,win_rrsp_sc15,Windows端 市场15,4,,unavailable:data-provider has no new account field by clienttype,28,0.7857
+2026-08-01,win_rrsp_sc17,Windows端 市场17,1,,unavailable:data-provider has no new account field by clienttype,19,0.4737
+2026-08-01,win_rrsp_sc18,Windows端 市场18,46,,unavailable:data-provider has no new account field by clienttype,153,0.1438
+2026-08-01,win_rrsp_sc20,Windows端 市场20,44,,unavailable:data-provider has no new account field by clienttype,454,0.4207
+2026-08-01,win_rrsp_sc3,Windows端 市场3,7,,unavailable:data-provider has no new account field by clienttype,138,0.2029
+2026-08-01,win_rrsp_sc4,Windows端 市场4,4,,unavailable:data-provider has no new account field by clienttype,115,0.3565
+2026-08-01,win_rrsp_sc6,Windows端 市场6,3,,unavailable:data-provider has no new account field by clienttype,10,0.4
+2026-08-01,win_rrsp_sc7,Windows端 市场7,1,,unavailable:data-provider has no new account field by clienttype,1,0.0
+2026-08-01,win_rrsp_sc8,Windows端 市场8,77,,unavailable:data-provider has no new account field by clienttype,375,0.4533
+2026-08-01,win_rrsp_sc9,Windows端 市场9,361,,unavailable:data-provider has no new account field by clienttype,11120,0.417
+2026-08-01,win_rrsp_tftj,Windows端 天府泰剧字幕组,2,,unavailable:data-provider has no new account field by clienttype,31,0.5484
+2026-08-01,win_rrsp_tt,Windows端 社群-图图,3,,unavailable:data-provider has no new account field by clienttype,106,0.3019
+2026-08-01,win_rrsp_will,Windows端 社群-WILL,1,,unavailable:data-provider has no new account field by clienttype,1,0.0
+2026-08-02,android_fast,安卓智美人人,22,,unavailable:data-provider has no new account field by clienttype,1346,0.0
+2026-08-02,android_qwtv,青蛙TV,180,,unavailable:data-provider has no new account field by clienttype,6137,0.8558
+2026-08-02,android_rrjc,安卓人人剧场,2537,,unavailable:data-provider has no new account field by clienttype,52066,0.8534
+2026-08-02,android_rrsp_hm_Harmony,安卓鸿蒙,3954,,unavailable:data-provider has no new account field by clienttype,83334,0.8608
+2026-08-02,android_rrsp_xb,安卓新人人android_rrsp_xb,25984,,unavailable:data-provider has no new account field by clienttype,746386,0.8367
+2026-08-02,android_tiantianhanju,安卓天天韩剧,2,,unavailable:data-provider has no new account field by clienttype,15,0.8
+2026-08-02,android_tv,安卓TV版,9,,unavailable:data-provider has no new account field by clienttype,1352,0.0
+2026-08-02,ios_andrew,iOS多多60,1,,unavailable:data-provider has no new account field by clienttype,132,0.0
+2026-08-02,ios_aura,iOS多多110,15,,unavailable:data-provider has no new account field by clienttype,9423,0.7647
+2026-08-02,ios_beat,iOS多多99,5,,unavailable:data-provider has no new account field by clienttype,5078,0.7824
+2026-08-02,ios_beit,iOS韩剧TV,1,,unavailable:data-provider has no new account field by clienttype,443,0.6659
+2026-08-02,ios_bryan,iOS多多88,26,,unavailable:data-provider has no new account field by clienttype,9239,0.7704
+2026-08-02,ios_coulson,iOS多多50,84,,unavailable:data-provider has no new account field by clienttype,17815,0.7598
+2026-08-02,ios_daisy,iOS多多53,3,,unavailable:data-provider has no new account field by clienttype,181,0.4144
+2026-08-02,ios_duoduoshipin,IOS多多6（已下架）,2,,unavailable:data-provider has no new account field by clienttype,2277,0.0
+2026-08-02,ios_early,iOS多多72,6,,unavailable:data-provider has no new account field by clienttype,594,0.4882
+2026-08-02,ios_executive,iOS多多98,40,,unavailable:data-provider has no new account field by clienttype,38914,0.8016
+2026-08-02,ios_fast,iOS韩剧大全TV,2,,unavailable:data-provider has no new account field by clienttype,443,0.3792
+2026-08-02,ios_jxx,IOS多多jxx版（已下架）,4,,unavailable:data-provider has no new account field by clienttype,499,0.0
+2026-08-02,ios_kevin,iOS多多89,5,,unavailable:data-provider has no new account field by clienttype,484,0.3864
+2026-08-02,ios_leo,iOS多多114,258,,unavailable:data-provider has no new account field by clienttype,81727,0.9276
+2026-08-02,ios_lyric,iOS多多122,37618,,unavailable:data-provider has no new account field by clienttype,270296,0.8263
+2026-08-02,ios_mas_video,iOS多多19,3,,unavailable:data-provider has no new account field by clienttype,221,0.5113
+2026-08-02,ios_milo,iOS多多109,34,,unavailable:data-provider has no new account field by clienttype,34049,0.7921
+2026-08-02,ios_moment,iOS多多96,9,,unavailable:data-provider has no new account field by clienttype,11015,0.7674
+2026-08-02,ios_nebula,iOS多多43,2,,unavailable:data-provider has no new account field by clienttype,56,0.0
+2026-08-02,ios_onto,iOS多多62,11,,unavailable:data-provider has no new account field by clienttype,915,0.4339
+2026-08-02,ios_orion,iOS多多108,12,,unavailable:data-provider has no new account field by clienttype,8355,0.7852
+2026-08-02,ios_our,iOS多多102,4,,unavailable:data-provider has no new account field by clienttype,1134,0.7125
+2026-08-02,ios_patriot,iOS多多58,16,,unavailable:data-provider has no new account field by clienttype,14494,0.6413
+2026-08-02,ios_pick,iOS多多84,38,,unavailable:data-provider has no new account field by clienttype,23768,0.6667
+2026-08-02,ios_role,iOS多多100,50,,unavailable:data-provider has no new account field by clienttype,33666,0.7573
+2026-08-02,ios_rrsp_jzsp,IOS多多专业版（已下架）,2,,unavailable:data-provider has no new account field by clienttype,2316,0.0
+2026-08-02,ios_rrsp_mvp,IOS人人2（已下架）,1,,unavailable:data-provider has no new account field by clienttype,65,0.0
+2026-08-02,ios_rrsp_xb_yifanju,IOS人人1（已下架）,1,,unavailable:data-provider has no new account field by clienttype,681,0.0
+2026-08-02,ios_rrtv_jsb,IOS多多极速版（已下架）,1,,unavailable:data-provider has no new account field by clienttype,1914,0.0
+2026-08-02,ios_single,iOS多多64,1,,unavailable:data-provider has no new account field by clienttype,602,0.4668
+2026-08-02,ios_site,iOS多多82,2,,unavailable:data-provider has no new account field by clienttype,233,0.382
+2026-08-02,ios_skye,iOS多多57,1,,unavailable:data-provider has no new account field by clienttype,120,0.3583
+2026-08-02,ios_start,iOS多多103,60,,unavailable:data-provider has no new account field by clienttype,41697,0.7631
+2026-08-02,ios_steve,iOS多多27,1,,unavailable:data-provider has no new account field by clienttype,164,0.3232
+2026-08-02,ios_sugarbean,iOS多多美剧视频,4,,unavailable:data-provider has no new account field by clienttype,313,0.3866
+2026-08-02,ios_summer,iOS多多104,82,,unavailable:data-provider has no new account field by clienttype,4178,0.5957
+2026-08-02,ios_ward,iOS多多52,1,,unavailable:data-provider has no new account field by clienttype,51,0.3333
+2026-08-02,ios_zyb,IOS多多概念版（已下架）,26,,unavailable:data-provider has no new account field by clienttype,4040,0.0
+2026-08-02,ipad_cover,iOS多多74,9,,unavailable:data-provider has no new account field by clienttype,1945,0.8113
+2026-08-02,mac_rrsp_gw,Mac版,133,,unavailable:data-provider has no new account field by clienttype,3106,0.7354
+2026-08-02,web_applet,M站,23689,,unavailable:data-provider has no new account field by clienttype,33978,0.6874
+2026-08-02,web_pc,M站横版,40104,,unavailable:data-provider has no new account field by clienttype,84128,0.7863
+2026-08-02,web_tiantianhanju,iOS天天韩剧,384,,unavailable:data-provider has no new account field by clienttype,470,0.9468
+2026-08-02,win_kf_360,Windows端 360 韩剧圈,17,,unavailable:data-provider has no new account field by clienttype,380,0.2842
+2026-08-02,win_kf_lianxiang,Windows端 联想 韩剧圈,177,,unavailable:data-provider has no new account field by clienttype,2266,0.2374
+2026-08-02,win_rrsp,Windows端,15,,unavailable:data-provider has no new account field by clienttype,231,0.7965
+2026-08-02,win_rrsp_360,Windows端 360,690,,unavailable:data-provider has no new account field by clienttype,23391,0.33
+2026-08-02,win_rrsp_360tg,Windows端 360推广,2,,unavailable:data-provider has no new account field by clienttype,711,0.2954
+2026-08-02,win_rrsp_360xzz,Windows端 360下载站,1,,unavailable:data-provider has no new account field by clienttype,3283,0.198
+2026-08-02,win_rrsp_ZOL,Windows端 ZOL下载站,899,,unavailable:data-provider has no new account field by clienttype,11807,0.3345
+2026-08-02,win_rrsp_baidu,Windows端 百度,2,,unavailable:data-provider has no new account field by clienttype,3588,0.3595
+2026-08-02,win_rrsp_cpayymt,Windows端 CPA雨悦美通,51,,unavailable:data-provider has no new account field by clienttype,1566,0.3602
+2026-08-02,win_rrsp_gmzj,Windows端 社群-乖猫追剧,452,,unavailable:data-provider has no new account field by clienttype,2648,0.3591
+2026-08-02,win_rrsp_gw,Windows端 官网,670,,unavailable:data-provider has no new account field by clienttype,18747,0.5124
+2026-08-02,win_rrsp_huajuntg,Windows端 华军推广,38,,unavailable:data-provider has no new account field by clienttype,849,0.3981
+2026-08-02,win_rrsp_huawei,Windows端 华为,144,,unavailable:data-provider has no new account field by clienttype,4873,0.2893
+2026-08-02,win_rrsp_lianxiang,Windows端 联想,872,,unavailable:data-provider has no new account field by clienttype,27570,0.2623
+2026-08-02,win_rrsp_ms,Windows端 微软,149,,unavailable:data-provider has no new account field by clienttype,7507,0.3285
+2026-08-02,win_rrsp_sc1,Windows端 市场1,1,,unavailable:data-provider has no new account field by clienttype,144,0.4861
+2026-08-02,win_rrsp_sc10,Windows端 市场10,1,,unavailable:data-provider has no new account field by clienttype,228,0.2149
+2026-08-02,win_rrsp_sc11,Windows端 市场11,22,,unavailable:data-provider has no new account field by clienttype,387,0.4289
+2026-08-02,win_rrsp_sc14,Windows端 市场14,658,,unavailable:data-provider has no new account field by clienttype,7664,0.3644
+2026-08-02,win_rrsp_sc15,Windows端 市场15,5,,unavailable:data-provider has no new account field by clienttype,24,0.7917
+2026-08-02,win_rrsp_sc17,Windows端 市场17,1,,unavailable:data-provider has no new account field by clienttype,19,0.5263
+2026-08-02,win_rrsp_sc18,Windows端 市场18,34,,unavailable:data-provider has no new account field by clienttype,119,0.1429
+2026-08-02,win_rrsp_sc20,Windows端 市场20,38,,unavailable:data-provider has no new account field by clienttype,432,0.4375
+2026-08-02,win_rrsp_sc3,Windows端 市场3,4,,unavailable:data-provider has no new account field by clienttype,117,0.2137
+2026-08-02,win_rrsp_sc4,Windows端 市场4,1,,unavailable:data-provider has no new account field by clienttype,121,0.3306
+2026-08-02,win_rrsp_sc8,Windows端 市场8,85,,unavailable:data-provider has no new account field by clienttype,397,0.4912
+2026-08-02,win_rrsp_sc9,Windows端 市场9,349,,unavailable:data-provider has no new account field by clienttype,11236,0.4307
+2026-08-02,win_rrsp_tftj,Windows端 天府泰剧字幕组,1,,unavailable:data-provider has no new account field by clienttype,33,0.5455
+2026-08-02,win_rrsp_tt,Windows端 社群-图图,6,,unavailable:data-provider has no new account field by clienttype,128,0.2969
+2026-08-03,android_fast,安卓智美人人,15,,unavailable:data-provider has no new account field by clienttype,1230,0.0
+2026-08-03,android_qwtv,青蛙TV,169,,unavailable:data-provider has no new account field by clienttype,5160,0.8521
+2026-08-03,android_rrjc,安卓人人剧场,2051,,unavailable:data-provider has no new account field by clienttype,43829,0.8213
+2026-08-03,android_rrsp_hm_Harmony,安卓鸿蒙,3282,,unavailable:data-provider has no new account field by clienttype,70275,0.8389
+2026-08-03,android_rrsp_xb,安卓新人人android_rrsp_xb,20841,,unavailable:data-provider has no new account field by clienttype,623506,0.8019
+2026-08-03,android_tv,安卓TV版,8,,unavailable:data-provider has no new account field by clienttype,1121,0.0
+2026-08-03,ios_aura,iOS多多110,10,,unavailable:data-provider has no new account field by clienttype,8474,0.7496
+2026-08-03,ios_beat,iOS多多99,7,,unavailable:data-provider has no new account field by clienttype,4475,0.7535
+2026-08-03,ios_beit,iOS韩剧TV,1,,unavailable:data-provider has no new account field by clienttype,428,0.6355
+2026-08-03,ios_bryan,iOS多多88,18,,unavailable:data-provider has no new account field by clienttype,8615,0.7488
+2026-08-03,ios_collector,iOS多多47,2,,unavailable:data-provider has no new account field by clienttype,95,0.1579
+2026-08-03,ios_coulson,iOS多多50,68,,unavailable:data-provider has no new account field by clienttype,15921,0.7429
+2026-08-03,ios_duoduoshipin,IOS多多6（已下架）,2,,unavailable:data-provider has no new account field by clienttype,2155,0.0
+2026-08-03,ios_early,iOS多多72,2,,unavailable:data-provider has no new account field by clienttype,531,0.4143
+2026-08-03,ios_executive,iOS多多98,37,,unavailable:data-provider has no new account field by clienttype,33909,0.7716
+2026-08-03,ios_fast,iOS韩剧大全TV,3,,unavailable:data-provider has no new account field by clienttype,400,0.37
+2026-08-03,ios_kevin,iOS多多89,12,,unavailable:data-provider has no new account field by clienttype,395,0.357
+2026-08-03,ios_leo,iOS多多114,165,,unavailable:data-provider has no new account field by clienttype,67910,0.9173
+2026-08-03,ios_long,iOS多多20,1,,unavailable:data-provider has no new account field by clienttype,225,0.4222
+2026-08-03,ios_lyric,iOS多多122,30302,,unavailable:data-provider has no new account field by clienttype,230741,0.7883
+2026-08-03,ios_mas_video,iOS多多19,6,,unavailable:data-provider has no new account field by clienttype,192,0.474
+2026-08-03,ios_milo,iOS多多109,33,,unavailable:data-provider has no new account field by clienttype,30242,0.7657
+2026-08-03,ios_moment,iOS多多96,7,,unavailable:data-provider has no new account field by clienttype,9901,0.7333
+2026-08-03,ios_nebula,iOS多多43,4,,unavailable:data-provider has no new account field by clienttype,45,0.0
+2026-08-03,ios_onto,iOS多多62,4,,unavailable:data-provider has no new account field by clienttype,788,0.3871
+2026-08-03,ios_orion,iOS多多108,7,,unavailable:data-provider has no new account field by clienttype,7611,0.7651
+2026-08-03,ios_our,iOS多多102,1,,unavailable:data-provider has no new account field by clienttype,1049,0.7007
+2026-08-03,ios_patriot,iOS多多58,14,,unavailable:data-provider has no new account field by clienttype,12667,0.6318
+2026-08-03,ios_pick,iOS多多84,30,,unavailable:data-provider has no new account field by clienttype,21032,0.6525
+2026-08-03,ios_role,iOS多多100,31,,unavailable:data-provider has no new account field by clienttype,30194,0.722
+2026-08-03,ios_rrtv_jsb,IOS多多极速版（已下架）,2,,unavailable:data-provider has no new account field by clienttype,1753,0.0
+2026-08-03,ios_single,iOS多多64,2,,unavailable:data-provider has no new account field by clienttype,482,0.3983
+2026-08-03,ios_site,iOS多多82,5,,unavailable:data-provider has no new account field by clienttype,240,0.4167
+2026-08-03,ios_skye,iOS多多57,1,,unavailable:data-provider has no new account field by clienttype,81,0.3704
+2026-08-03,ios_start,iOS多多103,45,,unavailable:data-provider has no new account field by clienttype,38572,0.7413
+2026-08-03,ios_steve,iOS多多27,1,,unavailable:data-provider has no new account field by clienttype,145,0.3103
+2026-08-03,ios_sugarbean,iOS多多美剧视频,7,,unavailable:data-provider has no new account field by clienttype,247,0.3968
+2026-08-03,ios_summer,iOS多多104,95,,unavailable:data-provider has no new account field by clienttype,3867,0.5743
+2026-08-03,ios_ward,iOS多多52,4,,unavailable:data-provider has no new account field by clienttype,46,0.2826
+2026-08-03,ios_xgdd,iOS多多15,1,,unavailable:data-provider has no new account field by clienttype,430,0.4628
+2026-08-03,ios_zyb,IOS多多概念版（已下架）,21,,unavailable:data-provider has no new account field by clienttype,3709,0.0
+2026-08-03,ipad_cover,iOS多多74,8,,unavailable:data-provider has no new account field by clienttype,1692,0.7979
+2026-08-03,mac_rrsp_gw,Mac版,115,,unavailable:data-provider has no new account field by clienttype,2993,0.711
+2026-08-03,web_applet,M站,16952,,unavailable:data-provider has no new account field by clienttype,25567,0.6232
+2026-08-03,web_pc,M站横版,40502,,unavailable:data-provider has no new account field by clienttype,83253,0.7339
+2026-08-03,web_tiantianhanju,iOS天天韩剧,281,,unavailable:data-provider has no new account field by clienttype,339,0.9204
+2026-08-03,win_kf_360,Windows端 360 韩剧圈,23,,unavailable:data-provider has no new account field by clienttype,427,0.2787
+2026-08-03,win_kf_lianxiang,Windows端 联想 韩剧圈,150,,unavailable:data-provider has no new account field by clienttype,2322,0.2041
+2026-08-03,win_rrsp,Windows端,21,,unavailable:data-provider has no new account field by clienttype,237,0.8312
+2026-08-03,win_rrsp_360,Windows端 360,692,,unavailable:data-provider has no new account field by clienttype,27547,0.2953
+2026-08-03,win_rrsp_ZOL,Windows端 ZOL下载站,879,,unavailable:data-provider has no new account field by clienttype,13157,0.3065
+2026-08-03,win_rrsp_baidu,Windows端 百度,2,,unavailable:data-provider has no new account field by clienttype,3841,0.326
+2026-08-03,win_rrsp_baidu2,Windows端 百度2,1,,unavailable:data-provider has no new account field by clienttype,886,0.3544
+2026-08-03,win_rrsp_cpayymt,Windows端 CPA雨悦美通,49,,unavailable:data-provider has no new account field by clienttype,1560,0.3308
+2026-08-03,win_rrsp_gmzj,Windows端 社群-乖猫追剧,461,,unavailable:data-provider has no new account field by clienttype,2848,0.3269
+2026-08-03,win_rrsp_gw,Windows端 官网,643,,unavailable:data-provider has no new account field by clienttype,19177,0.4801
+2026-08-03,win_rrsp_huajuntg,Windows端 华军推广,9,,unavailable:data-provider has no new account field by clienttype,911,0.3732
+2026-08-03,win_rrsp_huawei,Windows端 华为,131,,unavailable:data-provider has no new account field by clienttype,5208,0.2579
+2026-08-03,win_rrsp_lianxiang,Windows端 联想,745,,unavailable:data-provider has no new account field by clienttype,29411,0.2311
+2026-08-03,win_rrsp_ms,Windows端 微软,167,,unavailable:data-provider has no new account field by clienttype,7804,0.2904
+2026-08-03,win_rrsp_sc10,Windows端 市场10,2,,unavailable:data-provider has no new account field by clienttype,241,0.2075
+2026-08-03,win_rrsp_sc11,Windows端 市场11,28,,unavailable:data-provider has no new account field by clienttype,436,0.4106
+2026-08-03,win_rrsp_sc14,Windows端 市场14,626,,unavailable:data-provider has no new account field by clienttype,7840,0.3388
+2026-08-03,win_rrsp_sc15,Windows端 市场15,7,,unavailable:data-provider has no new account field by clienttype,21,0.7143
+2026-08-03,win_rrsp_sc17,Windows端 市场17,2,,unavailable:data-provider has no new account field by clienttype,17,0.4706
+2026-08-03,win_rrsp_sc18,Windows端 市场18,99,,unavailable:data-provider has no new account field by clienttype,202,0.1139
+2026-08-03,win_rrsp_sc19,Windows端 市场19,1,,unavailable:data-provider has no new account field by clienttype,96,0.1042
+2026-08-03,win_rrsp_sc20,Windows端 市场20,35,,unavailable:data-provider has no new account field by clienttype,451,0.3902
+2026-08-03,win_rrsp_sc3,Windows端 市场3,5,,unavailable:data-provider has no new account field by clienttype,143,0.1608
+2026-08-03,win_rrsp_sc4,Windows端 市场4,4,,unavailable:data-provider has no new account field by clienttype,124,0.3145
+2026-08-03,win_rrsp_sc6,Windows端 市场6,3,,unavailable:data-provider has no new account field by clienttype,4,0.5
+2026-08-03,win_rrsp_sc8,Windows端 市场8,82,,unavailable:data-provider has no new account field by clienttype,450,0.4356
+2026-08-03,win_rrsp_sc9,Windows端 市场9,297,,unavailable:data-provider has no new account field by clienttype,11876,0.3843
+2026-08-03,win_rrsp_tftj,Windows端 天府泰剧字幕组,1,,unavailable:data-provider has no new account field by clienttype,42,0.5
+2026-08-03,win_rrsp_tt,Windows端 社群-图图,6,,unavailable:data-provider has no new account field by clienttype,140,0.3429
+2026-08-03,win_rrsp_xzdj,Windows端 快手直播+社群-小嘴短剧,1,,unavailable:data-provider has no new account field by clienttype,310,0.4258
+2026-08-04,android_fast,安卓智美人人,13,,unavailable:data-provider has no new account field by clienttype,1190,0.0
+2026-08-04,android_qwtv,青蛙TV,141,,unavailable:data-provider has no new account field by clienttype,5011,0.8439
+2026-08-04,android_rrjc,安卓人人剧场,1839,,unavailable:data-provider has no new account field by clienttype,40802,0.8133
+2026-08-04,android_rrsp_hm_Harmony,安卓鸿蒙,3070,,unavailable:data-provider has no new account field by clienttype,67478,0.8346
+2026-08-04,android_rrsp_xb,安卓新人人android_rrsp_xb,19524,,unavailable:data-provider has no new account field by clienttype,591828,0.7978
+2026-08-04,android_tiantianhanju,安卓天天韩剧,1,,unavailable:data-provider has no new account field by clienttype,19,0.6842
+2026-08-04,android_tv,安卓TV版,9,,unavailable:data-provider has no new account field by clienttype,1119,0.0
+2026-08-04,ios_andrew,iOS多多60,1,,unavailable:data-provider has no new account field by clienttype,121,0.0
+2026-08-04,ios_aura,iOS多多110,10,,unavailable:data-provider has no new account field by clienttype,8226,0.7437
+2026-08-04,ios_beat,iOS多多99,4,,unavailable:data-provider has no new account field by clienttype,4248,0.7521
+2026-08-04,ios_bryan,iOS多多88,16,,unavailable:data-provider has no new account field by clienttype,8429,0.7384
+2026-08-04,ios_coulson,iOS多多50,70,,unavailable:data-provider has no new account field by clienttype,15458,0.7308
+2026-08-04,ios_duoduoshipin,IOS多多6（已下架）,2,,unavailable:data-provider has no new account field by clienttype,2065,0.0
+2026-08-04,ios_early,iOS多多72,4,,unavailable:data-provider has no new account field by clienttype,477,0.4172
+2026-08-04,ios_executive,iOS多多98,43,,unavailable:data-provider has no new account field by clienttype,32206,0.7643
+2026-08-04,ios_fast,iOS韩剧大全TV,3,,unavailable:data-provider has no new account field by clienttype,373,0.3727
+2026-08-04,ios_hawkeye,iOS多多29,1,,unavailable:data-provider has no new account field by clienttype,45,0.3778
+2026-08-04,ios_kevin,iOS多多89,3,,unavailable:data-provider has no new account field by clienttype,370,0.2892
+2026-08-04,ios_leo,iOS多多114,154,,unavailable:data-provider has no new account field by clienttype,63410,0.9143
+2026-08-04,ios_lyric,iOS多多122,28841,,unavailable:data-provider has no new account field by clienttype,221667,0.7851
+2026-08-04,ios_mas_video,iOS多多19,7,,unavailable:data-provider has no new account field by clienttype,196,0.4898
+2026-08-04,ios_milo,iOS多多109,37,,unavailable:data-provider has no new account field by clienttype,28994,0.7606
+2026-08-04,ios_onto,iOS多多62,4,,unavailable:data-provider has no new account field by clienttype,736,0.3791
+2026-08-04,ios_orion,iOS多多108,7,,unavailable:data-provider has no new account field by clienttype,7347,0.7515
+2026-08-04,ios_our,iOS多多102,5,,unavailable:data-provider has no new account field by clienttype,1017,0.6765
+2026-08-04,ios_patriot,iOS多多58,12,,unavailable:data-provider has no new account field by clienttype,12105,0.6181
+2026-08-04,ios_pick,iOS多多84,38,,unavailable:data-provider has no new account field by clienttype,20348,0.6492
+2026-08-04,ios_quake,iOS多多56,1,,unavailable:data-provider has no new account field by clienttype,28,0.1429
+2026-08-04,ios_role,iOS多多100,39,,unavailable:data-provider has no new account field by clienttype,28936,0.7179
+2026-08-04,ios_rrsp_jzsp,IOS多多专业版（已下架）,1,,unavailable:data-provider has no new account field by clienttype,2033,0.0
+2026-08-04,ios_rrtv_jsb,IOS多多极速版（已下架）,1,,unavailable:data-provider has no new account field by clienttype,1718,0.0
+2026-08-04,ios_single,iOS多多64,4,,unavailable:data-provider has no new account field by clienttype,482,0.4149
+2026-08-04,ios_site,iOS多多82,1,,unavailable:data-provider has no new account field by clienttype,191,0.3822
+2026-08-04,ios_skye,iOS多多57,1,,unavailable:data-provider has no new account field by clienttype,97,0.3918
+2026-08-04,ios_start,iOS多多103,43,,unavailable:data-provider has no new account field by clienttype,37128,0.7419
+2026-08-04,ios_steve,iOS多多27,1,,unavailable:data-provider has no new account field by clienttype,140,0.3214
+2026-08-04,ios_sugarbean,iOS多多美剧视频,7,,unavailable:data-provider has no new account field by clienttype,263,0.4144
+2026-08-04,ios_summer,iOS多多104,80,,unavailable:data-provider has no new account field by clienttype,3718,0.5769
+2026-08-04,ios_ward,iOS多多52,3,,unavailable:data-provider has no new account field by clienttype,45,0.2889
+2026-08-04,ios_zyb,IOS多多概念版（已下架）,16,,unavailable:data-provider has no new account field by clienttype,3645,0.0
+2026-08-04,ipad_cover,iOS多多74,4,,unavailable:data-provider has no new account field by clienttype,1655,0.8042
+2026-08-04,mac_rrsp_gw,Mac版,126,,unavailable:data-provider has no new account field by clienttype,2854,0.7176
+2026-08-04,web_applet,M站,20213,,unavailable:data-provider has no new account field by clienttype,28213,0.6753
+2026-08-04,web_pc,M站横版,38127,,unavailable:data-provider has no new account field by clienttype,79760,0.7201
+2026-08-04,web_tiantianhanju,iOS天天韩剧,419,,unavailable:data-provider has no new account field by clienttype,467,0.9529
+2026-08-04,win_kf_360,Windows端 360 韩剧圈,16,,unavailable:data-provider has no new account field by clienttype,400,0.2475
+2026-08-04,win_kf_lianxiang,Windows端 联想 韩剧圈,154,,unavailable:data-provider has no new account field by clienttype,2315,0.1957
+2026-08-04,win_rrsp,Windows端,12,,unavailable:data-provider has no new account field by clienttype,229,0.7249
+2026-08-04,win_rrsp_360,Windows端 360,706,,unavailable:data-provider has no new account field by clienttype,26689,0.3009
+2026-08-04,win_rrsp_360tg,Windows端 360推广,1,,unavailable:data-provider has no new account field by clienttype,810,0.2556
+2026-08-04,win_rrsp_ZOL,Windows端 ZOL下载站,812,,unavailable:data-provider has no new account field by clienttype,12743,0.3082
+2026-08-04,win_rrsp_baidu,Windows端 百度,1,,unavailable:data-provider has no new account field by clienttype,3657,0.3249
+2026-08-04,win_rrsp_cpayymt,Windows端 CPA雨悦美通,56,,unavailable:data-provider has no new account field by clienttype,1582,0.3281
+2026-08-04,win_rrsp_gmzj,Windows端 社群-乖猫追剧,397,,unavailable:data-provider has no new account field by clienttype,2695,0.341
+2026-08-04,win_rrsp_gw,Windows端 官网,613,,unavailable:data-provider has no new account field by clienttype,18775,0.4731
+2026-08-04,win_rrsp_huajuntg,Windows端 华军推广,9,,unavailable:data-provider has no new account field by clienttype,891,0.3524
+2026-08-04,win_rrsp_huawei,Windows端 华为,84,,unavailable:data-provider has no new account field by clienttype,4916,0.2655
+2026-08-04,win_rrsp_lianxiang,Windows端 联想,805,,unavailable:data-provider has no new account field by clienttype,28744,0.2369
+2026-08-04,win_rrsp_ms,Windows端 微软,148,,unavailable:data-provider has no new account field by clienttype,7657,0.2884
+2026-08-04,win_rrsp_sc11,Windows端 市场11,23,,unavailable:data-provider has no new account field by clienttype,425,0.3929
+2026-08-04,win_rrsp_sc14,Windows端 市场14,550,,unavailable:data-provider has no new account field by clienttype,7581,0.3325
+2026-08-04,win_rrsp_sc15,Windows端 市场15,4,,unavailable:data-provider has no new account field by clienttype,29,0.5862
+2026-08-04,win_rrsp_sc18,Windows端 市场18,119,,unavailable:data-provider has no new account field by clienttype,242,0.0744
+2026-08-04,win_rrsp_sc19,Windows端 市场19,1,,unavailable:data-provider has no new account field by clienttype,96,0.1146
+2026-08-04,win_rrsp_sc20,Windows端 市场20,36,,unavailable:data-provider has no new account field by clienttype,423,0.4043
+2026-08-04,win_rrsp_sc3,Windows端 市场3,4,,unavailable:data-provider has no new account field by clienttype,134,0.1866
+2026-08-04,win_rrsp_sc4,Windows端 市场4,2,,unavailable:data-provider has no new account field by clienttype,114,0.3246
+2026-08-04,win_rrsp_sc6,Windows端 市场6,1,,unavailable:data-provider has no new account field by clienttype,4,0.25
+2026-08-04,win_rrsp_sc8,Windows端 市场8,69,,unavailable:data-provider has no new account field by clienttype,434,0.4539
+2026-08-04,win_rrsp_sc9,Windows端 市场9,304,,unavailable:data-provider has no new account field by clienttype,11637,0.3763
+2026-08-04,win_rrsp_tftj,Windows端 天府泰剧字幕组,2,,unavailable:data-provider has no new account field by clienttype,36,0.5
+2026-08-04,win_rrsp_tt,Windows端 社群-图图,9,,unavailable:data-provider has no new account field by clienttype,128,0.2734
+2026-08-05,android_fast,安卓智美人人,6,,unavailable:data-provider has no new account field by clienttype,1178,0.0
+2026-08-05,android_qwtv,青蛙TV,133,,unavailable:data-provider has no new account field by clienttype,4955,0.8519
+2026-08-05,android_rrjc,安卓人人剧场,2237,,unavailable:data-provider has no new account field by clienttype,41694,0.8259
+2026-08-05,android_rrsp_hm_Harmony,安卓鸿蒙,2956,,unavailable:data-provider has no new account field by clienttype,67890,0.8392
+2026-08-05,android_rrsp_xb,安卓新人人android_rrsp_xb,19516,,unavailable:data-provider has no new account field by clienttype,595810,0.8049
+2026-08-05,android_tv,安卓TV版,8,,unavailable:data-provider has no new account field by clienttype,1057,0.0
+2026-08-05,ios_andrew,iOS多多60,1,,unavailable:data-provider has no new account field by clienttype,104,0.0
+2026-08-05,ios_aura,iOS多多110,9,,unavailable:data-provider has no new account field by clienttype,8053,0.757
+2026-08-05,ios_beat,iOS多多99,3,,unavailable:data-provider has no new account field by clienttype,4302,0.7431
+2026-08-05,ios_beit,iOS韩剧TV,2,,unavailable:data-provider has no new account field by clienttype,406,0.6429
+2026-08-05,ios_bryan,iOS多多88,18,,unavailable:data-provider has no new account field by clienttype,8353,0.7486
+2026-08-05,ios_coulson,iOS多多50,67,,unavailable:data-provider has no new account field by clienttype,15367,0.7458
+2026-08-05,ios_daisy,iOS多多53,2,,unavailable:data-provider has no new account field by clienttype,137,0.3723
+2026-08-05,ios_duoduoshipin,IOS多多6（已下架）,6,,unavailable:data-provider has no new account field by clienttype,2087,0.0
+2026-08-05,ios_early,iOS多多72,5,,unavailable:data-provider has no new account field by clienttype,416,0.4519
+2026-08-05,ios_executive,iOS多多98,47,,unavailable:data-provider has no new account field by clienttype,32331,0.7739
+2026-08-05,ios_fast,iOS韩剧大全TV,3,,unavailable:data-provider has no new account field by clienttype,371,0.3612
+2026-08-05,ios_groot,iOS韩剧6,1,,unavailable:data-provider has no new account field by clienttype,103,0.0
+2026-08-05,ios_kevin,iOS多多89,2,,unavailable:data-provider has no new account field by clienttype,390,0.3154
+2026-08-05,ios_leo,iOS多多114,185,,unavailable:data-provider has no new account field by clienttype,63260,0.9159
+2026-08-05,ios_lyric,iOS多多122,28377,,unavailable:data-provider has no new account field by clienttype,220437,0.7885
+2026-08-05,ios_mas_video,iOS多多19,1,,unavailable:data-provider has no new account field by clienttype,182,0.4725
+2026-08-05,ios_milo,iOS多多109,42,,unavailable:data-provider has no new account field by clienttype,28850,0.7659
+2026-08-05,ios_moment,iOS多多96,5,,unavailable:data-provider has no new account field by clienttype,9377,0.73
+2026-08-05,ios_nebula,iOS多多43,1,,unavailable:data-provider has no new account field by clienttype,56,0.0
+2026-08-05,ios_onto,iOS多多62,6,,unavailable:data-provider has no new account field by clienttype,683,0.3836
+2026-08-05,ios_orion,iOS多多108,5,,unavailable:data-provider has no new account field by clienttype,7284,0.7633
+2026-08-05,ios_patriot,iOS多多58,10,,unavailable:data-provider has no new account field by clienttype,11853,0.6263
+2026-08-05,ios_pick,iOS多多84,27,,unavailable:data-provider has no new account field by clienttype,20159,0.6481
+2026-08-05,ios_quake,iOS多多56,1,,unavailable:data-provider has no new account field by clienttype,10,0.2
+2026-08-05,ios_role,iOS多多100,47,,unavailable:data-provider has no new account field by clienttype,28599,0.7226
+2026-08-05,ios_rrsp_jzsp,IOS多多专业版（已下架）,5,,unavailable:data-provider has no new account field by clienttype,1947,0.0
+2026-08-05,ios_rrsp_xb_yifanju,IOS人人1（已下架）,2,,unavailable:data-provider has no new account field by clienttype,589,0.0
+2026-08-05,ios_single,iOS多多64,2,,unavailable:data-provider has no new account field by clienttype,447,0.4116
+2026-08-05,ios_start,iOS多多103,42,,unavailable:data-provider has no new account field by clienttype,36783,0.7415
+2026-08-05,ios_steve,iOS多多27,1,,unavailable:data-provider has no new account field by clienttype,146,0.3425
+2026-08-05,ios_sugarbean,iOS多多美剧视频,5,,unavailable:data-provider has no new account field by clienttype,251,0.3625
+2026-08-05,ios_summer,iOS多多104,81,,unavailable:data-provider has no new account field by clienttype,3617,0.5734
+2026-08-05,ios_ward,iOS多多52,5,,unavailable:data-provider has no new account field by clienttype,45,0.2667
+2026-08-05,ios_zyb,IOS多多概念版（已下架）,14,,unavailable:data-provider has no new account field by clienttype,3591,0.0
+2026-08-05,ipad_cover,iOS多多74,3,,unavailable:data-provider has no new account field by clienttype,1634,0.7809
+2026-08-05,mac_rrsp_gw,Mac版,104,,unavailable:data-provider has no new account field by clienttype,2841,0.7202
+2026-08-05,web_applet,M站,14376,,unavailable:data-provider has no new account field by clienttype,22392,0.6446
+2026-08-05,web_pc,M站横版,35002,,unavailable:data-provider has no new account field by clienttype,76567,0.7613
+2026-08-05,web_tiantianhanju,iOS天天韩剧,959,,unavailable:data-provider has no new account field by clienttype,1062,0.9369
+2026-08-05,win_kf_360,Windows端 360 韩剧圈,30,,unavailable:data-provider has no new account field by clienttype,405,0.3383
+2026-08-05,win_kf_lianxiang,Windows端 联想 韩剧圈,156,,unavailable:data-provider has no new account field by clienttype,2346,0.1939
+2026-08-05,win_rrsp,Windows端,12,,unavailable:data-provider has no new account field by clienttype,226,0.8274
+2026-08-05,win_rrsp_360,Windows端 360,629,,unavailable:data-provider has no new account field by clienttype,26424,0.2992
+2026-08-05,win_rrsp_ZOL,Windows端 ZOL下载站,732,,unavailable:data-provider has no new account field by clienttype,12488,0.3004
+2026-08-05,win_rrsp_baidu,Windows端 百度,2,,unavailable:data-provider has no new account field by clienttype,3595,0.3288
+2026-08-05,win_rrsp_cpayymt,Windows端 CPA雨悦美通,57,,unavailable:data-provider has no new account field by clienttype,1586,0.3436
+2026-08-05,win_rrsp_gmzj,Windows端 社群-乖猫追剧,448,,unavailable:data-provider has no new account field by clienttype,2675,0.3529
+2026-08-05,win_rrsp_gw,Windows端 官网,605,,unavailable:data-provider has no new account field by clienttype,18552,0.4728
+2026-08-05,win_rrsp_huajuntg,Windows端 华军推广,9,,unavailable:data-provider has no new account field by clienttype,895,0.3564
+2026-08-05,win_rrsp_huawei,Windows端 华为,75,,unavailable:data-provider has no new account field by clienttype,4904,0.2494
+2026-08-05,win_rrsp_lianxiang,Windows端 联想,710,,unavailable:data-provider has no new account field by clienttype,28568,0.2325
+2026-08-05,win_rrsp_ms,Windows端 微软,133,,unavailable:data-provider has no new account field by clienttype,7519,0.2953
+2026-08-05,win_rrsp_sc11,Windows端 市场11,27,,unavailable:data-provider has no new account field by clienttype,429,0.4126
+2026-08-05,win_rrsp_sc14,Windows端 市场14,616,,unavailable:data-provider has no new account field by clienttype,7632,0.336
+2026-08-05,win_rrsp_sc15,Windows端 市场15,8,,unavailable:data-provider has no new account field by clienttype,31,0.6774
+2026-08-05,win_rrsp_sc17,Windows端 市场17,7,,unavailable:data-provider has no new account field by clienttype,26,0.3846
+2026-08-05,win_rrsp_sc18,Windows端 市场18,128,,unavailable:data-provider has no new account field by clienttype,266,0.1165
+2026-08-05,win_rrsp_sc20,Windows端 市场20,38,,unavailable:data-provider has no new account field by clienttype,433,0.3995
+2026-08-05,win_rrsp_sc3,Windows端 市场3,4,,unavailable:data-provider has no new account field by clienttype,144,0.1875
+2026-08-05,win_rrsp_sc4,Windows端 市场4,2,,unavailable:data-provider has no new account field by clienttype,117,0.3504
+2026-08-05,win_rrsp_sc6,Windows端 市场6,2,,unavailable:data-provider has no new account field by clienttype,3,0.3333
+2026-08-05,win_rrsp_sc8,Windows端 市场8,68,,unavailable:data-provider has no new account field by clienttype,420,0.4452
+2026-08-05,win_rrsp_sc9,Windows端 市场9,268,,unavailable:data-provider has no new account field by clienttype,11478,0.384
+2026-08-05,win_rrsp_sogou,Windows端 搜狗,1,,unavailable:data-provider has no new account field by clienttype,1522,0.1886
+2026-08-05,win_rrsp_tftj,Windows端 天府泰剧字幕组,1,,unavailable:data-provider has no new account field by clienttype,32,0.4063
+2026-08-05,win_rrsp_tt,Windows端 社群-图图,9,,unavailable:data-provider has no new account field by clienttype,130,0.2923

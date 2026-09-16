@@ -651,3 +651,5 @@ main:has(> #page-insight.active){padding-bottom:12px}
 .guess-funnel-card .search-funnel-card-head h3{font-size:19px!important}
 .guess-funnel-card .search-funnel-card-head p{font-size:12px!important}
 @media(max-width:900px){.guess-search-funnel-graphic{padding-bottom:28px}.guess-search-funnel-graphic .search-funnel-visual{min-height:0}.guess-search-funnel-graphic .search-funnel-cone{height:auto;justify-content:flex-start;padding-bottom:20px}.guess-search-funnel-graphic .search-funnel-cone .search-funnel-layer{padding-left:5%;padding-right:5%}.guess-search-funnel-graphic .search-funnel-layer-label span{font-size:15px}.guess-search-funnel-graphic .search-funnel-layer>strong{font-size:28px}.guess-search-funnel-graphic .search-funnel-layer>em{font-size:14px}.guess-quality-rates{min-height:0}.guess-quality-rates .search-funnel-rate-chain{gap:14px}.guess-quality-chain-arrow{flex:0 0 28px}.guess-quality-rates .search-funnel-overall-node:not(:last-child)::after{display:none}}
+/* Tab1 scale chart: the DAU columns use a light green accent. */
+#page-overview .overview-region:first-of-type .legend-dot.blue{background:#a8cdaf!important}

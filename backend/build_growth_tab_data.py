@@ -3,6 +3,9 @@
 from __future__ import annotations
 
 import json
+import os
+import tempfile
+import time
 from collections import defaultdict
 from pathlib import Path
 
@@ -10,6 +13,26 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "dashboard-v2" / "data" / "season_play_weekly_20260706_20260831.json"
 OUT = ROOT / "dashboard-v2" / "data" / "content_growth_tabs.json"
+
+
+def write_atomic(path: Path, text: str) -> None:
+    """Write derived output without exposing partial files on Windows."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, temp_name = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".tmp", dir=path.parent)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as handle:
+            handle.write(text)
+        for attempt in range(4):
+            try:
+                os.replace(temp_name, path)
+                break
+            except PermissionError:
+                if attempt == 3:
+                    raise
+                time.sleep(0.25 * (attempt + 1))
+    finally:
+        if os.path.exists(temp_name):
+            os.unlink(temp_name)
 GENRES = {"CHN": "国产", "JP": "日剧", "KR": "韩剧", "TH": "泰剧", "UK": "英剧", "USK": "美剧", "OTHER": "其他"}
 
 
@@ -115,7 +138,8 @@ def main() -> None:
     date_end = max((row["period_end"] for row in rows), default=date_start)
     latest_period = periods[-1] if periods else (date_start, date_end)
     previous_period = periods[-2] if len(periods) > 1 else latest_period
-    OUT.write_text(json.dumps({"date_range": [date_start, date_end], "summaries": summaries, "bl_top20": {"|".join(key): value for key, value in bl_top20.items()}, "genre_top30": genre_top30, "growth_top20": latest_growth, "growth_by_period": growth_by_period, "source": "data_provider/seasonPlayVV", "notes": ["内容级播放UV为seasonPlayVV.play_uv；跨内容UV不做用户去重。", "BL按plot_type中的精确标签同性识别。", f"增长榜比较等长自然周，默认{latest_period[0]}..{latest_period[1]}对比{previous_period[0]}..{previous_period[1]}。"]}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    payload = json.dumps({"date_range": [date_start, date_end], "summaries": summaries, "bl_top20": {"|".join(key): value for key, value in bl_top20.items()}, "genre_top30": genre_top30, "growth_top20": latest_growth, "growth_by_period": growth_by_period, "source": "data_provider/seasonPlayVV", "notes": ["内容级播放UV为seasonPlayVV.play_uv；跨内容UV不做用户去重。", "BL按plot_type中的精确标签同性识别。", f"增长榜比较等长自然周，默认{latest_period[0]}..{latest_period[1]}对比{previous_period[0]}..{previous_period[1]}。"]}, ensure_ascii=False, separators=(",", ":"))
+    write_atomic(OUT, payload)
     print(f"wrote {OUT}")
     print(f"summaries={len(summaries)} genre_views={len(genre_top30)} growth={len(latest_growth)}")
 

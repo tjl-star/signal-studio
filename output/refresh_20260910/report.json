@@ -1,0 +1,217 @@
+{
+  "generated_at": "2026-09-10T11:00:14.008351+08:00",
+  "target_date": "2026-09-09",
+  "modules": [
+    {
+      "module": "searchHot",
+      "file": "C:\\Users\\tjldq\\Documents\\数据看板搭建\\dashboard-v2\\data\\热搜总榜_20260704_20260804.json",
+      "incoming": 31,
+      "added": 31,
+      "applied": true
+    },
+    {
+      "module": "newSearchHot",
+      "file": "C:\\Users\\tjldq\\Documents\\数据看板搭建\\dashboard-v2\\data\\新用户热搜_词频_20260704_20260804.json",
+      "incoming": 31,
+      "added": 31,
+      "applied": true
+    }
+  ],
+  "queries": [
+    {
+      "endpoint": "seasonSearchAuthInfo",
+      "params": {
+        "date": "20260908"
+      },
+      "data_date": "2026-09-08",
+      "response_dates": [
+        "2026-09-08"
+      ],
+      "fields": [
+        "drama_type",
+        "ds",
+        "history_page_cnt",
+        "history_page_rank",
+        "hit_cnt",
+        "hit_uv",
+        "home_page_cnt",
+        "home_page_rank",
+        "max_reject_count_rulename",
+        "max_reject_rate",
+        "play_rank",
+        "playable_rate",
+        "plot_type",
+        "search_cnt",
+        "search_minus_play_rank",
+        "search_rank",
+        "search_uv",
+        "season_id",
+        "season_num",
+        "season_type",
+        "series_name"
+      ],
+      "rows": 24004
+    },
+    {
+      "endpoint": "seasonPlayVV",
+      "params": {
+        "startDate": "2026-09-08",
+        "endDate": "2026-09-08"
+      },
+      "data_date": "2026-09-08",
+      "response_dates": [],
+      "fields": [
+        "authoriz_party_name",
+        "has_copyright",
+        "play_count",
+        "play_uv",
+        "plot_type",
+        "producer_region",
+        "season_classify",
+        "season_id",
+        "season_type",
+        "title"
+      ],
+      "rows": 21874
+    },
+    {
+      "endpoint": "seasonSearchAuthInfo",
+      "params": {
+        "date": "20260908",
+        "new_or_old": "new"
+      },
+      "data_date": "2026-09-08",
+      "response_dates": [
+        "2026-09-08"
+      ],
+      "fields": [
+        "drama_type",
+        "ds",
+        "history_page_cnt",
+        "history_page_rank",
+        "hit_cnt",
+        "hit_uv",
+        "home_page_cnt",
+        "home_page_rank",
+        "max_reject_count_rulename",
+        "max_reject_rate",
+        "play_rank",
+        "playable_rate",
+        "plot_type",
+        "search_cnt",
+        "search_minus_play_rank",
+        "search_rank",
+        "search_uv",
+        "season_id",
+        "season_num",
+        "season_type",
+        "series_name"
+      ],
+      "rows": 4335
+    },
+    {
+      "endpoint": "seasonPlayVV",
+      "params": {
+        "startDate": "2026-09-08",
+        "endDate": "2026-09-08"
+      },
+      "data_date": "2026-09-08",
+      "response_dates": [],
+      "fields": [
+        "authoriz_party_name",
+        "has_copyright",
+        "play_count",
+        "play_uv",
+        "plot_type",
+        "producer_region",
+        "season_classify",
+        "season_id",
+        "season_type",
+        "title"
+      ],
+      "rows": 21874
+    }
+  ],
+  "coverage": {
+    "overviewCore": {
+      "start": "2026-07-01",
+      "end": "2026-09-09",
+      "missing_dates": [],
+      "rows": 284
+    },
+    "genreRatio": {
+      "start": "2026-07-01",
+      "end": "2026-09-09",
+      "missing_dates": [],
+      "rows": 503
+    },
+    "contentRanking": {
+      "start": "2026-07-01",
+      "end": "2026-09-09",
+      "missing_dates": [],
+      "rows": 4260
+    },
+    "searchHot": {
+      "start": "2026-07-01",
+      "end": "2026-09-08",
+      "missing_dates": [
+        "2026-09-09"
+      ],
+      "rows": 2127
+    },
+    "newSearchHot": {
+      "start": "2026-07-01",
+      "end": "2026-09-08",
+      "missing_dates": [
+        "2026-09-09"
+      ],
+      "rows": 2170
+    },
+    "channelOps": {
+      "start": "2026-07-01",
+      "end": "2026-09-09",
+      "missing_dates": [],
+      "rows": 568
+    },
+    "sectionOps": {
+      "start": "2026-07-01",
+      "end": "2026-09-09",
+      "missing_dates": [],
+      "rows": 23637
+    },
+    "bannerClick": {
+      "start": "2026-07-01",
+      "end": "2026-09-09",
+      "missing_dates": [],
+      "rows": 59804
+    },
+    "popupWindow": {
+      "start": "2026-07-01",
+      "end": "2026-09-09",
+      "missing_dates": [],
+      "rows": 5716
+    },
+    "guessYouLikeQuickBI": {
+      "source": "Quick BI MCP/OLAP snapshot",
+      "start": "2026-07-01",
+      "end": "2026-09-07",
+      "missing_dates": [
+        "2026-09-09"
+      ]
+    },
+    "searchOverallQuickBI": {
+      "source": "Quick BI MCP/OLAP snapshot",
+      "start": "2026-07-01",
+      "end": "2026-09-07",
+      "missing_dates": [
+        "2026-09-09"
+      ]
+    }
+  },
+  "blocked": {
+    "overviewCore": "resolved for 2026-09-09 using authorized runtime credential",
+    "QuickBI": "MCP not connected",
+    "searchHot_20260909": "seasonSearchAuthInfo returned empty for all devices and new_or_old=new"
+  },
+  "validation": "Search 2026-09-08 and core 2026-09-09 verified against source fields; Quick BI and 2026-09-09 search remain pending"
+}

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>视频运营数据平台</title>
+  <link rel="stylesheet" href="style.css?v=20260827-guess-funnel-8">
+  <link rel="stylesheet" href="kpi-trend-colors.css?v=20260825-kpi-red-up-green-down">
+  <link rel="stylesheet" href="ranking-trend.css?v=20260826-playuv-search-color">
+  <script src="compat.js?v=lan-compat-20260819-3"></script>
+  <script src="echarts.min.js?v=lan-compat-20260819-3"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">RR</span><div><strong>视频运营数据平台</strong></div></div>
+      <nav class="page-nav" aria-label="页面导航">
+        <button class="nav-item nav-parent active" data-page="insight">◈ <span>运营总览</span></button>
+        <button class="nav-item nav-parent" data-page="report">▤ <span>运营月报</span></button>
+        <button class="nav-item nav-parent nav-group-toggle" data-page="overview" aria-expanded="false">◉ <span>用户与内容</span></button>
+        <div class="nav-subnav"><button class="nav-subitem" data-page="overview">核心数据</button><button class="nav-subitem" data-page="search-funnel">搜索转化</button><button class="nav-subitem" data-page="content">热播榜单</button><button class="nav-subitem" data-page="search">热搜榜单</button><button class="nav-subitem" data-page="bl">BL内容消费</button><button class="nav-subitem" data-page="genre-contribution">剧种内容贡献</button><button class="nav-subitem" data-page="growth">播放增长榜</button></div>
+        <button class="nav-item nav-parent nav-group-toggle" data-page="home" aria-expanded="false">◌ <span>首页运营</span></button>
+        <div class="nav-subnav"><button class="nav-subitem" data-page="home">首页频道</button></div>
+        <button class="nav-item nav-parent nav-group-toggle" data-page="banner" aria-expanded="false">▧ <span>资源位运营</span></button>
+        <div class="nav-subnav"><button class="nav-subitem" data-page="banner">Banner点击</button><button class="nav-subitem" data-page="popup">弹窗数据</button><button class="nav-subitem" data-page="sections">首页板块</button><button class="nav-subitem" data-page="guess">猜你喜欢</button></div>
+        <div id="content-sidebar-tree" class="content-sidebar-tree" aria-hidden="true" style="display:none!important"></div>
+        <div id="tab4-sidebar-tree" class="tab4-sidebar-tree" aria-hidden="true" style="display:none!important"></div>
+      </nav>
+    </aside>
+    <main class="main" aria-busy="true">
+      <div id="dashboard-loading" class="dashboard-loading" role="status" aria-live="polite">
+        <div class="dashboard-loading-card"><span class="dashboard-loading-spinner" aria-hidden="true"></span><span>数据加载中</span></div>
+      </div>
+      <section id="page-insight" class="page active">
+        <div class="ops-v2-heading">
+          <div>
+            <h2>运营总览</h2>
+            <p>先看整体播放，再看运营信号与内容变化</p>
+          </div>
+          <em id="insight-date-label">数据更新至 --</em>
+        </div>
+
+        <section class="ops-v2-section ops-v2-kpi-section" aria-labelledby="insight-kpi-heading">
+          <div class="ops-v2-section-heading">
+            <div><span class="ops-v2-section-kicker">01</span><h3 id="insight-kpi-heading">核心 KPI</h3></div>
+          </div>
+          <div class="ops-v2-kpi-grid">
+            <article class="ops-v2-kpi-card is-primary">
+              <div class="ops-v2-card-heading"><span>内容播放VV</span><small>内容消费规模</small></div>
+              <strong id="insight-playback-kpi">--</strong>
+              <p id="insight-playback-kpi-note">加载中</p>
+            </article>
+            <article class="ops-v2-kpi-card is-secondary">
+              <div class="ops-v2-card-heading"><span>播放率</span><small id="insight-playrate-scope">全部客户端</small></div>
+              <strong id="insight-playrate-kpi">--</strong>
+              <p id="insight-playrate-kpi-note">加载中</p>
+              <span id="insight-playrate-alert" class="ops-v2-alert" hidden>低于70%警戒线</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="ops-v2-section ops-v2-facts-section" aria-labelledby="insight-facts-heading">
+          <div class="ops-v2-section-heading">
+            <div><span class="ops-v2-section-kicker">02</span><h3 id="insight-facts-heading">运营信息</h3></div>
+          </div>
+          <div class="ops-v2-facts-grid">
+            <article class="ops-v2-fact-card is-operations" aria-labelledby="insight-operations-heading">
+              <div class="ops-v2-fact-card-heading"><span class="ops-v2-fact-marker">01</span><h4 id="insight-operations-heading">运营总览</h4></div>
+              <div id="insight-operations-facts" class="ops-v2-fact-list"></div>
+            </article>
+            <article class="ops-v2-fact-card is-anomaly" aria-labelledby="insight-anomaly-heading">
+              <div class="ops-v2-fact-card-heading"><span class="ops-v2-fact-marker">02</span><h4 id="insight-anomaly-heading">异常监测</h4></div>
+              <div id="insight-anomaly-facts" class="ops-v2-fact-list"></div>
+            </article>
+            <article class="ops-v2-fact-card is-preference" aria-labelledby="insight-preference-heading">
+              <div class="ops-v2-fact-card-heading"><span class="ops-v2-fact-marker">03</span><h4 id="insight-preference-heading">用户喜好</h4></div>
+              <div id="insight-preference-facts" class="ops-v2-fact-list"></div>
+            </article>
+            <article class="ops-v2-fact-card is-resource" aria-labelledby="insight-resource-heading">
+              <div class="ops-v2-fact-card-heading"><span class="ops-v2-fact-marker">04</span><h4 id="insight-resource-heading">资源位表现</h4></div>
+              <div id="insight-resource-facts" class="ops-v2-fact-list"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="ops-v2-section ops-v2-core-section" aria-labelledby="insight-core-heading">
+          <div class="ops-v2-section-heading">
+            <div><span class="ops-v2-section-kicker">03</span><h3 id="insight-core-heading">核心趋势</h3></div>
+          </div>
+          <div class="ops-v2-chart-grid">
+            <article class="ops-v2-chart-card">
+              <div class="ops-v2-chart-heading"><div><h4>近7日内容播放VV趋势</h4><span>整体播放结果</span></div></div>
+              <div id="insight-playback-trend-chart" class="ops-v2-chart chart" role="img" aria-label="近7日内容播放VV趋势图"></div>
+            </article>
+            <article class="ops-v2-chart-card">
+              <div class="ops-v2-chart-heading"><div><h4>内容增长 / 回落</h4><span>当前已核验播放增长结果</span></div></div>
+              <div id="insight-growth-divergence-chart" class="ops-v2-divergence-chart" role="img" aria-label="内容播放增长与回落发散图"></div>
+            </article>
+          </div>
+        </section>
+      </section>
+      <section id="page-report" class="page report-page"></section>
+      <section id="page-overview" class="page">
+        <div class="hero-strip"><p class="eyebrow">DAILY HEALTH CHECK</p><h2>先看大盘健康度，再定位趋势异常</h2></div>
+        <div class="section-heading overview-kpi-heading"><div><span>CORE KPI</span><h2>核心指标</h2></div><label class="overview-client-control" for="overview-client-select"><span>客户端</span><select id="overview-client-select" aria-label="客户端筛选"><option value="安卓">安卓</option><option value="iOS">IOS</option><option value="M站">M站</option></select></label></div>
+        <section class="kpi-grid five" id="overview-kpis"></section>
+        <div class="section-heading"><span>TREND ANALYSIS</span><h2>趋势变化</h2><em>近30天</em></div>
+        <section class="grid two-col"><article class="panel chart-panel"><div class="panel-head"><h3>设备DAU趋势</h3><strong id="dau-current">--</strong></div><div id="dau-chart" class="chart"></div></article><article class="panel chart-panel"><div class="panel-head"><h3>新增设备趋势</h3><strong id="new-current">--</strong></div><div id="new-chart" class="chart"></div></article></section>
+        <section class="grid two-col lower"><article class="panel chart-panel"><div class="panel-head"><h3>播放率趋势</h3><span>后台原始播放率字段</span></div><div id="rate-chart" class="chart"></div></article><article class="panel"><div class="panel-head"><h3>客户端拆分</h3><span>设备DAU / 播放率</span></div><div class="table-wrap"><table><thead><tr><th>客户端</th><th>设备DAU</th><th>播放率</th><th>人均播放时长</th><th>人均播放次数</th></tr></thead><tbody id="client-table"></tbody></table></div></article></section>
+      </section>
+      <section id="page-content" class="page"><div class="section-heading"><div><span>CONTENT RANKING</span><h2>内容榜单</h2><p>按真实榜单字段查看内容播放表现</p></div><em>2026-07-06 至 2026-08-04</em></div><section class="summary-strip" id="content-summary"></section><div class="grid two-col content-insights"><article class="panel"><div class="panel-head"><div><h3>播放 VV Top10</h3><span>按原始播放VV排序</span></div><strong>Top10</strong></div><div id="ranking-chart" class="chart chart-compact"></div></article><article class="panel"><div class="panel-head"><div><h3>榜单数据说明</h3><span>原始文件状态</span></div></div><div class="status-list"><div><b>榜单范围</b><span>仅展示真实 Top30 记录</span></div><div><b>播放 UV</b><span>接口未返回时保留 --</span></div><div><b>排名</b><span>使用原始排名，不重新计算</span></div></div></article></div><article class="panel detail-panel"><div class="panel-head"><div><h3>站内播放排名 Top30</h3><span>完整字段下沉至明细</span></div><button class="detail-toggle" type="button" data-target="ranking-detail">查看明细</button></div><div id="ranking-detail" class="table-wrap tall detail-collapsed"><table><thead><tr><th>日期</th><th>排名</th><th>内容名称</th><th>播放UV</th><th>播放VV</th><th>昨日环比</th><th>聚集类型</th><th>内容分类</th><th>题材标签</th><th>榜单状态</th><th>数据状态</th></tr></thead><tbody id="ranking-table"></tbody></table></div></article></section>
+      <section id="page-genre" class="page"><div class="section-heading"><div><h2>剧种播放占比</h2><p>按日期查看各剧种播放 VV 占比及较前一日变化</p></div><label class="genre-standalone-date">日期<input id="genre-standalone-date" type="date" aria-label="剧种播放占比日期"></label></div><section class="grid two-col"><article class="panel"><div class="panel-head"><h3>剧种播放占比</h3><span id="genre-standalone-label">--</span></div><div id="genre-standalone-chart" class="chart genre-standalone-chart"></div></article><article class="panel"><div class="panel-head"><h3>剧种明细</h3><span>占比 · 较前一日 · 播放VV</span></div><div id="genre-standalone-list" class="genre-standalone-list"></div></article></section></section>
+      <section id="page-bl" class="page"></section>
+      <section id="page-genre-contribution" class="page"></section>
+      <section id="page-growth" class="page"></section>
+      <section id="page-guess" class="page"></section>
+      <section id="page-search-funnel" class="page"></section>
+      <section id="page-home" class="page"><div class="section-heading"><div><span>HOME FUNNEL</span><h2>首页流量与转化漏斗</h2><p>首页入口、资源位和猜你喜欢的运营分析</p></div><em>2026-07-04 至 2026-08-04</em></div><div class="sub-tabs"><button class="active" data-home-tab="traffic">流量入口</button><button data-home-tab="resources">资源位</button><button data-home-tab="guess">猜你喜欢</button></div><div id="home-traffic" class="home-panel active"><section class="kpi-grid five" id="traffic-kpis"></section><div class="grid two-col"><article class="panel"><div class="panel-head"><div><h3>频道入口链路</h3><span>原始口径，不计算虚拟流失率</span></div></div><div id="traffic-chain" class="chain"></div><p class="note">各环节按接口原始口径展示，不计算虚拟流失率。</p></article><article class="panel"><div class="panel-head"><div><h3>频道入口排行</h3><span>首页频道点击 UV</span></div></div><div id="channel-chart" class="chart chart-compact"></div><div class="detail-panel"><div class="detail-head"><span>频道明细</span><button class="detail-toggle" type="button" data-target="channel-detail">查看明细</button></div><div id="channel-detail" class="table-wrap detail-collapsed"><table><thead><tr><th>频道</th><th>首页频道点击UV</th><th>内容点击UV</th><th>详情播放UV</th></tr></thead><tbody id="channel-table"></tbody></table></div></div></article></div></div><div id="home-resources" class="home-panel"><div class="grid two-col"><article class="panel"><div class="panel-head"><div><h3>首页板块点击率排行</h3><span>click_ctr_uv</span></div></div><div id="section-chart" class="chart"></div><div class="detail-panel"><div class="detail-head"><span>板块明细</span><button class="detail-toggle" type="button" data-target="section-detail">查看明细</button></div><div id="section-detail" class="table-wrap detail-collapsed"><table><thead><tr><th>板块名称</th><th>子板块名称</th><th>曝光UV</th><th>点击UV</th><th>UV点击率</th><th>风险等级</th></tr></thead><tbody id="section-table"></tbody></table></div></div></article><article class="panel"><div class="panel-head"><div><h3>Banner点击率排行</h3><span>ctr_uv</span></div></div><div id="banner-chart" class="chart"></div><div class="detail-panel"><div class="detail-head"><span>Banner明细</span><button class="detail-toggle" type="button" data-target="banner-detail">查看明细</button></div><div id="banner-detail" class="table-wrap detail-collapsed"><table><thead><tr><th>标题</th><th>位置</th><th>频道</th><th>曝光UV</th><th>点击UV</th><th>UV点击率</th></tr></thead><tbody id="banner-table"></tbody></table></div></div></article></div></div><div id="home-guess" class="home-panel"><div class="grid two-col"><article class="panel"><div class="panel-head"><div><h3>UV趋势</h3><span>猜你喜欢首页</span></div></div><div id="guess-chart" class="chart"></div></article><article class="panel"><div class="panel-head"><div><h3>UV指标</h3><span>真实字段</span></div></div><div id="guess-uv" class="metric-list"></div><div class="empty-block"><b>PV</b><span id="guess-pv-note">字段为空，不使用UV替代PV</span></div></article></div></div></section>
+      <section id="page-sections" class="page"><div class="section-heading"><div><span>HOME SECTION OPERATIONS</span><h2>首页板块运营分析</h2><p>按日期、频道和板块查询首页板块曝光与点击表现</p></div><em>2026-07-05 至 2026-08-04 · android_rrsp_xb</em></div><div id="section-ops-root"></div></section>
+       <section id="page-banner" class="page banner-page">
+        <div class="section-heading banner-heading">
+          <div><span>BANNER OPERATIONS</span><h2>Banner点击分析</h2><p>按单日、客户端和Banner位置查看逐条点击表现</p></div>
+          <div class="banner-heading-tools" aria-label="Banner筛选条件">
+            <div class="banner-client-filter"><span>客户端</span><div class="segmented" role="tablist" aria-label="Banner客户端"><button type="button" class="active" data-banner-client="and" role="tab">安卓</button><button type="button" data-banner-client="web" role="tab">M站</button></div></div>
+          </div>
+        </div>
+        <section class="panel banner-ranking-panel">
+          <div class="panel-head banner-panel-head"><div><h3>Banner效果排行</h3><span id="banner-ranking-caption">2026-08-04 · 安卓 · 全部位置</span></div><div class="banner-panel-tools"><label><span>日期</span><input id="banner-date" type="date" aria-label="Banner效果排行日期"></label><label><span>Banner位置</span><select class="banner-position-select" data-banner-position-scope="rank" aria-label="Banner效果排行Banner位置"><option value="all">全部位置</option></select></label><div class="banner-ranking-tabs" role="tablist" aria-label="Banner排行类型"><button type="button" class="active" data-banner-ranking="click" role="tab">点击UV TOP10</button><button type="button" data-banner-ranking="ctr" role="tab">转化率 TOP10</button></div></div></div>
+          <div id="banner-ranking-empty" class="banner-empty" hidden>暂无真实数据</div>
+          <div id="banner-ranking-chart" class="banner-ranking-chart" role="img" aria-label="Banner效果排行图"></div>
+        </section>
+        <section class="banner-trend-panel"><div class="panel-head"><div><h3>上线后趋势</h3><span id="banner-trend-caption">搜索 Banner 标题后查看上线后的表现变化</span></div><div class="banner-trend-controls"><label class="banner-trend-search banner-title-suggest"><span>Banner标题搜索</span><input id="banner-trend-title-search" type="search" placeholder="输入剧名或Banner标题" aria-label="趋势图搜索Banner标题" autocomplete="off"><div id="banner-trend-title-suggestions" class="banner-title-suggestions"></div></label><label class="banner-trend-window"><span>客户端</span><select id="banner-trend-client" aria-label="Banner趋势客户端"><option value="and" selected>and</option><option value="web">web</option></select></label><div class="banner-trend-periods" role="tablist" aria-label="Banner趋势观察周期"><button type="button" class="banner-trend-period is-active" data-banner-trend-window="7" role="tab" aria-selected="true">上线后一周</button><button type="button" class="banner-trend-period" data-banner-trend-window="30" role="tab" aria-selected="false">近30天</button></div></div></div><div id="banner-trend-empty" class="banner-trend-empty">请先搜索一个 Banner 标题</div><div id="banner-trend-chart" class="banner-trend-chart" role="img" aria-label="Banner上线后趋势图"></div></section>
+        <section class="banner-burst-panel panel"><div class="panel-head banner-burst-head"><div><h3>月度 Banner 点击贡献 Top10</h3><span id="banner-burst-caption">按月累计点击UV排序 · 仅统计 and、web</span></div><label class="banner-burst-month"><span>月份</span><select id="banner-burst-month" aria-label="Banner点击贡献统计月份"></select></label></div><div class="banner-burst-layout"><div id="banner-burst-chart" class="banner-burst-chart" role="img" aria-label="月度Banner点击贡献Top10柱状图"></div><div id="banner-burst-list" class="banner-burst-list" aria-label="大爆剧Top10列表"></div></div><div class="banner-burst-legend"><span><i class="banner-burst-color-key"></i>颜色越深：平均转化率越高</span><span>点击柱子查看剧名、剧种及月度明细</span></div><div id="banner-burst-detail" class="banner-burst-detail" hidden></div></section>
+        <section class="panel banner-detail-panel">
+          <div class="panel-head banner-detail-head"><div><h3>Banner明细</h3><span>导出仅包含筛选结果中最早的3个数据日期</span></div><button id="banner-export-excel" class="banner-excel-button" type="button" aria-label="导出Banner明细Excel"><svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>导出 Excel</span></button></div>
+          <div class="banner-detail-filter-bar"><label class="banner-title-suggest"><span>Banner标题搜索</span><input id="banner-detail-title-search" type="search" placeholder="输入剧名或Banner标题" aria-label="搜索Banner标题" autocomplete="off"><div id="banner-detail-title-suggestions" class="banner-title-suggestions"></div></label><label><span>日期范围</span><div class="banner-date-range-fields"><input id="banner-detail-start-date" type="date" aria-label="Banner明细开始日期"><i>至</i><input id="banner-detail-end-date" type="date" aria-label="Banner明细结束日期"></div></label></div>
+          <div class="table-wrap banner-detail-table-wrap"><table class="banner-table"><thead><tr><th>日期</th><th>平台</th><th>Banner位置</th><th>Banner标题</th><th><button type="button" class="banner-sort-button" data-banner-detail-sort="exposureValue" data-banner-sort-toggle="true" aria-label="按曝光UV排序">曝光UV</button></th><th><button type="button" class="banner-sort-button" data-banner-detail-sort="clickValue" data-banner-sort-toggle="true" aria-label="按点击UV排序">点击UV</button></th><th><button type="button" class="banner-sort-button" data-banner-detail-sort="ctr_uv" data-banner-sort-toggle="true" aria-label="按转化率排序">转化率</button></th><th class="banner-change-head"><button type="button" class="banner-sort-button" data-banner-detail-sort="clickChange" data-banner-sort-toggle="true" aria-label="按点击UV昨日环比排序">点击UV昨日环比</button></th><th class="banner-change-head"><button type="button" class="banner-sort-button" data-banner-detail-sort="ctrChange" data-banner-sort-toggle="true" aria-label="按转化率昨日环比排序">转化率昨日环比</button></th></tr></thead><tbody id="banner-detail-body"></tbody></table></div>
+          <div id="banner-pagination-host" class="dashboard-pagination-host"></div>
+        </section>
+       </section>
+       <section id="page-popup" class="page popup-page">
+         <div class="section-heading popup-heading">
+          <div><span>POPUP OPERATIONS</span><h2>弹窗效果分析</h2><p>按剧名查看上线后一周有效播放表现，并核对完整漏斗明细</p></div>
+           <div class="popup-heading-tools" aria-label="弹窗数据筛选条件"></div>
+         </div>
+         <div class="popup-sub-tabs" role="tablist" aria-label="弹窗数据子导航">
+           <button type="button" class="active" data-popup-tab="overview" role="tab" aria-selected="true">上线后一周趋势</button>
+           <button type="button" data-popup-tab="ranking" role="tab" aria-selected="false">有效播放贡献榜</button>
+           <button type="button" data-popup-tab="detail" role="tab" aria-selected="false">弹窗明细</button>
+         </div>
+         <div id="popup-ranking" class="popup-panel"></div>
+         <div id="popup-overview" class="popup-panel active"></div>
+         <div id="popup-detail" class="popup-panel"></div>
+       </section>
+       <footer class="footer">数据来源：项目数据目录 · 缺失字段保持空状态</footer>
+    </main>
+  </div>
+  <link rel="stylesheet" href="section-ops.css?v=20260826-unified-pagination-1">
+  <link rel="stylesheet" href="theme-polish.css?v=20260827-guess-layout-2">
+<link rel="stylesheet" href="insight.css?v=20260831-clean-focus-final">
+  <link rel="stylesheet" href="banner-ops.css?v=20260826-unified-pagination-1">
+  <link rel="stylesheet" href="popup-ops.css?v=20260909-popup-final-13">
+<link rel="stylesheet" href="growth-tabs.css?v=20260910-bl-ui-5">
+  <link rel="stylesheet" href="growth-tabs-ui.css?v=20260910-neutral-labels-2">
+  <link rel="stylesheet" href="report.css?v=20260911-trust-pdf-2">
+  <script src="app.js?v=20260911-trust-pdf-2"></script>
+<script src="growth-tabs.js?v=20260911-growth-refresh"></script>
+<script src="report.js?v=20260911-report-mom-1"></script>
+</body>
+</html>

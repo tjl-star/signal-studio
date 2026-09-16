@@ -1,0 +1,653 @@
+﻿{
+    "安卓":  [
+               {
+                   "value":  [
+                                 {
+                                     "date":  "2026-07-08",
+                                     "movie_avg_play_count":  2.2942,
+                                     "short_avg_play_count":  3.8098,
+                                     "total_avg_play_count":  8.7691,
+                                     "tv_avg_play_count":  8.0451
+                                 },
+                                 {
+                                     "date":  "2026-07-09",
+                                     "movie_avg_play_count":  2.3134,
+                                     "short_avg_play_count":  3.9609,
+                                     "total_avg_play_count":  8.5621,
+                                     "tv_avg_play_count":  7.8617
+                                 },
+                                 {
+                                     "date":  "2026-07-10",
+                                     "movie_avg_play_count":  2.3929,
+                                     "short_avg_play_count":  4.0291,
+                                     "total_avg_play_count":  8.9505,
+                                     "tv_avg_play_count":  8.1258
+                                 },
+                                 {
+                                     "date":  "2026-07-11",
+                                     "movie_avg_play_count":  2.5014,
+                                     "short_avg_play_count":  3.7478,
+                                     "total_avg_play_count":  9.1821,
+                                     "tv_avg_play_count":  8.3295
+                                 },
+                                 {
+                                     "date":  "2026-07-12",
+                                     "movie_avg_play_count":  2.5088,
+                                     "short_avg_play_count":  3.9098,
+                                     "total_avg_play_count":  8.7333,
+                                     "tv_avg_play_count":  7.8278
+                                 },
+                                 {
+                                     "date":  "2026-07-13",
+                                     "movie_avg_play_count":  2.3825,
+                                     "short_avg_play_count":  3.9069,
+                                     "total_avg_play_count":  8.0528,
+                                     "tv_avg_play_count":  7.2995
+                                 },
+                                 {
+                                     "date":  "2026-07-14",
+                                     "movie_avg_play_count":  2.3857,
+                                     "short_avg_play_count":  4.0548,
+                                     "total_avg_play_count":  8.0826,
+                                     "tv_avg_play_count":  7.3197
+                                 },
+                                 {
+                                     "date":  "2026-07-15",
+                                     "movie_avg_play_count":  2.3699,
+                                     "short_avg_play_count":  4.0369,
+                                     "total_avg_play_count":  8.0498,
+                                     "tv_avg_play_count":  7.2212
+                                 },
+                                 {
+                                     "date":  "2026-07-16",
+                                     "movie_avg_play_count":  2.3527,
+                                     "short_avg_play_count":  4.3884,
+                                     "total_avg_play_count":  8.5315,
+                                     "tv_avg_play_count":  7.7101
+                                 },
+                                 {
+                                     "date":  "2026-07-17",
+                                     "movie_avg_play_count":  2.2992,
+                                     "short_avg_play_count":  4.0992,
+                                     "total_avg_play_count":  8.7808,
+                                     "tv_avg_play_count":  7.8325
+                                 },
+                                 {
+                                     "date":  "2026-07-18",
+                                     "movie_avg_play_count":  2.3722,
+                                     "short_avg_play_count":  3.6221,
+                                     "total_avg_play_count":  9.1356,
+                                     "tv_avg_play_count":  8.1792
+                                 },
+                                 {
+                                     "date":  "2026-07-19",
+                                     "movie_avg_play_count":  2.3884,
+                                     "short_avg_play_count":  3.7403,
+                                     "total_avg_play_count":  8.4992,
+                                     "tv_avg_play_count":  7.5748
+                                 },
+                                 {
+                                     "date":  "2026-07-20",
+                                     "movie_avg_play_count":  2.2864,
+                                     "short_avg_play_count":  3.7032,
+                                     "total_avg_play_count":  7.8749,
+                                     "tv_avg_play_count":  7.0967
+                                 },
+                                 {
+                                     "date":  "2026-07-21",
+                                     "movie_avg_play_count":  2.3275,
+                                     "short_avg_play_count":  3.9056,
+                                     "total_avg_play_count":  8.0376,
+                                     "tv_avg_play_count":  7.2295
+                                 },
+                                 {
+                                     "date":  "2026-07-22",
+                                     "movie_avg_play_count":  2.3427,
+                                     "short_avg_play_count":  3.4854,
+                                     "total_avg_play_count":  8.2408,
+                                     "tv_avg_play_count":  7.3765
+                                 },
+                                 {
+                                     "date":  "2026-07-23",
+                                     "movie_avg_play_count":  2.2963,
+                                     "short_avg_play_count":  4.2061,
+                                     "total_avg_play_count":  8.5671,
+                                     "tv_avg_play_count":  7.6723
+                                 },
+                                 {
+                                     "date":  "2026-07-24",
+                                     "movie_avg_play_count":  2.3002,
+                                     "short_avg_play_count":  3.9913,
+                                     "total_avg_play_count":  8.7709,
+                                     "tv_avg_play_count":  7.851
+                                 },
+                                 {
+                                     "date":  "2026-07-25",
+                                     "movie_avg_play_count":  2.3888,
+                                     "short_avg_play_count":  4.2913,
+                                     "total_avg_play_count":  9.0741,
+                                     "tv_avg_play_count":  8.0878
+                                 },
+                                 {
+                                     "date":  "2026-07-26",
+                                     "movie_avg_play_count":  2.4127,
+                                     "short_avg_play_count":  4.3545,
+                                     "total_avg_play_count":  8.4925,
+                                     "tv_avg_play_count":  7.5273
+                                 },
+                                 {
+                                     "date":  "2026-07-27",
+                                     "movie_avg_play_count":  2.3239,
+                                     "short_avg_play_count":  4.04,
+                                     "total_avg_play_count":  7.8905,
+                                     "tv_avg_play_count":  7.0812
+                                 },
+                                 {
+                                     "date":  "2026-07-28",
+                                     "movie_avg_play_count":  2.3283,
+                                     "short_avg_play_count":  3.8284,
+                                     "total_avg_play_count":  8.0968,
+                                     "tv_avg_play_count":  7.2617
+                                 },
+                                 {
+                                     "date":  "2026-07-29",
+                                     "movie_avg_play_count":  2.3337,
+                                     "short_avg_play_count":  4.1197,
+                                     "total_avg_play_count":  8.2681,
+                                     "tv_avg_play_count":  7.3656
+                                 },
+                                 {
+                                     "date":  "2026-07-30",
+                                     "movie_avg_play_count":  2.3581,
+                                     "short_avg_play_count":  4.2628,
+                                     "total_avg_play_count":  8.342,
+                                     "tv_avg_play_count":  7.441
+                                 },
+                                 {
+                                     "date":  "2026-07-31",
+                                     "movie_avg_play_count":  2.3203,
+                                     "short_avg_play_count":  3.3854,
+                                     "total_avg_play_count":  9.218,
+                                     "tv_avg_play_count":  8.0915
+                                 },
+                                 {
+                                     "date":  "2026-08-01",
+                                     "movie_avg_play_count":  2.4079,
+                                     "short_avg_play_count":  2.8798,
+                                     "total_avg_play_count":  9.2046,
+                                     "tv_avg_play_count":  8.2789
+                                 },
+                                 {
+                                     "date":  "2026-08-02",
+                                     "movie_avg_play_count":  2.4246,
+                                     "short_avg_play_count":  3.0755,
+                                     "total_avg_play_count":  8.542,
+                                     "tv_avg_play_count":  7.6133
+                                 },
+                                 {
+                                     "date":  "2026-08-03",
+                                     "movie_avg_play_count":  2.3041,
+                                     "short_avg_play_count":  4.2746,
+                                     "total_avg_play_count":  8.0555,
+                                     "tv_avg_play_count":  7.251
+                                 },
+                                 {
+                                     "date":  "2026-08-04",
+                                     "movie_avg_play_count":  2.2958,
+                                     "short_avg_play_count":  4.4361,
+                                     "total_avg_play_count":  8.2042,
+                                     "tv_avg_play_count":  7.4077
+                                 },
+                                 {
+                                     "date":  "2026-08-05",
+                                     "movie_avg_play_count":  2.2917,
+                                     "short_avg_play_count":  4.635,
+                                     "total_avg_play_count":  8.3534,
+                                     "tv_avg_play_count":  7.5026
+                                 },
+                                 {
+                                     "date":  "2026-08-06",
+                                     "movie_avg_play_count":  2.3269,
+                                     "short_avg_play_count":  4.3816,
+                                     "total_avg_play_count":  8.3759,
+                                     "tv_avg_play_count":  7.5486
+                                 }
+                             ],
+                   "Count":  30
+               }
+           ],
+    "iOS":  [
+                {
+                    "value":  [
+                                  {
+                                      "date":  "2026-07-08",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.9412,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-09",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.5872,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-10",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.9648,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-11",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  8.3213,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-12",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  8.3162,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-13",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.8661,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-14",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.5671,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-15",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.5617,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-16",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.6634,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-17",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.9298,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-18",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  8.3117,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-19",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  8.1022,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-20",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  6.6679,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-21",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  6.9981,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-22",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.1177,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-23",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.2468,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-24",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.8561,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-25",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  8.3241,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-26",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.8353,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-27",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.1209,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-28",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.1328,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-29",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.3794,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-30",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.6893,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-07-31",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  8.4544,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-08-01",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  9.3419,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-08-02",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  8.4342,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-08-03",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.6721,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-08-04",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.5559,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-08-05",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.7626,
+                                      "tv_avg_play_count":  0.0
+                                  },
+                                  {
+                                      "date":  "2026-08-06",
+                                      "movie_avg_play_count":  0.0,
+                                      "short_avg_play_count":  0.0,
+                                      "total_avg_play_count":  7.9958,
+                                      "tv_avg_play_count":  0.0
+                                  }
+                              ],
+                    "Count":  30
+                }
+            ],
+    "M站":  [
+               {
+                   "value":  [
+                                 {
+                                     "date":  "2026-07-08",
+                                     "movie_avg_play_count":  1.8281,
+                                     "short_avg_play_count":  1.5604,
+                                     "total_avg_play_count":  4.3918,
+                                     "tv_avg_play_count":  4.7182
+                                 },
+                                 {
+                                     "date":  "2026-07-09",
+                                     "movie_avg_play_count":  1.8697,
+                                     "short_avg_play_count":  1.6088,
+                                     "total_avg_play_count":  4.4077,
+                                     "tv_avg_play_count":  4.6337
+                                 },
+                                 {
+                                     "date":  "2026-07-10",
+                                     "movie_avg_play_count":  1.8627,
+                                     "short_avg_play_count":  1.5972,
+                                     "total_avg_play_count":  4.5981,
+                                     "tv_avg_play_count":  4.6251
+                                 },
+                                 {
+                                     "date":  "2026-07-11",
+                                     "movie_avg_play_count":  1.9404,
+                                     "short_avg_play_count":  1.5234,
+                                     "total_avg_play_count":  4.7879,
+                                     "tv_avg_play_count":  4.9142
+                                 },
+                                 {
+                                     "date":  "2026-07-12",
+                                     "movie_avg_play_count":  1.9211,
+                                     "short_avg_play_count":  1.5841,
+                                     "total_avg_play_count":  4.6131,
+                                     "tv_avg_play_count":  4.8437
+                                 },
+                                 {
+                                     "date":  "2026-07-13",
+                                     "movie_avg_play_count":  1.9389,
+                                     "short_avg_play_count":  1.7168,
+                                     "total_avg_play_count":  4.3283,
+                                     "tv_avg_play_count":  4.5839
+                                 },
+                                 {
+                                     "date":  "2026-07-14",
+                                     "movie_avg_play_count":  1.8503,
+                                     "short_avg_play_count":  1.5287,
+                                     "total_avg_play_count":  4.1241,
+                                     "tv_avg_play_count":  4.4857
+                                 },
+                                 {
+                                     "date":  "2026-07-15",
+                                     "movie_avg_play_count":  1.8281,
+                                     "short_avg_play_count":  1.6121,
+                                     "total_avg_play_count":  4.0054,
+                                     "tv_avg_play_count":  4.4276
+                                 },
+                                 {
+                                     "date":  "2026-07-16",
+                                     "movie_avg_play_count":  1.7935,
+                                     "short_avg_play_count":  1.5864,
+                                     "total_avg_play_count":  4.342,
+                                     "tv_avg_play_count":  4.6488
+                                 },
+                                 {
+                                     "date":  "2026-07-17",
+                                     "movie_avg_play_count":  1.912,
+                                     "short_avg_play_count":  1.6512,
+                                     "total_avg_play_count":  4.682,
+                                     "tv_avg_play_count":  4.7936
+                                 },
+                                 {
+                                     "date":  "2026-07-18",
+                                     "movie_avg_play_count":  1.9094,
+                                     "short_avg_play_count":  1.4602,
+                                     "total_avg_play_count":  4.5139,
+                                     "tv_avg_play_count":  4.8365
+                                 },
+                                 {
+                                     "date":  "2026-07-19",
+                                     "movie_avg_play_count":  1.9039,
+                                     "short_avg_play_count":  1.5998,
+                                     "total_avg_play_count":  4.6811,
+                                     "tv_avg_play_count":  4.913
+                                 },
+                                 {
+                                     "date":  "2026-07-20",
+                                     "movie_avg_play_count":  1.7984,
+                                     "short_avg_play_count":  1.5136,
+                                     "total_avg_play_count":  4.072,
+                                     "tv_avg_play_count":  4.4152
+                                 },
+                                 {
+                                     "date":  "2026-07-21",
+                                     "movie_avg_play_count":  1.8169,
+                                     "short_avg_play_count":  1.5006,
+                                     "total_avg_play_count":  4.2515,
+                                     "tv_avg_play_count":  4.3981
+                                 },
+                                 {
+                                     "date":  "2026-07-22",
+                                     "movie_avg_play_count":  1.8746,
+                                     "short_avg_play_count":  1.5693,
+                                     "total_avg_play_count":  4.2154,
+                                     "tv_avg_play_count":  4.4403
+                                 },
+                                 {
+                                     "date":  "2026-07-23",
+                                     "movie_avg_play_count":  1.8015,
+                                     "short_avg_play_count":  1.5672,
+                                     "total_avg_play_count":  4.4382,
+                                     "tv_avg_play_count":  4.4805
+                                 },
+                                 {
+                                     "date":  "2026-07-24",
+                                     "movie_avg_play_count":  1.7587,
+                                     "short_avg_play_count":  1.5923,
+                                     "total_avg_play_count":  4.5799,
+                                     "tv_avg_play_count":  4.6324
+                                 },
+                                 {
+                                     "date":  "2026-07-25",
+                                     "movie_avg_play_count":  1.8441,
+                                     "short_avg_play_count":  1.6145,
+                                     "total_avg_play_count":  4.8152,
+                                     "tv_avg_play_count":  4.8917
+                                 },
+                                 {
+                                     "date":  "2026-07-26",
+                                     "movie_avg_play_count":  1.8717,
+                                     "short_avg_play_count":  1.5736,
+                                     "total_avg_play_count":  4.5516,
+                                     "tv_avg_play_count":  4.7925
+                                 },
+                                 {
+                                     "date":  "2026-07-27",
+                                     "movie_avg_play_count":  1.8071,
+                                     "short_avg_play_count":  1.6746,
+                                     "total_avg_play_count":  4.2473,
+                                     "tv_avg_play_count":  4.4606
+                                 },
+                                 {
+                                     "date":  "2026-07-28",
+                                     "movie_avg_play_count":  1.7958,
+                                     "short_avg_play_count":  1.5643,
+                                     "total_avg_play_count":  4.0977,
+                                     "tv_avg_play_count":  4.4167
+                                 },
+                                 {
+                                     "date":  "2026-07-29",
+                                     "movie_avg_play_count":  1.8344,
+                                     "short_avg_play_count":  1.5701,
+                                     "total_avg_play_count":  4.3676,
+                                     "tv_avg_play_count":  4.4823
+                                 },
+                                 {
+                                     "date":  "2026-07-30",
+                                     "movie_avg_play_count":  2.0353,
+                                     "short_avg_play_count":  1.6069,
+                                     "total_avg_play_count":  4.5499,
+                                     "tv_avg_play_count":  4.5078
+                                 },
+                                 {
+                                     "date":  "2026-07-31",
+                                     "movie_avg_play_count":  1.9047,
+                                     "short_avg_play_count":  1.7481,
+                                     "total_avg_play_count":  4.5328,
+                                     "tv_avg_play_count":  4.6666
+                                 },
+                                 {
+                                     "date":  "2026-08-01",
+                                     "movie_avg_play_count":  1.9061,
+                                     "short_avg_play_count":  1.495,
+                                     "total_avg_play_count":  4.5714,
+                                     "tv_avg_play_count":  4.895
+                                 },
+                                 {
+                                     "date":  "2026-08-02",
+                                     "movie_avg_play_count":  1.9044,
+                                     "short_avg_play_count":  1.5303,
+                                     "total_avg_play_count":  4.3257,
+                                     "tv_avg_play_count":  4.6927
+                                 },
+                                 {
+                                     "date":  "2026-08-03",
+                                     "movie_avg_play_count":  1.915,
+                                     "short_avg_play_count":  1.5928,
+                                     "total_avg_play_count":  4.2748,
+                                     "tv_avg_play_count":  4.3327
+                                 },
+                                 {
+                                     "date":  "2026-08-04",
+                                     "movie_avg_play_count":  1.7941,
+                                     "short_avg_play_count":  1.6065,
+                                     "total_avg_play_count":  4.1094,
+                                     "tv_avg_play_count":  4.4
+                                 },
+                                 {
+                                     "date":  "2026-08-05",
+                                     "movie_avg_play_count":  1.807,
+                                     "short_avg_play_count":  1.6255,
+                                     "total_avg_play_count":  4.2707,
+                                     "tv_avg_play_count":  4.4083
+                                 },
+                                 {
+                                     "date":  "2026-08-06",
+                                     "movie_avg_play_count":  1.8705,
+                                     "short_avg_play_count":  1.6499,
+                                     "total_avg_play_count":  4.1444,
+                                     "tv_avg_play_count":  4.4346
+                                 }
+                             ],
+                   "Count":  30
+               }
+           ]
+}

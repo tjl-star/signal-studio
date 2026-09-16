@@ -3,7 +3,7 @@
   "tool": "search_drama_conversion_data",
   "api_id": "65dc407f9a53",
   "startDate": "2026-07-01",
-  "endDate": "20260913",
+  "endDate": "20260915",
   "client_scope": "all",
   "fields": [
     "date",
@@ -917,6 +917,30 @@
       "ff_play_uv_rate": "69.95%",
       "search_suc_uv": 252307,
       "result_play_time_uv": 43.56
+    },
+    {
+      "date": "20260914",
+      "into_search_click_uv": 199117,
+      "result_content_click_uv": 156686,
+      "play_5min_uv_rate": "31.54%",
+      "result_video_after_ad_play_start_uv": 136524,
+      "result_play_5mins_uv": 62793,
+      "search_suc_uv_ratio": "96.22%",
+      "ff_play_uv_rate": "68.56%",
+      "search_suc_uv": 191592,
+      "result_play_time_uv": 39.74
+    },
+    {
+      "date": "20260915",
+      "into_search_click_uv": 194542,
+      "result_content_click_uv": 153178,
+      "play_5min_uv_rate": "29.39%",
+      "result_video_after_ad_play_start_uv": 130920,
+      "result_play_5mins_uv": 57184,
+      "search_suc_uv_ratio": "96.39%",
+      "ff_play_uv_rate": "67.30%",
+      "search_suc_uv": 187527,
+      "result_play_time_uv": 38.53
     }
   ]
 }

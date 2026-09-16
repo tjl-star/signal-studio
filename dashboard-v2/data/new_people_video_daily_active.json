@@ -5,7 +5,7 @@
   "application": "全部应用",
   "date_range": {
     "start": "2026-07-04",
-    "end": "2026-09-13",
+    "end": "2026-09-15",
     "inclusive": true
   },
   "clients": [
@@ -2721,6 +2721,78 @@
       "device_dau": 1428003,
       "new_device": 107973,
       "play_rate": 0.7345,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-09-14",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 590400,
+      "new_device": 22674,
+      "play_rate": 0.7723,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-09-14",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 440506,
+      "new_device": 18766,
+      "play_rate": 0.7447,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-09-14",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 94679,
+      "new_device": 49741,
+      "play_rate": 0.6992,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-09-14",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1269582,
+      "new_device": 95572,
+      "play_rate": 0.7035,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-09-15",
+      "application_name": "全部应用",
+      "client": "安卓",
+      "device_dau": 572153,
+      "new_device": 22295,
+      "play_rate": 0.7641,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-09-15",
+      "application_name": "全部应用",
+      "client": "iOS",
+      "device_dau": 432269,
+      "new_device": 19427,
+      "play_rate": 0.7422,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-09-15",
+      "application_name": "全部应用",
+      "client": "M站",
+      "device_dau": 93031,
+      "new_device": 48819,
+      "play_rate": 0.7093,
+      "source": "data-provider /skill/coreData"
+    },
+    {
+      "date": "2026-09-15",
+      "application_name": "全部应用",
+      "client": "全部",
+      "device_dau": 1240250,
+      "new_device": 94749,
+      "play_rate": 0.6984,
       "source": "data-provider /skill/coreData"
     }
   ]

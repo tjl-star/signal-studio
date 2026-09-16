@@ -1,0 +1,112 @@
+[
+  {
+    "channel": "精选",
+    "click_count": 0,
+    "click_user": 0,
+    "ctr_pv": 0.0,
+    "ctr_uv": 0.0,
+    "date": "2026-08-13",
+    "exposure_count": 567,
+    "exposure_user": 1,
+    "group_name": "近期开播新剧⭐️"
+  },
+  {
+    "channel": "精选",
+    "click_count": 15,
+    "click_user": 1,
+    "ctr_pv": 0.0286,
+    "ctr_uv": 0.5,
+    "date": "2026-08-13",
+    "exposure_count": 525,
+    "exposure_user": 2,
+    "group_name": "排行榜"
+  },
+  {
+    "channel": "韩剧",
+    "click_count": 75,
+    "click_user": 1,
+    "ctr_pv": 0.2308,
+    "ctr_uv": 1.0,
+    "date": "2026-08-13",
+    "exposure_count": 325,
+    "exposure_user": 1,
+    "group_name": "韩剧排行榜"
+  },
+  {
+    "channel": "精选",
+    "click_count": 7,
+    "click_user": 1,
+    "ctr_pv": 0.025,
+    "ctr_uv": 0.5,
+    "date": "2026-08-13",
+    "exposure_count": 280,
+    "exposure_user": 2,
+    "group_name": "为你推荐"
+  },
+  {
+    "channel": "韩剧",
+    "click_count": 0,
+    "click_user": 0,
+    "ctr_pv": 0.0,
+    "ctr_uv": 0.0,
+    "date": "2026-08-13",
+    "exposure_count": 252,
+    "exposure_user": 1,
+    "group_name": "近期开播韩剧⭐️"
+  },
+  {
+    "channel": "精选",
+    "click_count": 4,
+    "click_user": 1,
+    "ctr_pv": 0.0238,
+    "ctr_uv": 0.5,
+    "date": "2026-08-13",
+    "exposure_count": 168,
+    "exposure_user": 2,
+    "group_name": ""
+  },
+  {
+    "channel": "精选",
+    "click_count": 0,
+    "click_user": 0,
+    "ctr_pv": 0.0,
+    "ctr_uv": 0.0,
+    "date": "2026-08-13",
+    "exposure_count": 84,
+    "exposure_user": 1,
+    "group_name": "满级打斗女神大赏💃💃"
+  },
+  {
+    "channel": "韩剧",
+    "click_count": 0,
+    "click_user": 0,
+    "ctr_pv": 0.0,
+    "ctr_uv": 0.0,
+    "date": "2026-08-13",
+    "exposure_count": 18,
+    "exposure_user": 1,
+    "group_name": ""
+  },
+  {
+    "channel": "韩剧",
+    "click_count": 0,
+    "click_user": 0,
+    "ctr_pv": 0.0,
+    "ctr_uv": 0.0,
+    "date": "2026-08-13",
+    "exposure_count": 5,
+    "exposure_user": 1,
+    "group_name": "杀人者的购物中心2"
+  },
+  {
+    "channel": "精选",
+    "click_count": 0,
+    "click_user": 0,
+    "ctr_pv": 0.0,
+    "ctr_uv": 0.0,
+    "date": "2026-08-13",
+    "exposure_count": 2,
+    "exposure_user": 1,
+    "group_name": "甜爱剧场"
+  }
+]

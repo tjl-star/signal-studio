@@ -1,0 +1,190 @@
+{
+  "dashboard_date": "2026-07-29",
+  "generated_at": "2026-07-30T17:04:00+08:00",
+  "source": "Quick BI真实数据｜人人视频数据总览｜默认全应用、全客户端、全设备、全地域",
+  "pages": {
+    "overview": {
+      "filters": {
+        "date": "2026-07-29",
+        "platforms": ["all"]
+      },
+      "metric_cards": [
+        {
+          "metric_key": "dau",
+          "metric_name": "DAU",
+          "value": 800300,
+          "unit": "人",
+          "wow": null,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "基础数据 → 日活数据 → 账号日活"
+        },
+        {
+          "metric_key": "new_users",
+          "metric_name": "新增用户",
+          "value": 12310,
+          "unit": "人",
+          "wow": null,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "基础数据 → 日活数据 → 账号日活 → 新增用户数"
+        },
+        {
+          "metric_key": "retention_1d",
+          "metric_name": "一日留存",
+          "value": 0.4491,
+          "unit": "%",
+          "wow": null,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "基础数据 → 留存分析 → 新账号留存 → 用户日留存（2026-07-29，1留率）"
+        },
+        {
+          "metric_key": "retention_3d",
+          "metric_name": "三日留存",
+          "value": 0.2711,
+          "unit": "%",
+          "wow": null,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "基础数据 → 留存分析 → 新账号留存 → 用户日留存（2026-07-29，3留率）"
+        },
+        {
+          "metric_key": "play_uv",
+          "metric_name": "播放人数",
+          "value": 860100,
+          "unit": "人",
+          "wow": null,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "播放数据 → 播放数据(20220731后不含新人人) → 播放人数 → 总（2026-07-29）"
+        },
+        {
+          "metric_key": "play_count",
+          "metric_name": "播放次数",
+          "value": 6592000,
+          "unit": "次",
+          "wow": null,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "播放数据 → 播放数据(20220731后不含新人人) → 播放次数 → 总（2026-07-29）"
+        },
+        {
+          "metric_key": "play_rate",
+          "metric_name": "播放率",
+          "value": 1.07472198,
+          "unit": "%",
+          "wow": null,
+          "trend_30d": [],
+          "status": "calculated",
+          "source": "播放人数 / DAU（860100 / 800300）"
+        },
+        {
+          "metric_key": "avg_play_count",
+          "metric_name": "人均播放次数",
+          "value": 7.66,
+          "unit": "次/人",
+          "wow": null,
+          "trend_30d": [],
+          "status": "confirmed",
+          "source": "播放数据 → 播放数据(20220731后不含新人人) → 人均播放次数 → 总（2026-07-29）"
+        },
+        {
+          "metric_key": "avg_play_time",
+          "metric_name": "人均播放时长",
+          "value": null,
+          "unit": "秒",
+          "wow": null,
+          "trend_30d": [],
+          "status": "pending",
+          "source": "播放时长（未取得明确对应指标）"
+        }
+      ],
+      "trends": {
+        "dau_30d": [],
+        "new_users_30d": [],
+        "play_rate_30d": []
+      },
+      "platform_breakdown": []
+    },
+    "content_analysis": {
+      "filters": {
+        "date": "2026-07-29",
+        "ranking_type": "series",
+        "metric": "play_count"
+      },
+      "hot_play_top30": [
+        {"rank":1,"title":"寒阳风起春山境","play_count":589600,"play_uv":103000,"day_change":-0.0035491,"country_region":"泰国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":2,"title":"天定良元","play_count":482400,"play_uv":128700,"day_change":-0.08740068,"country_region":"泰国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":3,"title":"检察官室的提案","play_count":298400,"play_uv":76220,"day_change":-0.10792227,"country_region":"韩国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":4,"title":"嫁入高门的男人","play_count":182400,"play_uv":66530,"day_change":-0.04950495,"country_region":"泰国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":5,"title":"杀人者的购物中心","play_count":178900,"play_uv":62720,"day_change":0.34713855,"country_region":"韩国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":6,"title":"挚爱","play_count":141100,"play_uv":16460,"day_change":-0.02081888,"country_region":"泰国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":7,"title":"伍贰","play_count":112600,"play_uv":17390,"day_change":0.07238095,"country_region":"泰国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":8,"title":"行尸走肉","play_count":96410,"play_uv":27020,"day_change":-0.06398058,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":9,"title":"怪奇物语","play_count":78320,"play_uv":16790,"day_change":0.04107404,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":10,"title":"Running Man","play_count":65420,"play_uv":12930,"day_change":-0.04746651,"country_region":"韩国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":11,"title":"无耻之徒(美版)","play_count":60120,"play_uv":14230,"day_change":-0.02985315,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":12,"title":"模范出租车","play_count":56350,"play_uv":14170,"day_change":-0.03095443,"country_region":"韩国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":13,"title":"龙之家族","play_count":52990,"play_uv":19040,"day_change":-0.22845079,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":14,"title":"老友记","play_count":38870,"play_uv":7305,"day_change":0.0164749,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":15,"title":"生活大爆炸","play_count":37780,"play_uv":9838,"day_change":-0.02929085,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":16,"title":"清醒点，泰尔先生","play_count":37360,"play_uv":14320,"day_change":-0.20662561,"country_region":"泰国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":17,"title":"初三的六一儿童节","play_count":36790,"play_uv":8922,"day_change":0.00163354,"country_region":"泰国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":18,"title":"极速恋人","play_count":32080,"play_uv":6231,"day_change":-0.14270444,"country_region":"泰国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":19,"title":"四方极爱","play_count":31590,"play_uv":7505,"day_change":-0.41238839,"country_region":"泰国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":20,"title":"犯罪心理","play_count":27140,"play_uv":6331,"day_change":-0.01986277,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":21,"title":"瑞克和莫蒂","play_count":23040,"play_uv":4522,"day_change":0.24071082,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":22,"title":"爱情同课程","play_count":22610,"play_uv":4960,"day_change":null,"country_region":"韩国","content_type":null,"genre":null,"is_new_entry":true,"status":"pending"},
+        {"rank":23,"title":"奇迹在东京","play_count":22150,"play_uv":5512,"day_change":-0.08960132,"country_region":"泰国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":24,"title":"破产姐妹","play_count":21940,"play_uv":4297,"day_change":-0.00858563,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":25,"title":"邪恶力量","play_count":21070,"play_uv":4070,"day_change":0.00237869,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":26,"title":"你的天空","play_count":19810,"play_uv":4464,"day_change":-0.02987267,"country_region":"泰国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":27,"title":"权力的游戏","play_count":18090,"play_uv":4389,"day_change":-0.06074766,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":28,"title":"黑暗荣耀","play_count":17850,"play_uv":null,"day_change":-0.08975013,"country_region":"韩国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":29,"title":"绝望写手","play_count":17790,"play_uv":4354,"day_change":-0.01166667,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"},
+        {"rank":30,"title":"紧急呼救","play_count":17500,"play_uv":null,"day_change":-0.04839587,"country_region":"美国","content_type":null,"genre":null,"is_new_entry":false,"status":"pending"}
+      ],
+      "genre_play_share": [
+        {"genre_group":null,"play_count":null,"share":null,"day_change":null,"status":"pending"}
+      ]
+    },
+    "search_analysis": {
+      "filters": {"date":"2026-07-29","user_type":"all"},
+      "hot_search_top30": [
+        {"rank":null,"keyword":null,"search_count":null,"search_uv":null,"day_change":null,"content_type":null,"genre":null,"status":"pending"}
+      ],
+      "search_funnel": {
+        "steps": [
+          {"step_key":"search","step_name":"搜索","uv":null,"status":"pending"},
+          {"step_key":"detail","step_name":"详情页","uv":null,"status":"pending"},
+          {"step_key":"first_play","step_name":"首帧播放","uv":null,"status":"pending"},
+          {"step_key":"effective_5min_play","step_name":"5分钟有效播放","uv":null,"status":"pending"},
+          {"step_key":"finish","step_name":"完成播放","uv":null,"status":"pending"}
+        ],
+        "conversion_rates": {"search_to_detail":null,"detail_to_first_play":null,"effective_play_rate":null,"finish_rate":null}
+      }
+    },
+    "traffic_analysis": {
+      "filters": {"date":"2026-07-29","channels":[]},
+      "channel_funnels": [
+        {"channel":"后续补充","home_uv":null,"channel_uv":null,"detail_uv":null,"play_uv":null,"conversion_rate":null,"day_change":null,"status":"pending"}
+      ],
+      "home_sections": [
+        {"section_name":"后续补充","exposure_pv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"}
+      ]
+    },
+    "recommendation_analysis": {
+      "filters": {"date":"2026-07-29"},
+      "banners": [
+        {"component_name":"后续补充","title":null,"channel":null,"position":null,"exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"}
+      ],
+      "popups": [
+        {"component_name":"后续补充","title":null,"exposure_pv":null,"exposure_uv":null,"click_count":null,"play_count":null,"effective_play_count":null,"status":"pending"}
+      ],
+      "guess_you_like": [
+        {"component_name":"后续补充","exposure_count":null,"click_count":null,"play_count":null,"effective_play_count":null,"conversion_rate":null,"status":"pending"}
+      ]
+    }
+  }
+}

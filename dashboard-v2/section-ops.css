@@ -22,3 +22,16 @@
 .section-ops-th-filter input[type=date],.section-ops-th-filter select{height:26px;min-width:0;width:122px;padding:0 7px;border:1px solid #d5e2f0;border-radius:6px;background:#fff;color:#294866;font:700 11px inherit;outline:none;box-sizing:border-box}
 .section-ops-th-filter select{width:132px;padding-right:18px}
 .section-ops-table th:has(.section-ops-th-filter){height:54px;vertical-align:middle}
+
+/* Component long-range trend: reuse Banner controls and chart language. */
+#section-component-trend .section-component-trend-window{align-items:center;white-space:nowrap}
+#section-component-trend .section-component-trend-charts{display:grid;gap:18px}
+#section-component-trend .section-component-trend-chart-block{min-width:0}
+#section-component-trend .section-component-trend-chart-block h4{margin:0;color:#294866;font-size:14px;font-weight:800}
+#section-component-trend .section-component-trend-chart{height:300px;margin-top:8px}
+#section-component-trend .section-component-trend-window .banner-trend-period:focus-visible{outline:2px solid #2f76e8;outline-offset:2px}
+@media(max-width:600px){
+  #section-component-trend .section-component-trend-window{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:8px}
+  #section-component-trend .section-component-trend-window .banner-trend-periods{min-width:0}
+  #section-component-trend .section-component-trend-chart{height:260px}
+}

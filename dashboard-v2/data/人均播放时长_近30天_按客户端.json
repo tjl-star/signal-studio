@@ -698,5 +698,69 @@
     "tv_avg_watch_duration": 76.582,
     "movie_avg_watch_duration": 17.711,
     "short_avg_watch_duration": 1.1483
+  },
+  {
+    "date": "2026-09-14",
+    "client_type": "M站",
+    "total_avg_watch_duration": 35.1106,
+    "tv_avg_watch_duration": 55.9893,
+    "movie_avg_watch_duration": 24.4284,
+    "short_avg_watch_duration": 3.5448
+  },
+  {
+    "date": "2026-09-14",
+    "client_type": "iOS",
+    "total_avg_watch_duration": 51.2904,
+    "tv_avg_watch_duration": 0.0,
+    "movie_avg_watch_duration": 0.0,
+    "short_avg_watch_duration": 0.0
+  },
+  {
+    "date": "2026-09-14",
+    "client_type": "全部",
+    "total_avg_watch_duration": 66.4531,
+    "tv_avg_watch_duration": 83.0676,
+    "movie_avg_watch_duration": 25.2783,
+    "short_avg_watch_duration": 1.3374
+  },
+  {
+    "date": "2026-09-14",
+    "client_type": "安卓",
+    "total_avg_watch_duration": 69.3017,
+    "tv_avg_watch_duration": 69.647,
+    "movie_avg_watch_duration": 17.0462,
+    "short_avg_watch_duration": 1.1177
+  },
+  {
+    "date": "2026-09-15",
+    "client_type": "M站",
+    "total_avg_watch_duration": 34.2571,
+    "tv_avg_watch_duration": 55.3503,
+    "movie_avg_watch_duration": 23.9091,
+    "short_avg_watch_duration": 2.7286
+  },
+  {
+    "date": "2026-09-15",
+    "client_type": "iOS",
+    "total_avg_watch_duration": 50.0749,
+    "tv_avg_watch_duration": 0.0,
+    "movie_avg_watch_duration": 0.0,
+    "short_avg_watch_duration": 0.0
+  },
+  {
+    "date": "2026-09-15",
+    "client_type": "全部",
+    "total_avg_watch_duration": 64.9784,
+    "tv_avg_watch_duration": 82.2193,
+    "movie_avg_watch_duration": 25.5576,
+    "short_avg_watch_duration": 2.0675
+  },
+  {
+    "date": "2026-09-15",
+    "client_type": "安卓",
+    "total_avg_watch_duration": 67.8048,
+    "tv_avg_watch_duration": 68.5857,
+    "movie_avg_watch_duration": 17.0666,
+    "short_avg_watch_duration": 1.8828
   }
 ]

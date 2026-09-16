@@ -73,7 +73,7 @@ let DASHBOARD_RANGE_END='2026-09-10';
 // default remains the overview for existing bookmarks, while
 // `?page=content` opens 热播榜单 immediately.
 const requestedInitialPage=new URLSearchParams(window.location.search).get('page');
-const initialPage=['insight','report','overview','content','search','genre','home','guess','sections','search-funnel','banner','popup'].includes(requestedInitialPage)?requestedInitialPage:'insight';
+const initialPage=['report','overview','content','search','genre','home','guess','sections','search-funnel','banner','popup'].includes(requestedInitialPage)?requestedInitialPage:'overview';
 const state={start:DASHBOARD_RANGE_START,end:DASHBOARD_RANGE_END,client:'安卓',page:initialPage,homeTab:'traffic',data:{}};window.__dashboardState=state;
 window.__openResourcePage=()=>{state.page='banner';renderPage()};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
@@ -211,6 +211,13 @@ function updateDashboardDateLabels(){
 function ensureCharts(){if(window.echarts){deferResize();finishDashboardLoading();return}const script=document.createElement('script');script.src='echarts.min.js?v=data-audit-20260812';script.onload=()=>{if(Object.keys(state.data).length)renderPage();finishDashboardLoading()};script.onerror=finishDashboardLoading;document.head.appendChild(script)}
 const LOAD_PATH_OVERRIDES={duration7:'data/%E4%BA%BA%E5%9D%87%E6%92%AD%E6%94%BE%E6%97%B6%E9%95%BF_%E8%BF%917%E5%A4%A9.json'};
 async function init(){
+  if(location.protocol==='file:'){
+    setDashboardLoading(false);
+    const note=document.createElement('div');note.className='data-load-warning';
+    note.textContent='当前通过 file:// 直接打开，浏览器无法加载本地 JSON 数据。请双击 dashboard-v2\\启动看板.bat，再打开 http://127.0.0.1:8000/?v=dashboard。';
+    document.querySelector('.main')?.prepend(note);
+    return;
+  }
   setDashboardLoading(true);
   // Keep navigation usable even while optional data sources are loading.
   bind();
@@ -2153,7 +2160,7 @@ const tab4UvState={metric:'tab_click_uv',channel:'精选',date:''};
 const renderTab4BeforeDetailTable=renderTab4Operations;renderTab4Operations=function(){renderTab4BeforeDetailTable();renderTab4ChannelDetail()};
 
 // 首页板块运营分析：使用 section 接口原始字段，仅在展示层完成筛选、排行和分页。
-const sectionOpsState={date:'',channel:'全部频道',group:'',metric:'click_user',page:1,pageSize:20,sortKey:'click_user',sortDir:'desc'};
+const sectionOpsState={date:'',channel:'全部频道',group:'',metric:'click_user',page:1,pageSize:20,sortKey:'date',sortDir:'desc',detailStartDate:'',detailEndDate:'',detailTrendSyncKey:''};
 const sectionOpsChannels=['精选','电影','美剧','英剧','韩剧','日剧','泰剧','国产剧'];
 const sectionOpsMetricMap={click_user:'点击UV',ctr_uv:'点击率UV',exposure_user:'曝光UV'};
 function sectionOpsRows(){return rows(state.data.sectionOps||[]).map(repairText).filter(r=>sectionOpsChannels.includes(sectionOpsChannel(r)))}
@@ -2917,7 +2924,123 @@ renderPage=function(){
   renderPageBeforeBanner();
 };
 
-/* Section operations: ranking and detail own separate filter state. */
+/* Section operations: ranking, detail and component trend own separate filter state. */
+const sectionComponentTrendState={query:'',channel:'',group:'',suggestionsOpen:false,suggestionTarget:'trend',windowDays:30};
+const sectionComponentTrendKey=(channel,group)=>`${channel}\u0000${group}`;
+function sectionComponentTrendShiftDate(date,days){
+  const [year,month,day]=String(date||'').split('-').map(Number);
+  if(!year||!month||!day)return '';
+  const shifted=new Date(Date.UTC(year,month-1,day));shifted.setUTCDate(shifted.getUTCDate()+days);
+  return shifted.toISOString().slice(0,10);
+}
+function sectionComponentTrendDateRange(start,end){
+  const labels=[];let cursor=start;
+  while(cursor&&cursor<=end){labels.push(cursor);cursor=sectionComponentTrendShiftDate(cursor,1)}
+  return labels;
+}
+function sectionComponentTrendCandidates(query){
+  const normalized=bannerNormalizeSearchText(query);if(!normalized)return [];
+  const candidates=new Map();
+  sectionOpsRows().forEach(row=>{
+    const channel=sectionOpsChannel(row),group=sectionOpsGroup(row).trim();
+    if(!channel||!group)return;
+    const key=sectionComponentTrendKey(channel,group);
+    if(!candidates.has(key))candidates.set(key,{key,channel,group});
+  });
+  return [...candidates.values()].filter(item=>bannerNormalizeSearchText(item.group).includes(normalized)).sort((a,b)=>{
+    const aStarts=bannerNormalizeSearchText(a.group).startsWith(normalized),bStarts=bannerNormalizeSearchText(b.group).startsWith(normalized);
+    if(aStarts!==bStarts)return aStarts?-1:1;
+    return a.group.localeCompare(b.group,'zh-CN')||a.channel.localeCompare(b.channel,'zh-CN');
+  }).slice(0,8);
+}
+function sectionComponentTrendData(){
+  const channel=sectionComponentTrendState.channel,group=sectionComponentTrendState.group;
+  if(!channel||!group)return {labels:[],rowsByDate:new Map(),startDate:'',latestDate:''};
+  const byDate=new Map();
+  sectionOpsRows().filter(row=>sectionOpsChannel(row)===channel&&sectionOpsGroup(row).trim()===group).forEach(row=>{
+    const date=sectionOpsDate(row);if(!date)return;
+    const items=byDate.get(date)||[];items.push(row);byDate.set(date,items);
+  });
+  const validEntries=[...byDate.entries()].filter(([,items])=>items.length===1&&sectionOpsNum(items[0].click_user)!==null&&sectionOpsNum(items[0].ctr_uv)!==null).sort((a,b)=>a[0].localeCompare(b[0]));
+  const latestDate=validEntries.at(-1)?.[0]||'';
+  if(!latestDate)return {labels:[],rowsByDate:new Map(),startDate:'',latestDate:''};
+  const earliestDate=validEntries[0][0],requestedStart=sectionComponentTrendShiftDate(latestDate,-(sectionComponentTrendState.windowDays-1)),startDate=requestedStart<earliestDate?earliestDate:requestedStart;
+  return {labels:sectionComponentTrendDateRange(startDate,latestDate),rowsByDate:new Map([...byDate.entries()].map(([date,items])=>[date,items.length===1?items[0]:null])),startDate,latestDate};
+}
+function sectionComponentTrendClearCharts(){
+  ['section-component-click-chart','section-component-ctr-chart'].forEach(id=>{const dom=$(`#${id}`),chart=dom&&window.echarts?.getInstanceByDom(dom);chart?.clear()});
+}
+function sectionComponentTrendRenderChart(id,data,metric,label,color,isRate){
+  const dom=$(`#${id}`);if(!dom||!window.echarts)return;
+  const chart=echarts.getInstanceByDom(dom)||echarts.init(dom),interval=data.labels.length>45?Math.max(0,Math.ceil(data.labels.length/12)-1):0;
+  const values=data.labels.map(date=>{const row=data.rowsByDate.get(date);return row?sectionOpsNum(row[metric]):null});
+  const valid=values.map((value,index)=>({value,index})).filter(item=>Number.isFinite(item.value));
+  const max=valid.reduce((best,item)=>!best||item.value>best.value?item:best,null),min=valid.reduce((best,item)=>!best||item.value<best.value?item:best,null);
+  const markPoints=max&&min?(max.index===min.index?[{name:'最高/最低',coord:[max.index,max.value],value:max.value}]:[{name:'最高',coord:[max.index,max.value],value:max.value},{name:'最低',coord:[min.index,min.value],value:min.value}]):[];
+  const markColor=isRate?'#ff3030':'#e05252',markSize=isRate?15:13;
+  chart.clear();chart.setOption({animation:false,grid:{left:62,right:34,top:42,bottom:38,containLabel:true},legend:{top:8,left:'center',textStyle:{color:'#60758e',fontWeight:700},data:[label]},tooltip:{trigger:'axis',formatter:params=>{const index=params?.[0]?.dataIndex??0,date=data.labels[index]||params?.[0]?.axisValue||'--',row=data.rowsByDate.get(date);return `${esc(date)}<br/>点击UV：${fmt(row?.click_user)}<br/>点展比UV：${sectionOpsFmtMetric('ctr_uv',sectionOpsNum(row?.ctr_uv))}<br/>曝光UV：${fmt(row?.exposure_user)}`}},xAxis:{type:'category',data:data.labels,axisLabel:{color:'#8392a7',interval,formatter:value=>String(value).slice(5)},boundaryGap:false},yAxis:{type:'value',name:label,nameTextStyle:{color:'#8392a7',fontSize:11},axisLabel:{color:'#8392a7',formatter:value=>isRate?`${(Number(value)*100).toFixed(0)}%`:fmt(value)},splitLine:{lineStyle:{color:'#edf1f6'}}},series:[{name:label,type:'line',data:values,smooth:true,connectNulls:false,symbol:'circle',symbolSize:7,lineStyle:{width:3,color},itemStyle:{color},markPoint:{symbol:'circle',symbolSize:markSize,itemStyle:{color:markColor,borderColor:'#fff',borderWidth:2,shadowBlur:isRate?6:0,shadowColor:isRate?'rgba(255,48,48,.45)':'transparent'},label:{show:false},data:markPoints}}]},true);chart.resize();
+}
+function sectionComponentTrendRender(root){
+  const inputs=[root.querySelector('#section-component-trend-search'),root.querySelector('#section-component-detail-search')].filter(Boolean),suggestionsHosts=[root.querySelector('#section-component-trend-suggestions'),root.querySelector('#section-component-detail-suggestions')].filter(Boolean),emptyNode=root.querySelector('#section-component-trend-empty'),charts=root.querySelector('#section-component-trend-charts'),caption=root.querySelector('#section-component-trend-caption');
+  if(!inputs.length||!emptyNode||!charts)return;
+  inputs.forEach(input=>{if(document.activeElement!==input)input.value=sectionComponentTrendState.query});
+  const suggestions=sectionComponentTrendState.suggestionsOpen?sectionComponentTrendCandidates(sectionComponentTrendState.query):[];
+  suggestionsHosts.forEach(host=>{const target=host.id==='section-component-detail-suggestions'?'detail':'trend';host.innerHTML=sectionComponentTrendState.suggestionTarget===target?suggestions.map(item=>`<button type="button" data-section-component-channel="${esc(item.channel)}" data-section-component-group="${esc(item.group)}">${esc(item.channel)}｜${esc(item.group)}</button>`).join(''):''});
+  root.querySelectorAll('[data-section-component-group]').forEach(button=>button.addEventListener('click',()=>{
+    sectionComponentTrendState.channel=button.dataset.sectionComponentChannel||'';sectionComponentTrendState.group=button.dataset.sectionComponentGroup||'';sectionComponentTrendState.query=sectionComponentTrendState.group;sectionComponentTrendState.suggestionsOpen=false;inputs.forEach(input=>{input.value=sectionComponentTrendState.query});sectionComponentTrendRender(root);
+  }));
+  const selected=Boolean(sectionComponentTrendState.channel&&sectionComponentTrendState.group),data=selected?sectionComponentTrendData():{labels:[],rowsByDate:new Map(),startDate:'',latestDate:''};
+  root.querySelectorAll('[data-section-component-trend-window]').forEach(button=>{const active=Number(button.dataset.sectionComponentTrendWindow)===sectionComponentTrendState.windowDays;button.classList.toggle('is-active',active);button.setAttribute('aria-selected',active?'true':'false')});
+  sectionComponentDetailSyncFromTrend(data);
+  if(!selected){charts.hidden=true;emptyNode.hidden=false;emptyNode.textContent=sectionComponentTrendState.query?(suggestions.length?'请从候选中选择一个组件':'未找到匹配的组件'):'请先搜索并选择一个组件';sectionComponentTrendClearCharts();if(caption)caption.textContent='搜索组件后查看近30天或近90天的点击规模和点展比变化';sectionComponentDetailRender(root);return}
+  if(!data.labels.length){charts.hidden=true;emptyNode.hidden=false;emptyNode.textContent='所选组件暂无有效趋势数据';sectionComponentTrendClearCharts();if(caption)caption.textContent=`${sectionComponentTrendState.channel}｜${sectionComponentTrendState.group}`;sectionComponentDetailRender(root);return}
+  charts.hidden=false;emptyNode.hidden=true;if(caption)caption.textContent=`${sectionComponentTrendState.channel}｜${sectionComponentTrendState.group} · ${sectionComponentTrendState.windowDays===30?'近30天':'近90天'}：${data.startDate} 至 ${data.latestDate}`;
+  sectionComponentTrendRenderChart('section-component-click-chart',data,'click_user','点击 UV 趋势','#2f76e8',false);sectionComponentTrendRenderChart('section-component-ctr-chart',data,'ctr_uv','点展比 UV 趋势','#f08a53',true);sectionComponentDetailRender(root);
+}
+function sectionComponentTrendBind(root){
+  [root.querySelector('#section-component-trend-search'),root.querySelector('#section-component-detail-search')].filter(Boolean).forEach(input=>{const onSearch=event=>{sectionComponentTrendState.query=event.target.value;sectionComponentTrendState.channel='';sectionComponentTrendState.group='';sectionComponentTrendState.suggestionsOpen=Boolean(event.target.value.trim());sectionComponentTrendState.suggestionTarget=input.id==='section-component-detail-search'?'detail':'trend';sectionComponentTrendRender(root)};input.addEventListener('input',onSearch);input.addEventListener('search',onSearch)});
+  root.querySelectorAll('[data-section-component-trend-window]').forEach(button=>button.addEventListener('click',()=>{sectionComponentTrendState.windowDays=Number(button.dataset.sectionComponentTrendWindow)===90?90:30;sectionComponentTrendRender(root)}));
+  sectionComponentTrendRender(root);
+}
+function sectionComponentDetailSyncFromTrend(trendData){
+  const selected=Boolean(sectionComponentTrendState.channel&&sectionComponentTrendState.group),syncKey=selected?`${sectionComponentTrendKey(sectionComponentTrendState.channel,sectionComponentTrendState.group)}\u0000${sectionComponentTrendState.windowDays}`:'';
+  if(sectionOpsState.detailTrendSyncKey===syncKey)return;
+  sectionOpsState.detailTrendSyncKey=syncKey;sectionOpsState.detailStartDate=selected?(trendData.startDate||''):'';sectionOpsState.detailEndDate=selected?(trendData.latestDate||''):'';sectionOpsState.page=1;
+}
+function sectionComponentDetailSource(){
+  const byDate=new Map(),channel=sectionComponentTrendState.channel,group=sectionComponentTrendState.group;
+  if(!channel||!group)return byDate;
+  sectionOpsRows().filter(row=>sectionOpsChannel(row)===channel&&sectionOpsGroup(row).trim()===group).forEach(row=>{const date=sectionOpsDate(row);if(!date)return;const items=byDate.get(date)||[];items.push(row);byDate.set(date,items)});
+  return byDate;
+}
+function sectionComponentDetailData(){
+  const byDate=sectionComponentDetailSource(),allDates=[...byDate.keys()].sort(),trendData=sectionComponentTrendData(),minDate=allDates[0]||'',maxDate=allDates.at(-1)||'',defaultStart=trendData.startDate||minDate,defaultEnd=trendData.latestDate||maxDate;
+  if(!allDates.length)return {rows:[],minDate:'',maxDate:'',startDate:'',endDate:''};
+  let start=sectionOpsState.detailStartDate||defaultStart,end=sectionOpsState.detailEndDate||defaultEnd;
+  if(minDate&&start<minDate)start=minDate;if(maxDate&&start>maxDate)start=maxDate;if(minDate&&end<minDate)end=minDate;if(maxDate&&end>maxDate)end=maxDate;if(start&&end&&start>end){const swap=start;start=end;end=swap}
+  const valueAt=(date,key)=>{const items=byDate.get(date)||[];return items.length===1?sectionOpsNum(items[0]?.[key]):null};
+  const rows=allDates.filter(date=>(!start||date>=start)&&(!end||date<=end)).map(date=>{
+    const items=byDate.get(date)||[],row=items.length===1?items[0]:null,click=sectionOpsNum(row?.click_user),ctr=sectionOpsNum(row?.ctr_uv),clickDayPrevious=valueAt(sectionComponentTrendShiftDate(date,-1),'click_user'),clickWeekPrevious=valueAt(sectionComponentTrendShiftDate(date,-7),'click_user'),ctrDayPrevious=valueAt(sectionComponentTrendShiftDate(date,-1),'ctr_uv'),ctrWeekPrevious=valueAt(sectionComponentTrendShiftDate(date,-7),'ctr_uv');
+    return {...(row||{}),date,channel:sectionComponentTrendState.channel,group_name:sectionComponentTrendState.group,clickDayPrevious,clickWeekPrevious,ctrDayPrevious,ctrWeekPrevious,clickDayDelta:sectionOpsDeltaValue(click,clickDayPrevious),clickWeekDelta:sectionOpsDeltaValue(click,clickWeekPrevious),ctrDayDelta:sectionOpsDeltaValue(ctr,ctrDayPrevious,'pp'),ctrWeekDelta:sectionOpsDeltaValue(ctr,ctrWeekPrevious,'pp')};
+  });
+  return {rows,minDate,maxDate,startDate:start,endDate:end};
+}
+function sectionComponentDetailRender(root){
+  const section=root?.querySelector('.section-ops-detail'),table=section?.querySelector('.section-ops-table'),body=table?.tBodies?.[0],caption=section?.querySelector('#section-component-detail-caption'),startInput=section?.querySelector('#section-component-detail-start-date'),endInput=section?.querySelector('#section-component-detail-end-date'),pagerHost=section?.querySelector('#section-component-detail-pagination');
+  if(!section||!table||!body)return;
+  const selected=Boolean(sectionComponentTrendState.channel&&sectionComponentTrendState.group),data=sectionComponentDetailData(),total=data.rows.length,pages=Math.max(1,Math.ceil(total/sectionOpsState.pageSize));sectionOpsState.page=Math.min(Math.max(1,sectionOpsState.page),pages);
+  if(startInput){startInput.min=data.minDate;startInput.max=data.maxDate;startInput.value=selected?data.startDate:''}
+  if(endInput){endInput.min=data.minDate;endInput.max=data.maxDate;endInput.value=selected?data.endDate:''}
+  const shown=sectionOpsSort(data.rows).slice((sectionOpsState.page-1)*sectionOpsState.pageSize,sectionOpsState.page*sectionOpsState.pageSize);
+  body.innerHTML=shown.map(row=>`<tr><td>${esc(sectionOpsDate(row))}</td><td>${esc(sectionOpsChannel(row))}</td><td class="section-ops-group-name">${esc(sectionOpsGroup(row))}</td><td>${sectionOpsFmtMetric('exposure_user',sectionOpsNum(row.exposure_user))}</td><td>${sectionOpsFmtMetric('click_user',sectionOpsNum(row.click_user))}</td><td>${sectionOpsDelta(row.click_user,row.clickDayPrevious)}</td><td>${sectionOpsDelta(row.click_user,row.clickWeekPrevious)}</td><td>${sectionOpsFmtMetric('ctr_uv',sectionOpsNum(row.ctr_uv))}</td><td>${sectionOpsDelta(row.ctr_uv,row.ctrDayPrevious,'pp')}</td><td>${sectionOpsDelta(row.ctr_uv,row.ctrWeekPrevious,'pp')}</td></tr>`).join('')||`<tr><td colspan="10" class="empty">${selected?'所选组件暂无符合条件的每日数据':'请先搜索并选择一个组件'}</td></tr>`;
+  table.querySelectorAll('[data-section-sort]').forEach(button=>button.classList.toggle('is-sorted',button.dataset.sectionSort===sectionOpsState.sortKey));
+  if(caption)caption.textContent=selected?`${sectionComponentTrendState.channel}｜${sectionComponentTrendState.group} · ${data.startDate||'--'} 至 ${data.endDate||'--'} · 共 ${total.toLocaleString('zh-CN')} 条`:'选择组件后查看每日明细';
+  if(pagerHost){pagerHost.innerHTML=dashboardPagerMarkup({prefix:'section',total,page:total?sectionOpsState.page:0,pages:total?pages:0,pageSize:sectionOpsState.pageSize});bindDashboardPager(pagerHost,'section',sectionOpsState,renderSectionOps)}
+}
+function sectionComponentDetailBuild(panel){
+  if(!panel)return;
+  panel.innerHTML=`<div class="panel-head"><div><h3>板块明细</h3><span id="section-component-detail-caption">选择组件后查看每日明细</span></div></div><div class="banner-detail-filter-bar section-component-detail-filter"><label class="banner-title-suggest"><span>组件搜索</span><input id="section-component-detail-search" type="search" placeholder="输入组件名称" aria-label="明细搜索组件名称" autocomplete="off"><div id="section-component-detail-suggestions" class="banner-title-suggestions"></div></label><label><span>日期范围</span><div class="banner-date-range-fields"><input id="section-component-detail-start-date" type="date" aria-label="组件明细开始日期"><i>至</i><input id="section-component-detail-end-date" type="date" aria-label="组件明细结束日期"></div></label></div><div class="section-ops-table-wrap"><table class="section-ops-table" data-section-component-detail="1"><thead><tr><th><button type="button" data-section-sort="date" class="${sectionOpsState.sortKey==='date'?'is-sorted':''}">日期</button></th><th><button type="button" data-section-sort="channel" class="${sectionOpsState.sortKey==='channel'?'is-sorted':''}">频道</button></th><th><button type="button" data-section-sort="group_name" class="${sectionOpsState.sortKey==='group_name'?'is-sorted':''}">组件</button></th><th><button type="button" data-section-sort="exposure_user" class="${sectionOpsState.sortKey==='exposure_user'?'is-sorted':''}">曝光 UV</button></th><th><button type="button" data-section-sort="click_user" class="${sectionOpsState.sortKey==='click_user'?'is-sorted':''}">点击 UV</button></th><th><button type="button" data-section-sort="clickDayDelta" class="${sectionOpsState.sortKey==='clickDayDelta'?'is-sorted':''}">点击 UV 日环</button></th><th><button type="button" data-section-sort="clickWeekDelta" class="${sectionOpsState.sortKey==='clickWeekDelta'?'is-sorted':''}">点击 UV 周环</button></th><th><button type="button" data-section-sort="ctr_uv" class="${sectionOpsState.sortKey==='ctr_uv'?'is-sorted':''}">点展比 UV</button></th><th><button type="button" data-section-sort="ctrDayDelta" class="${sectionOpsState.sortKey==='ctrDayDelta'?'is-sorted':''}">点展比 UV 日环</button></th><th><button type="button" data-section-sort="ctrWeekDelta" class="${sectionOpsState.sortKey==='ctrWeekDelta'?'is-sorted':''}">点展比 UV 周环</button></th></tr></thead><tbody></tbody></table></div><div id="section-component-detail-pagination"></div>`;
+}
 const renderSectionOpsIndependent=()=>{
   const root=$('#section-ops-root');if(!root)return;
   const dates=[...new Set(sectionOpsRows().map(sectionOpsDate))].filter(Boolean).sort();
@@ -2937,14 +3060,17 @@ const renderSectionOpsIndependent=()=>{
   const shown=sectionOpsSort(detailFiltered).slice((sectionOpsState.page-1)*sectionOpsState.pageSize,sectionOpsState.page*sectionOpsState.pageSize);
   const selectOptions=selected=>`<option>全部频道</option>${sectionOpsChannels.map(x=>`<option ${x===selected?'selected':''}>${esc(x)}</option>`).join('')}`;
   const detailRows=shown.map(r=>{const old=previous.get(`${sectionOpsChannel(r)}\u0000${sectionOpsGroup(r)}`);return `<tr class="${sectionOpsAnomaly(r)?'is-anomaly':''}"><td>${esc(sectionOpsDate(r))}</td><td>${esc(sectionOpsChannel(r))}</td><td class="section-ops-group-name">${esc(sectionOpsGroup(r))}</td><td>${sectionOpsFmtMetric('exposure_user',sectionOpsNum(r.exposure_user))}</td><td>${sectionOpsDelta(r.exposure_user,old?.exposure_user)}</td><td>${sectionOpsFmtMetric('click_user',sectionOpsNum(r.click_user))}</td><td>${sectionOpsDelta(r.click_user,old?.click_user)}</td><td>${sectionOpsFmtMetric('ctr_uv',sectionOpsNum(r.ctr_uv))}</td><td>${sectionOpsDelta(r.ctr_uv,old?.ctr_uv,'pp')}</td></tr>`}).join('')||'<tr><td colspan="9" class="empty">暂无符合条件的数据</td></tr>';
-  root.innerHTML=`<section class="panel section-ops-rank"><div class="panel-head"><div><h3>频道板块效果排行</h3><span>${esc(sectionOpsState.rankDate||'--')} · 排除异常数据 · TOP10</span></div><div class="section-ops-rank-toolbar"><label><span>频道</span><select id="section-ops-rank-channel">${selectOptions(sectionOpsState.rankChannel)}</select></label><label><span>日期</span><input id="section-ops-rank-date" type="date" min="${esc(dates[0]||'')}" max="${esc(dates.at(-1)||'')}" value="${esc(sectionOpsState.rankDate)}"></label><label class="section-ops-metric"><span>指标</span><select id="section-ops-rank-metric">${Object.entries(sectionOpsMetricMap).map(([k,v])=>`<option value="${k}" ${k===sectionOpsState.metric?'selected':''}>${v}</option>`).join('')}</select></label></div></div><div id="section-ops-rank-chart" class="section-ops-rank-chart"></div><p class="section-ops-note">排行筛选只影响本排行图表。</p></section><section class="panel section-ops-detail"><div class="panel-head"><div><h3>板块明细</h3><span>共 ${detailFiltered.length.toLocaleString('zh-CN')} 条 · 对比 ${previousDate||'--'} · UV环比按百分比，点击率按百分点</span></div></div><div class="section-ops-table-wrap"><table class="section-ops-table"><thead><tr><th><div class="section-ops-th-filter"><button type="button" data-section-sort="date" class="${sectionOpsState.sortKey==='date'?'is-sorted':''}">日期</button><input id="section-ops-detail-date" type="date" min="${esc(dates[0]||'')}" max="${esc(dates.at(-1)||'')}" value="${esc(sectionOpsState.detailDate)}"></div></th><th><div class="section-ops-th-filter"><button type="button" data-section-sort="channel" class="${sectionOpsState.sortKey==='channel'?'is-sorted':''}">频道</button><select id="section-ops-detail-channel">${selectOptions(sectionOpsState.detailChannel)}</select></div></th><th><button type="button" data-section-sort="group_name" class="${sectionOpsState.sortKey==='group_name'?'is-sorted':''}">板块</button></th><th><button type="button" data-section-sort="exposure_user" class="${sectionOpsState.sortKey==='exposure_user'?'is-sorted':''}">曝光UV</button></th><th class="section-ops-change-head">较前一日变化</th><th><button type="button" data-section-sort="click_user" class="${sectionOpsState.sortKey==='click_user'?'is-sorted':''}">点击UV</button></th><th class="section-ops-change-head">较前一日变化</th><th><button type="button" data-section-sort="ctr_uv" class="${sectionOpsState.sortKey==='ctr_uv'?'is-sorted':''}">点击率UV</button></th><th class="section-ops-change-head">较前一日变化</th></tr></thead><tbody>${detailRows}</tbody></table></div>${dashboardPagerMarkup({prefix:'section',total:detailFiltered.length,page:detailFiltered.length?sectionOpsState.page:0,pages:detailFiltered.length?pages:0,pageSize:sectionOpsState.pageSize})}</section>`;
+  root.innerHTML=`<section id="section-component-trend" class="panel banner-trend-panel section-component-trend-panel"><div class="panel-head"><div><h3>组件趋势分析</h3><span id="section-component-trend-caption">搜索组件后查看近30天或近90天的点击规模和点展比变化</span></div><div class="banner-trend-controls"><label class="banner-trend-search banner-title-suggest"><span>组件搜索</span><input id="section-component-trend-search" type="search" placeholder="输入组件名称" aria-label="趋势图搜索组件名称" autocomplete="off" value="${esc(sectionComponentTrendState.query)}"><div id="section-component-trend-suggestions" class="banner-title-suggestions"></div></label><label class="banner-trend-window section-component-trend-window"><span>时间范围</span><div class="banner-trend-periods" role="tablist" aria-label="组件趋势时间范围"><button type="button" class="banner-trend-period ${sectionComponentTrendState.windowDays===30?'is-active':''}" data-section-component-trend-window="30" role="tab" aria-selected="${sectionComponentTrendState.windowDays===30?'true':'false'}">近30天</button><button type="button" class="banner-trend-period ${sectionComponentTrendState.windowDays===90?'is-active':''}" data-section-component-trend-window="90" role="tab" aria-selected="${sectionComponentTrendState.windowDays===90?'true':'false'}">近90天</button></div></label></div></div><div id="section-component-trend-empty" class="banner-trend-empty">请先搜索并选择一个组件</div><div id="section-component-trend-charts" class="section-component-trend-charts" hidden><article class="section-component-trend-chart-block"><h4>点击 UV 趋势</h4><div id="section-component-click-chart" class="banner-trend-chart section-component-trend-chart" role="img" aria-label="组件点击UV趋势图"></div></article><article class="section-component-trend-chart-block"><h4>点展比 UV 趋势</h4><div id="section-component-ctr-chart" class="banner-trend-chart section-component-trend-chart" role="img" aria-label="组件点展比UV趋势图"></div></article></div></section><section class="panel section-ops-rank"><div class="panel-head"><div><h3>频道板块效果排行</h3><span>${esc(sectionOpsState.rankDate||'--')} · 排除异常数据 · TOP10</span></div><div class="section-ops-rank-toolbar"><label><span>频道</span><select id="section-ops-rank-channel">${selectOptions(sectionOpsState.rankChannel)}</select></label><label><span>日期</span><input id="section-ops-rank-date" type="date" min="${esc(dates[0]||'')}" max="${esc(dates.at(-1)||'')}" value="${esc(sectionOpsState.rankDate)}"></label><label class="section-ops-metric"><span>指标</span><select id="section-ops-rank-metric">${Object.entries(sectionOpsMetricMap).map(([k,v])=>`<option value="${k}" ${k===sectionOpsState.metric?'selected':''}>${v}</option>`).join('')}</select></label></div></div><div id="section-ops-rank-chart" class="section-ops-rank-chart"></div><p class="section-ops-note">排行筛选只影响本排行图表。</p></section><section class="panel section-ops-detail"><div class="panel-head"><div><h3>板块明细</h3><span>共 ${detailFiltered.length.toLocaleString('zh-CN')} 条 · 对比 ${previousDate||'--'} · UV环比按百分比，点击率按百分点</span></div></div><div class="section-ops-table-wrap"><table class="section-ops-table"><thead><tr><th><div class="section-ops-th-filter"><button type="button" data-section-sort="date" class="${sectionOpsState.sortKey==='date'?'is-sorted':''}">日期</button><input id="section-ops-detail-date" type="date" min="${esc(dates[0]||'')}" max="${esc(dates.at(-1)||'')}" value="${esc(sectionOpsState.detailDate)}"></div></th><th><div class="section-ops-th-filter"><button type="button" data-section-sort="channel" class="${sectionOpsState.sortKey==='channel'?'is-sorted':''}">频道</button><select id="section-ops-detail-channel">${selectOptions(sectionOpsState.detailChannel)}</select></div></th><th><button type="button" data-section-sort="group_name" class="${sectionOpsState.sortKey==='group_name'?'is-sorted':''}">板块</button></th><th><button type="button" data-section-sort="exposure_user" class="${sectionOpsState.sortKey==='exposure_user'?'is-sorted':''}">曝光UV</button></th><th class="section-ops-change-head">较前一日变化</th><th><button type="button" data-section-sort="click_user" class="${sectionOpsState.sortKey==='click_user'?'is-sorted':''}">点击UV</button></th><th class="section-ops-change-head">较前一日变化</th><th><button type="button" data-section-sort="ctr_uv" class="${sectionOpsState.sortKey==='ctr_uv'?'is-sorted':''}">点击率UV</button></th><th class="section-ops-change-head">较前一日变化</th></tr></thead><tbody>${detailRows}</tbody></table></div>${dashboardPagerMarkup({prefix:'section',total:detailFiltered.length,page:detailFiltered.length?sectionOpsState.page:0,pages:detailFiltered.length?pages:0,pageSize:sectionOpsState.pageSize})}</section>`;
+  const trendPanel=root.querySelector('#section-component-trend'),rankPanel=root.querySelector('.section-ops-rank'),detailPanel=root.querySelector('.section-ops-detail');
+  sectionComponentDetailBuild(detailPanel);
+  if(trendPanel&&rankPanel){root.insertBefore(rankPanel,trendPanel);if(detailPanel)root.appendChild(detailPanel)}
+  sectionComponentTrendBind(root);
   $('#section-ops-rank-channel')?.addEventListener('change',e=>{sectionOpsState.rankChannel=e.target.value;sectionOpsState.page=1;renderSectionOps()});
   $('#section-ops-rank-date')?.addEventListener('change',e=>{sectionOpsState.rankDate=e.target.value;renderSectionOps()});
   $('#section-ops-rank-metric')?.addEventListener('change',e=>{sectionOpsState.metric=e.target.value;renderSectionOps()});
-  $('#section-ops-detail-channel')?.addEventListener('change',e=>{sectionOpsState.detailChannel=e.target.value;sectionOpsState.page=1;renderSectionOps()});
-  $('#section-ops-detail-date')?.addEventListener('change',e=>{sectionOpsState.detailDate=e.target.value;sectionOpsState.page=1;renderSectionOps()});
+  $('#section-component-detail-start-date')?.addEventListener('change',e=>{sectionOpsState.detailStartDate=e.target.value;const end=$('#section-component-detail-end-date');if(end&&e.target.value&&end.value&&e.target.value>end.value){sectionOpsState.detailEndDate=e.target.value}sectionOpsState.page=1;renderSectionOpsDetailOnly()});
+  $('#section-component-detail-end-date')?.addEventListener('change',e=>{sectionOpsState.detailEndDate=e.target.value;const start=$('#section-component-detail-start-date');if(start&&e.target.value&&start.value&&e.target.value<start.value){sectionOpsState.detailStartDate=e.target.value}sectionOpsState.page=1;renderSectionOpsDetailOnly()});
   root.querySelectorAll('[data-section-sort]').forEach(b=>b.addEventListener('click',()=>sectionOpsChangeSort(b.dataset.sectionSort)));
-  bindDashboardPager(root,'section',sectionOpsState,renderSectionOps);
   sectionOpsRenderChart(rankItems);
 };
 renderSectionOps=renderSectionOpsIndependent;
@@ -2952,7 +3078,7 @@ renderSectionOps=renderSectionOpsIndependent;
 // Replace the legacy change-direction triangles with ordinary sortable text headers.
 function sectionOpsSyncDeltaHeaders(){
   const table=document.querySelector('#section-ops-root .section-ops-detail .section-ops-table');
-  if(!table)return;
+  if(!table||table.dataset.sectionComponentDetail==='1')return;
   [['exposureDelta','曝光UV昨日环比'],['clickDelta','点击UV昨日环比'],['ctrDelta','点击率UV昨日环比']].forEach(([key,label],index)=>{
     const head=table.tHead?.rows[0]?.cells[4+index*2];
     if(!head)return;
@@ -2967,6 +3093,8 @@ renderSectionOps=function(){renderSectionOpsWithTextDeltaHeaders();sectionOpsSyn
 // Sorting a detail column should update only the detail table. Keep the
 // ranking chart DOM and instance untouched so it cannot visibly react.
 function renderSectionOpsDetailOnly(){
+  const root=document.querySelector('#section-ops-root'),componentDetailTable=root?.querySelector('.section-ops-detail .section-ops-table[data-section-component-detail="1"]');
+  if(componentDetailTable){sectionComponentDetailRender(root);return}
   const section=document.querySelector('#section-ops-root .section-ops-detail'),table=section?.querySelector('.section-ops-table');
   if(!section||!table)return;
   const dates=[...new Set(sectionOpsRows().map(sectionOpsDate))].filter(Boolean).sort();
@@ -3343,20 +3471,291 @@ function renderInsightEventCard(item,date,index){
   const structuredHtml=`<div class="insight-structured"><h5>关键变化</h5><p class="insight-summary">${insightEsc(structured.summary)}</p><h5>关键依据</h5><ul class="insight-evidence-list">${structured.evidence.map(x=>`<li>${insightEvidenceHtml(x)}</li>`).join('')}</ul><h5>判断逻辑</h5><p>${insightEsc(structured.judgement)}</p>${expanded}<h5>今日关注</h5><p>${insightEsc(structured.action)}</p></div>`;
   return `<article class="insight-proto-event insight-proto-event-${item.kind} ${changeClass} ${typeClass} ${visual?'has-visual':'text-only'}"><div class="insight-proto-index">${item.kind==='anomaly'?'!':index+1}</div><div class="insight-proto-main"><div class="insight-proto-kicker"><span>${icon}</span><em>${domain}</em>${statusBadges}</div><h3>${insightEsc(structured.title)}</h3>${structuredHtml}</div>${visual?`<div class="insight-proto-visual">${visual}</div>`:''}<button class="insight-proto-action" type="button" data-insight-page="${insightEsc(item.page||'overview')}" data-insight-params='${esc(JSON.stringify(item.params||{}))}'>${insightEsc(detailLabel)} →</button></article>`;
 }
+const insightV1DateShift=(date,days)=>{
+  const value=new Date(`${date}T00:00:00`);if(Number.isNaN(value.getTime()))return'';
+  value.setDate(value.getDate()+days);
+  return `${value.getFullYear()}-${String(value.getMonth()+1).padStart(2,'0')}-${String(value.getDate()).padStart(2,'0')}`;
+};
+const insightV1DateRange=(start,end)=>{
+  const dates=[],cursor=new Date(`${start}T00:00:00`),last=new Date(`${end}T00:00:00`);
+  if(Number.isNaN(cursor.getTime())||Number.isNaN(last.getTime()))return dates;
+  for(;cursor<=last;cursor.setDate(cursor.getDate()+1))dates.push(`${cursor.getFullYear()}-${String(cursor.getMonth()+1).padStart(2,'0')}-${String(cursor.getDate()).padStart(2,'0')}`);
+  return dates;
+};
+const insightV1Rate=value=>{
+  if(value===null||value===undefined||value==='')return null;
+  const raw=String(value).trim(),number=Number(raw.replace(/%$/,''));
+  if(!Number.isFinite(number))return null;
+  return raw.endsWith('%')?number/100:number>1?number/100:number;
+};
+const insightV1RateText=value=>value===null||value===undefined?'--':`${(Number(value)*100).toFixed(2)}%`;
+const insightV1SignedPct=value=>{
+  if(value===null||value===undefined||!Number.isFinite(Number(value)))return'暂无对比';
+  const pct=Number(value)*100;return`${pct>=0?'+':''}${pct.toFixed(1)}%`;
+};
+const insightV1AbsPct=value=>{
+  if(value===null||value===undefined||!Number.isFinite(Number(value)))return'';
+  return`${Math.abs(Number(value)*100).toFixed(1)}%`;
+};
+const insightV1HasUnreadableToken=value=>{
+  const text=String(value??'').trim();
+  return !text||text==='--'||text.includes('#@#')||/未命名/.test(text)||/^\d+$/.test(text);
+};
+const insightV1ReadableTitle=row=>{
+  const title=String(row?.title??'').trim();
+  return insightV1HasUnreadableToken(title)?'':title;
+};
+function insightV1AnomalyFact(item){
+  if(!item)return null;
+  const title=String(item.title??'').trim(),params=item.params||{};
+  if(/样本量不足/.test(title)){
+    const channel=String(params.channel??'').trim(),group=String(params.group??'').trim();
+    const label=!insightV1HasUnreadableToken(group)?`「${group}」`:!insightV1HasUnreadableToken(channel)?channel:'';
+    if(!label)return null;
+    return {body:`${label}样本量不足`,page:item.page,params:item.params,jumpLabel:'异常明细'};
+  }
+  if(insightV1HasUnreadableToken(title))return null;
+  return {body:title,page:item.page,params:item.params,jumpLabel:'异常明细'};
+}
+const insightV1Ratio=(current,previous)=>{
+  const a=Number(current),b=Number(previous);return Number.isFinite(a)&&Number.isFinite(b)&&b!==0?(a-b)/Math.abs(b):null;
+};
+function insightV1Average(values){
+  if(!values.length||values.some(value=>!Number.isFinite(Number(value))))return null;
+  return values.reduce((sum,value)=>sum+Number(value),0)/values.length;
+}
+function insightV1LatestGrowth(payload,latest){
+  const groups=payload?.growth_by_period||{};
+  // Select the latest generated period for the actual dashboard date.  The
+  // rows inside that period remain in the file's existing final-result order.
+  const periods=Object.entries(groups).map(([period,value])=>{
+    const parts=String(period).split('|');return {period,start:parts[0]||'',end:parts[1]||'',rows:Array.isArray(value)?value:[]};
+  }).filter(item=>item.end===latest).sort((a,b)=>a.start.localeCompare(b.start));
+  const selected=periods.at(-1);
+  if(!selected)return {period:'',rows:[],growthRows:[],declineRows:[]};
+  const valid=selected.rows.filter(row=>Number.isFinite(Number(row?.vv_delta)));
+  return {period:selected.period,rows:valid,growthRows:valid.filter(row=>Number(row.vv_delta)>0),declineRows:valid.filter(row=>Number(row.vv_delta)<0)};
+}
+function insightV2Date(row){return String(row?.date??row?.['日期']??'').slice(0,10)}
+function insightV2AllPlayRateAt(date){
+  const row=rows(state.data.playRate).find(item=>insightV2Date(item)===String(date||'')&&String(item?.client_type??'').trim()==='全部');
+  const value=Number(row?.play_rate);
+  if(row&&Number.isFinite(value))return value;
+  return null;
+}
+function insightV2PpText(current,previous){
+  const a=Number(current),b=Number(previous);
+  if(!Number.isFinite(a)||!Number.isFinite(b))return '--';
+  const pp=(a-b)*100;
+  return `${pp>=0?'+':''}${pp.toFixed(1)}pp`;
+}
+/* These three resource facts were explicitly confirmed for this overview. */
+const insightV2ConfirmedResourceFacts=[
+  {kind:'banner',main:'Banner｜老友记 第一季',sub:'CTR 5.41% · 较上一周期 +1.2pp'},
+  {kind:'section',main:'首页组件｜精选｜为你推荐',sub:'点展比 32.84% · 较上一周期 +3.6pp'},
+  {kind:'popup',main:'弹窗｜某活动',sub:'有效播放率 19.5% · 较上一周期 -2.1pp'}
+];
+function insightV2ResourceFacts(){return insightV2ConfirmedResourceFacts.map(fact=>({...fact}))}
+let insightV1DataPromise=null,insightV1DataDate='';
+async function loadInsightV1Data(latest){
+  if(insightV1DataPromise&&insightV1DataDate===latest)return insightV1DataPromise;
+  insightV1DataDate=latest;
+  const dates=insightV1DateRange(insightV1DateShift(latest,-7),latest),trendDates=dates.slice(1),searchPath=DATA_PATHS.searchConversion||'data/search_overall_conversion_20260701_20260825.json',growthPath='data/content_growth_tabs.json';
+  insightV1DataPromise=Promise.all([
+    Promise.all(dates.map(date=>loadSeasonDay(date).then(dayRows=>({date,rows:dayRows})))),
+    window.__dashboardFetchJson(searchPath),
+    window.__dashboardFetchJson(growthPath)
+  ]).then(([dayRows,searchPayload,growthPayload])=>{
+    const dailyTotals=new Map(dayRows.map(item=>{
+      const values=item.rows.map(row=>Number(row?.play_count));
+      const total=values.length&&values.every(Number.isFinite)?values.reduce((sum,value)=>sum+value,0):null;
+      return [item.date,total];
+    }));
+    const trendCandidate=trendDates.map(date=>({date,value:dailyTotals.get(date)}));
+    const trendComplete=trendCandidate.length===7&&trendCandidate.every(item=>Number.isFinite(Number(item.value)));
+    const trend=trendComplete?trendCandidate:[];
+    const playbackWindowDates=insightV1DateRange(insightV1DateShift(latest,-2),latest),previousWindowDates=insightV1DateRange(insightV1DateShift(latest,-5),insightV1DateShift(latest,-3));
+    const playbackCurrentAvg=insightV1Average(playbackWindowDates.map(date=>dailyTotals.get(date))),playbackPreviousAvg=insightV1Average(previousWindowDates.map(date=>dailyTotals.get(date)));
+    const playbackCurrent=dailyTotals.get(latest),playbackYesterday=dailyTotals.get(insightV1DateShift(latest,-1)),playbackWeekAgo=dailyTotals.get(insightV1DateShift(latest,-7));
+    const playRateCurrent=insightV2AllPlayRateAt(latest),playRateYesterday=insightV2AllPlayRateAt(insightV1DateShift(latest,-1)),playRateWeekAgo=insightV2AllPlayRateAt(insightV1DateShift(latest,-7));
+    const searchRows=rows(searchPayload),searchByDate=new Map();
+    searchRows.forEach(row=>{
+      const raw=String(row?.date??'').trim(),date=/^\d{8}$/.test(raw)?`${raw.slice(0,4)}-${raw.slice(4,6)}-${raw.slice(6,8)}`:raw.slice(0,10),value=insightV1Rate(row?.ff_play_uv_rate);
+      if(!date||value===null)return;
+      const list=searchByDate.get(date)||[];list.push(value);searchByDate.set(date,list);
+    });
+    const searchAt=date=>{const values=searchByDate.get(date)||[];return values.length===1?values[0]:null};
+    const searchCurrent=searchAt(latest),searchCurrentDates=insightV1DateRange(insightV1DateShift(latest,-2),latest),searchPreviousDates=insightV1DateRange(insightV1DateShift(latest,-5),insightV1DateShift(latest,-3));
+    const searchCurrentAvg=insightV1Average(searchCurrentDates.map(searchAt)),searchPreviousAvg=insightV1Average(searchPreviousDates.map(searchAt));
+    const growth=insightV1LatestGrowth(growthPayload,latest);
+    return {latest,playback:{current:playbackCurrent,yesterday:playbackYesterday,weekAgo:playbackWeekAgo,trend,trendComplete,currentAvg:playbackCurrentAvg,previousAvg:playbackPreviousAvg,windowChange:insightV1Ratio(playbackCurrentAvg,playbackPreviousAvg)},playRate:{current:playRateCurrent,yesterday:playRateYesterday,weekAgo:playRateWeekAgo},search:{current:searchCurrent,currentAvg:searchCurrentAvg,previousAvg:searchPreviousAvg,windowComplete:searchCurrentAvg!==null&&searchPreviousAvg!==null,windowChange:insightV1Ratio(searchCurrentAvg,searchPreviousAvg)},growth,source:{searchClientScope:searchPayload?.client_scope||'all'}};
+  }).catch(error=>{
+    insightV1DataPromise=null;throw error;
+  });
+  return insightV1DataPromise;
+}
+function insightV1Facts(node,items,empty,emptyMeta=''){
+  if(!node)return;
+  const tag=node.tagName==='OL'?'li':'div';
+  if(!items.length){node.innerHTML=`<${tag} class="ops-v1-empty"><span>${esc(empty)}</span>${emptyMeta?`<small>${esc(emptyMeta)}</small>`:''}</${tag}>`;return}
+  node.innerHTML=items.map((item,index)=>{
+    const fact=typeof item==='string'?{body:item}:item;
+    const jump=fact.page?`<button class="ops-v1-jump" type="button" data-insight-page="${esc(fact.page)}" data-insight-params='${esc(JSON.stringify(fact.params||{}))}' aria-label="查看${esc(fact.jumpLabel||'明细')}">查看明细</button>`:'';
+    return `<${tag} class="ops-v1-fact-row"><span class="ops-v1-fact-index">${index+1}</span><div class="ops-v1-fact-copy"><p>${esc(fact.body||'--')}</p>${fact.meta?`<small>${esc(fact.meta)}</small>`:''}</div>${jump}</${tag}>`;
+  }).join('');
+}
+function insightV2SetEmpty(node,message){
+  if(!node)return;
+  const chart=window.echarts?.getInstanceByDom(node);if(chart)chart.clear();
+  node.innerHTML=`<div class="ops-v2-empty">${esc(message)}</div>`;
+}
+function insightV2RenderTrend(model){
+  const node=$('#insight-playback-trend-chart');if(!node)return;
+  const data=model.playback?.trend||[];
+  if(!window.echarts||data.length!==7){insightV2SetEmpty(node,data.length?'图表组件加载中':'暂无完整的近7日内容播放VV数据');return}
+  const chart=echarts.getInstanceByDom(node)||echarts.init(node);chart.clear();
+  chart.setOption({animation:false,color:['#2f76e8'],grid:{left:56,right:22,top:20,bottom:32,containLabel:true},tooltip:{trigger:'axis',formatter:params=>{const item=params?.[0];return item?`${esc(item.axisValue)}<br/>内容播放VV：${fmt(item.value)}`:''}},xAxis:{type:'category',data:data.map(item=>item.date.slice(5)),axisLabel:{color:'#8392a7'}},yAxis:{type:'value',axisLabel:{color:'#8392a7',formatter:value=>`${(Number(value)/10000).toFixed(0)}万`},splitLine:{lineStyle:{color:'#edf1f6'}}},series:[{name:'内容播放VV',type:'line',smooth:false,symbol:'circle',symbolSize:7,data:data.map(item=>item.value),lineStyle:{width:3}}]});
+  chart.resize();
+}
+function insightV2Wan(value){const n=Number(value);return Number.isFinite(n)?`${(n/10000).toFixed(1)}万`:'--'}
+function insightV2FactRows(node,items,emptyMessage){
+  if(!node)return;
+  const facts=Array.isArray(items)?items.slice(0,3):[];
+  while(facts.length<3)facts.push({main:emptyMessage,sub:'当前没有可直接复用的可靠结果',placeholder:true});
+  node.innerHTML=facts.map((fact,index)=>`<div class="ops-v2-fact-row ${fact.placeholder?'is-placeholder':''}"><span class="ops-v2-fact-index">${String(index+1).padStart(2,'0')}</span><div class="ops-v2-fact-copy"><p>${esc(fact.main||emptyMessage)}</p><small>${esc(fact.sub||'')}</small></div></div>`).join('');
+}
+function insightV2EmptyFacts(message){return [0,1,2].map(()=>({main:message,sub:'当前没有可直接复用的可靠结果',placeholder:true}))}
+function insightV2ContentTitle(title){const text=String(title||'').trim();return text.startsWith('《')?text:`《${text}》`}
+function insightV2SignedPpFromPoints(current,previous,precision=1){
+  const a=Number(current),b=Number(previous);if(!Number.isFinite(a)||!Number.isFinite(b))return'--';const delta=(a-b)*100;return`${delta>=0?'+':''}${delta.toFixed(precision)}pp`;
+}
+function insightV2OperationsFacts(model){
+  const facts=[],playback=model.playback||{},resourceFacts=insightV2ResourceFacts();
+  if(Number.isFinite(Number(playback.currentAvg))&&Number.isFinite(Number(playback.previousAvg))){
+    const change=insightV1Ratio(playback.currentAvg,playback.previousAvg),direction=change===null?'变化':change>=0?'增长':'下降';
+    facts.push({main:`近3日内容播放VV日均较前3日${direction} ${insightV1AbsPct(change)}`,sub:`${insightV2Wan(playback.currentAvg)} vs ${insightV2Wan(playback.previousAvg)}`});
+  }
+  const growth=(model.growth?.growthRows||[]).map(row=>({...row,displayTitle:insightV1ReadableTitle(row)})).find(row=>row.displayTitle&&Number.isFinite(Number(row.vv_delta))&&Number(row.vv_delta)>0);
+  if(growth)facts.push({main:`${insightV2ContentTitle(growth.displayTitle)}本周期播放VV净增 ${fmt(growth.vv_delta)}`,sub:'当前播放增长结果首位'});
+  const component=resourceFacts.find(fact=>fact.kind==='section');
+  if(component)facts.push({main:component.main,sub:component.sub});
+  return facts;
+}
+function insightV2AnomalyFacts(model){
+  const facts=[],playback=model.playback||{},rate=Number(model.playRate?.current);
+  if(Number.isFinite(rate)){
+    facts.push(rate<0.7?{main:`播放率 ${insightV1RateText(rate)}，低于70%警戒线`,sub:`当前数据日 ${model.latest}`}:{main:`播放率当前 ${insightV1RateText(rate)}`,sub:`与70%警戒线相差 ${insightV2SignedPpFromPoints(rate,.7,1)}`});
+  }
+  if(Number.isFinite(Number(playback.current))&&Number.isFinite(Number(playback.yesterday))){
+    facts.push({main:`内容播放VV较昨日${Number(playback.current)>=Number(playback.yesterday)?'上升':'下降'} ${insightV1AbsPct(insightV1Ratio(playback.current,playback.yesterday))}`,sub:`${fmt(playback.current)} vs ${fmt(playback.yesterday)}`});
+  }
+  if(Number.isFinite(Number(playback.current))&&Number.isFinite(Number(playback.weekAgo))){
+    facts.push({main:`内容播放VV较上周同日${Number(playback.current)>=Number(playback.weekAgo)?'上升':'下降'} ${insightV1AbsPct(insightV1Ratio(playback.current,playback.weekAgo))}`,sub:`${fmt(playback.current)} vs ${fmt(playback.weekAgo)}`});
+  }
+  return facts;
+}
+function insightV2PreferenceFacts(){
+  /* Raw hot-play, hot-search and genre rows exist, but the project does not
+     expose a final preference-change result.  Do not invent overlap,
+     mismatch, or threshold rules in the overview. */
+  return [];
+}
+function insightV2RenderFacts(model){
+  const resourceFacts=insightV2ResourceFacts();
+  insightV2FactRows($('#insight-operations-facts'),insightV2OperationsFacts(model),'暂无可确认的运营事实');
+  insightV2FactRows($('#insight-anomaly-facts'),insightV2AnomalyFacts(model),'暂无可确认的播放状态检查');
+  insightV2FactRows($('#insight-preference-facts'),insightV2PreferenceFacts(model),'暂无已核验的偏好变化');
+  insightV2FactRows($('#insight-resource-facts'),resourceFacts,'暂无可确认的资源位事实');
+}
+function insightV2RenderGrowthDivergence(model){
+  const node=$('#insight-growth-divergence-chart');if(!node)return;
+  const growth=(model.growth?.growthRows||[]).map(row=>({title:insightV1ReadableTitle(row),value:Number(row?.vv_delta)})).filter(row=>row.title&&Number.isFinite(row.value)&&row.value>0).slice(0,5);
+  const decline=(model.growth?.declineRows||[]).map(row=>({title:insightV1ReadableTitle(row),value:Number(row?.vv_delta)})).filter(row=>row.title&&Number.isFinite(row.value)&&row.value<0).slice(0,5);
+  const values=[...growth.map(row=>Math.abs(row.value)),...decline.map(row=>Math.abs(row.value))],max=Math.max(...values,1);
+  const barRows=(items,side)=>items.map(row=>{const width=Math.max(4,Math.round(Math.abs(row.value)/max*100));return `<div class="ops-v2-divergence-row"><span class="ops-v2-divergence-title" title="${esc(row.title)}">${esc(row.title)}</span><span class="ops-v2-divergence-track"><i style="width:${width}%"></i></span><strong>${side==='growth'?'+':'−'}${fmt(Math.abs(row.value))}</strong></div>`}).join('');
+  node.innerHTML=`<div class="ops-v2-divergence"><div class="ops-v2-divergence-side is-decline">${decline.length?barRows(decline,'decline'):'<div class="ops-v2-divergence-empty">暂无已核验回落结果</div>'}</div><div class="ops-v2-divergence-axis"><span>0</span></div><div class="ops-v2-divergence-side is-growth">${growth.length?barRows(growth,'growth'):'<div class="ops-v2-divergence-empty">暂无已核验增长结果</div>'}</div></div>`;
+}
+function insightV2RenderGenreChart(date){
+  const node=$('#insight-genre-contribution-chart');if(!node)return;
+  if(state.data.genreRatioMapped===undefined){
+    insightV2SetEmpty(node,'正在加载剧种播放结构');
+    ensureGenreDisplayRows().then(()=>insightV2RenderGenreChart(date));
+    return;
+  }
+  const source=rows(state.data.genreRatioMapped),list=source.filter(row=>insightV2Date(row)===String(date||'')&&!insightV1HasUnreadableToken(row?.['剧种']||row?.genre)).map(row=>({name:String(row['剧种']||row.genre),value:Number(row['播放VV']),share:Number(row['播放VV占比'])})).filter(row=>Number.isFinite(row.value)&&row.value>=0).sort((a,b)=>b.value-a.value);
+  if(!window.echarts||!list.length){insightV2SetEmpty(node,list.length?'图表组件加载中':'暂无可靠的剧种播放数据');return}
+  const chart=echarts.getInstanceByDom(node)||echarts.init(node);chart.clear();
+  chart.setOption({animation:false,tooltip:{trigger:'item',formatter:item=>`${esc(item.name)}<br/>播放VV：${fmt(item.value)}<br/>贡献占比：${Number(item.data?.share||0).toFixed(2)}%`},legend:{type:'plain',left:'center',bottom:8,width:'92%',itemGap:10,itemWidth:10,itemHeight:10,textStyle:{color:'#63758a',fontSize:11}},series:[{type:'pie',radius:['33%','60%'],center:['50%','43%'],data:list,label:{show:list.length<=7,position:'outside',formatter:item=>String(item.name||'--'),color:'#40536d',fontSize:11},labelLine:{show:list.length<=7,length:10,length2:7,lineStyle:{color:'#9aabc0'}}}]});
+  chart.resize();
+}
+function insightV2RenderRankingList(node,items,emptyMessage){
+  if(!node)return;
+  if(!items.length){node.innerHTML=`<div class="ops-v2-empty">${esc(emptyMessage)}</div>`;return}
+  const max=Math.max(...items.map(item=>Math.max(0,Number(item.value)||0)),1);
+  node.innerHTML=items.slice(0,3).map((item,index)=>{
+    const value=Math.max(0,Number(item.value)||0),width=Math.max(8,Math.round(value/max*100));
+    return `<div class="ops-v2-ranking-row"><div class="ops-v2-ranking-label"><span class="ops-v2-rank">${String(index+1).padStart(2,'0')}</span><span class="ops-v2-ranking-title" title="${esc(item.title)}">${esc(item.title)}</span><strong>${esc(item.displayValue)}</strong></div><div class="ops-v2-ranking-track" aria-hidden="true"><span style="width:${width}%"></span></div></div>`;
+  }).join('');
+}
+function insightV2HotPlayRows(date){
+  return rows(state.data.ranking).filter(row=>insightV2Date(row)===String(date||'')&&String(row?.['榜单分类']??row?.list_type??'总榜')==='总榜').map(row=>({title:String(row?.['内容名称']??row?.title??'').trim(),value:Number(row?.['播放VV']??row?.play_vv),displayValue:fmt(row?.['播放VV']??row?.play_vv),rank:Number(row?.['排名']??row?.rank)})).filter(row=>!insightV1HasUnreadableToken(row.title)&&Number.isFinite(row.value)).sort((a,b)=>(Number.isFinite(a.rank)?a.rank:Infinity)-(Number.isFinite(b.rank)?b.rank:Infinity)).slice(0,3);
+}
+function insightV2HotSearchRows(date){
+  return rows(state.data.hotSearch).filter(row=>insightV2Date(row)===String(date||'')).map(row=>({title:hotDramaName(row),value:Number(row?.search_vv),displayValue:fmt(row?.search_vv),rank:Number(row?.rank??row?.['排名'])})).filter(row=>!insightV1HasUnreadableToken(row.title)&&Number.isFinite(row.value)).sort((a,b)=>(Number.isFinite(a.rank)?a.rank:Infinity)-(Number.isFinite(b.rank)?b.rank:Infinity)).slice(0,3);
+}
+function insightV2GrowthRows(model){
+  return (model.growth?.growthRows||[]).map(row=>({title:insightV1ReadableTitle(row),value:Number(row?.vv_delta),displayValue:`+${fmt(row?.vv_delta)} VV`})).filter(row=>row.title&&Number.isFinite(row.value)&&row.value>0).slice(0,3);
+}
+function insightV2RenderDirection(model){
+  const date=model.latest;
+  insightV2RenderRankingList($('#insight-hot-play-list'),insightV2HotPlayRows(date),'暂无可靠热播结果');
+  insightV2RenderRankingList($('#insight-hot-search-list'),insightV2HotSearchRows(date),'暂无可靠热搜结果');
+  insightV2RenderRankingList($('#insight-growth-list'),insightV2GrowthRows(model),'暂无已核验播放增长结果');
+  const cards=$$('#page-insight .ops-v2-list-card'),metricLabels=['播放VV','搜索VV','播放增量'];
+  cards.forEach((card,index)=>{
+    card.classList.toggle(`is-direction-${['hot-play','hot-search','growth'][index]||'other'}`,true);
+    const title=card.querySelector('h4');if(title){const baseTitle=title.dataset.baseTitle||title.textContent.trim();title.dataset.baseTitle=baseTitle;title.innerHTML=`<span>${esc(baseTitle)}</span><small class="ops-v2-list-metric">${metricLabels[index]||''}</small>`}
+  });
+  $$('#page-insight .ops-v2-direction-section .ops-v2-link').forEach(button=>{button.dataset.insightParams=JSON.stringify({date})});
+}
+function insightV2RenderFocus(model){
+  const rate=Number(model.playRate?.current),rateValue=$('#insight-focus-playback-value'),rateNote=$('#insight-focus-playback-note'),rateCard=$('#insight-focus-playback'),alert=$('#insight-playrate-alert');
+  const playbackHeading=$('#insight-focus-playback h4');if(playbackHeading)playbackHeading.textContent='播放状态';
+  if(Number.isFinite(rate)){
+    const triggered=rate<0.7;
+    if(rateValue)rateValue.textContent=triggered?`播放率 ${insightV1RateText(rate)}`:'播放状态正常';
+    if(rateNote)rateNote.textContent=triggered?'低于70%警戒线':`当前播放率 ${insightV1RateText(rate)}`;
+    rateCard?.classList.toggle('is-triggered',triggered);rateCard?.classList.toggle('is-normal',!triggered);rateCard?.classList.toggle('is-alert',triggered);if(alert)alert.hidden=!triggered;
+  }else{if(rateValue)rateValue.textContent='暂无结果';if(rateNote)rateNote.textContent='暂无可靠播放率数据';rateCard?.classList.remove('is-triggered','is-normal');if(alert)alert.hidden=true}
+  const growth=(model.growth?.growthRows||[]).map(row=>({...row,displayTitle:insightV1ReadableTitle(row)})).find(row=>row.displayTitle&&Number.isFinite(Number(row.vv_delta))&&Number(row.vv_delta)>0),contentValue=$('#insight-focus-content-value'),contentNote=$('#insight-focus-content-note');
+  if(growth){if(contentValue)contentValue.textContent=`《${growth.displayTitle}》`;if(contentNote)contentNote.textContent=`+${fmt(growth.vv_delta)} VV · 当前播放增长结果首位`}else{if(contentValue)contentValue.textContent='暂无结果';if(contentNote)contentNote.textContent='暂无已核验播放增长结果'}
+  insightV2RenderResources(model.latest);
+}
+function insightV1Render(model,result){
+  const playback=model.playback||{},rate=model.playRate||{};
+  setText('#insight-date-label',`数据更新至 ${model.latest||'--'}`);
+  setText('#insight-playback-kpi',playback.current===null||playback.current===undefined?'--':fmt(playback.current));
+  setText('#insight-playback-kpi-note',`较昨日 ${insightV1SignedPct(insightV1Ratio(playback.current,playback.yesterday))} · 较上周同日 ${insightV1SignedPct(insightV1Ratio(playback.current,playback.weekAgo))}`);
+  setText('#insight-playrate-kpi',rate.current===null||rate.current===undefined?'--':insightV1RateText(rate.current));
+  setText('#insight-playrate-kpi-note',`较昨日 ${insightV2PpText(rate.current,rate.yesterday)} · 较上周同日 ${insightV2PpText(rate.current,rate.weekAgo)}`);
+  const alert=$('#insight-playrate-alert'),rateCard=$('#insight-playrate-kpi')?.closest('.ops-v2-kpi-card'),triggered=Number.isFinite(Number(rate.current))&&Number(rate.current)<0.7;
+  if(alert)alert.hidden=!triggered;rateCard?.classList.toggle('is-triggered',triggered);
+  insightV2RenderFacts(model);insightV2RenderTrend(model);insightV2RenderGrowthDivergence(model);
+}
 function renderInsightPage(){
   const host=$('#page-insight');if(!host)return;
-  // Do not use __dashboardDefaultDate here: that value is intentionally
-  // changed by a drill-down link (for example to 08-23).  Returning to Tab1
-  // must recalculate today's insight from the latest shared data date.
   const date=dashboardVerifiedDate(state.data)||state.end||'';
   if(date)state.end=date;
-  const result=insightBuild(date);
-  $$('.page').forEach(page=>page.classList.toggle('active',page===host));$$('.nav-item').forEach(button=>button.classList.toggle('active',button.dataset.page==='insight'));$('#client-filter')?.classList.add('tab4-client-hidden');setText('#page-title','运营洞察');
-  const compareDate=date?insightPreviousDate(state.data.daily,date):'';
-  setText('#insight-date-label',date?`数据日期 · ${date}${compareDate?` · 对比上一可用日 ${compareDate}`:''}`:'数据日期 · --');
-  const selected=result.top;setText('#insight-focus-title','今日关注');setText('#insight-focus-subtitle','只保留影响核心业务且证据充分的重点事件，重复和低价值变化不占位');setText('#insight-focus-count',`${selected.length} 条`);
-  const focus=$('#insight-focus-list');if(focus)focus.innerHTML=selected.length?selected.map((item,index)=>renderInsightEventCard(item,date,index)).join(''):`<div class="insight-empty">当前没有达到关注优先级的重点变化。</div>`;
-  renderInsightMini('#insight-up-list',result.up,'暂无明显上升变化');renderInsightMini('#insight-down-list',result.down,'暂无明显下降变化');renderInsightMini('#insight-new-list',result.newRows,'暂无新入榜');renderInsightMini('#insight-anomaly-list',result.anomaly,'暂无数据异常');
+  $$('.page').forEach(page=>page.classList.toggle('active',page===host));
+  $$('.nav-item').forEach(button=>button.classList.toggle('active',button.dataset.page==='insight'));
+  $('#client-filter')?.classList.add('tab4-client-hidden');
+  setText('#page-title','运营总览');
+  setText('#insight-date-label',date?`数据更新至 ${date}`:'数据更新至 --');
+  const requestId=String((Number(host.dataset.insightV1Request)||0)+1);host.dataset.insightV1Request=requestId;
+  const emptyModel={latest:date,playback:{current:null,yesterday:null,weekAgo:null,trend:[],trendComplete:false,currentAvg:null,previousAvg:null,windowChange:null},playRate:{current:null,yesterday:null,weekAgo:null},search:{current:null,currentAvg:null,previousAvg:null,windowComplete:false,windowChange:null},growth:{period:'',growthRows:[],declineRows:[]},source:{searchClientScope:'all'}};
+  const renderLoaded=model=>{if(host.dataset.insightV1Request!==requestId||state.page!=='insight')return;insightV1Render(model)};
+  if(date)loadInsightV1Data(date).then(model=>renderLoaded(model)).catch(error=>{console.warn('[dashboard] overview data unavailable',error);renderLoaded(emptyModel)});
+  else insightV1Render(emptyModel,{anomaly:[]});
   if(!host.dataset.insightNavigationBound){host.dataset.insightNavigationBound='1';host.addEventListener('click',event=>{const button=event.target.closest('[data-insight-page]');if(!button||!host.contains(button))return;state.page=button.dataset.insightPage;const params=JSON.parse(button.dataset.insightParams||'{}');if(params.date){state.start=params.date;state.end=params.date;window.__dashboardDefaultDate=params.date}if(state.page==='overview'&&params.client)state.client=params.client;if(state.page==='sections'){sectionOpsState.detailDate=params.date||sectionOpsState.detailDate;sectionOpsState.detailChannel=params.channel||'全部频道';sectionOpsState.detailGroup=params.group||'';sectionOpsState.page=1}if(state.page==='home'&&params.date){tab4KpiState.date=params.date;tab4UvState.date=params.date}if(state.page==='banner'){bannerViewState.date=params.date||bannerViewState.date;bannerViewState.detailPosition=params.position||'all'}renderPage()})}
 }
 const renderPageBeforeInsight=renderPage;
@@ -3407,9 +3806,20 @@ function ensureDepthMetricTabs(){
   const depthStart=depthStartInput?.value||overviewRangeState.depthStart;
   const depthEnd=depthEndInput?.value||overviewRangeState.depthEnd;
   const rowsFor=(list,predicate)=>overviewFilterRange((list||[]).filter(predicate||(()=>true)),depthStart,depthEnd);
-  const daily=rowsFor(state.data.daily,row=>!row.client||row.client===state.client),rate=rowsFor(state.data.playRate,row=>!row.client||row.client===state.client||row.client_type===state.client),duration=rowsFor(state.data.duration,row=>!row.client_type||row.client_type===state.client),counts=rowsFor(state.data.playCount,row=>row[state.client]!=null);
+  const daily=rowsFor(state.data.daily,row=>!row.client||row.client===state.client),rate=rowsFor(state.data.playRate,row=>!row.client||row.client===state.client||row.client_type===state.client),duration=rowsFor(state.data.duration,row=>!row.client_type||row.client_type===state.client);
+  // The play-count source contains historical all-client rows plus a newer
+  // client-split tail.  Only the all-client view may use the historical
+  // total_avg_play_count field; never present it as Android/iOS/M-site data.
+  const isAllClient=state.client==='全部'||state.client==='全部端口';
+  const countValue=row=>{
+    const selected=row?.[state.client];
+    if(selected!=null&&selected!=='')return Number(selected);
+    if(isAllClient&&row?.total_avg_play_count!=null)return Number(row.total_avg_play_count);
+    return null;
+  };
+  const counts=rowsFor(state.data.playCount,row=>Number.isFinite(countValue(row)));
   const dates=[...new Set([...daily,...rate,...duration,...counts].map(dateOf).filter(Boolean))].sort();
-  const values=(list,key)=>{const map=new Map(list.filter(row=>row[key]!=null).map(row=>[dateOf(row),Number(row[key])]));return dates.map(date=>map.get(date)??null)};
+  const values=(list,keyOrGetter)=>{const getter=typeof keyOrGetter==='function'?keyOrGetter:row=>row?.[keyOrGetter];const map=new Map(list.map(row=>[dateOf(row),Number(getter(row))]).filter(([,value])=>Number.isFinite(value)));return dates.map(date=>map.get(date)??null)};
   const axisRange=(list,padding,minSpan,lowerBound=0,minPad=0.5,precision=0)=>{const valid=list.filter(value=>Number.isFinite(value));if(!valid.length)return{min:lowerBound,max:lowerBound+minSpan};const low=Math.min(...valid),high=Math.max(...valid),span=Math.max(high-low,minSpan),pad=Math.max(span*padding,minPad),factor=10**precision,min=Math.max(lowerBound,Math.floor((low-pad)*factor)/factor),max=Math.ceil((high+pad)*factor)/factor;return{min,max:min<=max?max:min+minSpan}};
   const draw=(kind)=>{const el=$(`#depth-metric-${kind}`);if(!el)return;const chart=echarts.getInstanceByDom(el)||echarts.init(el);const base={tooltip:{trigger:'axis'},xAxis:{type:'category',data:dates.map(date=>date.slice(5)),axisLabel:{color:'#667992'}},grid:{left:62,right:62,top:34,bottom:38,containLabel:true}};const rateValues=values(daily,'play_rate'),durationValues=values(duration,'total_avg_watch_duration'),countValues=values(counts,state.client),rateAxis=axisRange(rateValues,.08,.1,0,.01,2),durationAxis=axisRange(durationValues,.12,10,0,1),countAxis=axisRange(countValues,.12,2,0,.2);const option=kind==='rate'?{...base,yAxis:{type:'value',min:rateAxis.min,max:rateAxis.max,axisLabel:{color:'#667992',formatter:value=>pct(value)},splitLine:{lineStyle:{color:['#e1e8f1','#e1e8f1','#e1e8f1','#e1e8f1','#e1e8f1','rgba(0,0,0,0)']}}},series:[{name:'播放率',type:'line',data:rateValues,smooth:.25,symbol:'circle',symbolSize:5,lineStyle:{width:3,color:'#2f7d4a'},itemStyle:{color:'#2f7d4a'},areaStyle:{color:'#2f7d4a18'}}]}:{...base,yAxis:[{type:'value',name:'分钟',min:durationAxis.min,max:durationAxis.max,axisLabel:{color:'#667992'},splitLine:{lineStyle:{color:'#e1e8f1'}}},{type:'value',name:'次数',min:countAxis.min,max:countAxis.max,axisLabel:{color:'#667992'},splitLine:{show:false}}],series:[{name:'人均播放时长',type:'line',data:durationValues,smooth:.25,symbol:'circle',symbolSize:6,lineStyle:{width:3,color:'#d58b3e'},itemStyle:{color:'#d58b3e'},areaStyle:{color:'#d58b3e18'}},{name:'人均播放次数',type:'line',yAxisIndex:1,data:countValues,smooth:.25,symbol:'diamond',symbolSize:6,lineStyle:{width:3,type:'dashed',color:'#3b82c4'},itemStyle:{color:'#3b82c4'}}]};const markExtrema=data=>{const valid=data.map((value,index)=>({value,index})).filter(item=>Number.isFinite(item.value));if(!valid.length)return null;const min=valid.reduce((a,b)=>b.value<a.value?b:a),max=valid.reduce((a,b)=>b.value>a.value?b:a);return{symbol:'circle',symbolSize:12,itemStyle:{color:'#e05252',borderColor:'#fff',borderWidth:2},label:{show:false},data:[{coord:[max.index,max.value]},{coord:[min.index,min.value]}]}};if(kind==='rate')option.series[0].markPoint=markExtrema(rateValues);else{option.series[0].markPoint=markExtrema(durationValues);option.series[1].markPoint=markExtrema(countValues)}chart.clear();chart.setOption(option,true);chart.resize()};
   region._renderDepthMetricTabs=()=>draw(region.querySelector('[data-depth-view].active')?.dataset.depthView||'rate');
@@ -3442,14 +3852,14 @@ refreshOverviewRangeChart=function(kind){
 };
 
 // Keep the Tab2 consumption-depth axes comparable across dates.  The chart
-// The overview scale chart has fixed metric semantics: blue is always DAU and
-// green is always new devices. Do this after the optional global theme layer,
+// The overview scale chart has fixed metric semantics: light green is always DAU and
+// blue is always new devices. Do this after the optional global theme layer,
 // which otherwise rewrites individual bar colours.
 function enforceOverviewScaleColors(){
   const dom=$('#overview-scale-combo')||$('#tab1-scale-chart');
   const chart=dom&&window.echarts?.getInstanceByDom(dom);if(!chart)return;
   const option=chart.getOption(),series=option.series||[];
-  const deviceColor='#2f6f3e',newDeviceColor='#2f76e8';
+  const deviceColor='#a8cdaf',newDeviceColor='#2f76e8';
   const deviceData=(series[0]?.data||[]).map(point=>{
     const value=point&&typeof point==='object'&&!Array.isArray(point)?point.value:point;
     return {value,itemStyle:{color:deviceColor}};
@@ -3653,7 +4063,7 @@ popupChart=function(id,option){
   if(el&&!el.__popupDomClickMotion){el.__popupDomClickMotion=true;el.addEventListener('click',event=>{const wave=document.createElement('span');wave.className='popup-chart-wave';wave.style.left=`${event.offsetX}px`;wave.style.top=`${event.offsetY}px`;el.appendChild(wave);setTimeout(()=>wave.remove(),760)})}
 }
 
-const groupedNavMap={insight:'insight',overview:'overview',content:'overview',search:'overview',genre:'overview',home:'home',guess:'home',sections:'home','search-funnel':'search-funnel',banner:'banner',popup:'banner'};
+const groupedNavMap={insight:'insight',overview:'overview',content:'overview',search:'overview',genre:'overview',home:'home',guess:'banner',sections:'banner','search-funnel':'overview',banner:'banner',popup:'banner'};
 const renderPageBeforeGroupedNav=renderPage;
 renderPage=function(){renderPageBeforeGroupedNav();const group=groupedNavMap[state.page]||state.page;$$('.nav-parent').forEach(button=>button.classList.toggle('active',button.dataset.page===group));$$('.nav-subitem').forEach(button=>button.classList.toggle('active',button.dataset.page===state.page))};
 $$('.nav-subitem').forEach(button=>{if(button.tagName==='A'||button.dataset.navBound)return;button.dataset.navBound='1';button.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();state.page=button.dataset.page;renderPage()})});
