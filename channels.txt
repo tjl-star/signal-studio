@@ -1,4 +1,0 @@
-# 每行一个 YouTube 频道 handle。第一版每频道默认取最近 10 条视频。
-@Netflix
-@DisneyPlus
-@VikiGlobalTV

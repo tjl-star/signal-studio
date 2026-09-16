@@ -1,8 +1,0 @@
-__pycache__/
-*.py
-*test*.png
-验证*.png
-insight-prototype.html
-data/backups/
-data/tab4-backup-before-all-platform/
-data/*.bak-*
