@@ -1,0 +1,5 @@
+import axios from "axios";
+export interface ChannelRow {date:string;channel:string;entry_uv:number|null;content_click_uv:number|null;detail_play_uv:number|null;play_5m_uv:number|null;effective_play_uv:number|null;entry_click_rate:number|null;click_play_rate:number|null;detail_5m_rate:number|null;play_5m_effective_rate:number|null}
+export interface GuessRow {date:string;page:string;source_type:string;front_tab_uv:number|null;content_exposure_uv:number|null;content_click_uv:number|null;content_click_rate:number|null;ff_play_convert_rate:number|null;play_convert_rate:number|null;play_5min_rate_uv:number|null;avg_time_uv:number|null}
+export interface HomePayload {channels:ChannelRow[];recommendation:GuessRow|null;recommendation_trend:GuessRow[];meta:{channel:{source:string;available_dates:string[];original_fields:string[]};recommendation:{source:string;api_id:string;available_dates:string[];original_fields:string[];page:string;source_type:string}}}
+export async function fetchHomeOperations(date:string,start_date:string,end_date:string){return (await axios.get<HomePayload>("/api/v1/home-operations",{params:{date,start_date,end_date}})).data}
